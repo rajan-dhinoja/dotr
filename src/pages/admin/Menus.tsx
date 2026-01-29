@@ -39,6 +39,25 @@ import {
 } from "lucide-react";
 import type { Tables, TablesInsert } from "@/integrations/supabase/types";
 import { cn } from "@/lib/utils";
+import {
+  DndContext,
+  DragOverlay,
+  KeyboardSensor,
+  PointerSensor,
+  closestCenter,
+  useSensor,
+  useSensors,
+  type DragEndEvent,
+  type DragStartEvent,
+} from "@dnd-kit/core";
+import {
+  SortableContext,
+  arrayMove,
+  sortableKeyboardCoordinates,
+  useSortable,
+  verticalListSortingStrategy,
+} from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
 
 // MenuItem type now includes mega menu columns from database
 type MenuItem = Tables<"menu_items">;
@@ -59,6 +78,137 @@ const MENU_LOCATIONS = [
   { value: "mobile", label: "Mobile Navigation" },
   { value: "footer", label: "Footer Links" },
 ];
+
+interface SortableMenuItemProps {
+  item: TreeNode;
+  depth: number;
+  renderChildren?: () => React.ReactNode;
+  onEdit: () => void;
+  onDelete: () => void;
+  onToggleVisibility: () => void;
+  getLevelLabel: (n: number | null | undefined) => string;
+  getLevelColor: (n: number | null | undefined) => string;
+}
+
+function SortableMenuItem({
+  item,
+  depth,
+  renderChildren,
+  onEdit,
+  onDelete,
+  onToggleVisibility,
+  getLevelLabel,
+  getLevelColor,
+}: SortableMenuItemProps) {
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    setActivatorNodeRef,
+    transform,
+    transition,
+    isDragging,
+  } = useSortable({ id: item.id });
+
+  const Icon = item.icon_name ? resolveIcon(item.icon_name) : null;
+  const level = item.item_level ?? 0;
+  const isMega = item.menu_type === "mega";
+
+  return (
+    <Card
+      ref={setNodeRef}
+      style={{
+        transform: CSS.Transform.toString(transform),
+        transition,
+        opacity: isDragging ? 0.4 : 1,
+      }}
+    >
+      <CardContent className="p-3 flex items-center gap-3">
+        <div
+          ref={setActivatorNodeRef}
+          {...attributes}
+          {...listeners}
+          className="cursor-grab active:cursor-grabbing touch-none rounded p-0.5 -m-0.5"
+          title="Drag to reorder"
+        >
+          <GripVertical className="h-4 w-4 text-foreground/60" />
+        </div>
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2">
+            {Icon && <Icon className="h-4 w-4 text-primary" />}
+            <p className="font-medium truncate">{item.label}</p>
+            <Badge variant="outline" className={cn("text-xs", getLevelColor(level))}>
+              {getLevelLabel(level)}
+            </Badge>
+            {isMega && (
+              <Badge variant="secondary" className="text-xs">
+                Mega
+              </Badge>
+            )}
+          </div>
+          <p className="text-xs text-foreground/70 mt-0.5">{item.url || "No link"}</p>
+        </div>
+        <div className="flex items-center gap-2">
+          {item.target === "_blank" && (
+            <ExternalLink className="h-4 w-4 text-muted-foreground" />
+          )}
+          <Button variant="ghost" size="icon" onClick={onToggleVisibility}>
+            {item.is_active ? (
+              <Eye className="h-4 w-4" />
+            ) : (
+              <EyeOff className="h-4 w-4 text-foreground/60" />
+            )}
+          </Button>
+          <Button variant="ghost" size="sm" onClick={onEdit}>
+            Edit
+          </Button>
+          <Button variant="ghost" size="icon" onClick={onDelete}>
+            <Trash2 className="h-4 w-4 text-destructive" />
+          </Button>
+        </div>
+      </CardContent>
+      {renderChildren != null && <div className="pb-2">{renderChildren()}</div>}
+    </Card>
+  );
+}
+
+/** Simple card for DragOverlay (no sortable hook, no buttons) */
+function MenuCardOverlay({
+  item,
+  getLevelLabel,
+  getLevelColor,
+}: {
+  item: MenuItem | undefined;
+  getLevelLabel: (n: number | null | undefined) => string;
+  getLevelColor: (n: number | null | undefined) => string;
+}) {
+  if (!item) return null;
+  const Icon = item.icon_name ? resolveIcon(item.icon_name) : null;
+  const level = item.item_level ?? 0;
+  const isMega = item.menu_type === "mega";
+  return (
+    <Card className="shadow-lg ring-2 ring-primary/20">
+      <CardContent className="p-3 flex items-center gap-3">
+        <GripVertical className="h-4 w-4 text-foreground/60" />
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2">
+            {Icon && <Icon className="h-4 w-4 text-primary" />}
+            <p className="font-medium truncate">{item.label}</p>
+            <Badge variant="outline" className={cn("text-xs", getLevelColor(level))}>
+              {getLevelLabel(level)}
+            </Badge>
+            {isMega && (
+              <Badge variant="secondary" className="text-xs">
+                Mega
+              </Badge>
+            )}
+          </div>
+          <p className="text-xs text-foreground/70 mt-0.5">{item.url || "No link"}</p>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
 
 export default function AdminMenus() {
   const [activeLocation, setActiveLocation] = useState<string>("header");
@@ -524,88 +674,96 @@ export default function AdminMenus() {
     }
   };
 
+  const [activeId, setActiveId] = useState<string | null>(null);
+
+  const reorderMutation = useMutation({
+    mutationFn: async (items: { id: string; display_order: number }[]) => {
+      const results = await Promise.all(
+        items.map(({ id, display_order }) =>
+          supabase.from("menu_items").update({ display_order }).eq("id", id)
+        )
+      );
+      const err = results.find((r) => r.error);
+      if (err?.error) throw err.error;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["admin-menu-items"] });
+      queryClient.invalidateQueries({ predicate: (q) => (q.queryKey[0] as string) === "navigation-menu" || (q.queryKey[0] as string) === "mega-menu" });
+      toast({ title: "Order updated" });
+      logActivity({ action: "update", entity_type: "menu_items", entity_name: `Reordered items in ${activeLocation}` });
+    },
+    onError: (e: Error) =>
+      toast({ title: "Failed to reorder", description: e.message, variant: "destructive" }),
+  });
+
+  const sensors = useSensors(
+    useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
+    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
+  );
+
+  const handleDragStart = (e: DragStartEvent) => setActiveId(String(e.active.id));
+  const handleDragCancel = () => setActiveId(null);
+  const handleDragEnd = (e: DragEndEvent) => {
+    setActiveId(null);
+    const { active, over } = e;
+    if (!over || active.id === over.id) return;
+
+    const activeItem = flatItems.find((i) => i.id === active.id);
+    const overItem = flatItems.find((i) => i.id === over.id);
+    if (!activeItem || !overItem) return;
+
+    const activeParent = activeItem.parent_id ?? null;
+    const overParent = overItem.parent_id ?? null;
+    if (activeParent !== overParent) return; // only reorder within same level
+
+    const siblings = flatItems
+      .filter((i) => (i.parent_id ?? null) === activeParent)
+      .sort((a, b) => (a.display_order ?? 0) - (b.display_order ?? 0));
+
+    const oldIndex = siblings.findIndex((s) => s.id === active.id);
+    const newIndex = siblings.findIndex((s) => s.id === over.id);
+    if (oldIndex === -1 || newIndex === -1 || oldIndex === newIndex) return;
+
+    const reordered = arrayMove(siblings, oldIndex, newIndex);
+    reorderMutation.mutate(reordered.map((it, i) => ({ id: it.id, display_order: i })));
+  };
+
   const renderTree = (nodes: TreeNode[], depth = 0) => {
+    const ids = nodes.map((n) => n.id);
     return (
-      <div className={depth === 0 ? "space-y-2" : "space-y-1 pl-6"}>
-        {nodes.map((item) => {
-          const Icon = item.icon_name ? resolveIcon(item.icon_name) : null;
-          const level = item.item_level ?? 0;
-          const isMega = item.menu_type === "mega";
-          
-          return (
-            <Card key={item.id}>
-              <CardContent className="p-3 flex items-center gap-3">
-                <GripVertical className="h-4 w-4 text-foreground/60 cursor-grab" />
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2">
-                    {Icon && <Icon className="h-4 w-4 text-primary" />}
-                    <p className="font-medium truncate">{item.label}</p>
-                    <Badge 
-                      variant="outline" 
-                      className={cn("text-xs", getLevelColor(level))}
-                    >
-                      {getLevelLabel(level)}
-                    </Badge>
-                    {isMega && (
-                      <Badge variant="secondary" className="text-xs">
-                        Mega
-                      </Badge>
-                    )}
-                  </div>
-                  <p className="text-xs text-foreground/70 mt-0.5">
-                    {item.url || "No link"}
-                  </p>
-                </div>
-                <div className="flex items-center gap-2">
-                  {item.target === "_blank" && (
-                    <ExternalLink className="h-4 w-4 text-muted-foreground" />
-                  )}
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    onClick={() =>
-                      itemToggleVisibilityMutation.mutate({
-                        id: item.id,
-                        is_active: !item.is_active,
-                      })
-                    }
-                  >
-                    {item.is_active ? (
-                      <Eye className="h-4 w-4" />
-                    ) : (
-                      <EyeOff className="h-4 w-4 text-foreground/60" />
-                    )}
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => {
-                      setEditingItem(item);
-                      setIsItemActive(item.is_active ?? true);
-                      setMenuType(item.menu_type ?? "simple");
-                      setSelectedParentId(item.parent_id ?? null);
-                      setIconName(item.icon_name ?? null);
-                      setIsItemDialogOpen(true);
-                    }}
-                  >
-                    Edit
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    onClick={() => itemDeleteMutation.mutate(item.id)}
-                  >
-                    <Trash2 className="h-4 w-4 text-destructive" />
-                  </Button>
-                </div>
-              </CardContent>
-              {item.children && item.children.length > 0 && (
-                <div className="pb-2">{renderTree(item.children, depth + 1)}</div>
-              )}
-            </Card>
-          );
-        })}
-      </div>
+      <SortableContext items={ids} strategy={verticalListSortingStrategy}>
+        <div className={depth === 0 ? "space-y-2" : "space-y-1 pl-6"}>
+          {nodes.map((item) => (
+            <SortableMenuItem
+              key={item.id}
+              item={item}
+              depth={depth}
+              renderChildren={
+                item.children && item.children.length > 0
+                  ? () => renderTree(item.children!, depth + 1)
+                  : undefined
+              }
+              onEdit={() => {
+                setEditingItem(item);
+                setIsItemActive(item.is_active ?? true);
+                setMenuType(item.menu_type ?? "simple");
+                setSelectedParentId(item.parent_id ?? null);
+                setIconName(item.icon_name ?? null);
+                setIsItemDialogOpen(true);
+              }}
+              onDelete={() => itemDeleteMutation.mutate(item.id)}
+              onToggleVisibility={() =>
+                itemToggleVisibilityMutation.mutate({
+                  id: item.id,
+                  is_active: !item.is_active,
+                })
+              }
+              getLevelLabel={getLevelLabel}
+              getLevelColor={getLevelColor}
+            />
+          ))}
+        </div>
+      </SortableContext>
     );
   };
 
@@ -690,6 +848,11 @@ export default function AdminMenus() {
                       Use "Sync Pages to Menu" to automatically add pages from the Pages section
                     </p>
                   )}
+                  {loc.value === "mobile" && (
+                    <p className="text-xs text-muted-foreground">
+                      When empty, the Header Navigation is used on mobile. Add items here to customize the mobile menu.
+                    </p>
+                  )}
                 </div>
               </CardHeader>
               <CardContent>
@@ -705,9 +868,31 @@ export default function AdminMenus() {
                         Tip: Click "Sync Pages to Menu" to automatically create menu items from your imported pages.
                       </p>
                     )}
+                    {loc.value === "mobile" && (
+                      <p className="text-xs text-muted-foreground">
+                        When empty, mobile devices show the Header Navigation. Add items here to customize the mobile menu, or sync from pages.
+                      </p>
+                    )}
                   </div>
                 ) : (
-                  renderTree(itemsTree)
+                  <DndContext
+                    sensors={sensors}
+                    collisionDetection={closestCenter}
+                    onDragStart={handleDragStart}
+                    onDragEnd={handleDragEnd}
+                    onDragCancel={handleDragCancel}
+                  >
+                    {renderTree(itemsTree)}
+                    <DragOverlay dropAnimation={null}>
+                      {activeId ? (
+                        <MenuCardOverlay
+                          item={flatItems.find((i) => i.id === activeId)}
+                          getLevelLabel={getLevelLabel}
+                          getLevelColor={getLevelColor}
+                        />
+                      ) : null}
+                    </DragOverlay>
+                  </DndContext>
                 )}
               </CardContent>
             </Card>

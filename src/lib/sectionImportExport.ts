@@ -1,6 +1,6 @@
 import type { PageSection } from '@/hooks/usePageSections';
 import type { Json } from '@/integrations/supabase/types';
-import { validateJson } from './sectionSchemaUtils';
+import { validateJson, coerceContentForSchema } from './sectionSchemaUtils';
 
 /**
  * Section export data structure
@@ -183,6 +183,9 @@ export async function validateSectionImportData(
           message: 'Content must be an object',
         });
       } else {
+        // Coerce content to match schema types (e.g. string "3" -> number 3 for count)
+        const contentObj = section.content as Record<string, unknown>;
+        section.content = coerceContentForSchema(contentObj, sectionType.schema) as Json;
         // Validate content against schema
         const validation = validateJson(section.content as Json, sectionType.schema);
         if (!validation.valid && validation.errors.length > 0) {

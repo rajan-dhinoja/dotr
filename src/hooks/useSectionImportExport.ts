@@ -176,22 +176,24 @@ export function useSectionImportExport({
       const errors: Array<{ sectionIndex: number; error: string }> = [];
       const createdSectionIds: string[] = [];
 
+      // Normalize title for matching (treat null, undefined, '' as equivalent)
+      const norm = (v: string | null | undefined) => (v == null || v === '' ? null : v);
+
       // Process each section
       for (let i = 0; i < importData.sections.length; i++) {
         const sectionData = importData.sections[i];
         
         try {
-          // Find existing section
+          // Find existing section: first by id, then by section_type + title (for all modes including skip)
           let existingSection: PageSection | undefined;
           
           if (sectionData.id) {
             existingSection = existingSections.find(s => s.id === sectionData.id);
-          } else if (onConflict !== 'skip') {
-            // Try to match by section_type + title + display_order
+          }
+          if (!existingSection) {
             existingSection = existingSections.find(s =>
               s.section_type === sectionData.section_type &&
-              s.title === sectionData.title &&
-              s.display_order === sectionData.display_order
+              norm(s.title) === norm(sectionData.title)
             );
           }
 

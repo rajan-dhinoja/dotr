@@ -115,30 +115,38 @@ ALTER TABLE public.navigation_items ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.navigation_item_meta ENABLE ROW LEVEL SECURITY;
 
 -- Sites policies
-CREATE POLICY IF NOT EXISTS "Admins can manage sites" ON public.sites
-FOR ALL USING (has_role(auth.uid(), 'admin'::app_role));
+DROP POLICY IF EXISTS "Admins can manage sites" ON public.sites;
+CREATE POLICY "Admins can manage sites" ON public.sites
+FOR ALL USING (public.has_role(auth.uid(), 'admin'::app_role));
 
-CREATE POLICY IF NOT EXISTS "Anyone can view active sites" ON public.sites
-FOR SELECT USING (is_active = true OR has_role(auth.uid(), 'admin'::app_role));
+DROP POLICY IF EXISTS "Anyone can view active sites" ON public.sites;
+CREATE POLICY "Anyone can view active sites" ON public.sites
+FOR SELECT USING (is_active = true OR public.has_role(auth.uid(), 'admin'::app_role));
 
 -- Navigation menus policies
-CREATE POLICY IF NOT EXISTS "Anyone can view active navigation menus" ON public.navigation_menus
-FOR SELECT USING (is_active = true OR has_role(auth.uid(), 'admin'::app_role));
+DROP POLICY IF EXISTS "Anyone can view active navigation menus" ON public.navigation_menus;
+CREATE POLICY "Anyone can view active navigation menus" ON public.navigation_menus
+FOR SELECT USING (is_active = true OR public.has_role(auth.uid(), 'admin'::app_role));
 
-CREATE POLICY IF NOT EXISTS "Admins can manage navigation menus" ON public.navigation_menus
-FOR ALL USING (has_role(auth.uid(), 'admin'::app_role));
+DROP POLICY IF EXISTS "Admins can manage navigation menus" ON public.navigation_menus;
+CREATE POLICY "Admins can manage navigation menus" ON public.navigation_menus
+FOR ALL USING (public.has_role(auth.uid(), 'admin'::app_role));
 
 -- Navigation items policies
-CREATE POLICY IF NOT EXISTS "Anyone can view active navigation items" ON public.navigation_items
-FOR SELECT USING (is_active = true OR has_role(auth.uid(), 'admin'::app_role));
+DROP POLICY IF EXISTS "Anyone can view active navigation items" ON public.navigation_items;
+CREATE POLICY "Anyone can view active navigation items" ON public.navigation_items
+FOR SELECT USING (is_active = true OR public.has_role(auth.uid(), 'admin'::app_role));
 
-CREATE POLICY IF NOT EXISTS "Admins can manage navigation items" ON public.navigation_items
-FOR ALL USING (has_role(auth.uid(), 'admin'::app_role));
+DROP POLICY IF EXISTS "Admins can manage navigation items" ON public.navigation_items;
+CREATE POLICY "Admins can manage navigation items" ON public.navigation_items
+FOR ALL USING (public.has_role(auth.uid(), 'admin'::app_role));
 
 -- Navigation item meta policies
-CREATE POLICY IF NOT EXISTS "Anyone can view navigation item meta" ON public.navigation_item_meta
+DROP POLICY IF EXISTS "Anyone can view navigation item meta" ON public.navigation_item_meta;
+CREATE POLICY "Anyone can view navigation item meta" ON public.navigation_item_meta
 FOR SELECT USING (true);
 
-CREATE POLICY IF NOT EXISTS "Admins can manage navigation item meta" ON public.navigation_item_meta
-FOR ALL USING (has_role(auth.uid(), 'admin'::app_role));
+DROP POLICY IF EXISTS "Admins can manage navigation item meta" ON public.navigation_item_meta;
+CREATE POLICY "Admins can manage navigation item meta" ON public.navigation_item_meta
+FOR ALL USING (public.has_role(auth.uid(), 'admin'::app_role));
 

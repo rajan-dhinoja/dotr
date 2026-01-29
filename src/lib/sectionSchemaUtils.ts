@@ -33,26 +33,31 @@ export function convertToJsonSchema(sectionSchema: Json | null | undefined): Pla
   const properties: Record<string, PlainJsonSchema> = {};
   const required: string[] = [];
 
+  // Determine which field name holds the array when we have items_schema (form uses "fields", others use "items")
+  const arrayFieldName =
+    schema.items_schema && Array.isArray(schema.fields) && schema.fields.includes('fields')
+      ? 'fields'
+      : 'items';
+
   // Handle top-level fields
   if (Array.isArray(schema.fields) && schema.fields.length > 0) {
     for (const field of schema.fields) {
       if (typeof field !== 'string') continue;
-      
-      // Skip 'items' field if it exists, handle separately
+      // Skip the array field that will be set from items_schema below
+      if (field === arrayFieldName && schema.items_schema && typeof schema.items_schema === 'object') continue;
       if (field === 'items') continue;
-      
-      // Determine field type from context or default to string
+
+      // Determine field type from context or default to string.
+      // Check array before string so "social_links" matches _links (array) not _link (string).
       let fieldType: 'string' | 'number' | 'boolean' | 'array' | 'object' = 'string';
-      
-      // Special handling for known field patterns
-      if (field.includes('_url') || field.includes('_link') || field.includes('_image') || field.includes('url')) {
+      if (field.includes('_links') || field.includes('platforms') || field.includes('options') || field.includes('features')) {
+        fieldType = 'array';
+      } else if (field.includes('_url') || field.includes('_link') || field.includes('_image') || field.includes('url')) {
         fieldType = 'string';
       } else if (field === 'autoplay' || field.includes('_active') || field.includes('is_') || field === 'show_filters' || field === 'show_featured_only') {
         fieldType = 'boolean';
       } else if (field === 'count' || field.includes('_order') || field.includes('display_order') || field.includes('rating')) {
         fieldType = 'number';
-      } else if (field.includes('_links') || field.includes('platforms') || field.includes('options') || field.includes('features')) {
-        fieldType = 'array';
       }
 
       properties[field] = {
@@ -61,34 +66,26 @@ export function convertToJsonSchema(sectionSchema: Json | null | undefined): Pla
     }
   }
 
-  // Handle items array schema
+  // Handle items/fields array schema (form section uses "fields", other sections use "items")
   if (schema.items_schema && typeof schema.items_schema === 'object') {
     const itemProperties: Record<string, PlainJsonSchema> = {};
-    
     for (const [key, typeStr] of Object.entries(schema.items_schema)) {
       if (typeof key !== 'string' || typeof typeStr !== 'string') continue;
-      
       let itemType: 'string' | 'number' | 'boolean' | 'array' | 'object' = 'string';
-      
       if (typeStr === 'string') itemType = 'string';
       else if (typeStr === 'number') itemType = 'number';
       else if (typeStr === 'boolean') itemType = 'boolean';
       else if (typeStr === 'array') itemType = 'array';
       else if (typeStr === 'object') itemType = 'object';
-
-      itemProperties[key] = {
-        type: itemType,
-      };
+      itemProperties[key] = { type: itemType };
     }
-
-    // Only add items property if we have item properties or if 'items' is in fields
-    if (Object.keys(itemProperties).length > 0 || (Array.isArray(schema.fields) && schema.fields.includes('items'))) {
-      properties.items = {
+    if (Object.keys(itemProperties).length > 0 || (Array.isArray(schema.fields) && (schema.fields.includes('items') || schema.fields.includes('fields')))) {
+      properties[arrayFieldName] = {
         type: 'array',
         items: {
           type: 'object',
           properties: itemProperties,
-          additionalProperties: true, // Allow extra fields in items
+          additionalProperties: true,
         },
       };
     }
@@ -383,6 +380,99 @@ export function generateExampleJson(sectionSchema: Json | null | undefined): Rec
 }
 
 /**
+ * Coerce content values to match schema types (e.g. string "3" -> number 3 for count).
+ * Returns a new object; does not mutate input.
+ */
+export function coerceContentForSchema(
+  content: Record<string, unknown>,
+  sectionSchema: Json | null | undefined
+): Record<string, unknown> {
+  if (!content || typeof content !== 'object') return content;
+  if (!sectionSchema || typeof sectionSchema !== 'object') return { ...content };
+
+  const schema = sectionSchema as SectionSchema;
+  const result: Record<string, unknown> = {};
+
+  for (const [key, value] of Object.entries(content)) {
+    if (value === null || value === undefined) {
+      result[key] = value;
+      continue;
+    }
+    const isArrayWithItemsSchema =
+      (key === 'items' || key === 'fields') &&
+      Array.isArray(value) &&
+      schema.items_schema &&
+      typeof schema.items_schema === 'object';
+    if (isArrayWithItemsSchema) {
+      result[key] = value.map((item) => {
+        if (typeof item !== 'object' || item === null) return item;
+        const coercedItem: Record<string, unknown> = {};
+        for (const [k, v] of Object.entries(item)) {
+          const expectedType = (schema.items_schema as Record<string, string>)[k];
+          coercedItem[k] = coerceValue(v, expectedType ?? 'string');
+        }
+        return coercedItem;
+      });
+      continue;
+    }
+    const fieldType = inferFieldType(key, schema);
+    result[key] = coerceValue(value, fieldType);
+  }
+  return result;
+}
+
+function inferFieldType(field: string, schema: SectionSchema): 'string' | 'number' | 'boolean' | 'array' | 'object' {
+  if (field.includes('_links') || field.includes('platforms') || field.includes('options') || field.includes('features')) return 'array';
+  if (field.includes('_url') || field.includes('_link') || field.includes('_image') || field.includes('url')) return 'string';
+  if (field === 'autoplay' || field.includes('_active') || field.includes('is_') || field === 'show_filters' || field === 'show_featured_only') return 'boolean';
+  if (field === 'count' || field.includes('_order') || field.includes('display_order') || field.includes('rating')) return 'number';
+  return 'string';
+}
+
+function coerceValue(value: unknown, expectedType: string): unknown {
+  if (expectedType === 'number') {
+    if (typeof value === 'number' && !Number.isNaN(value)) return value;
+    if (typeof value === 'string') {
+      const n = Number(value);
+      return Number.isNaN(n) ? value : n;
+    }
+    return value;
+  }
+  if (expectedType === 'boolean') {
+    if (typeof value === 'boolean') return value;
+    if (value === 'true' || value === true) return true;
+    if (value === 'false' || value === false) return false;
+    return value;
+  }
+  if (expectedType === 'string' && (typeof value === 'number' || typeof value === 'boolean')) {
+    return String(value);
+  }
+  return value;
+}
+
+/**
+ * Get value at JSON pointer path (e.g. /count or /items/0/title)
+ */
+function getValueAtPath(obj: Record<string, unknown>, path: string): unknown {
+  if (!path || path === '/') return obj;
+  const segments = path.replace(/^\/+/, '').split('/');
+  let current: unknown = obj;
+  for (const seg of segments) {
+    if (current === null || current === undefined) return undefined;
+    const key = seg.replace(/~1/g, '/').replace(/~0/g, '~');
+    const numKey = /^\d+$/.test(key) ? parseInt(key, 10) : key;
+    if (Array.isArray(current) && typeof numKey === 'number') {
+      current = current[numKey];
+    } else if (typeof current === 'object' && current !== null && (key in current || (typeof numKey === 'number' && numKey in current))) {
+      current = (current as Record<string, unknown>)[key];
+    } else {
+      return undefined;
+    }
+  }
+  return current;
+}
+
+/**
  * Validates JSON against a section schema
  */
 export function validateJson(
@@ -426,7 +516,10 @@ export function validateJson(
           // Improve error messages
           let message = error.message || 'Validation error';
           if (error.keyword === 'type') {
-            message = `Expected ${error.params?.type || 'valid type'}, got ${error.params?.type || 'invalid type'}`;
+            const expectedType = error.params?.type ?? 'valid type';
+            const actualValue = getValueAtPath(json as Record<string, unknown>, error.instancePath ?? '');
+            const actualType = actualValue === null ? 'null' : Array.isArray(actualValue) ? 'array' : typeof actualValue;
+            message = `Expected ${expectedType}, got ${actualType}`;
           } else if (error.keyword === 'required') {
             message = `Missing required field: ${error.params?.missingProperty || 'unknown'}`;
           }

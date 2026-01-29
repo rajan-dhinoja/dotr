@@ -73,25 +73,36 @@ export function usePageSections(pageType: string, entityId?: string) {
   });
 }
 
+export interface AdminPageSectionsResult {
+  sections: PageSection[];
+  totalCount: number;
+}
+
 export function useAdminPageSections(pageType: string, entityId?: string) {
-  return useQuery({
+  return useQuery<AdminPageSectionsResult>({
     queryKey: ['admin-page-sections', pageType, entityId],
     queryFn: async () => {
       let query = supabase
         .from('page_sections')
         .select('*')
-        .eq('page_type', pageType)
-        .order('display_order');
-      
+        .eq('page_type', pageType);
+
       if (entityId) {
         query = query.eq('entity_id', entityId);
       } else {
         query = query.is('entity_id', null);
       }
-      
+
+      query = query.order('display_order');
+
       const { data, error } = await query;
       if (error) throw error;
-      return data as PageSection[];
+
+      const sections = (data as PageSection[]) || [];
+      return {
+        sections,
+        totalCount: sections.length,
+      };
     },
     enabled: !!pageType,
     staleTime: 30 * 1000, // Cache for 30 seconds in admin

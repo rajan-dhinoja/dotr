@@ -10,6 +10,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { useSectionImportExport, type ImportOptions, type ImportResult } from '@/hooks/useSectionImportExport';
 import { parseSectionImportFile, validateSectionImportData, type SectionValidationResult } from '@/lib/sectionImportExport';
 import type { SectionType } from '@/hooks/usePageSections';
+import { cn } from '@/lib/utils';
 
 interface SectionImportModalProps {
   open: boolean;
@@ -282,50 +283,144 @@ export function SectionImportModal({
             {/* Import Options */}
             {validation?.valid && (
               <div className="space-y-4">
-                <div className="space-y-2">
-                  <Label>Import Mode</Label>
-                  <RadioGroup value={importMode} onValueChange={(v) => setImportMode(v as ImportMode)}>
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="skip" id="skip" />
-                      <Label htmlFor="skip" className="font-normal cursor-pointer">
-                        Skip Existing - Skip sections that already exist
-                      </Label>
+                <div className="space-y-3">
+                  <div>
+                    <Label className="text-base font-medium">When a section already exists</Label>
+                    <p className="text-xs text-muted-foreground mt-0.5">
+                      Choose what to do when the file contains a section that matches one already on this page.
+                    </p>
+                  </div>
+                  <RadioGroup value={importMode} onValueChange={(v) => setImportMode(v as ImportMode)} className="space-y-2">
+                    <div
+                      className={cn(
+                        'flex items-start space-x-3 rounded-lg border p-3 cursor-pointer hover:bg-muted/50',
+                        importMode === 'skip' && 'border-primary bg-muted/50'
+                      )}
+                      onClick={() => setImportMode('skip')}
+                      onKeyDown={(e) => e.key === 'Enter' && setImportMode('skip')}
+                      role="button"
+                      tabIndex={0}
+                    >
+                      <RadioGroupItem value="skip" id="import-skip" className="mt-0.5" />
+                      <div className="flex-1">
+                        <Label htmlFor="import-skip" className="font-medium cursor-pointer">
+                          Skip existing
+                        </Label>
+                        <p className="text-xs text-muted-foreground mt-0.5">
+                          Do not change existing sections. Only add sections that are new. Safest option.
+                        </p>
+                      </div>
                     </div>
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="overwrite" id="overwrite" />
-                      <Label htmlFor="overwrite" className="font-normal cursor-pointer">
-                        Overwrite - Replace existing sections with imported data
-                      </Label>
+                    <div
+                      className={cn(
+                        'flex items-start space-x-3 rounded-lg border p-3 cursor-pointer hover:bg-muted/50',
+                        importMode === 'overwrite' && 'border-primary bg-muted/50'
+                      )}
+                      onClick={() => setImportMode('overwrite')}
+                      onKeyDown={(e) => e.key === 'Enter' && setImportMode('overwrite')}
+                      role="button"
+                      tabIndex={0}
+                    >
+                      <RadioGroupItem value="overwrite" id="import-overwrite" className="mt-0.5" />
+                      <div className="flex-1">
+                        <Label htmlFor="import-overwrite" className="font-medium cursor-pointer">
+                          Overwrite existing
+                        </Label>
+                        <p className="text-xs text-muted-foreground mt-0.5">
+                          Replace matching sections with the data from the file. Existing content is lost for those sections.
+                        </p>
+                      </div>
                     </div>
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="merge" id="merge" />
-                      <Label htmlFor="merge" className="font-normal cursor-pointer">
-                        Merge - Merge imported data with existing sections
-                      </Label>
+                    <div
+                      className={cn(
+                        'flex items-start space-x-3 rounded-lg border p-3 cursor-pointer hover:bg-muted/50',
+                        importMode === 'merge' && 'border-primary bg-muted/50'
+                      )}
+                      onClick={() => setImportMode('merge')}
+                      onKeyDown={(e) => e.key === 'Enter' && setImportMode('merge')}
+                      role="button"
+                      tabIndex={0}
+                    >
+                      <RadioGroupItem value="merge" id="import-merge" className="mt-0.5" />
+                      <div className="flex-1">
+                        <Label htmlFor="import-merge" className="font-medium cursor-pointer">
+                          Merge with existing
+                        </Label>
+                        <p className="text-xs text-muted-foreground mt-0.5">
+                          Combine file data with existing sections. File content is merged into existing; existing fields are kept where the file does not override.
+                        </p>
+                      </div>
                     </div>
                   </RadioGroup>
                 </div>
 
-                <div className="space-y-2">
-                  <Label>Reorder Strategy</Label>
-                  <RadioGroup value={reorderStrategy} onValueChange={(v) => setReorderStrategy(v as ReorderStrategy)}>
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="preserve" id="preserve" />
-                      <Label htmlFor="preserve" className="font-normal cursor-pointer">
-                        Preserve - Keep imported display_order values
-                      </Label>
+                <div className="space-y-3">
+                  <div>
+                    <Label className="text-base font-medium">Section order</Label>
+                    <p className="text-xs text-muted-foreground mt-0.5">
+                      How to place new sections and handle display order.
+                    </p>
+                  </div>
+                  <RadioGroup value={reorderStrategy} onValueChange={(v) => setReorderStrategy(v as ReorderStrategy)} className="space-y-2">
+                    <div
+                      className={cn(
+                        'flex items-start space-x-3 rounded-lg border p-3 cursor-pointer hover:bg-muted/50',
+                        reorderStrategy === 'preserve' && 'border-primary bg-muted/50'
+                      )}
+                      onClick={() => setReorderStrategy('preserve')}
+                      onKeyDown={(e) => e.key === 'Enter' && setReorderStrategy('preserve')}
+                      role="button"
+                      tabIndex={0}
+                    >
+                      <RadioGroupItem value="preserve" id="reorder-preserve" className="mt-0.5" />
+                      <div className="flex-1">
+                        <Label htmlFor="reorder-preserve" className="font-medium cursor-pointer">
+                          Keep order from file
+                        </Label>
+                        <p className="text-xs text-muted-foreground mt-0.5">
+                          Use the order numbers from the imported file. Sections may appear between existing ones.
+                        </p>
+                      </div>
                     </div>
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="append" id="append" />
-                      <Label htmlFor="append" className="font-normal cursor-pointer">
-                        Append - Add sections at the end
-                      </Label>
+                    <div
+                      className={cn(
+                        'flex items-start space-x-3 rounded-lg border p-3 cursor-pointer hover:bg-muted/50',
+                        reorderStrategy === 'append' && 'border-primary bg-muted/50'
+                      )}
+                      onClick={() => setReorderStrategy('append')}
+                      onKeyDown={(e) => e.key === 'Enter' && setReorderStrategy('append')}
+                      role="button"
+                      tabIndex={0}
+                    >
+                      <RadioGroupItem value="append" id="reorder-append" className="mt-0.5" />
+                      <div className="flex-1">
+                        <Label htmlFor="reorder-append" className="font-medium cursor-pointer">
+                          Add at the end
+                        </Label>
+                        <p className="text-xs text-muted-foreground mt-0.5">
+                          New sections are added after your current sections. Easiest option; order in the file is ignored.
+                        </p>
+                      </div>
                     </div>
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="renumber" id="renumber" />
-                      <Label htmlFor="renumber" className="font-normal cursor-pointer">
-                        Renumber - Renumber all sections sequentially
-                      </Label>
+                    <div
+                      className={cn(
+                        'flex items-start space-x-3 rounded-lg border p-3 cursor-pointer hover:bg-muted/50',
+                        reorderStrategy === 'renumber' && 'border-primary bg-muted/50'
+                      )}
+                      onClick={() => setReorderStrategy('renumber')}
+                      onKeyDown={(e) => e.key === 'Enter' && setReorderStrategy('renumber')}
+                      role="button"
+                      tabIndex={0}
+                    >
+                      <RadioGroupItem value="renumber" id="reorder-renumber" className="mt-0.5" />
+                      <div className="flex-1">
+                        <Label htmlFor="reorder-renumber" className="font-medium cursor-pointer">
+                          Renumber everything
+                        </Label>
+                        <p className="text-xs text-muted-foreground mt-0.5">
+                          After import, all sections on the page are renumbered in order (0, 1, 2…). Use if you want a clean sequence.
+                        </p>
+                      </div>
                     </div>
                   </RadioGroup>
                 </div>

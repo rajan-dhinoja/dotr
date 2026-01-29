@@ -24,6 +24,7 @@ import {
 const navItems = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { section: 'Content' },
+  { href: '/admin/menus', label: 'Menus', icon: Menu },  
   { href: '/admin/pages', label: 'Pages', icon: FolderTree },
   { href: '/admin/page-sections', label: 'Page Sections', icon: LayoutGrid },
   { href: '/admin/blog', label: 'Blog Posts', icon: FileText },
@@ -38,7 +39,6 @@ const navItems = [
   { href: '/admin/testimonials', label: 'Testimonials', icon: MessageSquare },
   { href: '/admin/leads', label: 'Contact Leads', icon: Mail },
   { section: 'Appearance' },
-  { href: '/admin/menus', label: 'Menus', icon: Menu },
   { href: '/admin/media', label: 'Media Library', icon: Image },
   { section: 'System' },
   { href: '/admin/users', label: 'Users', icon: Users },

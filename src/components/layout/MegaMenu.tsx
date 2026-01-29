@@ -93,7 +93,7 @@ export const MegaMenu = ({ label, href, slug, menuItemId, menuItem, isActive }: 
     };
   }, []);
 
-  // Handle keyboard navigation
+  // Handle keyboard navigation (Escape) and focusout to close when focus leaves
   useEffect(() => {
     if (!open) return;
 
@@ -108,7 +108,22 @@ export const MegaMenu = ({ label, href, slug, menuItemId, menuItem, isActive }: 
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [open]);
 
-  // Focus trap when menu is open
+  // Close when focus leaves the entire menu (trigger + dropdown)
+  useEffect(() => {
+    if (!open || !menuRef.current) return;
+
+    const el = menuRef.current;
+    const handleFocusOut = (e: FocusEvent) => {
+      if (!el.contains(e.relatedTarget as Node)) {
+        setOpen(false);
+      }
+    };
+
+    el.addEventListener("focusout", handleFocusOut);
+    return () => el.removeEventListener("focusout", handleFocusOut);
+  }, [open]);
+
+  // Focus trap when menu is open (Tab cycles within dropdown; do not steal focus on open)
   useEffect(() => {
     if (!open || !menuRef.current) return;
 
@@ -135,8 +150,6 @@ export const MegaMenu = ({ label, href, slug, menuItemId, menuItem, isActive }: 
     };
 
     document.addEventListener("keydown", handleTab);
-    firstElement?.focus();
-
     return () => document.removeEventListener("keydown", handleTab);
   }, [open, megaMenuData]);
 
@@ -154,26 +167,28 @@ export const MegaMenu = ({ label, href, slug, menuItemId, menuItem, isActive }: 
   }, []);
 
   const handleMouseLeave = useCallback(() => {
-    // Add a small delay before closing to allow mouse movement
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
     timeoutRef.current = setTimeout(() => {
       setOpen(false);
-      // Keep fetching enabled for a bit in case user hovers again
-      setTimeout(() => {
-        if (!open) {
-          setShouldFetch(false);
-        }
-      }, 500);
+      setTimeout(() => setShouldFetch(false), 500);
+      timeoutRef.current = null;
     }, 150);
-  }, [open]);
+  }, []);
 
-  const handleClick = useCallback((e: React.MouseEvent) => {
-    // Always toggle the menu on click, don't navigate
+  const handleChevronClick = useCallback((e: React.MouseEvent) => {
     e.preventDefault();
-    if (!open) {
-      setShouldFetch(true);
-    }
-    setOpen(!open);
-  }, [open]);
+    e.stopPropagation();
+    setShouldFetch(true);
+    setOpen((prev) => !prev);
+  }, []);
+
+  const handleTriggerFocus = useCallback(() => {
+    setShouldFetch(true);
+    setOpen(true);
+  }, []);
 
   // Determine if this is a mega menu (has menu_type='mega' or has children)
   const isMegaMenu = menuItem?.menu_type === 'mega' || (menuItem?.children && menuItem.children.length > 0);
@@ -198,45 +213,60 @@ export const MegaMenu = ({ label, href, slug, menuItemId, menuItem, isActive }: 
     );
   }
 
-  // Render mega menu - show button with dropdown
+  // Render mega menu: Link (navigates) + chevron (toggles dropdown). Hover opens; click link navigates.
   return (
     <div
-      className="relative"
+      className="relative flex items-center"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       ref={menuRef}
     >
-      <button
-        className={cn(
-          "relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg group flex items-center gap-1",
-          isActive
-            ? "text-primary"
-            : "text-foreground/80 hover:text-foreground hover:bg-muted/50"
-        )}
-        onClick={handleClick}
-        aria-label={label}
-        aria-expanded={open}
-        aria-haspopup="true"
-        aria-controls={`mega-menu-${identifier}`}
-      >
-        <span className="relative z-10">{label}</span>
-        <ChevronDown
+      <div className="flex items-center rounded-lg group/trigger">
+        <Link
+          to={href}
+          onFocus={handleTriggerFocus}
           className={cn(
-            "h-4 w-4 transition-transform",
-            open && "rotate-180"
+            "relative px-4 py-2 pl-4 pr-2 text-sm font-medium transition-all duration-300 rounded-l-lg flex items-center",
+            "focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded-lg",
+            isActive
+              ? "text-primary"
+              : "text-foreground/80 hover:text-foreground hover:bg-muted/50"
           )}
-        />
-        {isActive && (
-          <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full" />
-        )}
-      </button>
+        >
+          <span className="relative z-10">{label}</span>
+          {isActive && (
+            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full" />
+          )}
+        </Link>
+        <button
+          type="button"
+          onClick={handleChevronClick}
+          onFocus={handleTriggerFocus}
+          aria-expanded={open}
+          aria-haspopup="true"
+          aria-controls={`mega-menu-${identifier}`}
+          aria-label={`Open ${label} submenu`}
+          className={cn(
+            "p-2 rounded-r-lg transition-all duration-300",
+            "focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded-lg",
+            isActive
+              ? "text-primary"
+              : "text-foreground/80 hover:text-foreground hover:bg-muted/50"
+          )}
+        >
+          <ChevronDown
+            className={cn(
+              "h-4 w-4 transition-transform",
+              open && "rotate-180"
+            )}
+          />
+        </button>
+      </div>
 
       {open && (
         <div
           id={`mega-menu-${identifier}`}
           className="absolute left-1/2 top-full z-[60] w-screen max-w-6xl -translate-x-1/2"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
           role="menu"
           aria-label={`${label} submenu`}
         >
@@ -297,6 +327,13 @@ export const MegaMenu = ({ label, href, slug, menuItemId, menuItem, isActive }: 
                           {megaMenuData.summaryText}
                         </p>
                       )}
+                      <Link
+                        to={href}
+                        className="inline-flex items-center text-sm font-medium text-white/90 hover:text-white underline underline-offset-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-cyan-500 rounded"
+                        role="menuitem"
+                      >
+                        View all {label}
+                      </Link>
                     </div>
                     {megaMenuData.ctaLabel && megaMenuData.ctaHref && (
                       <div>
@@ -325,6 +362,15 @@ export const MegaMenu = ({ label, href, slug, menuItemId, menuItem, isActive }: 
                       "border-b md:border-b-0 md:border-r"
                     )}>
                       <div className="p-4 space-y-1 max-h-[500px] overflow-y-auto">
+                        {!(megaMenuData.summaryTitle || megaMenuData.summaryText) && (
+                          <Link
+                            to={href}
+                            className="flex items-center gap-3 px-4 py-3 rounded-lg text-cyan-600 hover:bg-cyan-50 hover:text-cyan-700 font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2"
+                            role="menuitem"
+                          >
+                            View all {label}
+                          </Link>
+                        )}
                         {megaMenuData.sections.map((section, index) => {
                           const SectionIcon = section.icon || resolveIcon(section.iconName || undefined);
                           const isActive = index === selectedCategoryIndex;

@@ -1,6 +1,24 @@
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+import { useQuery, useMutation, useQueryClient, type QueryClient } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import type { Json } from '@/integrations/supabase/types';
+
+/** Shared fetch for use in hook and prefetch */
+async function fetchPageSections(pageType: string, entityId?: string): Promise<PageSection[]> {
+  let query = supabase
+    .from('page_sections')
+    .select('*')
+    .eq('page_type', pageType)
+    .eq('is_active', true)
+    .order('display_order');
+  if (entityId) {
+    query = query.eq('entity_id', entityId);
+  } else {
+    query = query.is('entity_id', null);
+  }
+  const { data, error } = await query;
+  if (error) throw error;
+  return data as PageSection[];
+}
 
 export interface PageSection {
   id: string;
@@ -51,25 +69,51 @@ export function useSectionTypes(pageType?: string) {
 export function usePageSections(pageType: string, entityId?: string) {
   return useQuery({
     queryKey: ['page-sections', pageType, entityId],
+    queryFn: () => fetchPageSections(pageType, entityId),
+    staleTime: 2 * 60 * 1000, // Cache for 2 minutes
+    placeholderData: (previousData) => previousData, // Keep showing previous data while refetching (smoother UX)
+  });
+}
+
+/** Prefetch sections for a page so navigation feels instant. Call from app shell or on link hover. */
+export function prefetchPageSections(queryClient: QueryClient, pageType: string, entityId?: string) {
+  return queryClient.prefetchQuery({
+    queryKey: ['page-sections', pageType, entityId],
+    queryFn: () => fetchPageSections(pageType, entityId),
+    staleTime: 2 * 60 * 1000,
+  });
+}
+
+/**
+ * Fetches page sections for a service category page (/services/:category).
+ * Tries page_type = category first (e.g. "designing"), then "services/" + category,
+ * so content from Admin → Page Sections is used regardless of how the page slug is stored.
+ */
+export function useServiceCategorySections(category: string) {
+  return useQuery({
+    queryKey: ['service-category-sections', category],
     queryFn: async () => {
-      let query = supabase
+      const { data: first, error: e1 } = await supabase
         .from('page_sections')
         .select('*')
-        .eq('page_type', pageType)
+        .eq('page_type', category)
         .eq('is_active', true)
+        .is('entity_id', null)
         .order('display_order');
-      
-      if (entityId) {
-        query = query.eq('entity_id', entityId);
-      } else {
-        query = query.is('entity_id', null);
-      }
-      
-      const { data, error } = await query;
-      if (error) throw error;
-      return data as PageSection[];
+      if (e1) throw e1;
+      if (first && first.length > 0) return first as PageSection[];
+      const { data: second, error: e2 } = await supabase
+        .from('page_sections')
+        .select('*')
+        .eq('page_type', `services/${category}`)
+        .eq('is_active', true)
+        .is('entity_id', null)
+        .order('display_order');
+      if (e2) throw e2;
+      return (second ?? []) as PageSection[];
     },
-    staleTime: 2 * 60 * 1000, // Cache for 2 minutes
+    enabled: !!category,
+    staleTime: 2 * 60 * 1000,
   });
 }
 

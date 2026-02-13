@@ -1,12 +1,13 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { BackToTop } from "@/components/interactive/BackToTop";
 import { SectionRenderer } from "@/components/sections/SectionRenderer";
+import { ServicesGridSection } from "@/components/sections/ServicesGridSection";
 import { usePageSections } from "@/hooks/usePageSections";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const Services = () => {
   const { data: sections, isLoading } = usePageSections("services");
+  const hasSections = sections && sections.length > 0;
 
   return (
     <div className="min-h-screen bg-background">
@@ -19,21 +20,31 @@ const Services = () => {
             <Skeleton className="h-64 w-full" />
           </div>
         </div>
-      ) : sections && sections.length > 0 ? (
+      ) : hasSections ? (
         <SectionRenderer sections={sections} />
       ) : (
-        <div className="pt-32 pb-20 text-center">
-          <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Our Services</h1>
-            <p className="text-muted-foreground">
-              Add sections to this page from the admin panel.
-            </p>
+        /* Fallback: when no sections configured, show dynamic services from DB */
+        <>
+          <div className="pt-32 pb-12 text-center">
+            <div className="container mx-auto px-4">
+              <h1 className="text-4xl font-bold text-foreground mb-4">Our Services</h1>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Explore our comprehensive digital solutions—from design to development, marketing, and beyond.
+              </p>
+            </div>
           </div>
-        </div>
+          <ServicesGridSection
+            title="All Services"
+            subtitle="Select a category to explore our offerings"
+            content={{ source: "dynamic", groupByCategory: true }}
+          />
+          <p className="text-center text-sm text-muted-foreground pb-16">
+            Customize this page in Admin → Page Sections → Services
+          </p>
+        </>
       )}
 
       <Footer />
-      <BackToTop />
     </div>
   );
 };

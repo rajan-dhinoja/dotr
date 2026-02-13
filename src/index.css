@@ -159,8 +159,22 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox: hide scrollbar */
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge: hide scrollbar */
+  }
+
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+    min-height: 100vh;
+    -ms-overflow-style: none; /* IE/Edge: hide scrollbar */
   }
 }
 

@@ -1,7 +1,9 @@
+import { useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { ScrollToEnds } from '@/components/interactive/ScrollToEnds';
 import {
   LayoutDashboard,
   Briefcase,
@@ -15,25 +17,29 @@ import {
   LayoutGrid,
   Image,
   Activity,
-  Menu,
   FolderTree,
   Tag,
   ClipboardList,
+  Info,
+  Newspaper,
 } from 'lucide-react';
 
 const navItems = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { section: 'Content' },
-  { href: '/admin/menus', label: 'Menus', icon: Menu },  
-  { href: '/admin/pages', label: 'Pages', icon: FolderTree },
+  { href: '/admin/pages', label: 'Pages & Navigation', icon: FolderTree },
   { href: '/admin/page-sections', label: 'Page Sections', icon: LayoutGrid },
+  { href: '/admin/form-submissions', label: 'Form Submissions', icon: ClipboardList },
+  { section: 'Parts (Types) of Pages' },
+  { href: '/admin/service-categories', label: 'Service Categories', icon: Tag },
+  { href: '/admin/services', label: 'Services', icon: Briefcase },
+  { href: '/admin/projects', label: 'Projects', icon: FolderOpen },
+  { href: '/admin/about', label: 'About', icon: Info },
+  { href: '/admin/contact', label: 'Contact', icon: Mail },
+  { href: '/admin/blog-page', label: 'Blog', icon: Newspaper },
+  { section: 'Blog & News' },
   { href: '/admin/blog', label: 'Blog Posts', icon: FileText },
   { href: '/admin/blog-categories', label: 'Blog Categories', icon: Tag },
-  { href: '/admin/form-submissions', label: 'Form Submissions', icon: ClipboardList },
-  { section: 'Portfolio' },
-  { href: '/admin/services', label: 'Services', icon: Briefcase },
-  { href: '/admin/service-categories', label: 'Service Categories', icon: Tag },
-  { href: '/admin/projects', label: 'Projects', icon: FolderOpen },
   { section: 'People' },
   { href: '/admin/team', label: 'Team', icon: Users },
   { href: '/admin/testimonials', label: 'Testimonials', icon: MessageSquare },
@@ -47,6 +53,7 @@ const navItems = [
 ];
 
 export function AdminLayout({ children }: { children: React.ReactNode }) {
+  const mainRef = useRef<HTMLElement>(null);
   const { pathname } = useLocation();
   const { signOut, user } = useAuth();
   const navigate = useNavigate();
@@ -57,12 +64,12 @@ export function AdminLayout({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <div className="min-h-screen flex bg-background">
-      <aside className="w-64 bg-card border-r border-border flex flex-col overflow-hidden">
-        <div className="p-4 border-b border-border">
+    <div className="h-screen flex overflow-hidden bg-background">
+      <aside className="w-64 shrink-0 h-screen flex flex-col overflow-hidden border-r border-border bg-card">
+        <div className="shrink-0 p-4 border-b border-border">
           <Link to="/" className="font-bold text-xl text-foreground">DOTR Admin</Link>
         </div>
-        <nav className="flex-1 p-4 space-y-1 overflow-y-auto">
+        <nav className="flex-1 min-h-0 p-4 space-y-1 overflow-y-auto">
           {navItems.map((item, index) => {
             if ('section' in item) {
               return (
@@ -91,7 +98,7 @@ export function AdminLayout({ children }: { children: React.ReactNode }) {
             );
           })}
         </nav>
-        <div className="p-4 border-t border-border">
+        <div className="shrink-0 p-4 border-t border-border">
           <p className="text-xs text-muted-foreground mb-2 truncate">{user?.email}</p>
           <Button variant="outline" size="sm" className="w-full" onClick={handleSignOut}>
             <LogOut className="h-4 w-4 mr-2" />
@@ -99,7 +106,8 @@ export function AdminLayout({ children }: { children: React.ReactNode }) {
           </Button>
         </div>
       </aside>
-      <main className="flex-1 p-6 overflow-auto">{children}</main>
+      <main ref={mainRef} className="flex-1 min-h-0 p-6 overflow-auto">{children}</main>
+      <ScrollToEnds scrollContainerRef={mainRef} />
     </div>
   );
 }

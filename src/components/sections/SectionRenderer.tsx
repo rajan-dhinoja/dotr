@@ -1,60 +1,88 @@
-import { PageSection } from '@/hooks/usePageSections';
-import { AnimateInView, type AnimateInViewPreset } from '@/components/interactive/AnimateInView';
-import { SectionObserverProvider } from '@/contexts/SectionObserverContext';
-import { HeroSection } from './HeroSection';
-import { FeaturesSection } from './FeaturesSection';
-import { ProcessSection } from './ProcessSection';
-import { TestimonialsSection } from './TestimonialsSection';
-import { StatsSection } from './StatsSection';
-import { FAQSection } from './FAQSection';
-import { CTASection } from './CTASection';
-import { GallerySection } from './GallerySection';
-import { TeamSection } from './TeamSection';
-import { PricingSection } from './PricingSection';
-import { FormSection } from './FormSection';
-import { LogoCloudSection } from './LogoCloudSection';
-import { ServicesGridSection } from './ServicesGridSection';
-import { PortfolioGridSection } from './PortfolioGridSection';
-import { VideoSection } from './VideoSection';
-import { ImageTextSection } from './ImageTextSection';
-import { TimelineSection } from './TimelineSection';
-import { CountersSection } from './CountersSection';
-import { NewsletterSection } from './NewsletterSection';
-import { BlogPostsSection } from './BlogPostsSection';
-import { ContactInfoSection } from './ContactInfoSection';
-import { DividerSection } from './DividerSection';
-import { UspStripSection } from './UspStripSection';
-import { KpiStripSection } from './KpiStripSection';
-import { SocialProofBarSection } from './SocialProofBarSection';
-import { SuccessMetricsSection } from './SuccessMetricsSection';
-import { AwardsBadgesSection } from './AwardsBadgesSection';
-import { PressMentionsSection } from './PressMentionsSection';
-import { RatingsReviewsSection } from './RatingsReviewsSection';
-import { TrustBadgesSection } from './TrustBadgesSection';
-import { DifferentiatorsSection } from './DifferentiatorsSection';
-import { ProblemStatementSection } from './ProblemStatementSection';
-import { AgitateSolveSection } from './AgitateSolveSection';
-import { ValuePropositionSection } from './ValuePropositionSection';
-import { ElevatorPitchSection } from './ElevatorPitchSection';
-import { OutcomesBenefitsSection } from './OutcomesBenefitsSection';
-import { WhoItsForSection } from './WhoItsForSection';
-import { BeforeAfterSection } from './BeforeAfterSection';
-import { VideoDemoSection } from './VideoDemoSection';
-import { ScreenshotGallerySection } from './ScreenshotGallerySection';
-import { DeviceFramesSection } from './DeviceFramesSection';
-import { FeatureListSection } from './FeatureListSection';
-import { FeatureHighlightsSection } from './FeatureHighlightsSection';
-import { PrimaryCtaBannerSection } from './PrimaryCtaBannerSection';
-import { SecondaryCtaSection } from './SecondaryCtaSection';
-import { ExitIntentCtaSection } from './ExitIntentCtaSection';
-import { AboutUsSection } from './AboutUsSection';
-import { ValuesCultureSection } from './ValuesCultureSection';
+import { lazy, Suspense } from "react";
+import { PageSection } from "@/hooks/usePageSections";
+import { AnimateInView, type AnimateInViewPreset } from "@/components/interactive/AnimateInView";
+import { SectionObserverProvider } from "@/contexts/SectionObserverContext";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export interface SectionAnimationConfig {
   enabled?: boolean;
   preset?: AnimateInViewPreset;
   stagger?: boolean;
 }
+
+export interface SectionPageContext {
+  /** Category slug when rendering sections for a service category page (e.g. /services/designing) */
+  categorySlug?: string | null;
+}
+
+export interface SectionComponentProps {
+  title?: string | null;
+  subtitle?: string | null;
+  content?: Record<string, unknown>;
+  sectionId?: string;
+  categorySlug?: string | null;
+}
+
+/** Minimal fallback while a section chunk loads */
+function SectionLoadFallback() {
+  return (
+    <div className="py-12 container mx-auto px-4">
+      <Skeleton className="h-32 w-full rounded-lg animate-pulse" />
+    </div>
+  );
+}
+
+// Lazy-loaded section components (code-split by section type)
+const sectionTypeToLazy: Record<string, React.LazyExoticComponent<React.ComponentType<SectionComponentProps>>> = {
+  hero: lazy(() => import("./HeroSection").then((m) => ({ default: m.HeroSection }))),
+  features: lazy(() => import("./FeaturesSection").then((m) => ({ default: m.FeaturesSection }))),
+  process: lazy(() => import("./ProcessSection").then((m) => ({ default: m.ProcessSection }))),
+  testimonials: lazy(() => import("./TestimonialsSection").then((m) => ({ default: m.TestimonialsSection }))),
+  stats: lazy(() => import("./StatsSection").then((m) => ({ default: m.StatsSection }))),
+  faq: lazy(() => import("./FAQSection").then((m) => ({ default: m.FAQSection }))),
+  cta: lazy(() => import("./CTASection").then((m) => ({ default: m.CTASection }))),
+  gallery: lazy(() => import("./GallerySection").then((m) => ({ default: m.GallerySection }))),
+  team: lazy(() => import("./TeamSection").then((m) => ({ default: m.TeamSection }))),
+  pricing: lazy(() => import("./PricingSection").then((m) => ({ default: m.PricingSection }))),
+  form: lazy(() => import("./FormSection").then((m) => ({ default: m.FormSection }))),
+  "logo-cloud": lazy(() => import("./LogoCloudSection").then((m) => ({ default: m.LogoCloudSection }))),
+  "services-grid": lazy(() => import("./ServicesGridSection").then((m) => ({ default: m.ServicesGridSection }))),
+  "portfolio-grid": lazy(() => import("./PortfolioGridSection").then((m) => ({ default: m.PortfolioGridSection }))),
+  video: lazy(() => import("./VideoSection").then((m) => ({ default: m.VideoSection }))),
+  "image-text": lazy(() => import("./ImageTextSection").then((m) => ({ default: m.ImageTextSection }))),
+  timeline: lazy(() => import("./TimelineSection").then((m) => ({ default: m.TimelineSection }))),
+  counters: lazy(() => import("./CountersSection").then((m) => ({ default: m.CountersSection }))),
+  newsletter: lazy(() => import("./NewsletterSection").then((m) => ({ default: m.NewsletterSection }))),
+  "blog-posts": lazy(() => import("./BlogPostsSection").then((m) => ({ default: m.BlogPostsSection }))),
+  "contact-info": lazy(() => import("./ContactInfoSection").then((m) => ({ default: m.ContactInfoSection }))),
+  divider: lazy(() => import("./DividerSection").then((m) => ({ default: m.DividerSection }))),
+  "usp-strip": lazy(() => import("./UspStripSection").then((m) => ({ default: m.UspStripSection }))),
+  "kpi-strip": lazy(() => import("./KpiStripSection").then((m) => ({ default: m.KpiStripSection }))),
+  "social-proof-bar": lazy(() => import("./SocialProofBarSection").then((m) => ({ default: m.SocialProofBarSection }))),
+  "success-metrics": lazy(() => import("./SuccessMetricsSection").then((m) => ({ default: m.SuccessMetricsSection }))),
+  "awards-badges": lazy(() => import("./AwardsBadgesSection").then((m) => ({ default: m.AwardsBadgesSection }))),
+  "press-mentions": lazy(() => import("./PressMentionsSection").then((m) => ({ default: m.PressMentionsSection }))),
+  "ratings-reviews": lazy(() => import("./RatingsReviewsSection").then((m) => ({ default: m.RatingsReviewsSection }))),
+  "trust-badges": lazy(() => import("./TrustBadgesSection").then((m) => ({ default: m.TrustBadgesSection }))),
+  differentiators: lazy(() => import("./DifferentiatorsSection").then((m) => ({ default: m.DifferentiatorsSection }))),
+  "problem-statement": lazy(() => import("./ProblemStatementSection").then((m) => ({ default: m.ProblemStatementSection }))),
+  "agitate-solve": lazy(() => import("./AgitateSolveSection").then((m) => ({ default: m.AgitateSolveSection }))),
+  "value-proposition": lazy(() => import("./ValuePropositionSection").then((m) => ({ default: m.ValuePropositionSection }))),
+  "elevator-pitch": lazy(() => import("./ElevatorPitchSection").then((m) => ({ default: m.ElevatorPitchSection }))),
+  "outcomes-benefits": lazy(() => import("./OutcomesBenefitsSection").then((m) => ({ default: m.OutcomesBenefitsSection }))),
+  "who-its-for": lazy(() => import("./WhoItsForSection").then((m) => ({ default: m.WhoItsForSection }))),
+  "before-after": lazy(() => import("./BeforeAfterSection").then((m) => ({ default: m.BeforeAfterSection }))),
+  "video-demo": lazy(() => import("./VideoDemoSection").then((m) => ({ default: m.VideoDemoSection }))),
+  "screenshot-gallery": lazy(() => import("./ScreenshotGallerySection").then((m) => ({ default: m.ScreenshotGallerySection }))),
+  "device-frames": lazy(() => import("./DeviceFramesSection").then((m) => ({ default: m.DeviceFramesSection }))),
+  "feature-list": lazy(() => import("./FeatureListSection").then((m) => ({ default: m.FeatureListSection }))),
+  "feature-highlights": lazy(() => import("./FeatureHighlightsSection").then((m) => ({ default: m.FeatureHighlightsSection }))),
+  "primary-cta-banner": lazy(() => import("./PrimaryCtaBannerSection").then((m) => ({ default: m.PrimaryCtaBannerSection }))),
+  "secondary-cta": lazy(() => import("./SecondaryCtaSection").then((m) => ({ default: m.SecondaryCtaSection }))),
+  "exit-intent-cta": lazy(() => import("./ExitIntentCtaSection").then((m) => ({ default: m.ExitIntentCtaSection }))),
+  "about-us": lazy(() => import("./AboutUsSection").then((m) => ({ default: m.AboutUsSection }))),
+  "values-culture": lazy(() => import("./ValuesCultureSection").then((m) => ({ default: m.ValuesCultureSection }))),
+};
 
 function getSectionAnimationConfig(section: PageSection): {
   enabled: boolean;
@@ -75,25 +103,39 @@ function getSectionAnimationConfig(section: PageSection): {
 
 interface SectionRendererProps {
   sections: PageSection[];
+  pageContext?: SectionPageContext;
 }
 
-export function SectionRenderer({ sections }: SectionRendererProps) {
+function getSectionAnchorId(section: PageSection): string {
+  const content = (section.content || {}) as Record<string, unknown>;
+  const rawAnchor = typeof content.anchor === "string" ? content.anchor.trim() : "";
+  if (rawAnchor) return rawAnchor;
+  return `section-${section.id}`;
+}
+
+export function SectionRenderer({ sections, pageContext }: SectionRendererProps) {
   return (
     <SectionObserverProvider>
-      {sections.map((section) => (
-        <SectionAnimationWrapper key={section.id} section={section} />
-      ))}
+      {sections.map((section) => {
+        const anchorId = getSectionAnchorId(section);
+        return (
+          <div key={section.id} id={anchorId}>
+            <SectionAnimationWrapper section={section} pageContext={pageContext} />
+          </div>
+        );
+      })}
     </SectionObserverProvider>
   );
 }
 
 interface SectionAnimationWrapperProps {
   section: PageSection;
+  pageContext?: SectionPageContext;
 }
 
-function SectionAnimationWrapper({ section }: SectionAnimationWrapperProps) {
+function SectionAnimationWrapper({ section, pageContext }: SectionAnimationWrapperProps) {
   const config = getSectionAnimationConfig(section);
-  const child = <DynamicSection section={section} />;
+  const child = <DynamicSection section={section} pageContext={pageContext} />;
 
   if (!config.enabled || config.preset === "none") {
     return child;
@@ -112,110 +154,27 @@ function SectionAnimationWrapper({ section }: SectionAnimationWrapperProps) {
 
 interface DynamicSectionProps {
   section: PageSection;
+  pageContext?: SectionPageContext;
 }
 
-function DynamicSection({ section }: DynamicSectionProps) {
+function DynamicSection({ section, pageContext }: DynamicSectionProps) {
   const { section_type, title, subtitle, content, id } = section;
   const contentObj = (content || {}) as Record<string, unknown>;
 
-  switch (section_type) {
-    case 'hero':
-      return <HeroSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'features':
-      return <FeaturesSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'process':
-      return <ProcessSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'testimonials':
-      return <TestimonialsSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'stats':
-      return <StatsSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'faq':
-      return <FAQSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'cta':
-      return <CTASection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'gallery':
-      return <GallerySection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'team':
-      return <TeamSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'pricing':
-      return <PricingSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'form':
-      return <FormSection title={title} subtitle={subtitle} content={contentObj} sectionId={id} />;
-    case 'logo-cloud':
-      return <LogoCloudSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'services-grid':
-      return <ServicesGridSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'portfolio-grid':
-      return <PortfolioGridSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'video':
-      return <VideoSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'image-text':
-      return <ImageTextSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'timeline':
-      return <TimelineSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'counters':
-      return <CountersSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'newsletter':
-      return <NewsletterSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'blog-posts':
-      return <BlogPostsSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'contact-info':
-      return <ContactInfoSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'divider':
-      return <DividerSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'usp-strip':
-      return <UspStripSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'kpi-strip':
-      return <KpiStripSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'social-proof-bar':
-      return <SocialProofBarSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'success-metrics':
-      return <SuccessMetricsSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'awards-badges':
-      return <AwardsBadgesSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'press-mentions':
-      return <PressMentionsSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'ratings-reviews':
-      return <RatingsReviewsSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'trust-badges':
-      return <TrustBadgesSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'differentiators':
-      return <DifferentiatorsSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'problem-statement':
-      return <ProblemStatementSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'agitate-solve':
-      return <AgitateSolveSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'value-proposition':
-      return <ValuePropositionSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'elevator-pitch':
-      return <ElevatorPitchSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'outcomes-benefits':
-      return <OutcomesBenefitsSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'who-its-for':
-      return <WhoItsForSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'before-after':
-      return <BeforeAfterSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'video-demo':
-      return <VideoDemoSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'screenshot-gallery':
-      return <ScreenshotGallerySection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'device-frames':
-      return <DeviceFramesSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'feature-list':
-      return <FeatureListSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'feature-highlights':
-      return <FeatureHighlightsSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'primary-cta-banner':
-      return <PrimaryCtaBannerSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'secondary-cta':
-      return <SecondaryCtaSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'exit-intent-cta':
-      return <ExitIntentCtaSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'about-us':
-      return <AboutUsSection title={title} subtitle={subtitle} content={contentObj} />;
-    case 'values-culture':
-      return <ValuesCultureSection title={title} subtitle={subtitle} content={contentObj} />;
-    default:
-      return null;
-  }
+  const LazySection = sectionTypeToLazy[section_type];
+  if (!LazySection) return null;
+
+  const sectionProps: SectionComponentProps = {
+    title,
+    subtitle,
+    content: contentObj,
+    sectionId: id,
+    categorySlug: pageContext?.categorySlug,
+  };
+
+  return (
+    <Suspense fallback={<SectionLoadFallback />}>
+      <LazySection {...sectionProps} />
+    </Suspense>
+  );
 }

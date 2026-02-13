@@ -9,6 +9,7 @@ import logoDark from "@/assets/dotr-logo-dark.jpg";
 import { useNavPages, Page } from "@/hooks/usePages";
 import { MegaMenu } from "@/components/layout/MegaMenu";
 import { useNavigationMenu, NavigationTreeItem } from "@/hooks/useNavigationMenu";
+import { getSystemRouteForSlug } from "@/lib/systemRoutes";
 import { transformToMegaMenu } from "@/lib/menuUtils";
 import { resolveIcon } from "@/lib/menuUtils";
 import {
@@ -52,13 +53,43 @@ const SYSTEM_ROUTES: Record<string, string> = {
   "terms-of-service": "/terms-of-service",
 };
 
+function buildBaseHrefFromPage(item: NavigationTreeItem): string | null {
+  if (!item.page_id || !(item as any).page) return null;
+  const slug = (item as any).page.slug;
+  return SYSTEM_ROUTES[slug] ?? `/${slug}`;
+}
+
+function normalizeAnchor(anchor: string | null | undefined): string | null {
+  if (!anchor) return null;
+  const trimmed = anchor.trim();
+  if (!trimmed) return null;
+  return trimmed.startsWith("#") ? trimmed : `#${trimmed}`;
+}
+
 function getItemHref(item: NavigationTreeItem): string {
-  let href = item.url || "#";
-  if ((!href || href === "#") && item.page_id && (item as any).page) {
-    const slug = (item as any).page.slug;
-    href = SYSTEM_ROUTES[slug] ?? `/${slug}`;
+  const rawUrl = item.url || "#";
+
+  // If URL already contains a hash, respect it as-is
+  if (rawUrl.includes("#")) {
+    return rawUrl;
   }
-  return href;
+
+  const sectionAnchor = normalizeAnchor((item as any).section_anchor as string | null | undefined);
+
+  if (sectionAnchor) {
+    const base =
+      (rawUrl && rawUrl !== "#"
+        ? rawUrl
+        : buildBaseHrefFromPage(item)) ?? "/";
+    return `${base}${sectionAnchor}`;
+  }
+
+  if ((!rawUrl || rawUrl === "#") && item.page_id && (item as any).page) {
+    const baseFromPage = buildBaseHrefFromPage(item);
+    if (baseFromPage) return baseFromPage;
+  }
+
+  return rawUrl || "#";
 }
 
 function treeToNavItem(node: NavigationTreeItem): NavItem {
@@ -147,22 +178,7 @@ export const Header = () => {
   };
 
   // Get correct href based on page slug
-  const getPageHref = (page: Page): string => {
-    // Map common system page slugs to their routes
-    const systemRoutes: Record<string, string> = {
-      'home': '/',
-      'about': '/about',
-      'services': '/services',
-      'portfolio': '/portfolio',
-      'blog': '/blog',
-      'contact': '/contact',
-      'testimonials': '/testimonials',
-      'privacy-policy': '/privacy-policy',
-      'terms-of-service': '/terms-of-service',
-    };
-
-    return systemRoutes[page.slug] || `/${page.slug}`;
-  };
+  const getPageHref = (page: Page): string => getSystemRouteForSlug(page.slug);
 
   const navigationFromPages = buildNavigationFromPages(pages);
 
@@ -183,9 +199,15 @@ export const Header = () => {
     [mobileNavTree]
   );
 
+  const getPathFromHref = (href: string) => {
+    const [path] = href.split("#");
+    return path || "/";
+  };
+
   const isActive = (href: string) => {
-    if (href === "/") return location.pathname === "/";
-    return location.pathname.startsWith(href);
+    const path = getPathFromHref(href);
+    if (path === "/") return location.pathname === "/";
+    return location.pathname.startsWith(path);
   };
 
   const toggleMobile = (key: string) => {

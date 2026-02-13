@@ -1,6 +1,5 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { BackToTop } from "@/components/interactive/BackToTop";
 import { SectionRenderer } from "@/components/sections/SectionRenderer";
 import { usePageSections } from "@/hooks/usePageSections";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -9,14 +8,18 @@ const Index = () => {
   const { data: sections, isLoading } = usePageSections("home");
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <Header />
 
-      {isLoading ? (
-        <div className="pt-20">
-          <Skeleton className="h-[50vh] w-full" />
-          <div className="container mx-auto px-4 py-20">
-            <Skeleton className="h-64 w-full" />
+      {isLoading && !sections?.length ? (
+        <div className="flex-1 pt-24 pb-20">
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="text-4xl font-bold text-foreground mb-2">Welcome</h1>
+            <div className="flex justify-center gap-2 mt-6" aria-hidden>
+              <Skeleton className="h-2 w-24 rounded-full animate-pulse" />
+              <Skeleton className="h-2 w-16 rounded-full animate-pulse" />
+              <Skeleton className="h-2 w-20 rounded-full animate-pulse" />
+            </div>
           </div>
         </div>
       ) : sections && sections.length > 0 ? (
@@ -33,7 +36,6 @@ const Index = () => {
       )}
 
       <Footer />
-      <BackToTop />
     </div>
   );
 };

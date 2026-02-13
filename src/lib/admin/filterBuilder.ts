@@ -16,6 +16,12 @@ export function applyFilters<T>(
       continue;
     }
 
+    // Sentinel for "filter by null" (e.g. Manual page type)
+    if (value === '__null__') {
+      filteredQuery = filteredQuery.is(key, null);
+      continue;
+    }
+
     // Handle boolean filters
     if (typeof value === 'boolean') {
       filteredQuery = filteredQuery.eq(key, value);

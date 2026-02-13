@@ -10,6 +10,7 @@ import {
   type PageImportItem,
   type MenuItemFlat,
 } from '@/lib/pagesMenuImportExport';
+import { getSystemRouteForSlug } from '@/lib/systemRoutes';
 import { logJsonImport, logJsonExport } from '@/lib/entityJson/audit';
 
 export type PagesImportMode = 'skip' | 'overwrite' | 'merge';
@@ -30,6 +31,7 @@ export interface PagesImportResult {
 
 const QUERY_KEYS = {
   adminPages: ['admin-pages'],
+  adminPagesTree: ['admin-pages-tree'],
   adminMenuItems: ['admin-menu-items'],
   pages: ['pages'],
   navPages: ['nav-pages'],
@@ -37,18 +39,7 @@ const QUERY_KEYS = {
 } as const;
 
 function getPageHref(slug: string): string {
-  const system: Record<string, string> = {
-    home: '/',
-    about: '/about',
-    services: '/services',
-    portfolio: '/portfolio',
-    blog: '/blog',
-    contact: '/contact',
-    testimonials: '/testimonials',
-    'privacy-policy': '/privacy-policy',
-    'terms-of-service': '/terms-of-service',
-  };
-  return system[slug] ?? `/${slug}`;
+  return getSystemRouteForSlug(slug);
 }
 
 function sortPagesTopo(pages: PageImportItem[]): PageImportItem[] {
@@ -119,12 +110,15 @@ function buildPageUpdate(
     show_in_navigation: p.show_in_navigation ?? true,
     display_order: p.display_order ?? 0,
     content: (p.content as Record<string, unknown>) ?? {},
+    source_entity_type: p.source_entity_type ?? null,
+    source_entity_id: p.source_entity_id ?? null,
   };
   if (mode === 'overwrite') return payload;
   const out: Record<string, unknown> = {};
   const keys = [
     'title', 'description', 'meta_title', 'meta_description', 'template',
     'parent_id', 'is_active', 'show_in_nav', 'show_in_navigation', 'display_order', 'content',
+    'source_entity_type', 'source_entity_id',
   ] as const;
   for (const k of keys) {
     const v = payload[k];
@@ -173,6 +167,7 @@ export function usePagesImportExport() {
         display_order?: number | null;
         target?: string | null;
         is_active?: boolean | null;
+        menu_type?: string | null;
       }>;
       exportPagesMenuToFile(pages as Parameters<typeof exportPagesMenuToFile>[0], menuItems);
       await logJsonExport('pages_and_menu', pages.length + menuItems.length);
@@ -236,7 +231,7 @@ export function usePagesImportExport() {
 
         const [existingPagesRes, existingMenuRes] = await Promise.all([
           supabase.from('pages').select('id, slug, title, description, meta_title, meta_description, template, parent_id, is_active, show_in_nav, display_order, content'),
-          supabase.from('menu_items').select('id, menu_location, label, url, page_id, parent_id, display_order, target, is_active'),
+          supabase.from('menu_items').select('id, menu_location, label, url, page_id, parent_id, display_order, target, is_active, menu_type'),
         ]);
         if (existingPagesRes.error) throw existingPagesRes.error;
         if (existingMenuRes.error) throw existingMenuRes.error;
@@ -255,6 +250,7 @@ export function usePagesImportExport() {
           display_order: number;
           target: string | null;
           is_active: boolean | null;
+          menu_type: string | null;
         }>;
 
         const slugToId = new Map<string, string>();
@@ -305,8 +301,11 @@ export function usePagesImportExport() {
                   parent_id: parentId,
                   is_active: p.is_active ?? true,
                   show_in_nav: p.show_in_nav ?? true,
+                  show_in_navigation: p.show_in_navigation ?? true,
                   display_order: p.display_order ?? 0,
                   content: ((p.content as Record<string, unknown>) ?? {}) as Json,
+                  source_entity_type: p.source_entity_type ?? null,
+                  source_entity_id: p.source_entity_id ?? null,
                 }])
                 .select('id')
                 .single();
@@ -363,6 +362,7 @@ export function usePagesImportExport() {
                 display_order: it.display_order,
                 target: it.target ?? '_self',
                 is_active: it.is_active ?? true,
+                ...(it.menu_type !== undefined && { menu_type: it.menu_type ?? null }),
               };
               const { error } = await supabase
                 .from('menu_items')
@@ -383,6 +383,7 @@ export function usePagesImportExport() {
                   display_order: it.display_order,
                   target: it.target ?? '_self',
                   is_active: it.is_active ?? true,
+                  ...(it.menu_type !== undefined && { menu_type: it.menu_type ?? null }),
                 })
                 .select('id')
                 .single();
@@ -400,12 +401,17 @@ export function usePagesImportExport() {
         }
 
         queryClient.invalidateQueries({ queryKey: QUERY_KEYS.adminPages });
+        queryClient.invalidateQueries({ queryKey: QUERY_KEYS.adminPagesTree });
         queryClient.invalidateQueries({ queryKey: QUERY_KEYS.adminMenuItems });
         queryClient.invalidateQueries({ queryKey: QUERY_KEYS.pages });
         queryClient.invalidateQueries({ queryKey: QUERY_KEYS.navPages });
         queryClient.invalidateQueries({ queryKey: QUERY_KEYS.adminPagesForNav });
         queryClient.invalidateQueries({ predicate: (q) => (q.queryKey[0] as string) === 'navigation-menu' });
+        queryClient.invalidateQueries({ predicate: (q) => (q.queryKey[0] as string) === 'mega-menu' });
         queryClient.invalidateQueries({ predicate: (q) => (q.queryKey[0] as string) === 'page' });
+        // Force refetch of admin pages so the list updates immediately
+        await queryClient.refetchQueries({ queryKey: QUERY_KEYS.adminPages });
+        await queryClient.refetchQueries({ queryKey: QUERY_KEYS.adminPagesTree });
 
         await logJsonImport('pages_and_menu', imported + overwritten, failed);
 

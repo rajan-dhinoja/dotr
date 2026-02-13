@@ -1,0 +1,764 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-01-30T12:00:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "services/designing",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "Designing Services Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "Design That Drives Results—UI/UX, Branding, Motion & More",
+        "subtitle": "From user interfaces to brand identity and motion design—we deliver fast, scalable, and AI-assisted design across every touchpoint. Smart design, built to scale.",
+        "cta_text": "Get a Design Consultation",
+        "cta_link": "/contact",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "We help ambitious brands and product teams create world-class design—UI/UX, branding, and motion—that drives engagement, builds recognition, and scales with your business. Your vision. Our design expertise. Results in weeks.",
+        "tagline": "Your vision. Our design expertise. Results in weeks.",
+        "author": "DOTR Design Team",
+        "author_title": "Design Pillar"
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Zap", "text": "Fast Turnaround" },
+          { "icon": "Palette", "text": "AI-Assisted Design" },
+          { "icon": "Layers", "text": "Design Systems" },
+          { "icon": "Shield", "text": "Brand Consistency" },
+          { "icon": "Sparkles", "text": "UI to Motion" }
+        ]
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 4, "suffix": "", "prefix": "", "label": "Design Disciplines" },
+          { "value": 2, "suffix": " weeks", "prefix": "", "label": "To First Prototype" },
+          { "value": 100, "suffix": "%", "prefix": "", "label": "Brand-Consistent" },
+          { "value": 24, "suffix": "/7", "prefix": "", "label": "Design Support" }
+        ],
+        "animate": true
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "Design Challenges We Solve",
+      "subtitle": "Facing these issues?",
+      "content": {
+        "problems": [
+          {
+            "title": "Inconsistent Branding",
+            "description": "Disconnected visuals across touchpoints—websites, apps, marketing—leading to a fragmented customer experience and diluted brand identity."
+          },
+          {
+            "title": "Slow Design Cycles",
+            "description": "Lengthy feedback loops, endless revisions, and handoff friction between design and development delaying launches and eating into budgets."
+          },
+          {
+            "title": "Generic, Template-Like Output",
+            "description": "Off-the-shelf templates and one-size-fits-all solutions that don't differentiate your product or resonate with your audience."
+          },
+          {
+            "title": "Poor UX Holding You Back",
+            "description": "Confusing flows, high bounce rates, and low conversions because design wasn't user-centered or data-informed from the start."
+          }
+        ],
+        "empathy_text": "We get it. Great design should be fast, consistent, and scalable—not a bottleneck. DOTR brings UI/UX, branding, and motion together with an AI-first approach so you ship better, sooner."
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "problem": "Your design process is slow, inconsistent, or scattered across freelancers and agencies. Brand and UI don't align, and handoff to development causes delays and rework.",
+        "agitation": "Every week of delay costs you users, revenue, and competitive edge. Generic templates and one-off assets dilute your brand. The longer you wait to fix it, the harder it gets.",
+        "solution": "DOTR brings UI/UX, branding, and motion under one roof—with AI-assisted workflows and design systems that scale. We deliver in weeks, hand off cleanly to dev, and keep your brand consistent everywhere."
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "Why DOTR for Design?",
+      "subtitle": "The AI-First Design Difference",
+      "content": {
+        "headline": "End-to-End Design—UI/UX, Branding, Motion—Fast & Scalable",
+        "supporting_points": [
+          "Full design stack: UI/UX, Graphic Design, Branding & Identity, Motion / Visual Design—one partner, no handoff chaos",
+          "AI-assisted design tools and workflows for faster iteration and consistency at scale",
+          "Design systems and components that plug into development (Lovable, modern stack) for seamless delivery",
+          "Brand-first thinking: every pixel supports your identity and business goals",
+          "Modular, CMS-driven content—every section and asset editable from admin, no redesigns for copy changes"
+        ],
+        "cta_text": "See Our Design Process",
+        "cta_url": "/about"
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Our Designing Services",
+      "subtitle": "Four Pillars, One Cohesive Design Offering",
+      "content": {
+        "items": [
+          {
+            "icon": "Layout",
+            "title": "UI/UX Design",
+            "description": "User-centered interfaces and experiences that drive engagement, reduce friction, and convert. Research, wireframes, prototypes, and handoff-ready design.",
+            "link": "/services/designing/ui-ux-design"
+          },
+          {
+            "icon": "Palette",
+            "title": "Graphic Design",
+            "description": "Print and digital assets—logos, brochures, social graphics, marketing materials—that look sharp and stay on-brand.",
+            "link": "/services/designing/graphic-design"
+          },
+          {
+            "icon": "Award",
+            "title": "Branding & Identity",
+            "description": "Complete brand identity: strategy, visual language, guidelines, and assets that make your brand recognizable and memorable.",
+            "link": "/services/designing/branding-identity"
+          },
+          {
+            "icon": "Film",
+            "title": "Motion / Visual Design",
+            "description": "Motion graphics, animations, and visual design that bring your brand to life and elevate user experience.",
+            "link": "/services/designing/motion-visual-design"
+          }
+        ]
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "How We Design",
+      "subtitle": "Our Streamlined Design Process",
+      "content": {
+        "items": [
+          {
+            "step": 1,
+            "title": "Discovery & Research",
+            "description": "We align on goals, audiences, and constraints. User research and competitive insight inform every design decision.",
+            "icon": "Search"
+          },
+          {
+            "step": 2,
+            "title": "Concepts & Prototypes",
+            "description": "Rapid concepts and interactive prototypes. AI-assisted tools help us iterate fast while keeping quality high.",
+            "icon": "PenTool"
+          },
+          {
+            "step": 3,
+            "title": "Design System & Handoff",
+            "description": "Production-ready design systems and clean handoff to development. No pixel chaos—everything built to scale.",
+            "icon": "Layers"
+          },
+          {
+            "step": 4,
+            "title": "Iterate & Scale",
+            "description": "Ongoing refinement, new touchpoints, and design support. Your design evolves with your product and brand.",
+            "icon": "Rocket"
+          }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "timeline",
+      "title": "Design Journey",
+      "subtitle": "From brief to launch",
+      "content": {
+        "items": [
+          { "year": "Week 1", "title": "Discovery & Research", "description": "Align on goals, users, and constraints. We gather insights and define the design direction.", "icon": "Search" },
+          { "year": "Week 2", "title": "Concepts & Prototypes", "description": "Rapid concepts and interactive prototypes. You review and we iterate based on feedback.", "icon": "PenTool" },
+          { "year": "Week 3–4", "title": "Design System & Handoff", "description": "Production-ready design system, specs, and assets. Clean handoff to development.", "icon": "Layers" },
+          { "year": "Ongoing", "title": "Iterate & Scale", "description": "Refinement, new features, and design support. Your design grows with your product.", "icon": "Rocket" }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "color": "primary",
+        "width": "full",
+        "spacing": "medium"
+      },
+      "display_order": 11,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-highlights",
+      "title": "Design + AI Capabilities",
+      "subtitle": "How We Use AI to Design Smarter",
+      "content": {
+        "items": [
+          {
+            "title": "AI-Assisted Design Tools",
+            "description": "Leverage AI to speed up exploration, generate variations, and maintain consistency across UI and branding.",
+            "icon": "Sparkles",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Design Systems That Scale",
+            "description": "Component-based design systems that plug into your CMS and dev stack—change once, update everywhere.",
+            "icon": "Layers",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Rapid Prototyping",
+            "description": "Interactive prototypes and user flows in days, not weeks. Test early, iterate fast, ship with confidence.",
+            "icon": "PenTool",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Brand Consistency Engine",
+            "description": "Guidelines, tokens, and workflows that keep your brand cohesive across every channel and asset.",
+            "icon": "Award",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Motion & Micro-Interactions",
+            "description": "Thoughtful motion design that guides users, reinforces hierarchy, and adds polish without distraction.",
+            "icon": "Film",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Dev-Ready Handoff",
+            "description": "Clean specs, assets, and integration with Lovable and modern dev workflows. Design and code stay in sync.",
+            "icon": "Code",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 12,
+      "is_active": true
+    },
+    {
+      "section_type": "video",
+      "title": "See Our Design Process",
+      "subtitle": "From concept to handoff",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80",
+        "autoplay": false
+      },
+      "display_order": 13,
+      "is_active": true
+    },
+    {
+      "section_type": "image-text",
+      "title": "From Concept to Launch",
+      "subtitle": "Design that connects",
+      "content": {
+        "image_url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80",
+        "image_position": "left",
+        "description": "We take your vision from early concepts to production-ready design systems. Our AI-assisted workflows and design–dev handoff ensure every screen, asset, and interaction stays on-brand and ships fast. Whether you need a full brand identity, a new app UI, or motion that brings your product to life—we've got you covered.",
+        "cta_text": "See Our Design Process",
+        "cta_link": "/about"
+      },
+      "display_order": 14,
+      "is_active": true
+    },
+    {
+      "section_type": "before-after",
+      "title": "Design Transformation",
+      "subtitle": "Before & after we step in",
+      "content": {
+        "before_image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=80",
+        "after_image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=600&q=80",
+        "before_label": "Before",
+        "after_label": "After"
+      },
+      "display_order": 15,
+      "is_active": true
+    },
+    {
+      "section_type": "differentiators",
+      "title": "Why Choose DOTR for Design?",
+      "subtitle": "Design Agencies vs. DOTR",
+      "content": {
+        "items": [
+          { "feature": "AI-Assisted Design Workflows", "us": true, "competitors": false },
+          { "feature": "UI/UX + Branding + Motion Under One Roof", "us": true, "competitors": "Single Disciplines" },
+          { "feature": "Design Systems + CMS Integration", "us": true, "competitors": "Static Deliverables" },
+          { "feature": "Fast Turnaround (Weeks, Not Months)", "us": true, "competitors": false },
+          { "feature": "Dev-Ready Handoff (Lovable, Supabase)", "us": true, "competitors": "Manual Specs" },
+          { "feature": "End-to-End with Dev, Marketing, AI", "us": true, "competitors": "Design-Only" }
+        ],
+        "show_comparison": true,
+        "our_label": "DOTR",
+        "competitor_label": "Traditional Design Agencies"
+      },
+      "display_order": 16,
+      "is_active": true
+    },
+    {
+      "section_type": "features",
+      "title": "What We Bring to Every Project",
+      "subtitle": "Design fundamentals we never skip",
+      "content": {
+        "items": [
+          { "title": "User-Centered Research", "description": "We start with your users and goals—every design decision is informed by data and empathy.", "icon": "Search" },
+          { "title": "Design Systems & Components", "description": "Scalable, consistent components that plug into your stack and grow with your product.", "icon": "Layers" },
+          { "title": "Accessible & Inclusive Design", "description": "WCAG-aligned, inclusive interfaces that work for everyone, on every device.", "icon": "CheckCircle" },
+          { "title": "Rapid Prototyping", "description": "Interactive prototypes in days so you can test, iterate, and validate before build.", "icon": "PenTool" },
+          { "title": "Dev-Ready Handoff", "description": "Clean specs, assets, and integration so design and development stay in sync.", "icon": "Code" },
+          { "title": "Ongoing Design Support", "description": "Iterate, expand, and evolve your design with ongoing support and design ops.", "icon": "Headphones" }
+        ]
+      },
+      "display_order": 17,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-list",
+      "title": "Included in Every Project",
+      "subtitle": "What you can expect",
+      "content": {
+        "items": [
+          { "text": "User research & discovery", "icon": "Search" },
+          { "text": "Design systems & component libraries", "icon": "Layers" },
+          { "text": "Interactive prototypes", "icon": "PenTool" },
+          { "text": "Accessibility (WCAG) alignment", "icon": "CheckCircle" },
+          { "text": "Dev-ready specs & assets", "icon": "Code" },
+          { "text": "Ongoing design support", "icon": "Headphones" }
+        ],
+        "columns": 2
+      },
+      "display_order": 18,
+      "is_active": true
+    },
+    {
+      "section_type": "stats",
+      "title": "Design by the Numbers",
+      "subtitle": "What We Deliver",
+      "content": {
+        "items": [
+          { "value": "4", "label": "Design Disciplines", "suffix": "" },
+          { "value": "2", "label": "Weeks to First Prototype", "suffix": "" },
+          { "value": "100", "label": "Brand-Consistent", "suffix": "%" },
+          { "value": "24", "label": "Hours Support", "suffix": "/7" }
+        ]
+      },
+      "display_order": 19,
+      "is_active": true
+    },
+    {
+      "section_type": "counters",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 100, "label": "Design Projects", "prefix": "", "suffix": "+", "icon": "Palette" },
+          { "value": 98, "label": "Client Satisfaction", "prefix": "", "suffix": "%", "icon": "Heart" },
+          { "value": 24, "label": "Support Hours", "prefix": "", "suffix": "/7", "icon": "Clock" },
+          { "value": 4, "label": "Design Disciplines", "prefix": "", "suffix": "", "icon": "Layers" }
+        ]
+      },
+      "display_order": 20,
+      "is_active": true
+    },
+    {
+      "section_type": "who-its-for",
+      "title": "Who We Design For",
+      "subtitle": "From startups to enterprises—we scale with you",
+      "content": {
+        "personas": [
+          {
+            "persona": "Startups",
+            "icon": "Rocket",
+            "description": "Get a complete brand and UI from day one. Fast, affordable, and built to scale as you grow.",
+            "benefits": ["Brand + UI package", "Rapid prototypes", "Design systems"]
+          },
+          {
+            "persona": "Enterprises",
+            "icon": "Building2",
+            "description": "Design systems, design ops, and consistency across products and teams. Enterprise-grade quality.",
+            "benefits": ["Design systems", "Governance", "Ongoing support"]
+          },
+          {
+            "persona": "Agencies & Product Teams",
+            "icon": "Users",
+            "description": "White-label design capacity, or design-dev partnership. We slot into your workflow.",
+            "benefits": ["Flexible engagement", "Handoff-ready", "Tool alignment"]
+          }
+        ]
+      },
+      "display_order": 21,
+      "is_active": true
+    },
+    {
+      "section_type": "outcomes-benefits",
+      "title": "What You'll Achieve",
+      "subtitle": "Outcomes from great design",
+      "content": {
+        "layout": "grid",
+        "items": [
+          { "title": "Stronger Brand Identity", "description": "Consistent, memorable branding across all touchpoints that builds trust and recognition.", "icon": "Award" },
+          { "title": "Better User Experience", "description": "Intuitive, accessible interfaces that reduce friction and drive engagement and conversions.", "icon": "Heart" },
+          { "title": "Faster Time to Market", "description": "Ship sooner with rapid prototyping, design systems, and seamless dev handoff.", "icon": "Zap" },
+          { "title": "Design That Scales", "description": "Components and guidelines that grow with your product—no constant redesigns.", "icon": "TrendingUp" }
+        ]
+      },
+      "display_order": 22,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "Design Impact",
+      "subtitle": "Results That Matter",
+      "content": {
+        "items": [
+          { "metric": "40%", "label": "Higher Engagement", "description": "Clients see measurable lifts in engagement after UI/UX and branding overhauls.", "icon": "TrendingUp" },
+          { "metric": "2x", "label": "Faster Iteration", "description": "Design systems and AI-assisted workflows cut revision cycles and speed up launches.", "icon": "Zap" },
+          { "metric": "98%", "label": "Client Satisfaction", "description": "Our design-first, AI-assisted approach keeps teams and stakeholders aligned and happy.", "icon": "Heart" },
+          { "metric": "100%", "label": "Brand Consistency", "description": "Design systems and guidelines keep every asset on-brand, every time.", "icon": "Award" }
+        ]
+      },
+      "display_order": 23,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Our Design Work",
+      "subtitle": "Selected projects across UI/UX, branding, and motion",
+      "content": {
+        "show_filters": true,
+        "items": [
+          { "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80", "title": "SaaS Dashboard UI", "category": "UI/UX Design", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=600&q=80", "title": "Brand Identity System", "category": "Branding & Identity", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=80", "title": "Mobile App Experience", "category": "UI/UX Design", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80", "title": "Marketing Campaign Visuals", "category": "Graphic Design", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80", "title": "Motion & Micro-Interactions", "category": "Motion / Visual Design", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80", "title": "E‑commerce Platform", "category": "UI/UX Design", "link": "/portfolio" }
+        ]
+      },
+      "display_order": 24,
+      "is_active": true
+    },
+    {
+      "section_type": "gallery",
+      "title": "Design in Action",
+      "subtitle": "A closer look at our work",
+      "content": {
+        "items": [
+          { "image_url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80", "caption": "UI/UX Design", "alt": "Interface design" },
+          { "image_url": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=600&q=80", "caption": "Brand Identity", "alt": "Brand system" },
+          { "image_url": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=80", "caption": "Motion Design", "alt": "Motion graphics" },
+          { "image_url": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80", "caption": "Graphic Design", "alt": "Marketing visuals" },
+          { "image_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80", "caption": "Design Systems", "alt": "Component library" },
+          { "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80", "caption": "Prototyping", "alt": "Interactive prototype" }
+        ]
+      },
+      "display_order": 25,
+      "is_active": true
+    },
+    {
+      "section_type": "testimonials",
+      "title": "What Clients Say About Our Design",
+      "subtitle": "Trusted by teams that care about design",
+      "content": {
+        "items": [
+          {
+            "quote": "DOTR delivered our full brand identity and UI in weeks. The design system they built has made every subsequent launch so much faster.",
+            "author": "Alex Chen",
+            "role": "CEO",
+            "company": "TechStart Inc.",
+            "image": ""
+          },
+          {
+            "quote": "Finally, a partner that does UI/UX, branding, and motion in one place. No more juggling freelancers. The AI-assisted workflows were a game-changer.",
+            "author": "Maria Rodriguez",
+            "role": "Head of Product",
+            "company": "Digital Ventures",
+            "image": ""
+          },
+          {
+            "quote": "The handoff to development was seamless. Our dev team had everything they needed—design systems, specs, assets. We shipped on time.",
+            "author": "James Wilson",
+            "role": "CTO",
+            "company": "Innovate Solutions",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 26,
+      "is_active": true
+    },
+    {
+      "section_type": "social-proof-bar",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "user_count": "100+",
+        "rating": 4.9,
+        "review_count": "50+",
+        "platforms": [
+          { "name": "LinkedIn", "followers": "10K+", "icon": "LinkedIn" },
+          { "name": "Twitter", "followers": "5K+", "icon": "Twitter" }
+        ]
+      },
+      "display_order": 27,
+      "is_active": true
+    },
+    {
+      "section_type": "about-us",
+      "title": "Our Design Philosophy",
+      "subtitle": "Design at DOTR",
+      "content": {
+        "story": "At DOTR, design isn't a silo—it's at the heart of everything we build. We combine UI/UX, graphic design, branding, and motion into one cohesive offering, powered by AI-assisted workflows and design systems that scale. From day one, we've believed that great design should be fast, consistent, and built to evolve with your product and brand.",
+        "mission": "To deliver design that drives results: clearer identities, better experiences, and faster time to market. We help teams ship design that resonates, converts, and scales.",
+        "vision": "To be the go-to design partner for brands and product teams who want end-to-end design—from strategy to handoff—without the usual agency friction.",
+        "founder_image": "",
+        "founder_name": "",
+        "founder_title": "",
+        "founded_year": "2024"
+      },
+      "display_order": 28,
+      "is_active": true
+    },
+    {
+      "section_type": "values-culture",
+      "title": "What We Stand For",
+      "subtitle": "Design values that guide our work",
+      "content": {
+        "items": [
+          { "title": "User-First", "description": "Every decision starts with the people who'll use your product. We design for clarity, accessibility, and delight.", "icon": "Heart" },
+          { "title": "Consistency at Scale", "description": "Design systems and guidelines that keep your brand and UI coherent across every touchpoint.", "icon": "Layers" },
+          { "title": "Speed Without Compromise", "description": "We iterate fast with AI-assisted tools, but we never skip research, feedback, or quality.", "icon": "Zap" },
+          { "title": "Collaboration", "description": "We work alongside your team and our dev, marketing, and AI pillars—design that fits your workflow.", "icon": "Users" },
+          { "title": "Continuous Improvement", "description": "Design evolves. We support ongoing refinement, new features, and design ops so you keep improving.", "icon": "TrendingUp" },
+          { "title": "Impact", "description": "We measure success by your results: engagement, conversions, and a brand that people remember.", "icon": "Target" }
+        ],
+        "culture_text": "We believe the best design happens when creativity meets process—when we move fast, stay consistent, and always put the user first."
+      },
+      "display_order": 29,
+      "is_active": true
+    },
+    {
+      "section_type": "trust-badges",
+      "title": "Design Built Right",
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "title": "AI-Assisted Design", "icon": "Sparkles", "description": "Faster iteration, consistent quality" },
+          { "title": "Design Systems", "icon": "Layers", "description": "Scalable, maintainable components" },
+          { "title": "Modern Stack", "icon": "Code", "description": "Lovable, Supabase, dev-ready handoff" },
+          { "title": "Brand-First", "icon": "Award", "description": "Every asset supports your identity" }
+        ]
+      },
+      "display_order": 30,
+      "is_active": true
+    },
+    {
+      "section_type": "awards-badges",
+      "title": "Recognition",
+      "subtitle": "Design excellence",
+      "content": {
+        "items": [
+          { "title": "Design Excellence 2024", "organization": "Industry Awards", "year": "2024", "image_url": "" },
+          { "title": "UI/UX Innovation", "organization": "Digital Design Awards", "year": "2024", "image_url": "" },
+          { "title": "Brand Identity", "organization": "Creative Awards", "year": "2023", "image_url": "" }
+        ]
+      },
+      "display_order": 31,
+      "is_active": true
+    },
+    {
+      "section_type": "logo-cloud",
+      "title": "Tools & Trust",
+      "subtitle": "We design with industry-standard tools and deliver for modern stacks",
+      "content": {
+        "items": [
+          { "logo_url": "/images/logos/figma.svg", "name": "Figma", "link": "https://figma.com" },
+          { "logo_url": "/images/logos/adobe.svg", "name": "Adobe Creative Cloud", "link": "https://adobe.com" },
+          { "logo_url": "/images/logos/supabase.svg", "name": "Supabase", "link": "https://supabase.com" },
+          { "logo_url": "/images/logos/react.svg", "name": "React", "link": "https://react.dev" },
+          { "logo_url": "/images/logos/tailwind.svg", "name": "Tailwind CSS", "link": "https://tailwindcss.com" },
+          { "logo_url": "/images/logos/lovable.svg", "name": "Lovable", "link": "https://lovable.dev" }
+        ]
+      },
+      "display_order": 32,
+      "is_active": true
+    },
+    {
+      "section_type": "secondary-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "text": "Ready to transform your brand and product with design that converts?",
+        "button_text": "Get a Design Consultation",
+        "button_url": "/contact"
+      },
+      "display_order": 33,
+      "is_active": true
+    },
+    {
+      "section_type": "faq",
+      "title": "Design Services FAQ",
+      "subtitle": "Common questions about our design offering",
+      "content": {
+        "items": [
+          {
+            "question": "What design services does DOTR offer?",
+            "answer": "We offer four core design disciplines: UI/UX Design, Graphic Design, Branding & Identity, and Motion / Visual Design. You can use one or combine several—we deliver them as a cohesive design offering with shared systems and workflows."
+          },
+          {
+            "question": "How do you use AI in design?",
+            "answer": "We use AI-assisted tools for exploration, variation generation, consistency checks, and speeding up repetitive tasks. Design decisions stay human-led; AI helps us iterate faster and keep quality high."
+          },
+          {
+            "question": "How fast can I get a first prototype?",
+            "answer": "Typically within 2 weeks for UI/UX prototypes, depending on scope. Branding and motion timelines vary; we'll give you a clear timeline during discovery."
+          },
+          {
+            "question": "Do you work with our development team?",
+            "answer": "Yes. We deliver design systems, specs, and assets that plug into modern stacks (including Lovable and Supabase). We can hand off to your dev team or work alongside our own development pillar for full design–dev alignment."
+          },
+          {
+            "question": "Can you handle both branding and UI/UX?",
+            "answer": "Absolutely. Many clients start with brand identity and then move into UI/UX, or vice versa. Having both under one roof means no misalignment between brand and product design."
+          }
+        ]
+      },
+      "display_order": 34,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "color": "primary",
+        "width": "full",
+        "spacing": "medium"
+      },
+      "display_order": 35,
+      "is_active": true
+    },
+    {
+      "section_type": "newsletter",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "placeholder_text": "Enter your email for design insights",
+        "button_text": "Subscribe",
+        "success_message": "Thanks! Check your inbox for design tips and updates."
+      },
+      "display_order": 36,
+      "is_active": true
+    },
+    {
+      "section_type": "contact-info",
+      "title": "Get in Touch",
+      "subtitle": "Let's discuss your design project",
+      "content": {
+        "email": "hello@dotr.io",
+        "phone": "+1 (555) 000-0000",
+        "address": "Your address here",
+        "map_embed_url": "",
+        "social_links": [
+          { "platform": "LinkedIn", "url": "https://linkedin.com/company/dotr", "icon": "LinkedIn" },
+          { "platform": "Twitter", "url": "https://twitter.com/dotr", "icon": "Twitter" },
+          { "platform": "Instagram", "url": "https://instagram.com/dotr", "icon": "Instagram" }
+        ]
+      },
+      "display_order": 37,
+      "is_active": true
+    },
+    {
+      "section_type": "cta",
+      "title": "Ready to Level Up Your Design?",
+      "subtitle": null,
+      "content": {
+        "headline": "Let's Create Something Memorable",
+        "description": "From brand identity to UI/UX and motion—we'll help you design experiences that resonate and convert. Get a free design consultation today.",
+        "primary_cta_text": "Get Design Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "View Our Work",
+        "secondary_cta_link": "/portfolio"
+      },
+      "display_order": 38,
+      "is_active": true
+    },
+    {
+      "section_type": "exit-intent-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "headline": "Wait! Before you go—",
+        "description": "Get a free design consultation and custom recommendations. See how we can transform your brand and product.",
+        "button_text": "Get Free Consultation",
+        "button_url": "/contact",
+        "show_after_scroll": 50,
+        "offer_text": "No commitment required"
+      },
+      "display_order": 39,
+      "is_active": true
+    },
+    {
+      "section_type": "primary-cta-banner",
+      "title": "Final CTA",
+      "subtitle": null,
+      "content": {
+        "headline": "Design That Drives Results—Get Started Today",
+        "description": "UI/UX, branding, motion—one partner, fast delivery. Book a free design consultation and see the DOTR difference.",
+        "primary_cta_text": "Book Design Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "Explore All Services",
+        "secondary_cta_link": "/services",
+        "background_color": "primary",
+        "text_color": "white"
+      },
+      "display_order": 40,
+      "is_active": true
+    }
+  ]
+}

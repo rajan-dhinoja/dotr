@@ -1,0 +1,878 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-01-30T12:00:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "services/development",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "Development Services Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "Fast, Scalable Development—Web, Mobile, APIs & SaaS",
+        "subtitle": "From frontend to backend, web apps to mobile apps and admin panels—we deliver future-ready software powered by AI and modern tools. Built to scale, shipped in weeks.",
+        "cta_text": "Get a Development Consultation",
+        "cta_link": "/contact",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "We help ambitious teams build world-class software—web apps, mobile apps, APIs, and SaaS—that ships fast, scales easily, and stays maintainable. Your vision. Our AI-assisted development. Results in weeks.",
+        "tagline": "Your vision. Our development expertise. Results in weeks.",
+        "author": "DOTR Development Team",
+        "author_title": "Development Pillar"
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Zap", "text": "Weeks, Not Months" },
+          { "icon": "Code", "text": "AI-Assisted Development" },
+          { "icon": "Layers", "text": "Full-Stack" },
+          { "icon": "Shield", "text": "Scalable & Secure" },
+          { "icon": "Rocket", "text": "Ship Fast" }
+        ]
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "Development Challenges We Solve",
+      "subtitle": "Facing these issues?",
+      "content": {
+        "problems": [
+          {
+            "title": "Slow, Fragmented Builds",
+            "description": "Lengthy development cycles, legacy tech debt, and handoff friction between frontend and backend—delaying launches and eating into budgets."
+          },
+          {
+            "title": "Can't Scale or Maintain",
+            "description": "Monolithic codebases, poor architecture, and no clear path to scale. Every new feature feels like a gamble."
+          },
+          {
+            "title": "Outdated Tech Stack",
+            "description": "Stuck on old frameworks and tools that can't support modern UX, APIs, or AI—limiting growth and innovation."
+          },
+          {
+            "title": "Vendor Lock-in or Silos",
+            "description": "Working with separate teams for web, mobile, and backend creates inconsistency, delays, and higher costs."
+          }
+        ],
+        "empathy_text": "We get it. You need software that ships fast, scales easily, and stays maintainable. DOTR brings full-stack development, modern tools, and AI-assisted workflows so you build once and scale without rewriting."
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "Why DOTR for Development?",
+      "subtitle": "The AI-First Development Difference",
+      "content": {
+        "headline": "End-to-End Development—Web, Mobile, APIs, SaaS—Fast & Future-Ready",
+        "supporting_points": [
+          "Full stack: Frontend, Backend, Web Apps, Mobile Apps, Admin Panels, APIs & SaaS—one partner, one codebase philosophy",
+          "AI-assisted development (e.g. GitHub Copilot) and modern stack (Lovable, Supabase) for faster, higher-quality delivery",
+          "Scalable architecture from day one—no rewrites when you grow",
+          "CMS-driven content and admin panels so you control every piece without touching code",
+          "CI/CD, cloud-ready (AWS, GCP, Azure), and built for ongoing maintenance and optimization"
+        ],
+        "cta_text": "See Our Development Process",
+        "cta_url": "/about"
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Our Development Services",
+      "subtitle": "Five Pillars, One Cohesive Development Offering",
+      "content": {
+        "items": [
+          {
+            "icon": "Monitor",
+            "title": "Frontend, Backend & Full-Stack",
+            "description": "Modern React, TypeScript, and backend services. Responsive UIs, APIs, and databases built to scale. One stack, end-to-end.",
+            "link": "/services/development/full-stack"
+          },
+          {
+            "icon": "Globe",
+            "title": "Web Apps & Websites",
+            "description": "Fast, SEO-friendly websites and web applications. CMS-driven content, programmatic pages, and conversion-focused experiences.",
+            "link": "/services/development/web-apps"
+          },
+          {
+            "icon": "Smartphone",
+            "title": "Mobile Applications",
+            "description": "Cross-platform and native mobile apps. User-centered design, performance, and seamless integration with your backend.",
+            "link": "/services/development/mobile-apps"
+          },
+          {
+            "icon": "LayoutDashboard",
+            "title": "Admin Panels & Dashboards",
+            "description": "Powerful internal tools and dashboards. Manage content, users, and data with intuitive, role-based admin experiences.",
+            "link": "/services/development/admin-panels"
+          },
+          {
+            "icon": "Plug",
+            "title": "APIs & SaaS Platforms",
+            "description": "RESTful and modern APIs, multi-tenant SaaS, and scalable platform architecture. Built for integration and growth.",
+            "link": "/services/development/apis-saas"
+          }
+        ]
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "How We Develop",
+      "subtitle": "Our Streamlined Development Process",
+      "content": {
+        "items": [
+          {
+            "step": 1,
+            "title": "Discovery & Architecture",
+            "description": "We align on scope, tech stack, and architecture. Clear specs and milestones so there are no surprises down the road.",
+            "icon": "Search"
+          },
+          {
+            "step": 2,
+            "title": "Rapid Build with AI Assistance",
+            "description": "Develop with Lovable, Supabase, and AI-assisted coding (e.g. GitHub Copilot). Faster delivery without sacrificing quality.",
+            "icon": "Code"
+          },
+          {
+            "step": 3,
+            "title": "Testing, Deploy & Integrate",
+            "description": "CI/CD pipelines, automated testing, and cloud deployment. Your app goes live with monitoring and scalability built in.",
+            "icon": "Rocket"
+          },
+          {
+            "step": 4,
+            "title": "Maintain & Scale",
+            "description": "Ongoing optimization, security updates, and feature iterations. We build so you can scale without rewriting.",
+            "icon": "TrendingUp"
+          }
+        ]
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "color": "primary",
+        "width": "full",
+        "spacing": "medium"
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-highlights",
+      "title": "Development + AI Capabilities",
+      "subtitle": "How We Use AI to Build Better, Faster",
+      "content": {
+        "items": [
+          {
+            "title": "AI-Assisted Coding",
+            "description": "GitHub Copilot and AI tools accelerate development while keeping code quality and consistency high.",
+            "icon": "Code",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Modern Stack (Lovable + Supabase)",
+            "description": "React, TypeScript, Supabase—scalable frontend and backend with real-time, auth, and storage out of the box.",
+            "icon": "Layers",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "CMS-Driven Everything",
+            "description": "Every section, page, and CTA manageable from admin. No code deploys for content changes—your team stays in control.",
+            "icon": "Layout",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "APIs & Integrations",
+            "description": "RESTful APIs, webhooks, and n8n automation. Connect your app to CRMs, payment gateways, and third-party services seamlessly.",
+            "icon": "Plug",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Scalable Architecture",
+            "description": "Cloud-ready design from day one. AWS, GCP, Azure—we build so you can scale without performance bottlenecks.",
+            "icon": "Cloud",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Security & Maintenance",
+            "description": "Application security, backups, and ongoing optimization. Your product stays fast, secure, and up to date.",
+            "icon": "Shield",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "image-text",
+      "title": "From Spec to Production",
+      "subtitle": "Development that scales",
+      "content": {
+        "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+        "image_position": "left",
+        "description": "We take your specs and ideas from concept to production-ready software. Our AI-assisted development and modern stack (Lovable, Supabase) ensure every feature, API, and admin panel ships fast and scales with your business. Whether you need a web app, mobile app, or full SaaS platform—we've got you covered.",
+        "cta_text": "See Our Development Process",
+        "cta_link": "/about"
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "differentiators",
+      "title": "Why Choose DOTR for Development?",
+      "subtitle": "Traditional Dev Shops vs. DOTR",
+      "content": {
+        "items": [
+          { "feature": "AI-Assisted Development (GitHub Copilot)", "us": true, "competitors": false },
+          { "feature": "Full-Stack + Web + Mobile + APIs Under One Roof", "us": true, "competitors": "Siloed Teams" },
+          { "feature": "CMS-Driven Admin (Every Section Editable)", "us": true, "competitors": "Hard-Coded Content" },
+          { "feature": "Fast Delivery (Weeks, Not Months)", "us": true, "competitors": false },
+          { "feature": "Modern Stack (Lovable, Supabase, n8n)", "us": true, "competitors": "Legacy Systems" },
+          { "feature": "End-to-End with Design, Marketing, AI", "us": true, "competitors": "Dev-Only" }
+        ],
+        "show_comparison": true,
+        "our_label": "DOTR",
+        "competitor_label": "Traditional Dev Shops"
+      },
+      "display_order": 11,
+      "is_active": true
+    },
+    {
+      "section_type": "features",
+      "title": "What We Bring to Every Build",
+      "subtitle": "Development fundamentals we never skip",
+      "content": {
+        "items": [
+          { "title": "Clear Architecture", "description": "We start with scope, stack, and milestones—every build is structured for scale and maintainability.", "icon": "Layers" },
+          { "title": "Modern Stack", "description": "React, TypeScript, Lovable, Supabase—scalable frontend and backend with real-time, auth, and storage out of the box.", "icon": "Code" },
+          { "title": "CMS-Driven Content", "description": "Every section and CTA manageable from admin. No code deploys for content changes—your team stays in control.", "icon": "Layout" },
+          { "title": "AI-Assisted Development", "description": "GitHub Copilot and AI tools accelerate delivery while keeping code quality and consistency high.", "icon": "Sparkles" },
+          { "title": "CI/CD & Cloud-Ready", "description": "Automated pipelines, testing, and deployment. AWS, GCP, Azure—we build so you can scale.", "icon": "Rocket" },
+          { "title": "Ongoing Support", "description": "Maintenance, security updates, and feature iterations. We build so you can evolve without rewriting.", "icon": "Headphones" }
+        ]
+      },
+      "display_order": 12,
+      "is_active": true
+    },
+    {
+      "section_type": "stats",
+      "title": "Development by the Numbers",
+      "subtitle": "What We Deliver",
+      "content": {
+        "items": [
+          { "value": "5", "label": "Development Pillars", "suffix": "" },
+          { "value": "2", "label": "Weeks to First Build", "suffix": "" },
+          { "value": "100", "label": "CMS-Controlled", "suffix": "%" },
+          { "value": "24", "label": "Hours Support", "suffix": "/7" }
+        ]
+      },
+      "display_order": 13,
+      "is_active": true
+    },
+    {
+      "section_type": "who-its-for",
+      "title": "Who We Build For",
+      "subtitle": "From startups to enterprises—we scale with you",
+      "content": {
+        "personas": [
+          {
+            "persona": "Startups",
+            "icon": "Rocket",
+            "description": "Get a production-ready web app or MVP in weeks. Modern stack, scalable from day one, no vendor juggling.",
+            "benefits": ["MVP in weeks", "Full-stack", "Scalable architecture"]
+          },
+          {
+            "persona": "Enterprises",
+            "icon": "Building2",
+            "description": "Complex systems, admin panels, and integrations. Security, compliance, and long-term maintainability built in.",
+            "benefits": ["Enterprise-grade", "APIs & integrations", "Ongoing support"]
+          },
+          {
+            "persona": "Agencies & Product Teams",
+            "icon": "Users",
+            "description": "White-label development or dedicated capacity. We slot into your workflow and deliver to your standards.",
+            "benefits": ["Flexible engagement", "Modern stack", "Clean handoff"]
+          }
+        ]
+      },
+      "display_order": 14,
+      "is_active": true
+    },
+    {
+      "section_type": "outcomes-benefits",
+      "title": "What You'll Achieve",
+      "subtitle": "Outcomes from great development",
+      "content": {
+        "layout": "grid",
+        "items": [
+          { "title": "Faster Time to Market", "description": "Ship in weeks with AI-assisted development, modern stack, and clear processes—no endless cycles.", "icon": "Zap" },
+          { "title": "Scalable & Maintainable", "description": "Architecture that grows with you. Add features, users, and integrations without rewriting from scratch.", "icon": "TrendingUp" },
+          { "title": "Full Control via Admin", "description": "CMS-driven content and sections. Your team updates copy, CTAs, and pages without touching code.", "icon": "Layout" },
+          { "title": "Future-Ready Tech", "description": "Modern frameworks, cloud-ready deployment, and security built in—ready for AI and scale.", "icon": "Sparkles" }
+        ]
+      },
+      "display_order": 15,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "Development Impact",
+      "subtitle": "Results That Matter",
+      "content": {
+        "items": [
+          { "metric": "3x", "label": "Faster Time to Market", "description": "Clients ship in weeks, not months, with our streamlined build and AI-assisted workflows.", "icon": "Zap" },
+          { "metric": "40%", "label": "Lower Maintenance Cost", "description": "Modern stack and clear architecture reduce ongoing dev and fix costs.", "icon": "TrendingUp" },
+          { "metric": "98%", "label": "Client Satisfaction", "description": "Our full-stack, AI-first approach keeps projects on time and on budget.", "icon": "Heart" },
+          { "metric": "100%", "label": "CMS-Controlled Content", "description": "Every section and CTA editable from admin—no code deploys for content.", "icon": "Layout" }
+        ]
+      },
+      "display_order": 16,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Our Development Work",
+      "subtitle": "Selected projects across web apps, mobile, and SaaS",
+      "content": {
+        "show_filters": true,
+        "items": [
+          { "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80", "title": "SaaS Dashboard", "category": "Web App", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", "title": "E-Commerce Platform", "category": "Web App", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "title": "Admin Panel", "category": "Dashboard", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80", "title": "API Integration", "category": "Backend", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80", "title": "Mobile App", "category": "Mobile", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80", "title": "Cloud Platform", "category": "SaaS", "link": "/portfolio" }
+        ]
+      },
+      "display_order": 17,
+      "is_active": true
+    },
+    {
+      "section_type": "testimonials",
+      "title": "What Clients Say About Our Development",
+      "subtitle": "Trusted by teams that ship",
+      "content": {
+        "items": [
+          {
+            "quote": "DOTR built our web app and admin panel in weeks. The stack they chose scales perfectly—we've added features without any rewrites.",
+            "author": "Alex Chen",
+            "role": "CEO",
+            "company": "TechStart Inc.",
+            "image": ""
+          },
+          {
+            "quote": "Finally, a dev partner that does frontend, backend, and APIs in one place. The AI-assisted development was noticeably faster.",
+            "author": "Maria Rodriguez",
+            "role": "Head of Product",
+            "company": "Digital Ventures",
+            "image": ""
+          },
+          {
+            "quote": "Our team can update every section from the admin panel. No more waiting for dev cycles for copy changes. Game-changer.",
+            "author": "James Wilson",
+            "role": "CTO",
+            "company": "Innovate Solutions",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 18,
+      "is_active": true
+    },
+    {
+      "section_type": "about-us",
+      "title": "Our Development Philosophy",
+      "subtitle": "Development at DOTR",
+      "content": {
+        "story": "At DOTR, development isn't a silo—it's at the heart of everything we build. We combine frontend, backend, web apps, mobile, and APIs into one cohesive offering, powered by AI-assisted workflows and a modern stack that scales. From day one, we've believed that great software should ship fast, scale easily, and stay maintainable.",
+        "mission": "To deliver development that drives results: faster time to market, scalable architecture, and full control via CMS-driven admin. We help teams build software that performs, converts, and grows.",
+        "vision": "To be the go-to development partner for teams who want end-to-end software—from MVP to scale—without the usual agency friction or legacy tech debt.",
+        "founder_image": "",
+        "founder_name": "",
+        "founder_title": "",
+        "founded_year": "2024"
+      },
+      "display_order": 19,
+      "is_active": true
+    },
+    {
+      "section_type": "values-culture",
+      "title": "What We Stand For",
+      "subtitle": "Development values that guide our work",
+      "content": {
+        "items": [
+          { "title": "Ship Fast", "description": "We deliver in weeks, not months. Clear scope, modern stack, and AI-assisted development keep timelines short.", "icon": "Zap" },
+          { "title": "Scale from Day One", "description": "Architecture and stack chosen so you can grow without rewrites. No technical debt by design.", "icon": "TrendingUp" },
+          { "title": "Quality Without Compromise", "description": "We move fast with AI assistance, but we never skip testing, security, or maintainability.", "icon": "Shield" },
+          { "title": "Collaboration", "description": "We work alongside your team and our design, marketing, and AI pillars—development that fits your workflow.", "icon": "Users" },
+          { "title": "Continuous Improvement", "description": "We support ongoing optimization, new features, and maintenance so your product keeps evolving.", "icon": "Rocket" },
+          { "title": "Impact", "description": "We measure success by your results: launch speed, scalability, and a product that users love.", "icon": "Target" }
+        ],
+        "culture_text": "We believe the best software happens when speed meets structure—when we ship fast, scale easily, and always put maintainability first."
+      },
+      "display_order": 20,
+      "is_active": true
+    },
+    {
+      "section_type": "trust-badges",
+      "title": "Development Built Right",
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "title": "AI-Assisted Development", "icon": "Code", "description": "GitHub Copilot, faster delivery" },
+          { "title": "Modern Stack", "icon": "Layers", "description": "Lovable, Supabase, React, TypeScript" },
+          { "title": "Cloud-Ready", "icon": "Cloud", "description": "AWS, GCP, Azure, CI/CD" },
+          { "title": "Security First", "icon": "Shield", "description": "Application security, backups" }
+        ]
+      },
+      "display_order": 21,
+      "is_active": true
+    },
+    {
+      "section_type": "logo-cloud",
+      "title": "Tools & Trust",
+      "subtitle": "We build with industry-standard tools and modern stacks",
+      "content": {
+        "items": [
+          { "logo_url": "https://placehold.co/120x48/f0f0f0/666?text=React", "name": "React", "link": "https://react.dev" },
+          { "logo_url": "https://placehold.co/120x48/f0f0f0/666?text=TypeScript", "name": "TypeScript", "link": "https://typescriptlang.org" },
+          { "logo_url": "https://placehold.co/120x48/f0f0f0/666?text=Supabase", "name": "Supabase", "link": "https://supabase.com" },
+          { "logo_url": "https://placehold.co/120x48/f0f0f0/666?text=Lovable", "name": "Lovable", "link": "https://lovable.dev" },
+          { "logo_url": "https://placehold.co/120x48/f0f0f0/666?text=Tailwind", "name": "Tailwind CSS", "link": "https://tailwindcss.com" },
+          { "logo_url": "https://placehold.co/120x48/f0f0f0/666?text=n8n", "name": "n8n", "link": "https://n8n.io" }
+        ]
+      },
+      "display_order": 22,
+      "is_active": true
+    },
+    {
+      "section_type": "secondary-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "text": "Ready to build your next web app, mobile app, or SaaS?",
+        "button_text": "Get a Development Consultation",
+        "button_url": "/contact"
+      },
+      "display_order": 23,
+      "is_active": true
+    },
+    {
+      "section_type": "faq",
+      "title": "Development Services FAQ",
+      "subtitle": "Common questions about our development offering",
+      "content": {
+        "items": [
+          {
+            "question": "What development services does DOTR offer?",
+            "answer": "We offer five core development pillars: Frontend, Backend & Full-Stack; Web Apps & Websites; Mobile Applications; Admin Panels & Dashboards; and APIs & SaaS Platforms. You can use one or combine several—we deliver as a cohesive offering with shared architecture and tooling."
+          },
+          {
+            "question": "How do you use AI in development?",
+            "answer": "We use AI-assisted tools like GitHub Copilot to accelerate coding, reduce boilerplate, and maintain consistency. Architecture and key decisions stay human-led; AI helps us ship faster without sacrificing quality."
+          },
+          {
+            "question": "How fast can I get a first build or MVP?",
+            "answer": "Typically within 2–4 weeks for an initial build or MVP, depending on scope. We'll give you a clear timeline and milestones during discovery."
+          },
+          {
+            "question": "Do you build mobile apps as well as web?",
+            "answer": "Yes. We build web apps, mobile applications (cross-platform and native), admin panels, and APIs. Many clients get web + admin + API from us in one project."
+          },
+          {
+            "question": "Is the content editable without code changes?",
+            "answer": "Yes. We build CMS-driven experiences where sections, pages, CTAs, and content are manageable from the admin panel. Your team can update copy and structure without deploying code."
+          },
+          {
+            "question": "What tech stack do you use?",
+            "answer": "We use modern, scalable technologies: React, TypeScript, Lovable, Supabase for backend and real-time, n8n for automation, and cloud platforms (AWS, GCP, Azure) for deployment. We choose the stack that fits your project and scale."
+          }
+        ]
+      },
+      "display_order": 24,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "color": "primary",
+        "width": "full",
+        "spacing": "medium"
+      },
+      "display_order": 25,
+      "is_active": true
+    },
+    {
+      "section_type": "contact-info",
+      "title": "Get in Touch",
+      "subtitle": "Let's discuss your development project",
+      "content": {
+        "email": "hello@dotr.io",
+        "phone": "+1 (555) 000-0000",
+        "address": "Your address here",
+        "map_embed_url": "",
+        "social_links": [
+          { "platform": "LinkedIn", "url": "https://linkedin.com/company/dotr", "icon": "LinkedIn" },
+          { "platform": "Twitter", "url": "https://twitter.com/dotr", "icon": "Twitter" },
+          { "platform": "Instagram", "url": "https://instagram.com/dotr", "icon": "Instagram" }
+        ]
+      },
+      "display_order": 26,
+      "is_active": true
+    },
+    {
+      "section_type": "cta",
+      "title": "Ready to Build Something Great?",
+      "subtitle": null,
+      "content": {
+        "headline": "Let's Ship Your Next Web App, Mobile App, or SaaS",
+        "description": "From MVP to scale—we'll help you build fast, scalable software with AI-assisted development and a modern stack. Get a free development consultation today.",
+        "primary_cta_text": "Get Development Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "View Our Work",
+        "secondary_cta_link": "/portfolio"
+      },
+      "display_order": 27,
+      "is_active": true
+    },
+    {
+      "section_type": "video",
+      "title": "See Our Development in Action",
+      "subtitle": "A quick overview of our stack and delivery",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+        "autoplay": false
+      },
+      "display_order": 28,
+      "is_active": true
+    },
+    {
+      "section_type": "timeline",
+      "title": "How We Build",
+      "subtitle": "Key milestones in every development project",
+      "content": {
+        "items": [
+          { "year": "Week 1", "title": "Discovery & Architecture", "description": "Align on scope, stack, and milestones. Clear specs so there are no surprises.", "icon": "Search" },
+          { "year": "Week 2–3", "title": "Rapid Build", "description": "AI-assisted development with Lovable, Supabase. First build or MVP taking shape.", "icon": "Code" },
+          { "year": "Week 4+", "title": "Launch & Scale", "description": "CI/CD, deployment, and ongoing optimization. Your product goes live and evolves.", "icon": "Rocket" }
+        ]
+      },
+      "display_order": 29,
+      "is_active": true
+    },
+    {
+      "section_type": "newsletter",
+      "title": "Dev & Product Insights",
+      "subtitle": "Get tips on modern stack, scaling, and shipping fast.",
+      "content": {
+        "placeholder_text": "Enter your email",
+        "button_text": "Subscribe",
+        "success_message": "Thanks for subscribing! We'll send you our best dev and product insights."
+      },
+      "display_order": 30,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": "The Cost of Slow Development",
+      "subtitle": "Then the solution",
+      "content": {
+        "problem": "Your team is stuck with legacy code, long release cycles, and no way to ship new features fast—draining momentum and losing to competitors.",
+        "agitation": "Every week without a modern stack and clear architecture costs you time, talent, and customers. The longer you wait, the harder it gets to catch up.",
+        "solution": "DOTR builds with a modern stack and AI-assisted development so you ship in weeks, scale without rewrites, and keep full control via CMS-driven admin. One partner, one stack, results that last."
+      },
+      "display_order": 31,
+      "is_active": true
+    },
+    {
+      "section_type": "before-after",
+      "title": "Before & After DOTR Development",
+      "subtitle": "See the transformation",
+      "content": {
+        "before_image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+        "after_image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "before_label": "Before",
+        "after_label": "After"
+      },
+      "display_order": 32,
+      "is_active": true
+    },
+    {
+      "section_type": "counters",
+      "title": "By the Numbers",
+      "subtitle": "What we deliver",
+      "content": {
+        "items": [
+          { "value": 5, "label": "Development Pillars", "prefix": "", "suffix": "", "icon": "Layers" },
+          { "value": 2, "label": "Weeks to First Build", "prefix": "", "suffix": "", "icon": "Zap" },
+          { "value": 100, "label": "CMS-Controlled", "prefix": "", "suffix": "%", "icon": "Layout" },
+          { "value": 24, "label": "Support", "prefix": "", "suffix": "/7", "icon": "Headphones" }
+        ]
+      },
+      "display_order": 33,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 3, "suffix": "x", "prefix": "", "label": "Faster Time to Market" },
+          { "value": 98, "suffix": "%", "prefix": "", "label": "Client Satisfaction" },
+          { "value": 24, "suffix": "/7", "prefix": "", "label": "Support" },
+          { "value": 5, "suffix": "", "prefix": "", "label": "Dev Pillars" }
+        ],
+        "animate": true
+      },
+      "display_order": 34,
+      "is_active": true
+    },
+    {
+      "section_type": "social-proof-bar",
+      "title": "Trusted by Product Teams",
+      "subtitle": null,
+      "content": {
+        "user_count": "500+",
+        "rating": 4.9,
+        "review_count": "120+",
+        "platforms": [
+          { "name": "LinkedIn", "followers": "30K", "icon": "Linkedin" },
+          { "name": "Twitter", "followers": "50K", "icon": "Twitter" }
+        ]
+      },
+      "display_order": 35,
+      "is_active": true
+    },
+    {
+      "section_type": "awards-badges",
+      "title": "Recognition",
+      "subtitle": "Awards and industry recognition",
+      "content": {
+        "items": [
+          { "title": "Top Development Team 2024", "organization": "Digital Leaders Summit", "year": "2024", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" },
+          { "title": "AI-Assisted Build Excellence", "organization": "Tech Excellence Awards", "year": "2024", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" },
+          { "title": "Customer Choice", "organization": "Business Excellence Awards", "year": "2023", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" }
+        ]
+      },
+      "display_order": 36,
+      "is_active": true
+    },
+    {
+      "section_type": "press-mentions",
+      "title": "As Seen In",
+      "subtitle": "What the press says about our development work",
+      "content": {
+        "items": [
+          { "publication": "TechCrunch", "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=TechCrunch", "quote": "A game-changing approach to building and shipping software—fast delivery, modern stack, AI at the core.", "link": "https://techcrunch.com" },
+          { "publication": "Forbes", "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Forbes", "quote": "Leading innovation with scalable architecture and end-to-end development across web, mobile, and SaaS.", "link": "https://forbes.com" },
+          { "publication": "Wired", "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Wired", "quote": "The future of development is here—weeks not months, CMS-driven content, no vendor juggling.", "link": "https://wired.com" }
+        ]
+      },
+      "display_order": 37,
+      "is_active": true
+    },
+    {
+      "section_type": "ratings-reviews",
+      "title": "Rated by Clients",
+      "subtitle": "What our clients say on leading platforms",
+      "content": {
+        "items": [
+          { "platform": "Google", "rating": 4.9, "review_count": 85, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Google" },
+          { "platform": "Clutch", "rating": 4.8, "review_count": 42, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Clutch" },
+          { "platform": "Trustpilot", "rating": 4.7, "review_count": 60, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Trustpilot" }
+        ],
+        "show_aggregate": true
+      },
+      "display_order": 38,
+      "is_active": true
+    },
+    {
+      "section_type": "gallery",
+      "title": "Work in Action",
+      "subtitle": "Web apps, dashboards, and platforms we've built",
+      "content": {
+        "items": [
+          { "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80", "caption": "SaaS Dashboard", "alt": "Dashboard" },
+          { "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", "caption": "Web Applications", "alt": "Web app" },
+          { "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "caption": "Admin Panel", "alt": "Admin" },
+          { "image_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80", "caption": "API & Integrations", "alt": "API" },
+          { "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80", "caption": "Mobile App", "alt": "Mobile" },
+          { "image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80", "caption": "Cloud Platform", "alt": "Cloud" }
+        ]
+      },
+      "display_order": 39,
+      "is_active": true
+    },
+    {
+      "section_type": "video-demo",
+      "title": "See It in Action",
+      "subtitle": "A quick walkthrough of our development process",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+        "callouts": [
+          { "time": "0:15", "text": "See how we scope and architect" },
+          { "time": "1:30", "text": "Explore the modern stack and CMS-driven admin" },
+          { "time": "2:45", "text": "Discover deployment and ongoing support" }
+        ]
+      },
+      "display_order": 40,
+      "is_active": true
+    },
+    {
+      "section_type": "screenshot-gallery",
+      "title": "Platform Preview",
+      "subtitle": "Key screens from our builds",
+      "content": {
+        "screenshots": [
+          { "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80", "caption": "Analytics Dashboard" },
+          { "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80", "caption": "Admin Panel" },
+          { "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80", "caption": "Content Management" },
+          { "url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80", "caption": "API & Workflows" }
+        ],
+        "show_captions": true
+      },
+      "display_order": 41,
+      "is_active": true
+    },
+    {
+      "section_type": "device-frames",
+      "title": "Every Device, Every Screen",
+      "subtitle": "Responsive and fast everywhere",
+      "content": {
+        "device_type": "iphone",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80"
+        ]
+      },
+      "display_order": 42,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-list",
+      "title": "What's Included in Every Build",
+      "subtitle": "The full stack, every time",
+      "content": {
+        "items": [
+          { "text": "CMS-driven content—edit every section from admin", "icon": "Settings" },
+          { "text": "Modern stack: React, TypeScript, Lovable, Supabase", "icon": "Code" },
+          { "text": "AI-assisted development (e.g. GitHub Copilot)", "icon": "Sparkles" },
+          { "text": "CI/CD and cloud-ready deployment", "icon": "Rocket" },
+          { "text": "Scalable architecture from day one", "icon": "TrendingUp" },
+          { "text": "Security, backups, and ongoing support", "icon": "Shield" },
+          { "text": "Weeks, not months—fast delivery", "icon": "Zap" },
+          { "text": "Web, mobile, APIs, SaaS—one partner", "icon": "Layers" }
+        ],
+        "columns": 2
+      },
+      "display_order": 43,
+      "is_active": true
+    },
+    {
+      "section_type": "team",
+      "title": "Meet the Dev Team",
+      "subtitle": "Experts in full-stack, mobile, and SaaS",
+      "content": {
+        "items": [
+          { "name": "Tech Lead", "role": "Architecture & Full-Stack", "bio": "Driving scalable architecture and modern stack decisions.", "image": "" },
+          { "name": "Frontend", "role": "React & UI", "bio": "Building fast, accessible interfaces that scale.", "image": "" },
+          { "name": "Backend", "role": "APIs & Data", "bio": "APIs, databases, and integrations that perform.", "image": "" },
+          { "name": "DevOps", "role": "CI/CD & Cloud", "bio": "Deployment, monitoring, and ongoing optimization.", "image": "" }
+        ]
+      },
+      "display_order": 44,
+      "is_active": true
+    },
+    {
+      "section_type": "blog-posts",
+      "title": "Latest from the Blog",
+      "subtitle": "Dev, product, and scaling insights",
+      "content": {
+        "count": 3,
+        "show_featured_only": false,
+        "layout": "grid"
+      },
+      "display_order": 45,
+      "is_active": true
+    },
+    {
+      "section_type": "exit-intent-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "headline": "Wait! Don't Leave Yet",
+        "description": "Get a free development consultation and a clear plan for your next build. No commitment—just clarity.",
+        "button_text": "Claim Free Consultation",
+        "button_url": "/contact",
+        "show_after_scroll": 50,
+        "offer_text": "We'll match you with the right stack and timeline for your project."
+      },
+      "display_order": 46,
+      "is_active": true
+    },
+    {
+      "section_type": "primary-cta-banner",
+      "title": "Final CTA",
+      "subtitle": null,
+      "content": {
+        "headline": "Development That Scales—Get Started Today",
+        "description": "Web, mobile, APIs, SaaS—one partner, modern stack, fast delivery. Book a free development consultation and see the DOTR difference.",
+        "primary_cta_text": "Book Development Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "Explore All Services",
+        "secondary_cta_link": "/services",
+        "background_color": "primary",
+        "text_color": "white"
+      },
+      "display_order": 47,
+      "is_active": true
+    }
+  ]
+}

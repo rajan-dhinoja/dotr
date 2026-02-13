@@ -21,7 +21,7 @@ import {
   SectionType,
   AdminPageSectionsResult,
 } from '@/hooks/usePageSections';
-import { SectionJsonEditor } from '@/components/admin/SectionJsonEditor';
+import { LazySectionJsonEditor } from '@/components/admin/LazySectionJsonEditor';
 import { useSectionImportExport } from '@/hooks/useSectionImportExport';
 import { SectionImportModal } from '@/components/admin/SectionImportModal';
 import { BulkDeleteDialog } from '@/components/admin/BulkDeleteDialog';
@@ -46,9 +46,13 @@ import { CSS } from '@dnd-kit/utilities';
 interface SectionManagerProps {
   pageType: string;
   entityId?: string;
+  /** Optional initial section id to open in edit dialog when the manager loads */
+  initialSectionId?: string;
+  /** Called when the edit dialog is closed so the parent can e.g. clear URL params */
+  onEditDialogClose?: () => void;
 }
 
-export function SectionManager({ pageType, entityId }: SectionManagerProps) {
+export function SectionManager({ pageType, entityId, initialSectionId, onEditDialogClose }: SectionManagerProps) {
   const { toast } = useToast();
   const { copiedSection, copySection, clearClipboard } = useSectionClipboard();
 
@@ -108,6 +112,18 @@ export function SectionManager({ pageType, entityId }: SectionManagerProps) {
     });
   }, [sections, sortBy, sortDir]);
 
+  // If an initialSectionId is provided (e.g. from ?section= in URL),
+  // automatically open that section in the edit dialog once sections are loaded.
+  useEffect(() => {
+    if (!initialSectionId || editingSection || sections.length === 0) return;
+    const target = sections.find((s) => s.id === initialSectionId);
+    if (target) {
+      setEditingSection(target);
+      setIsAddingNew(false);
+      setActiveTab('form');
+    }
+  }, [initialSectionId, sections, editingSection]);
+
   const { saveMutation, deleteMutation, reorderMutation } = usePageSectionMutations(pageType, entityId);
   const { exportSections } = useSectionImportExport({
     pageType,
@@ -148,6 +164,7 @@ export function SectionManager({ pageType, entityId }: SectionManagerProps) {
     isLast: boolean;
     onCopy: () => void;
     onEdit: () => void;
+    onEditItems?: () => void;
     onDelete: () => void;
   }
 
@@ -163,6 +180,7 @@ export function SectionManager({ pageType, entityId }: SectionManagerProps) {
     isLast,
     onCopy,
     onEdit,
+    onEditItems,
     onDelete,
   }: SortableSectionRowProps) => {
     const {
@@ -241,14 +259,25 @@ export function SectionManager({ pageType, entityId }: SectionManagerProps) {
               >
                 <Copy className="h-4 w-4" />
               </Button>
+              {onEditItems && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={onEditItems}
+                  className="gap-1.5"
+                >
+                  <Edit2 className="h-4 w-4" />
+                  Edit items
+                </Button>
+              )}
               <Button
                 variant="ghost"
-                size="icon"
-                className="h-8 w-8"
+                size="sm"
                 onClick={onEdit}
-                title="Edit section"
+                className="gap-1.5"
               >
                 <Edit2 className="h-4 w-4" />
+                Edit section
               </Button>
               <Button
                 variant="ghost"
@@ -407,6 +436,7 @@ export function SectionManager({ pageType, entityId }: SectionManagerProps) {
         toast({ title: editingSection.id ? 'Section updated' : 'Section added' });
         setEditingSection(null);
         setActiveTab('form'); // Reset to form view
+        onEditDialogClose?.();
       },
       onError: (error: Error) => {
         toast({ title: 'Error', description: error.message, variant: 'destructive' });
@@ -441,6 +471,7 @@ export function SectionManager({ pageType, entityId }: SectionManagerProps) {
       setEditingSection(null);
       setActiveTab('form');
       setJsonIsValid(true);
+      onEditDialogClose?.();
     }
   };
 
@@ -564,8 +595,6 @@ export function SectionManager({ pageType, entityId }: SectionManagerProps) {
             <SelectContent>
               <SelectItem value="display_order-asc">Order (asc)</SelectItem>
               <SelectItem value="display_order-desc">Order (desc)</SelectItem>
-              <SelectItem value="title-asc">Title A–Z</SelectItem>
-              <SelectItem value="title-desc">Title Z–A</SelectItem>
               <SelectItem value="section_type-asc">Type A–Z</SelectItem>
               <SelectItem value="section_type-desc">Type Z–A</SelectItem>
               <SelectItem value="updated_at-desc">Updated (newest)</SelectItem>
@@ -687,6 +716,7 @@ export function SectionManager({ pageType, entityId }: SectionManagerProps) {
                     isFirst={index === 0}
                     isLast={index === displayedSections.length - 1}
                     onCopy={() => handleCopySection(section)}
+                    onEditItems={() => setEditingSection(section)}
                     onEdit={() => setEditingSection(section)}
                     onDelete={() => handleDelete(section.id)}
                   />
@@ -828,7 +858,7 @@ export function SectionManager({ pageType, entityId }: SectionManagerProps) {
                 </TabsContent>
                 
                 <TabsContent value="json" className="flex-1 min-h-0 overflow-y-auto mt-4 pr-2">
-                  <SectionJsonEditor
+                  <LazySectionJsonEditor
                     section={editingSection}
                     sectionType={getSectionTypeInfo(editingSection.section_type)}
                     onContentChange={handleJsonContentChange}

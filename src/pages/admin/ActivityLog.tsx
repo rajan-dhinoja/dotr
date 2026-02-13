@@ -7,6 +7,8 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { useToast } from '@/hooks/use-toast';
+import { cn } from '@/lib/utils';
 import { format } from 'date-fns';
 import { Search, Download, RefreshCw } from 'lucide-react';
 
@@ -36,7 +38,8 @@ export default function AdminActivityLog() {
   const [actionFilter, setActionFilter] = useState('all');
   const [entityFilter, setEntityFilter] = useState('all');
 
-  const { data: logs = [], isLoading, refetch } = useQuery({
+  const { toast } = useToast();
+  const { data: logs = [], isLoading, isFetching, refetch } = useQuery({
     queryKey: ['activity-logs'],
     queryFn: async () => {
       const { data, error } = await supabase
@@ -48,6 +51,7 @@ export default function AdminActivityLog() {
       if (error) throw error;
       return data as ActivityLog[];
     },
+    staleTime: 60 * 1000,
   });
 
   const filteredLogs = logs.filter(log => {
@@ -94,8 +98,18 @@ export default function AdminActivityLog() {
           <p className="text-muted-foreground">Track all admin actions and changes</p>
         </div>
         <div className="flex gap-2">
-          <Button variant="outline" onClick={() => refetch()}>
-            <RefreshCw className="h-4 w-4 mr-2" /> Refresh
+          <Button
+            variant="outline"
+            onClick={() => {
+              refetch().then(() => {
+                toast({ title: 'Activity log refreshed' });
+              }).catch(() => {
+                toast({ title: 'Refresh failed', variant: 'destructive' });
+              });
+            }}
+            disabled={isFetching}
+          >
+            <RefreshCw className={cn('h-4 w-4 mr-2', isFetching && 'animate-spin')} /> Refresh
           </Button>
           <Button variant="outline" onClick={exportToCsv}>
             <Download className="h-4 w-4 mr-2" /> Export CSV

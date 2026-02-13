@@ -16,6 +16,10 @@ export interface PageImportItem {
   show_in_navigation?: boolean;
   display_order?: number;
   content?: Record<string, unknown> | null;
+  /** Page type for admin display: manual, about, contact, blog, portfolio, testimonials, service_category, service */
+  source_entity_type?: string | null;
+  /** UUID of linked entity (service_categories.id or services.id). Null for semantic types. */
+  source_entity_id?: string | null;
 }
 
 /**
@@ -31,6 +35,7 @@ export interface MenuItemImportFlat {
   display_order?: number;
   target?: string | null;
   is_active?: boolean;
+  menu_type?: string | null;
 }
 
 export interface MenuItemImportNested extends Omit<MenuItemImportFlat, 'parent_key'> {
@@ -52,6 +57,7 @@ export interface MenuItemFlat {
   display_order: number;
   target: string;
   is_active: boolean;
+  menu_type?: string | null;
 }
 
 /**
@@ -115,6 +121,7 @@ function flattenMenuItems(
       page_slug: it.page_slug ?? null,
       target: it.target ?? '_self',
       is_active: it.is_active ?? true,
+      menu_type: (it as MenuItemImportFlat).menu_type ?? null,
     };
 
     if (isNested(it) && it.children && it.children.length > 0) {
@@ -160,6 +167,7 @@ function normalizeFlatMenuItems(
     display_order: typeof it.display_order === 'number' ? it.display_order : i,
     target: it.target ?? '_self',
     is_active: it.is_active ?? true,
+    menu_type: it.menu_type ?? null,
   }));
 }
 
@@ -191,6 +199,8 @@ function normalizeParsed(parsed: {
           show_in_navigation: x.show_in_navigation !== false,
           display_order: typeof x.display_order === 'number' ? x.display_order : 0,
           content: (x.content as Record<string, unknown>) ?? null,
+          source_entity_type: typeof x.source_entity_type === 'string' ? x.source_entity_type : null,
+          source_entity_id: typeof x.source_entity_id === 'string' ? x.source_entity_id : null,
         };
       })
     : [];
@@ -461,6 +471,7 @@ export function exportPagesMenuToFile(
     display_order?: number | null;
     target?: string | null;
     is_active?: boolean | null;
+    menu_type?: string | null;
   }>
 ): void {
   const idToSlug = new Map<string, string>();
@@ -480,6 +491,8 @@ export function exportPagesMenuToFile(
     show_in_navigation: (p as { show_in_navigation?: boolean }).show_in_navigation ?? true,
     display_order: p.display_order ?? 0,
     content: (p.content as Record<string, unknown>) ?? null,
+    source_entity_type: (p as { source_entity_type?: string | null }).source_entity_type ?? null,
+    source_entity_id: (p as { source_entity_id?: string | null }).source_entity_id ?? null,
   }));
 
   const byLocation = new Map<string, typeof menuItems>();
@@ -515,6 +528,7 @@ export function exportPagesMenuToFile(
           display_order: order++,
           target: m.target ?? '_self',
           is_active: m.is_active ?? true,
+          menu_type: m.menu_type ?? null,
         });
         order = assignKeys(m.id, key, order);
       }

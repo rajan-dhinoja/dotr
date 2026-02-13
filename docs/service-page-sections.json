@@ -1,0 +1,935 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-01-30T12:00:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "services",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "Services Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "9 Specialized Pillars, One Unified Solution",
+        "subtitle": "From design to DevOps—end-to-end digital solutions powered by AI. One partner, no vendor juggling. Fast, scalable, and future-ready.",
+        "cta_text": "Get Free AI Consultation",
+        "cta_link": "/contact",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Zap", "text": "Weeks, Not Months" },
+          { "icon": "Shield", "text": "Enterprise-Grade Security" },
+          { "icon": "Brain", "text": "AI-First Approach" },
+          { "icon": "HeadphonesIcon", "text": "24/7 Support" },
+          { "icon": "Layers", "text": "9 Pillars, One Partner" }
+        ]
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "Why DOTR for Services?",
+      "subtitle": "The AI-First Difference",
+      "content": {
+        "headline": "End-to-End Solutions That Scale—No Vendor Juggling",
+        "supporting_points": [
+          "Nine full-fledged pillars: Design, Dev, E-Commerce, Marketing, Content, AI & Automation, Cloud/DevOps, Security, Consulting",
+          "AI-first from day one—automation and intelligence built in, not bolted on",
+          "Deliver results in weeks with streamlined processes and modern tools",
+          "Fully CMS-driven admin panel: every service, section, and CTA is editable",
+          "Modern stack: Lovable, Supabase, n8n, GitHub Copilot—reliable and scalable"
+        ],
+        "cta_text": "See How We Work",
+        "cta_url": "/about"
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Our Services",
+      "subtitle": "9 Specialized Pillars, One Unified Solution",
+      "content": {
+        "items": [
+          {
+            "icon": "Palette",
+            "title": "Designing",
+            "description": "UI/UX Design, Graphic Design, Branding & Identity, Motion / Visual Design",
+            "link": "/services/designing"
+          },
+          {
+            "icon": "Code",
+            "title": "Development",
+            "description": "Frontend, Backend & Full-Stack Development, Web Apps & Websites, Mobile Apps, Admin Panels & Dashboards, APIs & SaaS Platforms",
+            "link": "/services/development"
+          },
+          {
+            "icon": "ShoppingCart",
+            "title": "E-Commerce",
+            "description": "Shopify & WooCommerce, Custom E-commerce Platforms, Payments, Subscriptions, Marketplaces",
+            "link": "/services/e-commerce"
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Marketing",
+            "description": "Digital Strategy, SEO, Social Media Management, Paid Ads, Email Marketing & Automation",
+            "link": "/services/marketing"
+          },
+          {
+            "icon": "Video",
+            "title": "Content & Creative",
+            "description": "Website & SEO Content, Branding & Storytelling, Video Production & Editing",
+            "link": "/services/content-creative"
+          },
+          {
+            "icon": "Brain",
+            "title": "AI & Automation",
+            "description": "AI Chatbots & Support Systems, AI Content Generation, Lead Qualification & Recommendations, CRM, WhatsApp & Workflow Automation, AI Analytics",
+            "link": "/services/ai-automation"
+          },
+          {
+            "icon": "Cloud",
+            "title": "Cloud / DevOps",
+            "description": "AWS, GCP, Azure, CI/CD Pipelines, Deployment, Monitoring & Scalability",
+            "link": "/services/cloud-devops"
+          },
+          {
+            "icon": "Shield",
+            "title": "Security & Maintenance",
+            "description": "Application Security, Backups & Performance Optimization, Ongoing Maintenance",
+            "link": "/services/security-maintenance"
+          },
+          {
+            "icon": "Lightbulb",
+            "title": "Consulting & Support",
+            "description": "Startup & Product Consulting, MVP Planning, Digital Transformation, Long-term Support & SLAs",
+            "link": "/services/consulting-support"
+          }
+        ]
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "How We Deliver",
+      "subtitle": "Our Streamlined Process for Fast Results",
+      "content": {
+        "items": [
+          {
+            "step": 1,
+            "title": "AI-Powered Discovery",
+            "description": "Our AI consultant analyzes your needs, asks smart questions, and recommends the right mix of services from our 9 pillars. No lengthy sales calls—intelligent matching.",
+            "icon": "Search"
+          },
+          {
+            "step": 2,
+            "title": "Rapid Planning & Design",
+            "description": "We create detailed plans and prototypes using AI-assisted tools, aligning with your goals while moving at speed.",
+            "icon": "PenTool"
+          },
+          {
+            "step": 3,
+            "title": "AI-Enhanced Build",
+            "description": "Build with Lovable, Supabase, and AI assistance (e.g. GitHub Copilot) for faster, higher-quality delivery that scales.",
+            "icon": "Code"
+          },
+          {
+            "step": 4,
+            "title": "Automated Launch & Optimization",
+            "description": "Deploy via CI/CD. AI monitoring and ongoing optimization keep your solutions performing.",
+            "icon": "Rocket"
+          }
+        ]
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-highlights",
+      "title": "AI-First Capabilities",
+      "subtitle": "How We Leverage AI Across Every Service",
+      "content": {
+        "items": [
+          {
+            "title": "AI Consultant Chatbot",
+            "description": "Smart chatbot that asks intelligent questions and recommends the perfect services for your needs—available 24/7.",
+            "icon": "MessageSquare",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Smart Lead Qualification",
+            "description": "AI-powered systems qualify leads, route them to the right team, and start conversations instantly.",
+            "icon": "Filter",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "AI Service Recommendations",
+            "description": "Our platform analyzes your business needs and suggests the optimal combination of services for maximum impact.",
+            "icon": "Sparkles",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Automated Content Generation",
+            "description": "AI-assisted content for websites, marketing, and communications—faster and consistent.",
+            "icon": "FileText",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "AI Analytics & Insights",
+            "description": "Deep analytics to uncover patterns, predict trends, and optimize your digital presence continuously.",
+            "icon": "BarChart",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Workflow Automation",
+            "description": "End-to-end automation with n8n to connect your tools, streamline processes, and eliminate manual work.",
+            "icon": "Workflow",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "differentiators",
+      "title": "Why Choose DOTR?",
+      "subtitle": "What Sets Us Apart from Traditional Agencies",
+      "content": {
+        "items": [
+          { "feature": "AI-First Approach", "us": true, "competitors": false },
+          { "feature": "End-to-End Solutions (9 Pillars)", "us": true, "competitors": "Limited Services" },
+          { "feature": "Fast Delivery (Weeks, Not Months)", "us": true, "competitors": false },
+          { "feature": "Fully CMS-Driven Admin Panel", "us": true, "competitors": "Hard-coded Content" },
+          { "feature": "Modern Tech Stack (Scalable)", "us": true, "competitors": "Legacy Systems" },
+          { "feature": "24/7 AI Support & Automation", "us": true, "competitors": false },
+          { "feature": "Programmatic SEO & Growth", "us": true, "competitors": "Limited SEO" },
+          { "feature": "No Vendor Juggling", "us": true, "competitors": false }
+        ],
+        "show_comparison": true,
+        "our_label": "DOTR",
+        "competitor_label": "Traditional Agencies"
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "stats",
+      "title": "Our Impact",
+      "subtitle": "Numbers That Matter",
+      "content": {
+        "items": [
+          { "value": "9", "label": "Specialized Pillars", "suffix": "" },
+          { "value": "48", "label": "Modular Section Types", "suffix": "" },
+          { "value": "100", "label": "AI-Powered Features", "suffix": "%" },
+          { "value": "24", "label": "Hours Support", "suffix": "/7" }
+        ]
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "who-its-for",
+      "title": "Who We Serve",
+      "subtitle": "From startups to enterprises—we scale with you",
+      "content": {
+        "personas": [
+          {
+            "persona": "Startups",
+            "icon": "Rocket",
+            "description": "Move fast and scale efficiently with modern AI-powered solutions across our 9 pillars.",
+            "benefits": ["Rapid deployment", "Cost-effective", "Scalable architecture"]
+          },
+          {
+            "persona": "Enterprises",
+            "icon": "Building2",
+            "description": "Enterprise-grade solutions for complex requirements—design, dev, security, and support.",
+            "benefits": ["Custom integrations", "Dedicated support", "Security compliance"]
+          },
+          {
+            "persona": "Agencies",
+            "icon": "Users",
+            "description": "White-label solutions to expand your service offerings with our full stack.",
+            "benefits": ["Partner program", "Volume pricing", "Training resources"]
+          }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "outcomes-benefits",
+      "title": "What You'll Achieve",
+      "subtitle": "Measurable outcomes from day one",
+      "content": {
+        "layout": "grid",
+        "items": [
+          { "title": "Increased Efficiency", "description": "Automate repetitive tasks and focus on growth with AI across design, dev, and ops.", "icon": "Zap" },
+          { "title": "Better Customer Experience", "description": "Delight users with seamless, intelligent interactions powered by our solutions.", "icon": "Heart" },
+          { "title": "Higher Revenue", "description": "Convert more leads and retain customers with data-driven marketing and automation.", "icon": "TrendingUp" },
+          { "title": "Competitive Edge", "description": "Stay ahead with cutting-edge AI, automation, and end-to-end service delivery.", "icon": "Target" }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "Client Success Stories",
+      "subtitle": "Real Results from Real Clients",
+      "content": {
+        "items": [
+          { "metric": "40%", "label": "Average Revenue Increase", "description": "Clients see significant revenue growth after implementing our AI-powered solutions.", "icon": "TrendingUp" },
+          { "metric": "20+", "label": "Hours Saved Per Week", "description": "Automation eliminates manual tasks, freeing teams to focus on growth.", "icon": "Clock" },
+          { "metric": "3x", "label": "Faster Time to Market", "description": "Our streamlined processes and AI tools deliver results in weeks, not months.", "icon": "Zap" },
+          { "metric": "98%", "label": "Client Satisfaction", "description": "Our AI-first approach and end-to-end solutions keep clients coming back.", "icon": "Heart" }
+        ]
+      },
+      "display_order": 11,
+      "is_active": true
+    },
+    {
+      "section_type": "testimonials",
+      "title": "What Our Clients Say",
+      "subtitle": "Trusted by Businesses That Value Innovation",
+      "content": {
+        "items": [
+          {
+            "quote": "DOTR transformed our entire digital infrastructure. Their AI-first approach meant we got automation from day one across design, dev, and support. The results were immediate and measurable.",
+            "author": "Alex Chen",
+            "role": "CEO",
+            "company": "TechStart Inc.",
+            "image": ""
+          },
+          {
+            "quote": "Finally, a company that offers everything under one roof. No more juggling multiple vendors. DOTR's 9 pillars cover everything we need, and their AI tools make everything faster.",
+            "author": "Maria Rodriguez",
+            "role": "Founder",
+            "company": "Digital Ventures",
+            "image": ""
+          },
+          {
+            "quote": "The AI consultant understood our needs immediately and recommended the perfect service mix. The whole process was smooth and fast.",
+            "author": "James Wilson",
+            "role": "CTO",
+            "company": "Innovate Solutions",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 12,
+      "is_active": true
+    },
+    {
+      "section_type": "trust-badges",
+      "title": "Trusted By",
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "title": "AI-Powered Platform", "icon": "Brain", "description": "Built with cutting-edge AI technology" },
+          { "title": "Modern Tech Stack", "icon": "Code", "description": "Lovable, Supabase, n8n, GitHub Copilot" },
+          { "title": "Scalable Infrastructure", "icon": "Cloud", "description": "AWS, GCP, Azure ready" },
+          { "title": "Security First", "icon": "Shield", "description": "Enterprise-grade security protocols" }
+        ]
+      },
+      "display_order": 13,
+      "is_active": true
+    },
+    {
+      "section_type": "faq",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything You Need to Know About Our Services",
+      "content": {
+        "items": [
+          {
+            "question": "What services does DOTR offer?",
+            "answer": "DOTR offers end-to-end solutions across 9 pillars: Designing, Development, E-Commerce, Marketing, Content & Creative, AI & Automation, Cloud/DevOps, Security & Maintenance, and Consulting & Support. You can use one or combine several—no vendor juggling."
+          },
+          {
+            "question": "Can I use multiple services together?",
+            "answer": "Yes. Our 9 pillars are designed to work together. Many clients use design + development + marketing, or AI & Automation + Consulting. We recommend the right mix via our AI consultant and deliver it as one unified project."
+          },
+          {
+            "question": "How fast can you deliver?",
+            "answer": "We deliver in weeks, not months. Most projects see initial results within 2–4 weeks. Full implementation depends on scope but typically 6–12 weeks. Our AI-assisted processes and modern stack (Lovable, Supabase, n8n) keep timelines short."
+          },
+          {
+            "question": "Is everything editable from the admin?",
+            "answer": "Yes. Our CMS-driven approach means every piece of content—pages, sections, service descriptions, CTAs, FAQs, SEO meta—is manageable from the admin panel. No coding required."
+          },
+          {
+            "question": "Do you offer ongoing support?",
+            "answer": "Yes. Our Consulting & Support pillar includes long-term support, SLAs, maintenance, and digital transformation guidance. We also offer 24/7 AI-powered support and workflow automation."
+          }
+        ]
+      },
+      "display_order": 14,
+      "is_active": true
+    },
+    {
+      "section_type": "cta",
+      "title": "Ready to Get Started?",
+      "subtitle": null,
+      "content": {
+        "headline": "Let's Build Something Amazing Together",
+        "description": "Join forward-thinking businesses leveraging our 9 pillars and AI-first approach. Get a free AI consultation and custom service recommendations.",
+        "primary_cta_text": "Get Free AI Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "Explore Our Work",
+        "secondary_cta_link": "/portfolio"
+      },
+      "display_order": 15,
+      "is_active": true
+    },
+    {
+      "section_type": "primary-cta-banner",
+      "title": "Final CTA",
+      "subtitle": null,
+      "content": {
+        "headline": "Ready to Scale with AI-Powered Services?",
+        "description": "One partner, nine pillars, results in weeks. Get started today with a free consultation.",
+        "primary_cta_text": "Start Your AI Transformation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "Learn More",
+        "secondary_cta_link": "/about",
+        "background_color": "primary",
+        "text_color": "white"
+      },
+      "display_order": 16,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "The Problem",
+      "subtitle": "Are you struggling with these challenges?",
+      "content": {
+        "problems": [
+          { "title": "Slow, Manual Processes", "description": "Wasting hours on repetitive tasks that could be automated, limiting your team's ability to focus on growth and innovation." },
+          { "title": "Disconnected Services", "description": "Working with multiple vendors for design, development, marketing, and support creates communication gaps and delays." },
+          { "title": "Outdated Technology", "description": "Using legacy systems that can't scale with your business or leverage modern AI capabilities." },
+          { "title": "High Costs, Slow Results", "description": "Traditional agencies take months to deliver, charge premium rates, and often miss the mark on what you actually need." }
+        ],
+        "empathy_text": "We understand. Running a business means juggling countless priorities while trying to stay ahead. You need solutions that work fast, scale easily, and don't break the bank."
+      },
+      "display_order": 17,
+      "is_active": true
+    },
+    {
+      "section_type": "about-us",
+      "title": "About DOTR",
+      "subtitle": "AI-First Digital Solutions Company",
+      "content": {
+        "story": "DOTR (Dhinoja OmniTech Resolutions) was founded on a simple principle: technology should empower businesses, not complicate them. We're an AI-first company that builds fast, scalable, and future-ready solutions. Every service we offer is designed to be quick, smart, and optimized from the ground up.",
+        "mission": "To deliver innovative AI-powered digital solutions that drive real business results and help our clients achieve their goals faster and more efficiently.",
+        "vision": "To be the leading AI-first partner for businesses seeking to transform their digital presence, automate their operations, and unlock their full potential through intelligent technology.",
+        "founder_image": "",
+        "founder_name": "",
+        "founder_title": "",
+        "founded_year": "2024"
+      },
+      "display_order": 18,
+      "is_active": true
+    },
+    {
+      "section_type": "values-culture",
+      "title": "Our Values",
+      "subtitle": "What Drives Us",
+      "content": {
+        "items": [
+          { "title": "AI-First Thinking", "description": "We think AI-first. Every solution is designed with automation and intelligence at its core.", "icon": "Brain" },
+          { "title": "Speed & Efficiency", "description": "We deliver results fast without compromising quality. Time is your most valuable asset.", "icon": "Zap" },
+          { "title": "Scalability", "description": "Everything we build grows with your business. No performance bottlenecks, no technical debt.", "icon": "TrendingUp" },
+          { "title": "End-to-End Excellence", "description": "Complete solutions across 9 specialized pillars—no multiple vendors.", "icon": "Layers" },
+          { "title": "Innovation", "description": "We stay ahead with the latest tools and technologies to deliver cutting-edge solutions.", "icon": "Sparkles" },
+          { "title": "Client Success", "description": "Your success is our success. We measure our performance by the results we deliver for you.", "icon": "Target" }
+        ]
+      },
+      "display_order": 19,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "We help ambitious companies build world-class digital experiences with AI at the core—faster delivery, end-to-end solutions across 9 pillars, and no vendor juggling.",
+        "tagline": "Your vision. Our AI-powered execution. Extraordinary results.",
+        "author": "DOTR",
+        "author_title": "Dhinoja OmniTech Resolutions"
+      },
+      "display_order": 20,
+      "is_active": true
+    },
+    {
+      "section_type": "logo-cloud",
+      "title": "Trusted By Innovative Teams",
+      "subtitle": "Companies that chose AI-first digital solutions",
+      "content": {
+        "items": [
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+1", "name": "Client 1", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+2", "name": "Client 2", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+3", "name": "Client 3", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+4", "name": "Client 4", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+5", "name": "Client 5", "link": "" }
+        ]
+      },
+      "display_order": 21,
+      "is_active": true
+    },
+    {
+      "section_type": "features",
+      "title": "Core Capabilities",
+      "subtitle": "Built for speed, scale, and intelligence",
+      "content": {
+        "items": [
+          { "title": "CMS-Driven Content", "description": "Every section, CTA, and page is editable from the admin—no code required.", "icon": "Settings" },
+          { "title": "Programmatic SEO", "description": "Scale to hundreds of pages and use-case content for organic growth.", "icon": "Globe" },
+          { "title": "Modern Stack", "description": "Lovable, Supabase, n8n—reliable, fast, and built to scale.", "icon": "Code" },
+          { "title": "AI Automation", "description": "Chatbots, lead qualification, and workflows that run 24/7.", "icon": "Cpu" },
+          { "title": "End-to-End", "description": "Design, dev, marketing, and support under one roof.", "icon": "Layers" },
+          { "title": "Continuous Optimization", "description": "Monitoring, analytics, and improvements as part of the package.", "icon": "BarChart" }
+        ]
+      },
+      "display_order": 22,
+      "is_active": true
+    },
+    {
+      "section_type": "image-text",
+      "title": "Our Approach",
+      "subtitle": "AI-First from Discovery to Launch",
+      "content": {
+        "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "description": "We combine AI-powered discovery with human expertise. We recommend the right mix of services from our 9 pillars and deliver in weeks with a fully CMS-driven result.",
+        "image_position": "left",
+        "cta_text": "See How We Work",
+        "cta_link": "/about"
+      },
+      "display_order": 23,
+      "is_active": true
+    },
+    {
+      "section_type": "video",
+      "title": "See DOTR in Action",
+      "subtitle": "A quick overview of our AI-first approach",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+        "autoplay": false
+      },
+      "display_order": 24,
+      "is_active": true
+    },
+    {
+      "section_type": "timeline",
+      "title": "Our Journey",
+      "subtitle": "Key milestones in building AI-first digital solutions",
+      "content": {
+        "items": [
+          { "year": "2024", "title": "DOTR Founded", "description": "Launched with a mission to deliver AI-first, end-to-end digital solutions.", "icon": "Rocket" },
+          { "year": "2024", "title": "9 Pillars Live", "description": "Full stack of services from design to consulting under one roof.", "icon": "Layers" },
+          { "year": "2025", "title": "CMS & Programmatic SEO", "description": "48 section types and programmatic SEO capabilities for scalable growth.", "icon": "Globe" }
+        ]
+      },
+      "display_order": 25,
+      "is_active": true
+    },
+    {
+      "section_type": "newsletter",
+      "title": "Stay Ahead with AI Insights",
+      "subtitle": "Get tips on automation, scaling, and digital strategy in your inbox.",
+      "content": {
+        "placeholder_text": "Enter your email",
+        "button_text": "Subscribe",
+        "success_message": "Thanks for subscribing! We'll send you our best AI and growth insights."
+      },
+      "display_order": 26,
+      "is_active": true
+    },
+    {
+      "section_type": "secondary-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "text": "Want to see how we can help your business scale with AI?",
+        "button_text": "Book a Free Consultation",
+        "button_url": "/contact"
+      },
+      "display_order": 27,
+      "is_active": true
+    },
+    {
+      "section_type": "team",
+      "title": "Meet the Team",
+      "subtitle": "Experts in AI, design, development, and growth",
+      "content": {
+        "items": [
+          { "name": "Leadership", "role": "Founder & Strategy", "bio": "Driving AI-first vision and client success.", "image": "" },
+          { "name": "Engineering", "role": "Development & DevOps", "bio": "Building scalable, modern platforms.", "image": "" },
+          { "name": "Design", "role": "UX & Brand", "bio": "Creating experiences that convert.", "image": "" },
+          { "name": "Growth", "role": "Marketing & SEO", "bio": "Programmatic SEO and data-driven growth.", "image": "" }
+        ]
+      },
+      "display_order": 28,
+      "is_active": true
+    },
+    {
+      "section_type": "gallery",
+      "title": "Work in Action",
+      "subtitle": "Projects and platforms we've built",
+      "content": {
+        "items": [
+          { "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", "caption": "Dashboard & Analytics", "alt": "Analytics dashboard" },
+          { "image_url": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80", "caption": "Web Applications", "alt": "Web app" },
+          { "image_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80", "caption": "E-Commerce", "alt": "E-commerce store" },
+          { "image_url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80", "caption": "AI & Automation", "alt": "Automation workflow" },
+          { "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80", "caption": "Collaboration", "alt": "Team collaboration" },
+          { "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "caption": "Insights", "alt": "Data insights" }
+        ]
+      },
+      "display_order": 29,
+      "is_active": true
+    },
+    {
+      "section_type": "contact-info",
+      "title": "Get in Touch",
+      "subtitle": "We'd love to hear about your project",
+      "content": {
+        "email": "hello@dotr.com",
+        "phone": "+1 (555) 000-0000",
+        "address": "Your City, Your Country",
+        "map_embed_url": "",
+        "social_links": [
+          { "platform": "LinkedIn", "url": "https://linkedin.com", "icon": "Linkedin" },
+          { "platform": "Twitter", "url": "https://twitter.com", "icon": "Twitter" }
+        ]
+      },
+      "display_order": 30,
+      "is_active": true
+    },
+    {
+      "section_type": "blog-posts",
+      "title": "Latest from the Blog",
+      "subtitle": "AI, automation, and digital strategy insights",
+      "content": {
+        "count": 3,
+        "show_featured_only": false,
+        "layout": "grid"
+      },
+      "display_order": 31,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "width": "medium",
+        "spacing": "medium"
+      },
+      "display_order": 32,
+      "is_active": true
+    },
+    {
+      "section_type": "pricing",
+      "title": "Plans That Scale With You",
+      "subtitle": "Transparent pricing for every stage of growth",
+      "content": {
+        "items": [
+          {
+            "name": "Starter",
+            "price": "From $99",
+            "description": "Perfect for small businesses getting started with AI-powered basics",
+            "features": ["Up to 5 pages", "Basic CMS customization", "Mobile responsive", "Email support", "SSL certificate"],
+            "cta_text": "Get Started",
+            "is_featured": false
+          },
+          {
+            "name": "Professional",
+            "price": "From $299",
+            "description": "Ideal for growing businesses ready to scale with AI",
+            "features": ["Up to 20 pages", "Full admin panel access", "E-commerce integration", "Priority support", "SEO optimization", "Analytics dashboard"],
+            "cta_text": "Get Started",
+            "is_featured": true
+          },
+          {
+            "name": "Enterprise",
+            "price": "Custom",
+            "description": "Tailored AI-first solutions for large organizations",
+            "features": ["Unlimited pages", "Fully custom design", "All 9 pillars available", "Dedicated account manager", "24/7 priority support", "Custom development", "Training & onboarding"],
+            "cta_text": "Contact Sales",
+            "is_featured": false
+          }
+        ]
+      },
+      "display_order": 33,
+      "is_active": true
+    },
+    {
+      "section_type": "form",
+      "title": "Start Your AI Transformation",
+      "subtitle": "Tell us about your project—we'll respond within 24 hours",
+      "content": {
+        "form_title": "Get a Free AI Consultation",
+        "form_description": "Fill out the form below and our team will recommend the perfect mix of services from our 9 pillars.",
+        "submit_button_text": "Send Message",
+        "success_message": "Thank you! Your message has been received. We'll get back to you within 24 hours with tailored recommendations.",
+        "fields": [
+          { "field_type": "text", "label": "Full Name", "name": "name", "placeholder": "John Doe", "required": true, "width": "full" },
+          { "field_type": "email", "label": "Email Address", "name": "email", "placeholder": "john@example.com", "required": true, "width": "full" },
+          { "field_type": "phone", "label": "Phone Number", "name": "phone", "placeholder": "+1 (555) 123-4567", "required": false, "width": "half" },
+          {
+            "field_type": "select",
+            "label": "Interest Area",
+            "name": "inquiry_type",
+            "placeholder": "Select an option",
+            "required": true,
+            "options": ["AI & Automation", "Web & App Development", "Design & Branding", "E-Commerce", "Marketing & SEO", "General Inquiry"],
+            "width": "half"
+          },
+          { "field_type": "textarea", "label": "Message", "name": "message", "placeholder": "Tell us about your project or goals...", "required": true, "validation": { "min": 10, "max": 1000 }, "width": "full" },
+          { "field_type": "checkbox", "label": "I agree to receive updates and marketing communications", "name": "marketing_consent", "required": false, "width": "full" }
+        ]
+      },
+      "display_order": 34,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Our Work",
+      "subtitle": "Projects delivered with our AI-first approach",
+      "content": {
+        "show_filters": true,
+        "items": [
+          { "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", "title": "E-Commerce Platform", "category": "E-Commerce", "link": "/portfolio/e-commerce-platform" },
+          { "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80", "title": "SaaS Dashboard", "category": "Development", "link": "/portfolio/saas-dashboard" },
+          { "image": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80", "title": "Brand Identity", "category": "Design", "link": "/portfolio/brand-identity" },
+          { "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80", "title": "Corporate Website", "category": "Development", "link": "/portfolio/corporate-website" },
+          { "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80", "title": "AI Chatbot Platform", "category": "AI & Automation", "link": "/portfolio/ai-chatbot" },
+          { "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "title": "Analytics Platform", "category": "Development", "link": "/portfolio/analytics-platform" }
+        ]
+      },
+      "display_order": 35,
+      "is_active": true
+    },
+    {
+      "section_type": "counters",
+      "title": "By the Numbers",
+      "subtitle": "Our impact in real time",
+      "content": {
+        "items": [
+          { "value": 500, "label": "Projects Delivered", "prefix": "", "suffix": "+", "icon": "Briefcase" },
+          { "value": 98, "label": "Client Satisfaction", "prefix": "", "suffix": "%", "icon": "Heart" },
+          { "value": 24, "label": "Support Hours", "prefix": "", "suffix": "/7", "icon": "Clock" },
+          { "value": 9, "label": "Specialized Pillars", "prefix": "", "suffix": "", "icon": "Layers" }
+        ]
+      },
+      "display_order": 36,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 500, "suffix": "+", "prefix": "", "label": "Happy Clients" },
+          { "value": 98, "suffix": "%", "prefix": "", "label": "Satisfaction Rate" },
+          { "value": 24, "suffix": "/7", "prefix": "", "label": "Support Available" },
+          { "value": 9, "suffix": "", "prefix": "", "label": "Service Pillars" }
+        ],
+        "animate": true
+      },
+      "display_order": 37,
+      "is_active": true
+    },
+    {
+      "section_type": "social-proof-bar",
+      "title": "Trusted by Forward-Thinking Teams",
+      "subtitle": null,
+      "content": {
+        "user_count": "25,000+",
+        "rating": 4.9,
+        "review_count": "1,200+",
+        "platforms": [
+          { "name": "LinkedIn", "followers": "30K", "icon": "Linkedin" },
+          { "name": "Twitter", "followers": "50K", "icon": "Twitter" }
+        ]
+      },
+      "display_order": 38,
+      "is_active": true
+    },
+    {
+      "section_type": "awards-badges",
+      "title": "Recognition",
+      "subtitle": "Awards and industry recognition",
+      "content": {
+        "items": [
+          { "title": "AI Innovation 2024", "organization": "Tech Excellence Awards", "year": "2024", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" },
+          { "title": "Top Development Team", "organization": "Digital Leaders Summit", "year": "2024", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" },
+          { "title": "Customer Choice", "organization": "Business Excellence Awards", "year": "2023", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" }
+        ]
+      },
+      "display_order": 39,
+      "is_active": true
+    },
+    {
+      "section_type": "press-mentions",
+      "title": "As Seen In",
+      "subtitle": "What the press says about DOTR",
+      "content": {
+        "items": [
+          { "publication": "TechCrunch", "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=TechCrunch", "quote": "A game-changing approach to AI-first digital solutions that's revolutionizing how businesses scale.", "link": "https://techcrunch.com" },
+          { "publication": "Forbes", "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Forbes", "quote": "Leading innovation with cutting-edge technology and end-to-end service across nine specialized pillars.", "link": "https://forbes.com" },
+          { "publication": "Wired", "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Wired", "quote": "The future of digital transformation is here—fast delivery, no vendor juggling, AI at the core.", "link": "https://wired.com" }
+        ]
+      },
+      "display_order": 40,
+      "is_active": true
+    },
+    {
+      "section_type": "ratings-reviews",
+      "title": "Rated by Clients",
+      "subtitle": "What our clients say on leading platforms",
+      "content": {
+        "items": [
+          { "platform": "Google", "rating": 4.9, "review_count": 250, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Google" },
+          { "platform": "Clutch", "rating": 4.8, "review_count": 120, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Clutch" },
+          { "platform": "Trustpilot", "rating": 4.7, "review_count": 180, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Trustpilot" }
+        ],
+        "show_aggregate": true
+      },
+      "display_order": 41,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": "The Cost of Waiting",
+      "subtitle": "Then the solution",
+      "content": {
+        "problem": "Your team spends hours every day on tasks that could be automated—draining productivity and slowing growth.",
+        "agitation": "Every day without AI-first solutions costs you money, frustrates your team, and puts you behind competitors who've already modernized. The longer you wait, the further behind you fall.",
+        "solution": "DOTR automates the busywork so your team can focus on what matters—growing your business, delighting customers, and staying ahead. One partner, nine pillars, results in weeks."
+      },
+      "display_order": 42,
+      "is_active": true
+    },
+    {
+      "section_type": "before-after",
+      "title": "Before & After DOTR",
+      "subtitle": "See the transformation",
+      "content": {
+        "before_image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+        "after_image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "before_label": "Before",
+        "after_label": "After"
+      },
+      "display_order": 43,
+      "is_active": true
+    },
+    {
+      "section_type": "video-demo",
+      "title": "See It in Action",
+      "subtitle": "A quick walkthrough of our AI-first platform",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+        "callouts": [
+          { "time": "0:15", "text": "See how easy it is to get started" },
+          { "time": "1:30", "text": "Explore the AI consultant and service recommendations" },
+          { "time": "2:45", "text": "Discover the full admin panel and CMS" }
+        ]
+      },
+      "display_order": 44,
+      "is_active": true
+    },
+    {
+      "section_type": "screenshot-gallery",
+      "title": "Platform Preview",
+      "subtitle": "Key screens from our solutions",
+      "content": {
+        "screenshots": [
+          { "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80", "caption": "Analytics Dashboard" },
+          { "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80", "caption": "Admin Panel Overview" },
+          { "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80", "caption": "Content Management" },
+          { "url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80", "caption": "AI & Automation Workflows" }
+        ],
+        "show_captions": true
+      },
+      "display_order": 45,
+      "is_active": true
+    },
+    {
+      "section_type": "device-frames",
+      "title": "Every Device, Every Screen",
+      "subtitle": "Responsive and fast everywhere",
+      "content": {
+        "device_type": "iphone",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80"
+        ]
+      },
+      "display_order": 46,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-list",
+      "title": "What's Included",
+      "subtitle": "Every project gets the full stack",
+      "content": {
+        "items": [
+          { "text": "Fully CMS-driven content—edit everything from the admin", "icon": "Settings" },
+          { "text": "Programmatic SEO ready—scale to hundreds of pages", "icon": "Globe" },
+          { "text": "24/7 AI support and automation", "icon": "Headphones" },
+          { "text": "Modern stack: Lovable, Supabase, n8n", "icon": "Code" },
+          { "text": "End-to-end across 9 pillars—no vendor juggling", "icon": "Layers" },
+          { "text": "Enterprise-grade security and backups", "icon": "Shield" },
+          { "text": "Continuous optimization and monitoring", "icon": "BarChart3" },
+          { "text": "Weeks, not months—fast delivery", "icon": "Zap" }
+        ],
+        "columns": 2
+      },
+      "display_order": 47,
+      "is_active": true
+    },
+    {
+      "section_type": "exit-intent-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "headline": "Wait! Don't Leave Yet",
+        "description": "Get a free AI consultation and custom service recommendations. No commitment—just clarity.",
+        "button_text": "Claim Free Consultation",
+        "button_url": "/contact",
+        "show_after_scroll": 50,
+        "offer_text": "We'll match you with the right mix from our 9 pillars."
+      },
+      "display_order": 48,
+      "is_active": true
+    }
+  ]
+}

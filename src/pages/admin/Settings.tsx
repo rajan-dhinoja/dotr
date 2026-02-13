@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { AdminLayout } from '@/components/admin/AdminLayout';
-import { EntityJsonEditor } from '@/components/admin/EntityJsonEditor';
+import { LazyEntityJsonEditor } from '@/components/admin/LazyEntityJsonEditor';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -288,7 +288,7 @@ export default function AdminSettings() {
               <CardDescription>Edit all site settings as JSON. Changes will be saved to their respective setting keys.</CardDescription>
             </CardHeader>
             <CardContent>
-              <EntityJsonEditor
+              <LazyEntityJsonEditor
                 entityType="site_setting"
                 value={allSettingsJson}
                 onChange={(value) => setAllSettingsJson(value)}

@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { BackToTop } from "@/components/interactive/BackToTop";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Calendar, User } from "lucide-react";
-import { useBlogPosts } from "@/hooks/useBlogPosts";
+import { useBlogPostsWithFilter } from "@/hooks/useBlogPosts";
 import { usePageSections } from "@/hooks/usePageSections";
+import { usePageBySlug } from "@/hooks/usePages";
 import { SectionRenderer } from "@/components/sections/SectionRenderer";
 import { format } from "date-fns";
 
 const Blog = () => {
-  const { data: posts, isLoading: postsLoading } = useBlogPosts();
+  const { data: page } = usePageBySlug("blog");
+  const { data: posts, isLoading: postsLoading } = useBlogPostsWithFilter();
   const { data: sections, isLoading: sectionsLoading } = usePageSections("blog");
 
   const isLoading = sectionsLoading;
@@ -33,10 +34,10 @@ const Blog = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-                Blog & Insights
+                {page?.title ?? "Blog & Insights"}
               </h1>
               <p className="text-xl text-muted-foreground">
-                Industry insights, tips, and trends from our team of experts.
+                {page?.description ?? "Industry insights, tips, and trends from our team of experts."}
               </p>
             </div>
           </div>
@@ -111,7 +112,6 @@ const Blog = () => {
       </section>
 
       <Footer />
-      <BackToTop />
     </div>
   );
 };

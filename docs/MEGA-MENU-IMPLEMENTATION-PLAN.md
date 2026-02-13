@@ -198,7 +198,7 @@ supabase
 **Cache Invalidation:**
 - Admin panel menu updates → Invalidate `["navigation-menu", location]`
 - Admin panel menu updates → Invalidate `["mega-menu", location, "*"]` (wildcard)
-- Already implemented in `Menus.tsx` mutation callbacks
+- Already implemented in `AdminNavigationManager` (Pages & Navigation > Navigation tab) mutation callbacks
 
 ### 2.4 Performance Optimizations
 
@@ -364,7 +364,7 @@ interface MegaMenuProps {
 
 **Add Client-Side Validation:**
 ```typescript
-// In Menus.tsx handleItemSubmit
+// In AdminNavigationManager handleItemSubmit
 if (menuType === 'mega' && itemLevel === 0) {
   // Warn if no level 1 children exist
   // Suggest adding categories
@@ -473,7 +473,7 @@ if (!megaMenuData || megaMenuData.sections.length === 0) {
   return (
     <EmptyState>
       <p>No menu items configured</p>
-      <Link to="/admin/menus">Configure in Admin Panel</Link>
+      <Link to="/admin/pages?tab=navigation">Configure in Admin Panel</Link>
     </EmptyState>
   );
 }

@@ -67,7 +67,7 @@ export const useNavPages = () => {
         .from("pages")
         .select("*")
         .eq("is_active", true)
-        .eq("show_in_nav", true)
+        .or("show_in_nav.eq.true,show_in_navigation.eq.true")
         .order("display_order");
       
       if (error) throw error;

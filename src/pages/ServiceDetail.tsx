@@ -3,170 +3,129 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { SectionRenderer } from "@/components/sections/SectionRenderer";
+import { ServicesGridSection } from "@/components/sections/ServicesGridSection";
 import { Skeleton } from "@/components/ui/skeleton";
-import { ArrowLeft, ArrowRight, Palette, Code, TrendingUp, Video, CheckCircle } from "lucide-react";
-
-const iconMap: Record<string, React.ElementType> = {
-  designing: Palette,
-  development: Code,
-  marketing: TrendingUp,
-  creative: Video,
-};
+import { ArrowLeft } from "lucide-react";
+import { useServiceCategorySections } from "@/hooks/usePageSections";
+import NotFound from "./NotFound";
 
 export default function ServiceDetail() {
   const { category } = useParams<{ category: string }>();
 
-  const { data, isLoading } = useQuery({
+  // 1. Validate category exists: try service_categories first, then pages (children of Services)
+  const { data: categoryData, isLoading: categoryLoading } = useQuery({
     queryKey: ["service-category", category],
     queryFn: async () => {
+      if (!category) return null;
       const { data: cat, error: catError } = await supabase
         .from("service_categories")
         .select("*")
         .eq("slug", category)
-        .single();
+        .maybeSingle();
       if (catError) throw catError;
+      if (cat) return { category: cat };
 
-      const { data: services } = await supabase
-        .from("services")
-        .select("*")
-        .eq("category_id", cat.id)
-        .order("display_order");
-
-      return { category: cat, services: services ?? [] };
+      // Fallback: check if page exists under Services (Pages & Navigation)
+      const { data: page, error: pageErr } = await supabase
+        .from("pages")
+        .select("id, title, slug, description")
+        .eq("slug", `services/${category}`)
+        .eq("is_active", true)
+        .maybeSingle();
+      if (pageErr || !page) return null;
+      return {
+        category: {
+          id: page.id,
+          name: page.title,
+          slug: category,
+          description: page.description,
+        },
+      };
     },
     enabled: !!category,
   });
 
-  const IconComponent = category ? iconMap[category] || Palette : Palette;
+  // 2. Fetch dynamic sections from Admin → Page Sections
+  const { data: sections = [], isLoading: sectionsLoading } = useServiceCategorySections(category ?? "");
+
+  const sectionsReady = !sectionsLoading;
+  const hasDynamicSections = sectionsReady && sections.length > 0;
+  const categoryNotFound = !categoryLoading && category && !categoryData;
+  const noSectionsYet = sectionsReady && !hasDynamicSections && categoryData;
+
+  if (categoryNotFound) {
+    return <NotFound />;
+  }
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="pt-32 pb-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <Link 
-                to="/services" 
-                className="text-primary hover:text-primary/80 inline-flex items-center mb-6"
+        {/* Dynamic content from Admin → Page Sections (DB) */}
+        {hasDynamicSections && (
+          <>
+            <div className="container mx-auto px-4 pt-24 pb-4">
+              <Link
+                to="/services"
+                className="text-primary hover:text-primary/80 inline-flex items-center text-sm font-medium"
               >
                 <ArrowLeft className="h-4 w-4 mr-2" /> Back to Services
               </Link>
+            </div>
+            <SectionRenderer
+              sections={sections}
+              pageContext={{ categorySlug: category ?? undefined }}
+            />
+          </>
+        )}
 
-              {isLoading ? (
-                <div className="space-y-4">
-                  <Skeleton className="h-16 w-16 mb-6" />
-                  <Skeleton className="h-14 w-3/4" />
-                  <Skeleton className="h-6 w-full" />
-                </div>
-              ) : data ? (
-                <>
-                  <IconComponent className="h-16 w-16 text-primary mb-6" />
-                  <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-                    {data.category.name} Services
-                  </h1>
-                  {data.category.description && (
-                    <p className="text-xl text-muted-foreground">
-                      {data.category.description}
-                    </p>
-                  )}
-                </>
-              ) : (
-                <h1 className="text-3xl font-bold text-foreground">Category Not Found</h1>
+        {/* Loading: while sections are loading and category exists */}
+        {categoryData && sectionsLoading && (
+          <>
+            <div className="container mx-auto px-4 pt-24 pb-4">
+              <Link to="/services" className="text-primary hover:text-primary/80 inline-flex items-center text-sm font-medium">
+                <ArrowLeft className="h-4 w-4 mr-2" /> Back to Services
+              </Link>
+            </div>
+            <div className="container mx-auto px-4 py-20">
+              <Skeleton className="h-[40vh] w-full" />
+              <Skeleton className="h-64 w-full mt-8" />
+            </div>
+          </>
+        )}
+
+        {/* No sections yet: show dynamic services from DB + prompt to add more sections */}
+        {noSectionsYet && (
+          <>
+            <div className="container mx-auto px-4 pt-24 pb-4">
+              <Link
+                to="/services"
+                className="text-primary hover:text-primary/80 inline-flex items-center text-sm font-medium"
+              >
+                <ArrowLeft className="h-4 w-4 mr-2" /> Back to Services
+              </Link>
+            </div>
+            <div className="pt-12 pb-8 text-center">
+              <h1 className="text-4xl font-bold text-foreground mb-4">
+                {categoryData.category.name}
+              </h1>
+              {categoryData.category.description && (
+                <p className="text-muted-foreground max-w-xl mx-auto mb-8">
+                  {categoryData.category.description}
+                </p>
               )}
             </div>
-          </div>
-        </section>
-
-        {/* Services Grid */}
-        <section className="pb-20">
-          <div className="container mx-auto px-4">
-            {isLoading ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                {[1, 2, 3, 4].map((i) => (
-                  <Card key={i} className="border-border">
-                    <CardContent className="pt-6">
-                      <Skeleton className="h-12 w-12 mb-4" />
-                      <Skeleton className="h-8 w-3/4 mb-3" />
-                      <Skeleton className="h-4 w-full mb-2" />
-                      <Skeleton className="h-4 w-5/6" />
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            ) : data && data.services.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                {data.services.map((service) => (
-                  <Link 
-                    key={service.id}
-                    to={`/services/${category}/${service.slug}`}
-                    className="group"
-                  >
-                    <Card className="border-border hover:shadow-lg hover:border-primary/30 transition-all duration-300 h-full">
-                      <CardContent className="pt-6">
-                        {service.image_url ? (
-                          <img
-                            src={service.image_url}
-                            alt={service.name}
-                            className="w-full h-40 object-cover rounded-md mb-4 group-hover:scale-[1.02] transition-transform"
-                          />
-                        ) : (
-                          <div className="w-full h-40 bg-muted rounded-md mb-4 flex items-center justify-center">
-                            <CheckCircle className="h-12 w-12 text-primary/50" />
-                          </div>
-                        )}
-                        <h3 className="text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
-                          {service.name}
-                        </h3>
-                        {service.tagline && (
-                          <p className="text-muted-foreground mb-2">{service.tagline}</p>
-                        )}
-                        {service.description && (
-                          <p className="text-sm text-muted-foreground line-clamp-2">{service.description}</p>
-                        )}
-                        <div className="mt-4 flex items-center text-primary text-sm font-medium">
-                          Learn More <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            ) : data ? (
-              <p className="text-center text-muted-foreground py-8">
-                No services available in this category yet.
-              </p>
-            ) : (
-              <div className="text-center py-16">
-                <h2 className="text-2xl font-bold text-foreground mb-2">Category Not Found</h2>
-                <p className="text-muted-foreground">
-                  The service category you're looking for doesn't exist.
-                </p>
-              </div>
-            )}
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        {data && (
-          <section className="py-20 bg-card">
-            <div className="container mx-auto px-4 text-center">
-              <h2 className="text-4xl font-bold text-foreground mb-6">
-                Need {data.category.name} Solutions?
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Let's discuss how we can help bring your vision to life with our expert team.
-              </p>
-              <Button size="lg" asChild>
-                <Link to="/contact">
-                  Start Your Project <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </div>
-          </section>
+            <ServicesGridSection
+              title="Our Services"
+              subtitle="Explore what we offer in this category"
+              content={{ source: "dynamic", categorySlug: category }}
+              categorySlug={category ?? undefined}
+            />
+            <p className="text-center text-sm text-muted-foreground pb-16">
+              Add more sections in Admin → Page Sections → {category}
+            </p>
+          </>
         )}
       </main>
       <Footer />

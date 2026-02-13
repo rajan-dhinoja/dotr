@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { AdminLayout } from "@/components/admin/AdminLayout";
 import { SectionManager } from "@/components/admin/SectionManager";
 import {
@@ -15,7 +16,21 @@ import { supabase } from "@/integrations/supabase/client";
 import { Skeleton } from "@/components/ui/skeleton";
 
 export default function AdminPageSections() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const pageFromUrl = searchParams.get("page");
+  const sectionFromUrl = searchParams.get("section") || undefined;
   const [selectedPageType, setSelectedPageType] = useState<string>("");
+
+  const clearSectionParam = () => {
+    setSearchParams(
+      (prev) => {
+        const next = new URLSearchParams(prev);
+        next.delete("section");
+        return next;
+      },
+      { replace: true }
+    );
+  };
 
   // Fetch all pages from the database
   const { data: pages, isLoading } = useQuery({
@@ -31,12 +46,15 @@ export default function AdminPageSections() {
     },
   });
 
-  // Set the first page as selected when pages load
+  // Set selected page: from URL ?page= slug if valid, otherwise first page
   useEffect(() => {
-    if (pages && pages.length > 0 && !selectedPageType) {
+    if (!pages || pages.length === 0) return;
+    if (pageFromUrl && pages.some((p) => p.slug === pageFromUrl)) {
+      setSelectedPageType(pageFromUrl);
+    } else if (!selectedPageType) {
       setSelectedPageType(pages[0].slug);
     }
-  }, [pages, selectedPageType]);
+  }, [pages, pageFromUrl, selectedPageType]);
 
   const selectedPage = pages?.find(p => p.slug === selectedPageType);
 
@@ -85,7 +103,11 @@ export default function AdminPageSections() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <SectionManager pageType={selectedPageType} />
+              <SectionManager
+                pageType={selectedPageType}
+                initialSectionId={sectionFromUrl}
+                onEditDialogClose={clearSectionParam}
+              />
             </CardContent>
           </Card>
         )}

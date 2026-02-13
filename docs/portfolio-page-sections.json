@@ -1,0 +1,862 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-01-30T12:00:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "portfolio",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "Portfolio Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "Work That Drives Results—Design, Development & Marketing",
+        "subtitle": "From UI/UX and branding to web apps, mobile apps, and full-funnel marketing—explore case studies and projects delivered with our AI-first approach. Fast, scalable, and built to convert.",
+        "cta_text": "View Our Work",
+        "cta_link": "#portfolio-grid",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "We help ambitious brands and product teams ship world-class design, development, and marketing—fast and at scale. Our portfolio spans UI/UX, branding, web and mobile apps, SaaS, SEO, paid ads, and more. Your vision. Our AI-powered delivery. Results in weeks.",
+        "tagline": "Your vision. Our delivery. Results in weeks.",
+        "author": "DOTR",
+        "author_title": "Dhinoja OmniTech Resolutions"
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Zap", "text": "Weeks, Not Months" },
+          { "icon": "Brain", "text": "AI-First Delivery" },
+          { "icon": "Layers", "text": "Design to Dev to Marketing" },
+          { "icon": "Shield", "text": "Scalable & Future-Ready" },
+          { "icon": "Target", "text": "Conversion-Focused" }
+        ]
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 500, "suffix": "+", "prefix": "", "label": "Projects Delivered" },
+          { "value": 98, "suffix": "%", "prefix": "", "label": "Client Satisfaction" },
+          { "value": 9, "suffix": "", "prefix": "", "label": "Service Pillars" },
+          { "value": 24, "suffix": "/7", "prefix": "", "label": "Support Available" }
+        ],
+        "animate": true
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "Why Our Work Stands Out",
+      "subtitle": "The AI-First Portfolio Difference",
+      "content": {
+        "headline": "End-to-End Projects—Design, Development, Marketing—One Partner, No Handoff Chaos",
+        "supporting_points": [
+          "Full stack of case studies: UI/UX, branding, motion, web apps, mobile apps, SaaS, SEO, paid ads, and email automation",
+          "AI-assisted workflows and modern tools (Lovable, Supabase, n8n) for faster delivery and consistent quality",
+          "Every project built to scale—design systems, clean code, and measurable marketing outcomes",
+          "Modular, CMS-driven approach—we reuse and refine so you get results without reinventing the wheel",
+          "Conversion-focused: we measure success by your business results, not just deliverables"
+        ],
+        "cta_text": "Explore Our Services",
+        "cta_url": "/services"
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "Project Challenges We Solve",
+      "subtitle": "Facing these issues?",
+      "content": {
+        "problems": [
+          {
+            "title": "Scattered Vendors & Handoff Chaos",
+            "description": "Design with one team, dev with another, marketing elsewhere—leading to misalignment, delays, and rework across the project."
+          },
+          {
+            "title": "Slow Delivery & Missed Deadlines",
+            "description": "Lengthy cycles, endless revisions, and no clear process. Launches slip, budgets overrun, and momentum is lost."
+          },
+          {
+            "title": "Generic, Template-Like Results",
+            "description": "Off-the-shelf solutions that don't differentiate your brand or convert. You need work that stands out and drives results."
+          },
+          {
+            "title": "No Single Owner for Outcomes",
+            "description": "Nobody owns the full picture—design, build, and go-to-market feel disconnected. You need one partner accountable for results."
+          }
+        ],
+        "empathy_text": "We get it. Great work should be fast, cohesive, and built to convert. DOTR brings design, development, and marketing under one roof with an AI-first approach so you ship better, sooner."
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "problem": "Your projects are slow, fragmented, or scattered across freelancers and agencies. Design, dev, and marketing don't align, and handoffs cause delays and rework.",
+        "agitation": "Every week of delay costs you users, revenue, and competitive edge. Generic deliverables and one-off assets don't scale. The longer you wait to fix it, the harder it gets.",
+        "solution": "DOTR brings design, development, and marketing under one roof—with AI-assisted workflows and modern tools. We deliver in weeks, keep everything aligned, and build for conversion."
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Our Work",
+      "subtitle": "Selected projects across Design, Development, and Marketing",
+      "content": {
+        "show_filters": true,
+        "items": [
+          {
+            "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80",
+            "title": "SaaS Dashboard UI",
+            "category": "UI/UX Design",
+            "link": "/portfolio/saas-dashboard-ui"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=600&q=80",
+            "title": "Brand Identity System",
+            "category": "Branding & Identity",
+            "link": "/portfolio/brand-identity-system"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
+            "title": "Full-Stack Web App",
+            "category": "Development",
+            "link": "/portfolio/full-stack-web-app"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+            "title": "E-Commerce Platform",
+            "category": "Development",
+            "link": "/portfolio/e-commerce-platform"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80",
+            "title": "Mobile App",
+            "category": "Mobile Applications",
+            "link": "/portfolio/mobile-app"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "title": "SEO & Content Strategy",
+            "category": "Marketing",
+            "link": "/portfolio/seo-content-strategy"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+            "title": "Paid Acquisition Campaign",
+            "category": "Marketing",
+            "link": "/portfolio/paid-campaign"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80",
+            "title": "Social & Community",
+            "category": "Marketing",
+            "link": "/portfolio/social-campaign"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80",
+            "title": "AI Chatbot Platform",
+            "category": "AI & Automation",
+            "link": "/portfolio/ai-chatbot"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=80",
+            "title": "Motion & Micro-Interactions",
+            "category": "Motion / Visual Design",
+            "link": "/portfolio/motion-design"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80",
+            "title": "Marketing Campaign Visuals",
+            "category": "Graphic Design",
+            "link": "/portfolio/marketing-visuals"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80",
+            "title": "API & SaaS Platform",
+            "category": "Development",
+            "link": "/portfolio/apis-saas"
+          }
+        ]
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Browse by Service",
+      "subtitle": "Explore our Design, Development, and Marketing offerings",
+      "content": {
+        "items": [
+          {
+            "icon": "Palette",
+            "title": "Designing",
+            "description": "UI/UX Design, Graphic Design, Branding & Identity, Motion / Visual Design",
+            "link": "/services/designing"
+          },
+          {
+            "icon": "Code",
+            "title": "Development",
+            "description": "Frontend, Backend & Full-Stack, Web Apps, Mobile Apps, Admin Panels, APIs & SaaS",
+            "link": "/services/development"
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Marketing",
+            "description": "Digital Strategy, SEO, Social Media, Paid Ads, Email Marketing & Automation",
+            "link": "/services/marketing"
+          }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "How We Deliver Projects",
+      "subtitle": "From brief to launch",
+      "content": {
+        "items": [
+          {
+            "step": 1,
+            "title": "Discovery & Scope",
+            "description": "We align on goals, audience, and success metrics. AI-assisted discovery helps us recommend the right mix of design, dev, or marketing.",
+            "icon": "Search"
+          },
+          {
+            "step": 2,
+            "title": "Plan & Prototype",
+            "description": "Rapid plans and prototypes. We use AI-assisted tools to iterate fast while keeping quality high.",
+            "icon": "PenTool"
+          },
+          {
+            "step": 3,
+            "title": "Build & Launch",
+            "description": "Design systems, clean code, or campaigns—delivered with Lovable, Supabase, and modern workflows. We ship in weeks.",
+            "icon": "Rocket"
+          },
+          {
+            "step": 4,
+            "title": "Optimize & Scale",
+            "description": "Ongoing refinement, analytics, and support. Your project evolves with your business.",
+            "icon": "TrendingUp"
+          }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "timeline",
+      "title": "Project Journey",
+      "subtitle": "From brief to launch",
+      "content": {
+        "items": [
+          { "year": "Week 1", "title": "Discovery & Scope", "description": "Align on goals, audience, and success metrics. We recommend the right mix of design, dev, or marketing.", "icon": "Search" },
+          { "year": "Week 2", "title": "Plan & Prototype", "description": "Rapid plans and prototypes. You review and we iterate based on feedback.", "icon": "PenTool" },
+          { "year": "Week 3–4", "title": "Build & Launch", "description": "Design systems, clean code, or campaigns. We ship with Lovable, Supabase, and modern workflows.", "icon": "Rocket" },
+          { "year": "Ongoing", "title": "Optimize & Scale", "description": "Refinement, analytics, and support. Your project evolves with your business.", "icon": "TrendingUp" }
+        ]
+      },
+      "display_order": 11,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "color": "primary",
+        "width": "full",
+        "spacing": "medium"
+      },
+      "display_order": 12,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-highlights",
+      "title": "Portfolio + AI Capabilities",
+      "subtitle": "How We Deliver Work That Converts",
+      "content": {
+        "items": [
+          {
+            "title": "AI-Assisted Design & Dev",
+            "description": "Leverage AI to speed up design exploration, code generation, and consistency across UI and branding.",
+            "icon": "Sparkles",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Design to Dev to Marketing",
+            "description": "One partner for the full stack—design systems, clean code, and campaigns that stay aligned.",
+            "icon": "Layers",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Rapid Prototyping & Build",
+            "description": "Interactive prototypes and production builds in weeks. Test early, iterate fast, ship with confidence.",
+            "icon": "Rocket",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Conversion-Focused Outcomes",
+            "description": "Every project built to convert—clear CTAs, measurable marketing, and UX that drives results.",
+            "icon": "Target",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Modern Stack (Lovable, Supabase)",
+            "description": "Production-ready code and CMS-driven content. Your project scales without rewriting.",
+            "icon": "Code",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Ongoing Support & Optimization",
+            "description": "Refinement, analytics, and support after launch. Your project keeps evolving.",
+            "icon": "TrendingUp",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 13,
+      "is_active": true
+    },
+    {
+      "section_type": "video",
+      "title": "See Our Work in Action",
+      "subtitle": "From concept to launch",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80",
+        "autoplay": false
+      },
+      "display_order": 14,
+      "is_active": true
+    },
+    {
+      "section_type": "image-text",
+      "title": "From Brief to Launch",
+      "subtitle": "Work that connects",
+      "content": {
+        "image_url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80",
+        "image_position": "left",
+        "description": "We take your vision from early concepts to production-ready design, code, and campaigns. Our AI-assisted workflows and one-partner approach ensure every project stays aligned and ships fast. Whether you need a full brand + app + marketing or a single pillar—we've got you covered.",
+        "cta_text": "Start a Project",
+        "cta_link": "/contact"
+      },
+      "display_order": 15,
+      "is_active": true
+    },
+    {
+      "section_type": "before-after",
+      "title": "Project Transformation",
+      "subtitle": "Before & after we step in",
+      "content": {
+        "before_image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=80",
+        "after_image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=600&q=80",
+        "before_label": "Before",
+        "after_label": "After"
+      },
+      "display_order": 16,
+      "is_active": true
+    },
+    {
+      "section_type": "differentiators",
+      "title": "Why Choose DOTR for Your Project?",
+      "subtitle": "Traditional Agencies vs. DOTR",
+      "content": {
+        "items": [
+          { "feature": "AI-Assisted Design, Dev & Marketing", "us": true, "competitors": false },
+          { "feature": "Design + Development + Marketing Under One Roof", "us": true, "competitors": "Single Disciplines" },
+          { "feature": "Design Systems + CMS + Modern Stack", "us": true, "competitors": "Static Deliverables" },
+          { "feature": "Fast Turnaround (Weeks, Not Months)", "us": true, "competitors": false },
+          { "feature": "Lovable, Supabase, n8n—Future-Ready Stack", "us": true, "competitors": "Legacy or Manual" },
+          { "feature": "Conversion-Focused Outcomes", "us": true, "competitors": "Deliverables-Only" }
+        ],
+        "show_comparison": true,
+        "our_label": "DOTR",
+        "competitor_label": "Traditional Agencies"
+      },
+      "display_order": 17,
+      "is_active": true
+    },
+    {
+      "section_type": "features",
+      "title": "What We Bring to Every Project",
+      "subtitle": "Fundamentals we never skip",
+      "content": {
+        "items": [
+          { "title": "Discovery & Scope", "description": "We start with your goals, audience, and success metrics—every decision is informed by data and alignment.", "icon": "Search" },
+          { "title": "Design Systems & Clean Code", "description": "Scalable design and code that plug into your stack and grow with your product.", "icon": "Layers" },
+          { "title": "AI-Assisted Workflows", "description": "Faster iteration and consistency using modern tools—design, dev, and marketing in sync.", "icon": "Sparkles" },
+          { "title": "Rapid Prototyping & Build", "description": "Prototypes and production in weeks so you can test, iterate, and launch on time.", "icon": "Rocket" },
+          { "title": "Conversion-Focused UX & Marketing", "description": "Every project built to convert—clear CTAs, measurable outcomes, and data-driven optimization.", "icon": "Target" },
+          { "title": "Ongoing Support & Optimization", "description": "Refinement, analytics, and support after launch. Your project keeps evolving.", "icon": "TrendingUp" }
+        ]
+      },
+      "display_order": 18,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-list",
+      "title": "Included in Every Project",
+      "subtitle": "What you can expect",
+      "content": {
+        "items": [
+          { "text": "Discovery & scope alignment", "icon": "Search" },
+          { "text": "Design systems & component libraries", "icon": "Layers" },
+          { "text": "Clean code & modern stack", "icon": "Code" },
+          { "text": "AI-assisted workflows", "icon": "Sparkles" },
+          { "text": "Conversion-focused UX & marketing", "icon": "Target" },
+          { "text": "Ongoing support & optimization", "icon": "TrendingUp" }
+        ],
+        "columns": 2
+      },
+      "display_order": 19,
+      "is_active": true
+    },
+    {
+      "section_type": "stats",
+      "title": "Portfolio by the Numbers",
+      "subtitle": "What We Deliver",
+      "content": {
+        "items": [
+          { "value": "500", "label": "Projects Delivered", "suffix": "+" },
+          { "value": "98", "label": "Client Satisfaction", "suffix": "%" },
+          { "value": "9", "label": "Service Pillars", "suffix": "" },
+          { "value": "24", "label": "Support Hours", "suffix": "/7" }
+        ]
+      },
+      "display_order": 20,
+      "is_active": true
+    },
+    {
+      "section_type": "counters",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 500, "label": "Projects Delivered", "prefix": "", "suffix": "+", "icon": "Briefcase" },
+          { "value": 98, "label": "Client Satisfaction", "prefix": "", "suffix": "%", "icon": "Heart" },
+          { "value": 24, "label": "Support Hours", "prefix": "", "suffix": "/7", "icon": "Clock" },
+          { "value": 9, "label": "Service Pillars", "prefix": "", "suffix": "", "icon": "Layers" }
+        ]
+      },
+      "display_order": 21,
+      "is_active": true
+    },
+    {
+      "section_type": "who-its-for",
+      "title": "Who We Work With",
+      "subtitle": "From startups to enterprises—we scale with you",
+      "content": {
+        "personas": [
+          {
+            "persona": "Startups",
+            "icon": "Rocket",
+            "description": "Get a complete brand, app, or marketing from day one. Fast, affordable, and built to scale as you grow.",
+            "benefits": ["Brand + app package", "Rapid prototypes", "Go-to-market support"]
+          },
+          {
+            "persona": "Enterprises",
+            "icon": "Building2",
+            "description": "Design systems, scalable code, and full-funnel marketing. Enterprise-grade quality and governance.",
+            "benefits": ["Design systems", "Scalable architecture", "Ongoing support"]
+          },
+          {
+            "persona": "Agencies & Product Teams",
+            "icon": "Users",
+            "description": "White-label capacity or full partnership. We slot into your workflow—design, dev, or marketing.",
+            "benefits": ["Flexible engagement", "Handoff-ready", "Tool alignment"]
+          }
+        ]
+      },
+      "display_order": 22,
+      "is_active": true
+    },
+    {
+      "section_type": "outcomes-benefits",
+      "title": "What You'll Achieve",
+      "subtitle": "Outcomes from great projects",
+      "content": {
+        "layout": "grid",
+        "items": [
+          { "title": "Stronger Brand & Product", "description": "Consistent branding and UX across all touchpoints that build trust and drive conversions.", "icon": "Award" },
+          { "title": "Faster Time to Market", "description": "Ship sooner with rapid prototyping, modern stack, and one partner—no handoff chaos.", "icon": "Zap" },
+          { "title": "Measurable Growth", "description": "Data-driven design, dev, and marketing so you know what works and can scale what wins.", "icon": "TrendingUp" },
+          { "title": "One Partner, Full Stack", "description": "Design, development, and marketing under one roof—aligned, accountable, and built to convert.", "icon": "Layers" }
+        ]
+      },
+      "display_order": 23,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "Portfolio Impact",
+      "subtitle": "Results That Matter",
+      "content": {
+        "items": [
+          { "metric": "40%", "label": "Higher Engagement", "description": "Clients see measurable lifts in engagement after design and UX overhauls.", "icon": "TrendingUp" },
+          { "metric": "2x", "label": "Faster Delivery", "description": "AI-assisted workflows and one-partner approach cut cycles and speed up launches.", "icon": "Zap" },
+          { "metric": "98%", "label": "Client Satisfaction", "description": "Our AI-first, full-stack approach keeps teams and stakeholders aligned and happy.", "icon": "Heart" },
+          { "metric": "500+", "label": "Projects Delivered", "description": "Design, development, and marketing projects shipped across 9 service pillars.", "icon": "Briefcase" }
+        ]
+      },
+      "display_order": 24,
+      "is_active": true
+    },
+    {
+      "section_type": "testimonials",
+      "title": "What Clients Say About Our Work",
+      "subtitle": "Trusted by teams that ship",
+      "content": {
+        "items": [
+          {
+            "quote": "DOTR delivered our full brand identity and web app in weeks. The design system and codebase they built have made every subsequent launch so much faster.",
+            "author": "Alex Chen",
+            "role": "CEO",
+            "company": "TechStart Inc.",
+            "image": ""
+          },
+          {
+            "quote": "Finally, a partner that does design, development, and marketing in one place. No more juggling freelancers. The AI-assisted workflows were a game-changer.",
+            "author": "Maria Rodriguez",
+            "role": "Head of Product",
+            "company": "Digital Ventures",
+            "image": ""
+          },
+          {
+            "quote": "Our SEO and paid campaigns took off within two months. DOTR's data-driven approach and automation saved us time and budget.",
+            "author": "James Wilson",
+            "role": "CMO",
+            "company": "Innovate Solutions",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 25,
+      "is_active": true
+    },
+    {
+      "section_type": "gallery",
+      "title": "Work in Action",
+      "subtitle": "A closer look at our projects",
+      "content": {
+        "items": [
+          { "image_url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80", "caption": "UI/UX Design", "alt": "Interface design" },
+          { "image_url": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=600&q=80", "caption": "Brand Identity", "alt": "Brand system" },
+          { "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80", "caption": "Web App", "alt": "Development" },
+          { "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "caption": "Marketing & SEO", "alt": "Marketing" },
+          { "image_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80", "caption": "Motion Design", "alt": "Motion graphics" },
+          { "image_url": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=80", "caption": "Prototyping", "alt": "Interactive prototype" }
+        ]
+      },
+      "display_order": 26,
+      "is_active": true
+    },
+    {
+      "section_type": "social-proof-bar",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "user_count": "500+",
+        "rating": 4.9,
+        "review_count": "100+",
+        "platforms": [
+          { "name": "LinkedIn", "followers": "10K+", "icon": "LinkedIn" },
+          { "name": "Twitter", "followers": "5K+", "icon": "Twitter" }
+        ]
+      },
+      "display_order": 27,
+      "is_active": true
+    },
+    {
+      "section_type": "about-us",
+      "title": "Our Approach to Work",
+      "subtitle": "Portfolio at DOTR",
+      "content": {
+        "story": "At DOTR, every project is a business engine—not a one-off deliverable. We combine design, development, and marketing into one cohesive approach, powered by AI-assisted workflows and modern tools. From day one, we've believed that great work should be fast, scalable, and built to convert.",
+        "mission": "To deliver projects that drive results: clearer brands, better products, and measurable growth. We help teams ship work that resonates, converts, and scales.",
+        "vision": "To be the go-to partner for brands and product teams who want end-to-end solutions—from design to dev to marketing—without the usual vendor juggling.",
+        "founder_image": "",
+        "founder_name": "",
+        "founder_title": "",
+        "founded_year": "2024"
+      },
+      "display_order": 28,
+      "is_active": true
+    },
+    {
+      "section_type": "values-culture",
+      "title": "What We Stand For",
+      "subtitle": "Values that guide our work",
+      "content": {
+        "items": [
+          { "title": "User & Business First", "description": "Every decision starts with your users and business goals. We build for clarity, conversion, and scale.", "icon": "Heart" },
+          { "title": "One Partner, Full Stack", "description": "Design, dev, and marketing under one roof—no handoff chaos, one accountable team.", "icon": "Layers" },
+          { "title": "Speed Without Compromise", "description": "We iterate fast with AI-assisted tools, but we never skip discovery, feedback, or quality.", "icon": "Zap" },
+          { "title": "Collaboration", "description": "We work alongside your team—design, dev, and marketing that fits your workflow.", "icon": "Users" },
+          { "title": "Continuous Improvement", "description": "Projects evolve. We support ongoing refinement, analytics, and optimization so you keep improving.", "icon": "TrendingUp" },
+          { "title": "Impact", "description": "We measure success by your results: engagement, conversions, and growth—not just deliverables.", "icon": "Target" }
+        ],
+        "culture_text": "We believe the best work happens when creativity meets process—when we move fast, stay aligned, and always put your outcomes first."
+      },
+      "display_order": 29,
+      "is_active": true
+    },
+    {
+      "section_type": "trust-badges",
+      "title": "Work Built Right",
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "title": "AI-First Delivery", "icon": "Brain", "description": "Faster iteration, consistent quality" },
+          { "title": "Design to Dev to Marketing", "icon": "Layers", "description": "One partner, no handoff chaos" },
+          { "title": "Modern Stack", "icon": "Code", "description": "Lovable, Supabase, n8n" },
+          { "title": "Conversion-Focused", "icon": "Target", "description": "Every project built to convert" }
+        ]
+      },
+      "display_order": 30,
+      "is_active": true
+    },
+    {
+      "section_type": "awards-badges",
+      "title": "Recognition",
+      "subtitle": "Portfolio excellence",
+      "content": {
+        "items": [
+          { "title": "AI Innovation 2024", "organization": "Tech Excellence Awards", "year": "2024", "image_url": "" },
+          { "title": "Full-Stack Delivery", "organization": "Digital Leaders Summit", "year": "2024", "image_url": "" },
+          { "title": "Customer Choice", "organization": "Business Excellence Awards", "year": "2023", "image_url": "" }
+        ]
+      },
+      "display_order": 31,
+      "is_active": true
+    },
+    {
+      "section_type": "logo-cloud",
+      "title": "Tools & Trust",
+      "subtitle": "We build with industry-standard tools and deliver for modern stacks",
+      "content": {
+        "items": [
+          { "logo_url": "/images/logos/figma.svg", "name": "Figma", "link": "https://figma.com" },
+          { "logo_url": "/images/logos/supabase.svg", "name": "Supabase", "link": "https://supabase.com" },
+          { "logo_url": "/images/logos/react.svg", "name": "React", "link": "https://react.dev" },
+          { "logo_url": "/images/logos/tailwind.svg", "name": "Tailwind CSS", "link": "https://tailwindcss.com" },
+          { "logo_url": "/images/logos/lovable.svg", "name": "Lovable", "link": "https://lovable.dev" },
+          { "logo_url": "/images/logos/adobe.svg", "name": "Adobe Creative Cloud", "link": "https://adobe.com" }
+        ]
+      },
+      "display_order": 32,
+      "is_active": true
+    },
+    {
+      "section_type": "secondary-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "text": "Ready to add your project to our portfolio?",
+        "button_text": "Start a Project",
+        "button_url": "/contact"
+      },
+      "display_order": 33,
+      "is_active": true
+    },
+    {
+      "section_type": "faq",
+      "title": "Portfolio & Projects FAQ",
+      "subtitle": "Common questions about our work",
+      "content": {
+        "items": [
+          {
+            "question": "What types of projects do you showcase?",
+            "answer": "We showcase work across Design (UI/UX, branding, motion), Development (web apps, mobile apps, SaaS, APIs), and Marketing (SEO, paid ads, social, email). Every project is delivered with our AI-first approach and modern stack."
+          },
+          {
+            "question": "How do you deliver projects so fast?",
+            "answer": "We use AI-assisted tools (e.g. GitHub Copilot, Lovable, Supabase) and reusable design systems and components. This lets us iterate quickly and maintain quality while shipping in weeks, not months."
+          },
+          {
+            "question": "Can you handle design, development, and marketing together?",
+            "answer": "Yes. DOTR has full-fledged Design, Development, and Marketing pillars. We can deliver end-to-end projects—brand + app + marketing—so you have one partner and no handoff chaos."
+          },
+          {
+            "question": "Do you work with startups and enterprises?",
+            "answer": "Yes. We work with startups that need a complete brand and product from day one, and with enterprises that need design systems, scalable code, or full-funnel marketing. We scale with you."
+          },
+          {
+            "question": "How do I get a project started?",
+            "answer": "Use our contact form or book a consultation. Our AI consultant can help match you with the right mix of design, development, or marketing services based on your goals."
+          }
+        ]
+      },
+      "display_order": 34,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "color": "primary",
+        "width": "full",
+        "spacing": "medium"
+      },
+      "display_order": 35,
+      "is_active": true
+    },
+    {
+      "section_type": "newsletter",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "placeholder_text": "Enter your email for project insights",
+        "button_text": "Subscribe",
+        "success_message": "Thanks! Check your inbox for tips and updates."
+      },
+      "display_order": 36,
+      "is_active": true
+    },
+    {
+      "section_type": "contact-info",
+      "title": "Get in Touch",
+      "subtitle": "Let's discuss your next project",
+      "content": {
+        "email": "hello@dotr.io",
+        "phone": "+1 (555) 000-0000",
+        "address": "Your address here",
+        "map_embed_url": "",
+        "social_links": [
+          { "platform": "LinkedIn", "url": "https://linkedin.com/company/dotr", "icon": "LinkedIn" },
+          { "platform": "Twitter", "url": "https://twitter.com/dotr", "icon": "Twitter" },
+          { "platform": "Instagram", "url": "https://instagram.com/dotr", "icon": "Instagram" }
+        ]
+      },
+      "display_order": 37,
+      "is_active": true
+    },
+    {
+      "section_type": "cta",
+      "title": "Ready to Start Your Project?",
+      "subtitle": null,
+      "content": {
+        "headline": "Let's Build Something Together",
+        "description": "From design to development to marketing—explore our services and get a free consultation. Your next project could be in our portfolio.",
+        "primary_cta_text": "Get Free Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "Explore Services",
+        "secondary_cta_link": "/services"
+      },
+      "display_order": 38,
+      "is_active": true
+    },
+    {
+      "section_type": "exit-intent-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "headline": "Wait! Before you go—",
+        "description": "Get a free consultation and custom recommendations. See how we can add your project to our portfolio.",
+        "button_text": "Get Free Consultation",
+        "button_url": "/contact",
+        "show_after_scroll": 50,
+        "offer_text": "No commitment required"
+      },
+      "display_order": 39,
+      "is_active": true
+    },
+    {
+      "section_type": "primary-cta-banner",
+      "title": "Final CTA",
+      "subtitle": null,
+      "content": {
+        "headline": "Work That Drives Results—Get Started Today",
+        "description": "Design, development, marketing—one partner, fast delivery. Book a free consultation and see the DOTR difference.",
+        "primary_cta_text": "Book Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "View All Services",
+        "secondary_cta_link": "/services",
+        "background_color": "primary",
+        "text_color": "white"
+      },
+      "display_order": 40,
+      "is_active": true
+    }
+  ],
+  "services_list": {
+    "designing": [
+      { "title": "UI/UX Design", "slug": "ui-ux-design", "link": "/services/designing/ui-ux-design" },
+      { "title": "Graphic Design", "slug": "graphic-design", "link": "/services/designing/graphic-design" },
+      { "title": "Branding & Identity", "slug": "branding-identity", "link": "/services/designing/branding-identity" },
+      { "title": "Motion / Visual Design", "slug": "motion-visual-design", "link": "/services/designing/motion-visual-design" }
+    ],
+    "development": [
+      { "title": "Frontend, Backend & Full-Stack", "slug": "full-stack", "link": "/services/development/full-stack" },
+      { "title": "Web Apps & Websites", "slug": "web-apps", "link": "/services/development/web-apps" },
+      { "title": "Mobile Applications", "slug": "mobile-apps", "link": "/services/development/mobile-apps" },
+      { "title": "Admin Panels & Dashboards", "slug": "admin-panels", "link": "/services/development/admin-panels" },
+      { "title": "APIs & SaaS Platforms", "slug": "apis-saas", "link": "/services/development/apis-saas" }
+    ],
+    "marketing": [
+      { "title": "Digital Strategy", "slug": "digital-strategy", "link": "/services/marketing/digital-strategy" },
+      { "title": "SEO", "slug": "seo", "link": "/services/marketing/seo" },
+      { "title": "Social Media Management", "slug": "social-media", "link": "/services/marketing/social-media" },
+      { "title": "Paid Ads", "slug": "paid-ads", "link": "/services/marketing/paid-ads" },
+      { "title": "Email Marketing & Automation", "slug": "email-automation", "link": "/services/marketing/email-automation" }
+    ],
+    "all_flat": [
+      { "pillar": "Designing", "title": "UI/UX Design", "link": "/services/designing/ui-ux-design" },
+      { "pillar": "Designing", "title": "Graphic Design", "link": "/services/designing/graphic-design" },
+      { "pillar": "Designing", "title": "Branding & Identity", "link": "/services/designing/branding-identity" },
+      { "pillar": "Designing", "title": "Motion / Visual Design", "link": "/services/designing/motion-visual-design" },
+      { "pillar": "Development", "title": "Frontend, Backend & Full-Stack", "link": "/services/development/full-stack" },
+      { "pillar": "Development", "title": "Web Apps & Websites", "link": "/services/development/web-apps" },
+      { "pillar": "Development", "title": "Mobile Applications", "link": "/services/development/mobile-apps" },
+      { "pillar": "Development", "title": "Admin Panels & Dashboards", "link": "/services/development/admin-panels" },
+      { "pillar": "Development", "title": "APIs & SaaS Platforms", "link": "/services/development/apis-saas" },
+      { "pillar": "Marketing", "title": "Digital Strategy", "link": "/services/marketing/digital-strategy" },
+      { "pillar": "Marketing", "title": "SEO", "link": "/services/marketing/seo" },
+      { "pillar": "Marketing", "title": "Social Media Management", "link": "/services/marketing/social-media" },
+      { "pillar": "Marketing", "title": "Paid Ads", "link": "/services/marketing/paid-ads" },
+      { "pillar": "Marketing", "title": "Email Marketing & Automation", "link": "/services/marketing/email-automation" }
+    ]
+  }
+}

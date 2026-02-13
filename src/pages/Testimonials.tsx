@@ -1,11 +1,12 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { BackToTop } from "@/components/interactive/BackToTop";
 import { SectionRenderer } from "@/components/sections/SectionRenderer";
 import { usePageSections } from "@/hooks/usePageSections";
+import { usePageBySlug } from "@/hooks/usePages";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const Testimonials = () => {
+  const { data: page } = usePageBySlug("testimonials");
   const { data: sections, isLoading } = usePageSections("testimonials");
 
   return (
@@ -24,16 +25,15 @@ const Testimonials = () => {
       ) : (
         <div className="pt-32 pb-20 text-center">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Testimonials</h1>
+            <h1 className="text-4xl font-bold text-foreground mb-4">{page?.title ?? "Testimonials"}</h1>
             <p className="text-muted-foreground">
-              Add sections to this page from the admin panel.
+              {page?.description ?? "Add sections to this page from the admin panel."}
             </p>
           </div>
         </div>
       )}
 
       <Footer />
-      <BackToTop />
     </div>
   );
 };

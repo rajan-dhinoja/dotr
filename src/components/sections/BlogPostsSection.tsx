@@ -1,7 +1,7 @@
 import { GlassCard } from '@/components/interactive/GlassCard';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
-import { useBlogPosts } from '@/hooks/useBlogPosts';
+import { useBlogPostsWithFilter } from '@/hooks/useBlogPosts';
 import { format } from 'date-fns';
 import { Skeleton } from '@/components/ui/skeleton';
 
@@ -16,7 +16,7 @@ export function BlogPostsSection({ title, subtitle, content }: BlogPostsSectionP
   const showFeaturedOnly = content?.show_featured_only === true;
   const layout = (content?.layout as string) || 'grid';
 
-  const { data: posts, isLoading } = useBlogPosts();
+  const { data: posts, isLoading } = useBlogPostsWithFilter(count);
 
   const displayPosts = posts?.slice(0, count) || [];
 

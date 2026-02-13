@@ -749,17 +749,38 @@ export function buildMenuTree(items: MenuItem[]): MenuTreeItem[] {
 
 // Transform menu tree item to mega menu definition
 export function transformToMegaMenu(
-  item: MenuTreeItem, 
+  item: MenuTreeItem,
   pagesMap: Map<string, string>
 ): MegaMenuDefinition | null {
   if (!item) return null;
 
   const getUrl = (menuItem: MenuItem): string => {
-    if (menuItem.url) return menuItem.url;
-    if (menuItem.page_id && pagesMap.has(menuItem.page_id)) {
-      return `/${pagesMap.get(menuItem.page_id)}`;
+    const rawUrl = menuItem.url || '#';
+
+    // If URL already contains a hash, respect it
+    if (rawUrl.includes('#')) {
+      return rawUrl;
     }
-    return '#';
+
+    const sectionAnchor = (menuItem as any).section_anchor as string | null | undefined;
+    const trimmedAnchor = sectionAnchor?.trim();
+    const normalizedAnchor =
+      trimmedAnchor && !trimmedAnchor.startsWith('#') ? `#${trimmedAnchor}` : trimmedAnchor || '';
+
+    const baseFromPage =
+      menuItem.page_id && pagesMap.has(menuItem.page_id)
+        ? `/${pagesMap.get(menuItem.page_id)}`
+        : null;
+
+    const base = (rawUrl && rawUrl !== '#'
+      ? rawUrl
+      : baseFromPage) ?? '#';
+
+    if (normalizedAnchor) {
+      return `${base}${normalizedAnchor}`;
+    }
+
+    return base;
   };
 
   // Build sections from children (categories)

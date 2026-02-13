@@ -25,6 +25,32 @@ export const adminModules: Record<string, AdminModuleConfig> = {
         ],
       },
       {
+        id: 'show_in_navigation',
+        type: 'select',
+        label: 'In navigation',
+        field: 'show_in_navigation',
+        options: [
+          { value: 'true', label: 'Shown in nav' },
+          { value: 'false', label: 'Hidden from nav' },
+        ],
+      },
+      {
+        id: 'source_entity_type',
+        type: 'select',
+        label: 'Type',
+        field: 'source_entity_type',
+        options: [
+          { value: '__null__', label: 'Manual' },
+          { value: 'about', label: 'About' },
+          { value: 'contact', label: 'Contact' },
+          { value: 'blog', label: 'Blog' },
+          { value: 'testimonials', label: 'Testimonials' },
+          { value: 'portfolio', label: 'Portfolio' },
+          { value: 'service_category', label: 'Service Category' },
+          { value: 'service', label: 'Service' },
+        ],
+      },
+      {
         id: 'template',
         type: 'select',
         label: 'Template',
@@ -39,8 +65,10 @@ export const adminModules: Record<string, AdminModuleConfig> = {
     columns: [
       { key: 'title', label: 'Title', sortable: true },
       { key: 'slug', label: 'Slug' },
+      { key: 'source_entity_type', label: 'Type' },
       { key: 'template', label: 'Template' },
       { key: 'is_active', label: 'Status', render: 'status-badge' },
+      { key: 'show_in_navigation', label: 'In nav', render: 'boolean' },
       { key: 'display_order', label: 'Order', sortable: true },
     ],
     bulkActions: [

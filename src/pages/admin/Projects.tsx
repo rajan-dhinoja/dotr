@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { AdminLayout } from '@/components/admin/AdminLayout';
@@ -8,23 +8,45 @@ import { AdminPagination } from '@/components/admin/AdminPagination';
 import { BulkDeleteDialog } from '@/components/admin/BulkDeleteDialog';
 import { ImageUpload } from '@/components/admin/ImageUpload';
 import { ProjectGalleryManager } from '@/components/admin/ProjectGalleryManager';
-import { EntityJsonEditor } from '@/components/admin/EntityJsonEditor';
+import { LazyEntityJsonEditor } from '@/components/admin/LazyEntityJsonEditor';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Switch } from '@/components/ui/switch';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from '@/components/ui/alert-dialog';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Card, CardContent } from '@/components/ui/card';
+import { MenuItemsOrderList } from '@/components/admin/MenuItemsOrderList';
+import type { AdminMenuItemNode } from '@/hooks/useAdminMenuItems';
 import { useToast } from '@/hooks/use-toast';
 import { useAdminList } from '@/hooks/useAdminList';
 import { useBulkActions } from '@/hooks/useBulkActions';
 import { getModuleConfig } from '@/config/adminModules';
 import type { Tables } from '@/integrations/supabase/types';
+import { Info } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 type Project = Tables<'projects'>;
 
+const MENU_LOCATIONS = [
+  { value: 'header', label: 'Header' },
+  { value: 'mobile', label: 'Mobile' },
+  { value: 'footer', label: 'Footer' },
+];
+
 export default function AdminProjects() {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [editing, setEditing] = useState<Project | null>(null);
   const [coverImage, setCoverImage] = useState<string>('');
@@ -34,6 +56,9 @@ export default function AdminProjects() {
   const [jsonData, setJsonData] = useState<Record<string, unknown>>({});
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [bulkDeleteOpen, setBulkDeleteOpen] = useState(false);
+  const [menuLocation, setMenuLocation] = useState<string>('header');
+  const [menuItemsSearchQuery, setMenuItemsSearchQuery] = useState<string>('');
+  const [menuItemToDelete, setMenuItemToDelete] = useState<AdminMenuItemNode | null>(null);
   const { toast } = useToast();
   const queryClient = useQueryClient();
 
@@ -196,6 +221,58 @@ export default function AdminProjects() {
     }
   };
 
+  const handleEditPageFromMenu = async (pageId: string) => {
+    navigate('/admin/pages', { state: { editPageId: pageId } });
+  };
+
+  const removeFromMenuMutation = useMutation({
+    mutationFn: async (menuItemId: string) => {
+      const { error } = await supabase.from('menu_items').delete().eq('id', menuItemId);
+      if (error) throw error;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ predicate: (q) => (q.queryKey[0] as string) === 'admin-menu-items' });
+      queryClient.invalidateQueries({ predicate: (q) => (q.queryKey[0] as string) === 'navigation-menu' || (q.queryKey[0] as string) === 'mega-menu' });
+      setMenuItemToDelete(null);
+      toast({ title: 'Removed from menu' });
+    },
+    onError: (e: Error) =>
+      toast({ title: 'Failed to remove', description: e.message, variant: 'destructive' }),
+  });
+
+  const handleRemoveFromMenu = (menuItemId: string, node?: AdminMenuItemNode) => {
+    if (node) {
+      setMenuItemToDelete(node);
+    } else {
+      removeFromMenuMutation.mutate(menuItemId);
+    }
+  };
+
+  const confirmRemoveFromMenu = () => {
+    if (menuItemToDelete) {
+      removeFromMenuMutation.mutate(menuItemToDelete.id);
+    }
+  };
+
+  // Combined filter function for portfolio type and search
+  const portfolioMenuItemsFilterFn = useMemo(() => {
+    return (node: AdminMenuItemNode): boolean => {
+      // First check if it's a portfolio type
+      if (node.page?.source_entity_type !== 'portfolio') return false;
+      
+      // Then apply search filter if there's a search query
+      if (!menuItemsSearchQuery.trim()) return true;
+      
+      const searchLower = menuItemsSearchQuery.trim().toLowerCase();
+      const labelMatch = node.label?.toLowerCase().includes(searchLower);
+      const urlMatch = node.url?.toLowerCase().includes(searchLower);
+      const pageTitleMatch = node.page?.title?.toLowerCase().includes(searchLower);
+      const pageSlugMatch = node.page?.slug?.toLowerCase().includes(searchLower);
+      
+      return !!(labelMatch || urlMatch || pageTitleMatch || pageSlugMatch);
+    };
+  }, [menuItemsSearchQuery]);
+
   const columns = [
     {
       key: 'cover_image',
@@ -213,6 +290,9 @@ export default function AdminProjects() {
     <AdminLayout>
       <div className="mb-6">
         <h1 className="text-2xl font-bold">Projects</h1>
+        <p className="text-muted-foreground text-sm mt-1">
+          Manage portfolio projects and see how portfolio pages appear in your navigation.
+        </p>
       </div>
 
       <AdminToolbar
@@ -235,33 +315,35 @@ export default function AdminProjects() {
         onClearFilters={clearFilters}
       />
 
-      <div className="mt-6">
-        <AdminDataTable
-          data={projects}
-          columns={columns}
-          selectedIds={selectedIds}
-          onSelectionChange={setSelectedIds}
-          sortConfig={sortConfig}
-          onSortChange={(field, direction) => setSortConfig({ field, direction })}
-          loading={isLoading}
-          onEdit={handleEdit}
-          onDelete={(p) => deleteMutation.mutate(p.id)}
-          emptyMessage="No projects found"
-        />
-        {totalPages > 1 && (
-          <AdminPagination
-            page={page}
-            totalPages={totalPages}
-            totalCount={totalCount}
-            pageSize={pageSize}
-            onPageChange={goToPage}
-            onPrevious={previousPage}
-            onNext={nextPage}
-            hasPreviousPage={hasPreviousPage}
-            hasNextPage={hasNextPage}
+      {projects.length > 0 && (
+        <div className="mt-6">
+          <AdminDataTable
+            data={projects}
+            columns={columns}
+            selectedIds={selectedIds}
+            onSelectionChange={setSelectedIds}
+            sortConfig={sortConfig}
+            onSortChange={(field, direction) => setSortConfig({ field, direction })}
+            loading={isLoading}
+            onEdit={handleEdit}
+            onDelete={(p) => deleteMutation.mutate(p.id)}
+            emptyMessage="No projects found"
           />
-        )}
-      </div>
+          {totalPages > 1 && (
+            <AdminPagination
+              page={page}
+              totalPages={totalPages}
+              totalCount={totalCount}
+              pageSize={pageSize}
+              onPageChange={goToPage}
+              onPrevious={previousPage}
+              onNext={nextPage}
+              hasPreviousPage={hasPreviousPage}
+              hasNextPage={hasNextPage}
+            />
+          )}
+        </div>
+      )}
 
       <BulkDeleteDialog
         open={bulkDeleteOpen}
@@ -352,7 +434,7 @@ export default function AdminProjects() {
             </TabsContent>
 
             <TabsContent value="json" className="mt-4">
-              <EntityJsonEditor
+              <LazyEntityJsonEditor
                 entityType="project"
                 entityId={editing?.id}
                 value={jsonData}
@@ -364,6 +446,76 @@ export default function AdminProjects() {
           </Tabs>
         </DialogContent>
       </Dialog>
+
+      <Card className="mb-6 overflow-hidden">
+        <div className="border-b bg-muted/30 px-4 py-3">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <Info className="h-4 w-4 flex-shrink-0 text-primary/70" />
+            <span>
+              Portfolio pages show in this menu list with a <span className="font-semibold">Portfolio</span> type badge. Drag to reorder items per location.
+            </span>
+          </div>
+        </div>
+        <CardContent className="p-4 sm:p-6">
+          <div className="mb-4">
+            <Input
+              placeholder="Search menu items..."
+              value={menuItemsSearchQuery}
+              onChange={(e) => setMenuItemsSearchQuery(e.target.value)}
+              className="max-w-sm"
+            />
+          </div>
+          <Tabs value={menuLocation} onValueChange={setMenuLocation} className="w-full">
+            <TabsList className="bg-muted/60 mb-4">
+              {MENU_LOCATIONS.map((loc) => (
+                <TabsTrigger key={loc.value} value={loc.value}>
+                  {loc.label}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+            {MENU_LOCATIONS.map((loc) => (
+              <TabsContent key={loc.value} value={loc.value} className="mt-0">
+                <MenuItemsOrderList
+                  menuLocation={loc.value}
+                  filterFn={portfolioMenuItemsFilterFn}
+                  onEditPage={handleEditPageFromMenu}
+                  onRemoveFromMenu={handleRemoveFromMenu}
+                  onReorder={() => {
+                    queryClient.invalidateQueries({
+                      predicate: (q) =>
+                        (q.queryKey[0] as string) === 'navigation-menu' ||
+                        (q.queryKey[0] as string) === 'mega-menu',
+                    });
+                    toast({ title: 'Menu order updated' });
+                  }}
+                />
+              </TabsContent>
+            ))}
+          </Tabs>
+        </CardContent>
+      </Card>
+
+      <AlertDialog open={!!menuItemToDelete} onOpenChange={(open) => !open && setMenuItemToDelete(null)}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Remove from menu?</AlertDialogTitle>
+            <AlertDialogDescription>
+              Are you sure you want to remove &quot;{menuItemToDelete?.label}&quot; from the {menuLocation} menu? This will not delete the page itself.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel>Cancel</AlertDialogCancel>
+            <AlertDialogAction
+              className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
+              onClick={confirmRemoveFromMenu}
+              disabled={removeFromMenuMutation.isPending}
+            >
+              Remove
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+      
     </AdminLayout>
   );
 }

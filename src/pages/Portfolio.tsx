@@ -1,8 +1,9 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { BackToTop } from "@/components/interactive/BackToTop";
 import { SectionRenderer } from "@/components/sections/SectionRenderer";
+import { PortfolioGridSection } from "@/components/sections/PortfolioGridSection";
 import { usePageSections } from "@/hooks/usePageSections";
+import { useProjectsWithFilter } from "@/hooks/useProjects";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const Portfolio = () => {
@@ -22,18 +23,27 @@ const Portfolio = () => {
       ) : sections && sections.length > 0 ? (
         <SectionRenderer sections={sections} />
       ) : (
-        <div className="pt-32 pb-20 text-center">
-          <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Our Portfolio</h1>
-            <p className="text-muted-foreground">
-              Add sections to this page from the admin panel.
-            </p>
+        <>
+          <div className="pt-32 pb-12 text-center">
+            <div className="container mx-auto px-4">
+              <h1 className="text-4xl font-bold text-foreground mb-4">Our Portfolio</h1>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Explore our work and case studies across design, development, and digital solutions.
+              </p>
+            </div>
           </div>
-        </div>
+          <PortfolioGridSection
+            title="Our Projects"
+            subtitle="Explore what we've built"
+            content={{ source: "dynamic" }}
+          />
+          <p className="text-center text-sm text-muted-foreground pb-16">
+            Customize this page in Admin → Page Sections → Portfolio
+          </p>
+        </>
       )}
 
       <Footer />
-      <BackToTop />
     </div>
   );
 };

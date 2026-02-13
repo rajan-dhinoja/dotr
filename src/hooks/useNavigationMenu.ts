@@ -6,6 +6,10 @@ import type { Tables } from "@/integrations/supabase/types";
 export type MenuItem = Tables<"menu_items">;
 
 export interface NavigationTreeItem extends MenuItem {
+  /** Optional anchor for deep-linking to a section on the target page */
+  section_anchor?: string | null;
+  /** Optional FK to page_sections.id for stronger linkage to a section */
+  section_id?: string | null;
   children: NavigationTreeItem[];
 }
 

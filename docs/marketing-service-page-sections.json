@@ -1,0 +1,921 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-01-30T12:00:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "services/marketing",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "Marketing Services Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "Data-Driven Marketing That Scales—SEO, Paid Ads, Social & More",
+        "subtitle": "From digital strategy to SEO, social media, paid ads, and email automation—we deliver full-funnel marketing powered by AI. Grow visibility, leads, and revenue—fast and measurable.",
+        "cta_text": "Get a Marketing Consultation",
+        "cta_link": "/contact",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "BarChart", "text": "Data-Driven" },
+          { "icon": "Brain", "text": "AI-Powered" },
+          { "icon": "Target", "text": "Full-Funnel" },
+          { "icon": "TrendingUp", "text": "ROI-Focused" },
+          { "icon": "HeadphonesIcon", "text": "24/7 Support" }
+        ]
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "Marketing Challenges We Solve",
+      "subtitle": "Facing these issues?",
+      "content": {
+        "problems": [
+          {
+            "title": "No Visibility or Traction",
+            "description": "Your brand gets lost in the noise. Organic reach is low, SEO isn't moving the needle, and you're not sure which channels actually drive results."
+          },
+          {
+            "title": "Wasted Ad Spend",
+            "description": "Paid campaigns burn budget without clear attribution. You're guessing at audiences and creative instead of using data and AI to optimize."
+          },
+          {
+            "title": "Inconsistent Messaging & Channels",
+            "description": "Social, email, and ads feel disconnected. No unified strategy or content engine—everything is manual and reactive."
+          },
+          {
+            "title": "Manual, Slow Processes",
+            "description": "Reporting, lead nurturing, and content scheduling eat up time. You need automation and intelligence, not more spreadsheets."
+          }
+        ],
+        "empathy_text": "We get it. Marketing should be measurable, scalable, and aligned with your business goals. DOTR brings strategy, SEO, paid, social, and email together with an AI-first approach so you grow faster and smarter."
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "Why DOTR for Marketing?",
+      "subtitle": "The AI-First Marketing Difference",
+      "content": {
+        "headline": "Full-Funnel Marketing—Strategy, SEO, Paid, Social, Email—Powered by AI",
+        "supporting_points": [
+          "Complete marketing stack: Digital Strategy, SEO, Social Media Management, Paid Ads, Email Marketing & Automation—one partner, no channel silos",
+          "AI-powered targeting, content, and optimization for faster results and better ROI",
+          "Data-driven strategy and attribution so you know what works and can scale what wins",
+          "Integration with your site, CRM, and workflows (Supabase, n8n) for seamless lead capture and nurturing",
+          "Modular, CMS-driven content—every campaign, CTA, and landing page editable from admin"
+        ],
+        "cta_text": "See Our Marketing Process",
+        "cta_url": "/about"
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Our Marketing Services",
+      "subtitle": "Five Pillars, One Cohesive Marketing Offering",
+      "content": {
+        "items": [
+          {
+            "icon": "Compass",
+            "title": "Digital Strategy",
+            "description": "Audit, positioning, and roadmap. We align channels, budgets, and KPIs so every tactic serves your business goals.",
+            "link": "/services/marketing/digital-strategy"
+          },
+          {
+            "icon": "Search",
+            "title": "SEO",
+            "description": "Technical SEO, content strategy, and programmatic SEO. Rank higher, attract organic traffic, and scale with data.",
+            "link": "/services/marketing/seo"
+          },
+          {
+            "icon": "Share2",
+            "title": "Social Media Management",
+            "description": "Strategy, content, and community. We build and run your social presence so it drives awareness and leads.",
+            "link": "/services/marketing/social-media"
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Paid Ads",
+            "description": "Search, display, and social ads. AI-optimized targeting and creative for maximum ROI and scalable acquisition.",
+            "link": "/services/marketing/paid-ads"
+          },
+          {
+            "icon": "Mail",
+            "title": "Email Marketing & Automation",
+            "description": "Campaigns, sequences, and workflows. Nurture leads and customers with personalized, automated email that converts.",
+            "link": "/services/marketing/email-automation"
+          }
+        ]
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "How We Do Marketing",
+      "subtitle": "Our Streamlined Marketing Process",
+      "content": {
+        "items": [
+          {
+            "step": 1,
+            "title": "Discovery & Audit",
+            "description": "We review your goals, audience, current channels, and data. Clear KPIs and a baseline so we know what to improve.",
+            "icon": "Search"
+          },
+          {
+            "step": 2,
+            "title": "Strategy & Channel Mix",
+            "description": "We define the right mix of SEO, paid, social, and email. AI and data inform targeting, messaging, and budget allocation.",
+            "icon": "Compass"
+          },
+          {
+            "step": 3,
+            "title": "Execute & Optimize",
+            "description": "Launch campaigns and content. Continuous optimization using AI and analytics—creative, audiences, and spend tuned for results.",
+            "icon": "Zap"
+          },
+          {
+            "step": 4,
+            "title": "Scale & Automate",
+            "description": "Double down on what works. Automate reporting, lead nurturing, and content where possible so growth scales without linear cost.",
+            "icon": "Rocket"
+          }
+        ]
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-highlights",
+      "title": "Marketing + AI Capabilities",
+      "subtitle": "How We Use AI to Market Smarter",
+      "content": {
+        "items": [
+          {
+            "title": "AI-Powered Content & Creative",
+            "description": "Use AI to speed up copy, variations, and personalization—faster campaigns and consistent messaging across channels.",
+            "icon": "FileText",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80",
+            "link": null
+          },
+          {
+            "title": "Smart Bidding & Targeting",
+            "description": "Leverage AI and data to optimize ad spend, audiences, and placements for better ROI and scalable acquisition.",
+            "icon": "Target",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+            "link": null
+          },
+          {
+            "title": "SEO & Programmatic Growth",
+            "description": "Technical and content SEO plus programmatic pages—scale organic reach and use-case content that ranks and converts.",
+            "icon": "Globe",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "link": null
+          },
+          {
+            "title": "Social Scheduling & Community",
+            "description": "Plan, publish, and engage with AI-assisted content and workflows. Keep your social presence consistent and on-brand.",
+            "icon": "Share2",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80",
+            "link": null
+          },
+          {
+            "title": "Email & Lead Nurturing Automation",
+            "description": "Automated sequences and workflows (n8n, your CRM) so leads get the right message at the right time—without manual follow-up.",
+            "icon": "Mail",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=600&q=80",
+            "link": null
+          },
+          {
+            "title": "Analytics & Attribution",
+            "description": "Clear dashboards and attribution so you see what drives leads and revenue. Data-driven decisions, not guesswork.",
+            "icon": "BarChart",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "link": null
+          }
+        ]
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "differentiators",
+      "title": "Why Choose DOTR for Marketing?",
+      "subtitle": "Marketing Agencies vs. DOTR",
+      "content": {
+        "items": [
+          { "feature": "AI-Powered Strategy & Optimization", "us": true, "competitors": false },
+          { "feature": "SEO + Paid + Social + Email Under One Roof", "us": true, "competitors": "Single Channels" },
+          { "feature": "Data-Driven Attribution & ROI", "us": true, "competitors": "Vanity Metrics" },
+          { "feature": "Fast Execution (Weeks, Not Months)", "us": true, "competitors": false },
+          { "feature": "Integration with Dev, CMS & Automation", "us": true, "competitors": "Siloed Tools" },
+          { "feature": "End-to-End with Design, Dev, AI", "us": true, "competitors": "Marketing-Only" }
+        ],
+        "show_comparison": true,
+        "our_label": "DOTR",
+        "competitor_label": "Traditional Marketing Agencies"
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "stats",
+      "title": "Marketing by the Numbers",
+      "subtitle": "What We Deliver",
+      "content": {
+        "items": [
+          { "value": "5", "label": "Marketing Disciplines", "suffix": "" },
+          { "value": "2", "label": "Weeks to First Campaign", "suffix": "" },
+          { "value": "100", "label": "Data-Driven", "suffix": "%" },
+          { "value": "24", "label": "Hours Support", "suffix": "/7" }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "who-its-for",
+      "title": "Who We Market For",
+      "subtitle": "From startups to enterprises—we scale with you",
+      "content": {
+        "personas": [
+          {
+            "persona": "Startups",
+            "icon": "Rocket",
+            "description": "Get a clear strategy and execution from day one. Fast, affordable, and built to scale as you grow.",
+            "benefits": ["Full-funnel setup", "ROI-focused", "AI-powered optimization"]
+          },
+          {
+            "persona": "Enterprises",
+            "icon": "Building2",
+            "description": "Enterprise-grade strategy, attribution, and multi-channel campaigns. We align with your brand and compliance needs.",
+            "benefits": ["Custom reporting", "Dedicated support", "Integration with existing stack"]
+          },
+          {
+            "persona": "Agencies & Teams",
+            "icon": "Users",
+            "description": "White-label or partnership. We slot into your workflow and extend your marketing capacity with our full stack.",
+            "benefits": ["Flexible engagement", "Channel expertise", "Tool alignment"]
+          }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "outcomes-benefits",
+      "title": "What You'll Achieve",
+      "subtitle": "Outcomes from data-driven marketing",
+      "content": {
+        "layout": "grid",
+        "items": [
+          { "title": "More Qualified Leads", "description": "Target the right audience with AI and data. Fill the funnel with leads that convert.", "icon": "Target" },
+          { "title": "Better ROI", "description": "Optimize spend and creative continuously. Know what works and scale it with confidence.", "icon": "TrendingUp" },
+          { "title": "Stronger Brand Awareness", "description": "Consistent messaging across SEO, paid, social, and email. Be where your customers are.", "icon": "Award" },
+          { "title": "Scalable Growth", "description": "Automation and programmatic SEO let you grow reach and revenue without linear cost.", "icon": "Zap" }
+        ]
+      },
+      "display_order": 11,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "Marketing Impact",
+      "subtitle": "Results That Matter",
+      "content": {
+        "items": [
+          { "metric": "40%", "label": "Higher Lead Quality", "description": "Clients see better conversion rates after data-driven targeting and messaging.", "icon": "Target" },
+          { "metric": "2x", "label": "Faster Time to Results", "description": "AI and automation cut setup and optimization cycles—campaigns perform sooner.", "icon": "Zap" },
+          { "metric": "98%", "label": "Client Satisfaction", "description": "Our AI-first, full-funnel approach keeps marketing aligned with business goals.", "icon": "Heart" },
+          { "metric": "100", "label": "Data-Driven Decisions", "description": "Attribution and analytics so you invest in what actually drives revenue.", "icon": "BarChart" }
+        ]
+      },
+      "display_order": 12,
+      "is_active": true
+    },
+    {
+      "section_type": "testimonials",
+      "title": "What Clients Say About Our Marketing",
+      "subtitle": "Trusted by teams that care about growth",
+      "content": {
+        "items": [
+          {
+            "quote": "DOTR set up our full marketing stack—SEO, paid, and email—in weeks. The AI-powered optimization has made our CAC drop and our pipeline full.",
+            "author": "Alex Chen",
+            "role": "CEO",
+            "company": "TechStart Inc.",
+            "image": ""
+          },
+          {
+            "quote": "Finally, a partner that does strategy, SEO, ads, and automation in one place. No more juggling agencies. The data and attribution are crystal clear.",
+            "author": "Maria Rodriguez",
+            "role": "Head of Growth",
+            "company": "Digital Ventures",
+            "image": ""
+          },
+          {
+            "quote": "The automation they built has saved us 20+ hours a week. Leads get nurtured automatically, and we know exactly which channels drive revenue.",
+            "author": "James Wilson",
+            "role": "CMO",
+            "company": "Innovate Solutions",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 13,
+      "is_active": true
+    },
+    {
+      "section_type": "trust-badges",
+      "title": "Marketing Built Right",
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "title": "AI-Powered Optimization", "icon": "Brain", "description": "Smarter targeting, creative, and spend" },
+          { "title": "Data-Driven", "icon": "BarChart", "description": "Attribution and ROI you can act on" },
+          { "title": "Full-Funnel", "icon": "Target", "description": "Strategy, SEO, paid, social, email" },
+          { "title": "Modern Stack", "icon": "Code", "description": "Integrates with your site, CRM, n8n" }
+        ]
+      },
+      "display_order": 14,
+      "is_active": true
+    },
+    {
+      "section_type": "faq",
+      "title": "Marketing Services FAQ",
+      "subtitle": "Common questions about our marketing offering",
+      "content": {
+        "items": [
+          {
+            "question": "What marketing services does DOTR offer?",
+            "answer": "We offer five core marketing disciplines: Digital Strategy, SEO, Social Media Management, Paid Ads, and Email Marketing & Automation. You can use one or combine several—we deliver them as a cohesive, full-funnel offering with shared data and AI."
+          },
+          {
+            "question": "How do you use AI in marketing?",
+            "answer": "We use AI for targeting and audience optimization, content and creative variation, bidding and budget allocation, and automation (email, social, lead nurturing). Strategy and brand stay human-led; AI helps us execute faster and optimize continuously."
+          },
+          {
+            "question": "How fast can I see results?",
+            "answer": "Paid and social campaigns can go live within 2 weeks. SEO and email automation typically show meaningful results within 4–8 weeks. We'll set clear KPIs and milestones during discovery."
+          },
+          {
+            "question": "Do you work with our existing tools (CRM, analytics)?",
+            "answer": "Yes. We integrate with your site (e.g. Supabase), CRM, and workflows (n8n). We can connect reporting, lead capture, and nurturing so marketing and sales stay aligned."
+          },
+          {
+            "question": "Can you handle both SEO and paid ads?",
+            "answer": "Absolutely. Many clients run SEO for long-term organic growth and paid for immediate pipeline. Having both under one roof means consistent messaging, shared data, and no channel silos."
+          }
+        ]
+      },
+      "display_order": 15,
+      "is_active": true
+    },
+    {
+      "section_type": "cta",
+      "title": "Ready to Grow?",
+      "subtitle": null,
+      "content": {
+        "headline": "Let's Build Your Marketing Engine",
+        "description": "From strategy to SEO, paid, social, and email—we'll help you attract more leads and convert them faster. Get a free marketing consultation today.",
+        "primary_cta_text": "Get Marketing Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "View Our Work",
+        "secondary_cta_link": "/portfolio"
+      },
+      "display_order": 16,
+      "is_active": true
+    },
+    {
+      "section_type": "primary-cta-banner",
+      "title": "Final CTA",
+      "subtitle": null,
+      "content": {
+        "headline": "Data-Driven Marketing That Scales—Get Started Today",
+        "description": "Strategy, SEO, paid, social, email—one partner, AI-powered. Book a free marketing consultation and see the DOTR difference.",
+        "primary_cta_text": "Book Marketing Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "Explore All Services",
+        "secondary_cta_link": "/services",
+        "background_color": "primary",
+        "text_color": "white"
+      },
+      "display_order": 17,
+      "is_active": true
+    },
+    {
+      "section_type": "about-us",
+      "title": "About DOTR",
+      "subtitle": "AI-First Digital Solutions Company",
+      "content": {
+        "story": "DOTR (Dhinoja OmniTech Resolutions) was founded on a simple principle: technology should empower businesses, not complicate them. We're an AI-first company that builds fast, scalable, and future-ready solutions. Our Marketing pillar delivers full-funnel strategy, SEO, paid, social, and email—powered by data and AI.",
+        "mission": "To deliver innovative AI-powered digital solutions that drive real business results and help our clients achieve their goals faster and more efficiently.",
+        "vision": "To be the leading AI-first partner for businesses seeking to transform their digital presence, automate their operations, and unlock their full potential through intelligent technology.",
+        "founder_image": "",
+        "founder_name": "",
+        "founder_title": "",
+        "founded_year": "2024"
+      },
+      "display_order": 18,
+      "is_active": true
+    },
+    {
+      "section_type": "values-culture",
+      "title": "Our Values",
+      "subtitle": "What Drives Us",
+      "content": {
+        "items": [
+          { "title": "AI-First Thinking", "description": "We think AI-first. Every solution is designed with automation and intelligence at its core.", "icon": "Brain" },
+          { "title": "Speed & Efficiency", "description": "We deliver results fast without compromising quality. Time is your most valuable asset.", "icon": "Zap" },
+          { "title": "Data-Driven", "description": "We optimize with data and attribution—no vanity metrics. Every decision supports ROI.", "icon": "BarChart" },
+          { "title": "End-to-End Excellence", "description": "Complete solutions across 9 specialized pillars—no multiple vendors.", "icon": "Layers" },
+          { "title": "Innovation", "description": "We stay ahead with the latest tools and technologies to deliver cutting-edge solutions.", "icon": "Sparkles" },
+          { "title": "Client Success", "description": "Your success is our success. We measure our performance by the results we deliver for you.", "icon": "Target" }
+        ]
+      },
+      "display_order": 19,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "We help ambitious companies grow with data-driven marketing—SEO, paid ads, social, and email—powered by AI. One partner, full-funnel, results in weeks.",
+        "tagline": "Your growth. Our AI-powered marketing. Measurable results.",
+        "author": "DOTR",
+        "author_title": "Dhinoja OmniTech Resolutions"
+      },
+      "display_order": 20,
+      "is_active": true
+    },
+    {
+      "section_type": "logo-cloud",
+      "title": "Trusted By Growth Teams",
+      "subtitle": "Companies that chose data-driven marketing",
+      "content": {
+        "items": [
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+1", "name": "Client 1", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+2", "name": "Client 2", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+3", "name": "Client 3", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+4", "name": "Client 4", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+5", "name": "Client 5", "link": "" }
+        ]
+      },
+      "display_order": 21,
+      "is_active": true
+    },
+    {
+      "section_type": "features",
+      "title": "Marketing Capabilities",
+      "subtitle": "Built for growth, scale, and ROI",
+      "content": {
+        "items": [
+          { "title": "Data-Driven Strategy", "description": "Every campaign and channel is backed by attribution and ROI—no guesswork.", "icon": "BarChart" },
+          { "title": "SEO & Programmatic Growth", "description": "Scale organic reach with technical SEO and programmatic content that ranks.", "icon": "Globe" },
+          { "title": "AI-Powered Optimization", "description": "Targeting, creative, and spend optimized with AI—faster results, better ROI.", "icon": "Brain" },
+          { "title": "Full-Funnel Execution", "description": "Strategy, SEO, paid, social, and email under one roof—aligned messaging and data.", "icon": "Target" },
+          { "title": "Automation & Nurturing", "description": "Email sequences, lead scoring, and workflows that run 24/7.", "icon": "Mail" },
+          { "title": "Continuous Optimization", "description": "Reporting, A/B tests, and improvements as part of the package.", "icon": "TrendingUp" }
+        ]
+      },
+      "display_order": 22,
+      "is_active": true
+    },
+    {
+      "section_type": "image-text",
+      "title": "Our Marketing Approach",
+      "subtitle": "Data-First from Strategy to Scale",
+      "content": {
+        "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "description": "We combine AI-powered strategy with human expertise. We define the right channel mix, execute with data-driven creative, and optimize continuously so you grow faster and smarter.",
+        "image_position": "left",
+        "cta_text": "See Our Marketing Process",
+        "cta_link": "/about"
+      },
+      "display_order": 23,
+      "is_active": true
+    },
+    {
+      "section_type": "video",
+      "title": "See Our Marketing in Action",
+      "subtitle": "A quick overview of our data-driven approach",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "autoplay": false
+      },
+      "display_order": 24,
+      "is_active": true
+    },
+    {
+      "section_type": "timeline",
+      "title": "Our Journey",
+      "subtitle": "Key milestones in building AI-first marketing solutions",
+      "content": {
+        "items": [
+          { "year": "2024", "title": "DOTR Founded", "description": "Launched with a mission to deliver AI-first, end-to-end digital solutions.", "icon": "Rocket" },
+          { "year": "2024", "title": "9 Pillars Live", "description": "Full stack of services from design to marketing and consulting under one roof.", "icon": "Layers" },
+          { "year": "2025", "title": "Marketing & Programmatic SEO", "description": "Data-driven marketing and programmatic SEO capabilities for scalable growth.", "icon": "Globe" }
+        ]
+      },
+      "display_order": 25,
+      "is_active": true
+    },
+    {
+      "section_type": "newsletter",
+      "title": "Stay Ahead with Marketing Insights",
+      "subtitle": "Get tips on SEO, paid ads, and growth strategy in your inbox.",
+      "content": {
+        "placeholder_text": "Enter your email",
+        "button_text": "Subscribe",
+        "success_message": "Thanks for subscribing! We'll send you our best marketing and growth insights."
+      },
+      "display_order": 26,
+      "is_active": true
+    },
+    {
+      "section_type": "secondary-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "text": "Want to grow with data-driven marketing?",
+        "button_text": "Book a Free Marketing Consultation",
+        "button_url": "/contact"
+      },
+      "display_order": 27,
+      "is_active": true
+    },
+    {
+      "section_type": "team",
+      "title": "Meet the Team",
+      "subtitle": "Experts in AI, strategy, SEO, and growth",
+      "content": {
+        "items": [
+          { "name": "Leadership", "role": "Founder & Strategy", "bio": "Driving AI-first vision and client success.", "image": "" },
+          { "name": "Growth", "role": "Marketing & SEO", "bio": "Data-driven strategy and programmatic growth.", "image": "" },
+          { "name": "Design", "role": "UX & Brand", "bio": "Creating experiences that convert.", "image": "" },
+          { "name": "Engineering", "role": "Development & DevOps", "bio": "Building scalable, modern platforms.", "image": "" }
+        ]
+      },
+      "display_order": 28,
+      "is_active": true
+    },
+    {
+      "section_type": "gallery",
+      "title": "Marketing in Action",
+      "subtitle": "Campaigns and growth projects we've delivered",
+      "content": {
+        "items": [
+          { "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "caption": "Analytics Dashboard", "alt": "Marketing analytics" },
+          { "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", "caption": "SEO & Content", "alt": "SEO content" },
+          { "image_url": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80", "caption": "Paid Campaigns", "alt": "Paid ads" },
+          { "image_url": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80", "caption": "Social & Community", "alt": "Social media" },
+          { "image_url": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=600&q=80", "caption": "Email Automation", "alt": "Email campaigns" },
+          { "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80", "caption": "Collaboration", "alt": "Team collaboration" }
+        ]
+      },
+      "display_order": 29,
+      "is_active": true
+    },
+    {
+      "section_type": "contact-info",
+      "title": "Get in Touch",
+      "subtitle": "We'd love to hear about your marketing goals",
+      "content": {
+        "email": "hello@dotr.com",
+        "phone": "+1 (555) 000-0000",
+        "address": "Your City, Your Country",
+        "map_embed_url": "",
+        "social_links": [
+          { "platform": "LinkedIn", "url": "https://linkedin.com", "icon": "Linkedin" },
+          { "platform": "Twitter", "url": "https://twitter.com", "icon": "Twitter" }
+        ]
+      },
+      "display_order": 30,
+      "is_active": true
+    },
+    {
+      "section_type": "blog-posts",
+      "title": "Latest from the Blog",
+      "subtitle": "Marketing, SEO, and growth insights",
+      "content": {
+        "count": 3,
+        "show_featured_only": false,
+        "layout": "grid"
+      },
+      "display_order": 31,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "width": "medium",
+        "spacing": "medium"
+      },
+      "display_order": 32,
+      "is_active": true
+    },
+    {
+      "section_type": "pricing",
+      "title": "Marketing Plans That Scale",
+      "subtitle": "Transparent pricing for every stage of growth",
+      "content": {
+        "items": [
+          {
+            "name": "Starter",
+            "price": "From $99",
+            "description": "Perfect for small businesses getting started with SEO and content",
+            "features": ["Basic SEO audit", "Content strategy", "Up to 2 channels", "Monthly reporting", "Email support"],
+            "cta_text": "Get Started",
+            "is_featured": false
+          },
+          {
+            "name": "Growth",
+            "price": "From $299",
+            "description": "Ideal for growing businesses ready to scale with full-funnel marketing",
+            "features": ["Full strategy & SEO", "Paid + Social + Email", "AI-powered optimization", "Priority support", "Attribution & ROI reporting", "Automation setup"],
+            "cta_text": "Get Started",
+            "is_featured": true
+          },
+          {
+            "name": "Enterprise",
+            "price": "Custom",
+            "description": "Tailored data-driven marketing for large organizations",
+            "features": ["Dedicated strategy lead", "All 5 marketing disciplines", "Custom attribution", "24/7 priority support", "Integration with your stack", "Training & onboarding"],
+            "cta_text": "Contact Sales",
+            "is_featured": false
+          }
+        ]
+      },
+      "display_order": 33,
+      "is_active": true
+    },
+    {
+      "section_type": "form",
+      "title": "Start Your Marketing Transformation",
+      "subtitle": "Tell us about your goals—we'll respond within 24 hours",
+      "content": {
+        "form_title": "Get a Free Marketing Consultation",
+        "form_description": "Fill out the form below and our team will recommend the right mix of SEO, paid, social, and email for your business.",
+        "submit_button_text": "Send Message",
+        "success_message": "Thank you! Your message has been received. We'll get back to you within 24 hours with tailored marketing recommendations.",
+        "fields": [
+          { "field_type": "text", "label": "Full Name", "name": "name", "placeholder": "John Doe", "required": true, "width": "full" },
+          { "field_type": "email", "label": "Email Address", "name": "email", "placeholder": "john@example.com", "required": true, "width": "full" },
+          { "field_type": "phone", "label": "Phone Number", "name": "phone", "placeholder": "+1 (555) 123-4567", "required": false, "width": "half" },
+          {
+            "field_type": "select",
+            "label": "Interest Area",
+            "name": "inquiry_type",
+            "placeholder": "Select an option",
+            "required": true,
+            "options": ["SEO", "Paid Ads", "Social Media", "Email Marketing", "Full-Funnel Strategy", "General Inquiry"],
+            "width": "half"
+          },
+          { "field_type": "textarea", "label": "Message", "name": "message", "placeholder": "Tell us about your marketing goals or current challenges...", "required": true, "validation": { "min": 10, "max": 1000 }, "width": "full" },
+          { "field_type": "checkbox", "label": "I agree to receive updates and marketing communications", "name": "marketing_consent", "required": false, "width": "full" }
+        ]
+      },
+      "display_order": 34,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Our Work",
+      "subtitle": "Marketing and growth projects we've delivered",
+      "content": {
+        "show_filters": true,
+        "items": [
+          { "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "title": "SEO & Content Strategy", "category": "SEO", "link": "/portfolio/seo-content" },
+          { "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", "title": "Paid Acquisition Campaign", "category": "Paid Ads", "link": "/portfolio/paid-campaign" },
+          { "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80", "title": "Social & Community", "category": "Social Media", "link": "/portfolio/social-campaign" },
+          { "image": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=600&q=80", "title": "Email Automation", "category": "Email", "link": "/portfolio/email-automation" },
+          { "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80", "title": "Full-Funnel Growth", "category": "Strategy", "link": "/portfolio/full-funnel" },
+          { "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80", "title": "Analytics & Attribution", "category": "Analytics", "link": "/portfolio/analytics" }
+        ]
+      },
+      "display_order": 35,
+      "is_active": true
+    },
+    {
+      "section_type": "counters",
+      "title": "By the Numbers",
+      "subtitle": "Our marketing impact in real time",
+      "content": {
+        "items": [
+          { "value": 500, "label": "Campaigns Delivered", "prefix": "", "suffix": "+", "icon": "Target" },
+          { "value": 98, "label": "Client Satisfaction", "prefix": "", "suffix": "%", "icon": "Heart" },
+          { "value": 24, "label": "Support Hours", "prefix": "", "suffix": "/7", "icon": "Clock" },
+          { "value": 5, "label": "Marketing Disciplines", "prefix": "", "suffix": "", "icon": "Layers" }
+        ]
+      },
+      "display_order": 36,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 500, "suffix": "+", "prefix": "", "label": "Happy Clients" },
+          { "value": 98, "suffix": "%", "prefix": "", "label": "Satisfaction Rate" },
+          { "value": 24, "suffix": "/7", "prefix": "", "label": "Support Available" },
+          { "value": 5, "suffix": "", "prefix": "", "label": "Marketing Pillars" }
+        ],
+        "animate": true
+      },
+      "display_order": 37,
+      "is_active": true
+    },
+    {
+      "section_type": "social-proof-bar",
+      "title": "Trusted by Forward-Thinking Teams",
+      "subtitle": null,
+      "content": {
+        "user_count": "25,000+",
+        "rating": 4.9,
+        "review_count": "1,200+",
+        "platforms": [
+          { "name": "LinkedIn", "followers": "30K", "icon": "Linkedin" },
+          { "name": "Twitter", "followers": "50K", "icon": "Twitter" }
+        ]
+      },
+      "display_order": 38,
+      "is_active": true
+    },
+    {
+      "section_type": "awards-badges",
+      "title": "Recognition",
+      "subtitle": "Awards and industry recognition",
+      "content": {
+        "items": [
+          { "title": "Marketing Innovation 2024", "organization": "Growth Excellence Awards", "year": "2024", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" },
+          { "title": "Top SEO & Growth Team", "organization": "Digital Leaders Summit", "year": "2024", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" },
+          { "title": "Customer Choice", "organization": "Business Excellence Awards", "year": "2023", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" }
+        ]
+      },
+      "display_order": 39,
+      "is_active": true
+    },
+    {
+      "section_type": "press-mentions",
+      "title": "As Seen In",
+      "subtitle": "What the press says about DOTR",
+      "content": {
+        "items": [
+          { "publication": "TechCrunch", "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=TechCrunch", "quote": "A game-changing approach to AI-first digital solutions that's revolutionizing how businesses scale.", "link": "https://techcrunch.com" },
+          { "publication": "Forbes", "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Forbes", "quote": "Leading innovation with cutting-edge technology and end-to-end service across nine specialized pillars.", "link": "https://forbes.com" },
+          { "publication": "Wired", "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Wired", "quote": "The future of digital transformation is here—fast delivery, no vendor juggling, AI at the core.", "link": "https://wired.com" }
+        ]
+      },
+      "display_order": 40,
+      "is_active": true
+    },
+    {
+      "section_type": "ratings-reviews",
+      "title": "Rated by Clients",
+      "subtitle": "What our clients say on leading platforms",
+      "content": {
+        "items": [
+          { "platform": "Google", "rating": 4.9, "review_count": 250, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Google" },
+          { "platform": "Clutch", "rating": 4.8, "review_count": 120, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Clutch" },
+          { "platform": "Trustpilot", "rating": 4.7, "review_count": 180, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Trustpilot" }
+        ],
+        "show_aggregate": true
+      },
+      "display_order": 41,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": "The Cost of Waiting",
+      "subtitle": "Then the solution",
+      "content": {
+        "problem": "Your marketing is scattered across channels with no clear attribution—wasting spend and missing growth.",
+        "agitation": "Every day without data-driven marketing costs you leads, revenue, and market share. Competitors are already optimizing with AI and full-funnel strategy.",
+        "solution": "DOTR brings strategy, SEO, paid, social, and email under one roof—powered by AI and data. One partner, full-funnel, results in weeks."
+      },
+      "display_order": 42,
+      "is_active": true
+    },
+    {
+      "section_type": "before-after",
+      "title": "Before & After DOTR Marketing",
+      "subtitle": "See the transformation",
+      "content": {
+        "before_image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+        "after_image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "before_label": "Before",
+        "after_label": "After"
+      },
+      "display_order": 43,
+      "is_active": true
+    },
+    {
+      "section_type": "video-demo",
+      "title": "See It in Action",
+      "subtitle": "A quick walkthrough of our marketing platform",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+        "callouts": [
+          { "time": "0:15", "text": "See how we set up your strategy" },
+          { "time": "1:30", "text": "Explore SEO and paid campaign setup" },
+          { "time": "2:45", "text": "Discover attribution and ROI reporting" }
+        ]
+      },
+      "display_order": 44,
+      "is_active": true
+    },
+    {
+      "section_type": "screenshot-gallery",
+      "title": "Platform Preview",
+      "subtitle": "Key screens from our marketing solutions",
+      "content": {
+        "screenshots": [
+          { "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80", "caption": "Analytics Dashboard" },
+          { "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80", "caption": "Campaign Overview" },
+          { "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80", "caption": "Attribution & ROI" },
+          { "url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80", "caption": "Email & Automation" }
+        ],
+        "show_captions": true
+      },
+      "display_order": 45,
+      "is_active": true
+    },
+    {
+      "section_type": "device-frames",
+      "title": "Every Device, Every Screen",
+      "subtitle": "Responsive campaigns everywhere",
+      "content": {
+        "device_type": "iphone",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80"
+        ]
+      },
+      "display_order": 46,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-list",
+      "title": "What's Included",
+      "subtitle": "Every marketing engagement gets the full stack",
+      "content": {
+        "items": [
+          { "text": "Data-driven strategy and attribution", "icon": "BarChart" },
+          { "text": "SEO and programmatic content", "icon": "Globe" },
+          { "text": "AI-powered optimization", "icon": "Brain" },
+          { "text": "Paid, social, and email execution", "icon": "Target" },
+          { "text": "Integration with your site and CRM", "icon": "Code" },
+          { "text": "24/7 support and automation", "icon": "Headphones" },
+          { "text": "Continuous optimization and reporting", "icon": "TrendingUp" },
+          { "text": "Weeks, not months—fast delivery", "icon": "Zap" }
+        ],
+        "columns": 2
+      },
+      "display_order": 47,
+      "is_active": true
+    },
+    {
+      "section_type": "exit-intent-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "headline": "Wait! Don't Leave Yet",
+        "description": "Get a free marketing consultation and custom channel recommendations. No commitment—just clarity.",
+        "button_text": "Claim Free Consultation",
+        "button_url": "/contact",
+        "show_after_scroll": 50,
+        "offer_text": "We'll match you with the right mix of SEO, paid, social, and email."
+      },
+      "display_order": 48,
+      "is_active": true
+    }
+  ]
+}

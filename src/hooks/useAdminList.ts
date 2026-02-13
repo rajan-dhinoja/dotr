@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { buildListQuery, buildCountQuery } from '@/lib/admin/queryBuilder';
@@ -37,6 +37,11 @@ export function useAdminList<T extends BaseEntity>(
 
   // Debounce search query
   const debouncedSearch = useDebounce(searchQuery, 300);
+
+  // Reset to page 1 when search changes so results are visible
+  useEffect(() => {
+    setPage(1);
+  }, [debouncedSearch]);
 
   // Build query options
   const queryOptions = useMemo(

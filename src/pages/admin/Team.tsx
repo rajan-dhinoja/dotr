@@ -4,7 +4,7 @@ import { supabase } from '@/integrations/supabase/client';
 import { AdminLayout } from '@/components/admin/AdminLayout';
 import { DataTable } from '@/components/admin/DataTable';
 import { ImageUpload } from '@/components/admin/ImageUpload';
-import { EntityJsonEditor } from '@/components/admin/EntityJsonEditor';
+import { LazyEntityJsonEditor } from '@/components/admin/LazyEntityJsonEditor';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';

@@ -7,7 +7,7 @@ import { AdminToolbar } from '@/components/admin/AdminToolbar';
 import { AdminPagination } from '@/components/admin/AdminPagination';
 import { BulkDeleteDialog } from '@/components/admin/BulkDeleteDialog';
 import { ImageUpload } from '@/components/admin/ImageUpload';
-import { EntityJsonEditor } from '@/components/admin/EntityJsonEditor';
+import { LazyEntityJsonEditor } from '@/components/admin/LazyEntityJsonEditor';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -325,7 +325,7 @@ export default function AdminBlogPosts() {
               </TabsContent>
 
               <TabsContent value="json" className="mt-4">
-                <EntityJsonEditor
+                <LazyEntityJsonEditor
                   entityType="blog_post"
                   entityId={editing?.id}
                   value={jsonData}

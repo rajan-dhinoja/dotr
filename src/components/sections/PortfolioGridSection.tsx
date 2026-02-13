@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { useProjectsWithFilter } from '@/hooks/useProjects';
+import { Skeleton } from '@/components/ui/skeleton';
 
 interface PortfolioItem {
   image: string;
@@ -16,15 +18,41 @@ interface PortfolioGridSectionProps {
 }
 
 export function PortfolioGridSection({ title, subtitle, content }: PortfolioGridSectionProps) {
-  const items = (content?.items as PortfolioItem[]) || [];
+  const useDynamicSource = content?.source === 'dynamic';
+  const { data: projects, isLoading: dynamicLoading } = useProjectsWithFilter(undefined, { enabled: useDynamicSource });
+
+  const staticItems = (content?.items as PortfolioItem[]) || [];
+  const dynamicItems: PortfolioItem[] = (projects ?? []).map((p) => ({
+    image: p.cover_image || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+    title: p.title,
+    category: p.client || 'Project',
+    link: `/portfolio/${p.slug}`,
+  }));
+
+  const items = useDynamicSource ? dynamicItems : staticItems;
   const showFilters = content?.show_filters !== false;
-  
+  const isLoading = useDynamicSource && dynamicLoading;
+
   const categories = ['All', ...new Set(items.map(item => item.category).filter(Boolean))];
   const [activeCategory, setActiveCategory] = useState('All');
 
   const filteredItems = activeCategory === 'All' 
     ? items 
     : items.filter(item => item.category === activeCategory);
+
+  if (isLoading) {
+    return (
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[...Array(6)].map((_, i) => (
+              <Skeleton key={i} className="aspect-[4/3] w-full rounded-lg" />
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="py-16 md:py-24">

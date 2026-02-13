@@ -99,11 +99,11 @@ export default function SubServiceDetail() {
         ) : data ? (
           <>
             <ServiceHero
-              title={data.service.name}
+              title={data.service.name || data.service.title}
               summary={data.service.tagline}
               categoryName={data.category.name}
               categorySlug={data.category.slug}
-              iconName={data.service.icon}
+              iconName={data.service.icon || data.service.icon_name}
               heroImageUrl={data.service.image_url}
             />
 
@@ -131,13 +131,13 @@ export default function SubServiceDetail() {
               technologies={technologies} 
               description={data.service.description}
             />
-            <ServiceFAQ faqs={faqs} serviceTitle={data.service.name} />
+            <ServiceFAQ faqs={faqs} serviceTitle={data.service.name || data.service.title} />
             <ServicePricing 
               pricingInfo={data.service.pricing}
               deliveryTime={null}
-              serviceTitle={data.service.name}
+              serviceTitle={data.service.name || data.service.title}
             />
-            <ServiceCTA serviceTitle={data.service.name} />
+            <ServiceCTA serviceTitle={data.service.name || data.service.title} />
           </>
         ) : (
           <div className="pt-32 pb-20 container mx-auto px-4 text-center">

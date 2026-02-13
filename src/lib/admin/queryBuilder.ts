@@ -14,16 +14,13 @@ export function buildListQuery<T>(
   // Apply search across multiple fields
   if (options.search && options.search.trim() && options.searchFields && options.searchFields.length > 0) {
     const searchTerm = options.search.trim();
-    // Use OR conditions for multiple search fields
-    // Format: "(field1.ilike.%value%,field2.ilike.%value%)"
+    const pattern = `%${searchTerm}%`;
     if (options.searchFields.length === 1) {
-      // Single field - use simple ilike
-      builtQuery = builtQuery.ilike(options.searchFields[0], `%${searchTerm}%`);
+      builtQuery = builtQuery.ilike(options.searchFields[0], pattern);
     } else {
-      // Multiple fields - use OR
-      // Supabase OR format: "field1.ilike.%value%,field2.ilike.%value%"
+      // Supabase .or() format: "field1.ilike.%term%,field2.ilike.%term%"
       const orConditions = options.searchFields
-        .map((field) => `${field}.ilike.%${searchTerm}%`)
+        .map((field) => `${field}.ilike.${pattern}`)
         .join(',');
       builtQuery = builtQuery.or(orConditions);
     }
@@ -57,16 +54,18 @@ export function buildCountQuery<T>(
   query: any,
   options: Omit<QueryBuilderOptions, 'sort' | 'page' | 'pageSize'>
 ): any {
-  let builtQuery: any = query.select('*', { count: 'exact', head: true });
+  // Query already has .select('*', { count: 'exact', head: true }) from useAdminList
+  let builtQuery: any = query;
 
-  // Apply search
+  // Apply search (same as buildListQuery)
   if (options.search && options.search.trim() && options.searchFields && options.searchFields.length > 0) {
     const searchTerm = options.search.trim();
+    const pattern = `%${searchTerm}%`;
     if (options.searchFields.length === 1) {
-      builtQuery = builtQuery.ilike(options.searchFields[0], `%${searchTerm}%`);
+      builtQuery = builtQuery.ilike(options.searchFields[0], pattern);
     } else {
       const orConditions = options.searchFields
-        .map((field) => `${field}.ilike.%${searchTerm}%`)
+        .map((field) => `${field}.ilike.${pattern}`)
         .join(',');
       builtQuery = builtQuery.or(orConditions);
     }

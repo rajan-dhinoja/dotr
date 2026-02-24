@@ -1,0 +1,552 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-02-24T16:45:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "portfolio/development-projects",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "Development Portfolio Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "Engineering the Future: Our Development Portfolio",
+        "subtitle": "A showcase of scalable web apps, mobile platforms, and complex SaaS architectures built with our AI-first methodology. Shipped fast, built for scale.",
+        "cta_text": "Launch Your Project",
+        "cta_link": "/contact",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "We don't just write code; we build business engines. By leveraging AI-assisted development and a modern 'one codebase' philosophy, we deliver production-ready software in weeks that traditionally takes months.",
+        "tagline": "Modern stacks. AI-assisted speed. Enterprise-grade results.",
+        "author": "DOTR Tech Lead",
+        "author_title": "Development Pillar"
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Code", "text": "Full-Stack Expertise" },
+          { "icon": "Zap", "text": "AI-Accelerated Builds" },
+          { "icon": "Cloud", "text": "Cloud-Native Architecture" },
+          { "icon": "Shield", "text": "Scalable & Secure" },
+          { "icon": "Layers", "text": "Clean Code Quality" }
+        ]
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 3, "suffix": "x", "prefix": "", "label": "Faster Time to Market" },
+          { "value": 100, "suffix": "%", "prefix": "", "label": "CMS Controlled" },
+          { "value": 0, "prefix": "", "suffix": " Tech Debt", "label": "Clean Architecture" },
+          { "value": 24, "suffix": "/7", "prefix": "", "label": "Support Availability" }
+        ],
+        "animate": true
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "Solving Complex Tech Challenges",
+      "subtitle": "Moving past legacy limitations",
+      "content": {
+        "problems": [
+          {
+            "title": "Monolithic Legacy Debt",
+            "description": "Helping brands migrate from slow, fragile legacy systems to modern, modular architectures that don't break under pressure."
+          },
+          {
+            "title": "The Scaling Bottleneck",
+            "description": "Our work proves that speed doesn't have to sacrifice stability. We build for the next 10 million users from day one."
+          }
+        ],
+        "empathy_text": "We understand that software is a liability if it's not maintainable. Every project in our portfolio is built with the 'DOTR-DOS' philosophy: simple to manage, hard to break."
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": "The Speed Gap",
+      "subtitle": null,
+      "content": {
+        "problem": "Traditional dev cycles are too slow for today's market velocity.",
+        "agitation": "While your competitors are shipping new features daily using AI tools, a manual dev shop has you stuck in a 6-month release cycle.",
+        "solution": "We use Lovable, Supabase, and GitHub Copilot to compress development time by 70%, ensuring you lead the market instead of chasing it."
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "The DOTR Dev Advantage",
+      "subtitle": "Why our builds stand out",
+      "content": {
+        "headline": "Full-Stack Excellence with AI-First Efficiency",
+        "supporting_points": [
+          "One partner for Web, Mobile, APIs, and Admin Panels—eliminating vendor friction.",
+          "Scalable cloud deployment (AWS/GCP/Azure) with built-in CI/CD pipelines.",
+          "CMS-driven architecture: Admin controls the content, we control the performance.",
+          "Security-first mindset with application auditing and performance optimization."
+        ],
+        "cta_text": "View Development Services",
+        "cta_url": "/services/development"
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Development Domains",
+      "subtitle": "Our areas of technical expertise",
+      "content": {
+        "items": [
+          { "icon": "Globe", "title": "Web Apps & SaaS", "description": "High-performance platforms built for modern browsers.", "link": "/services/development/web-apps" },
+          { "icon": "Smartphone", "title": "Mobile Apps", "description": "Cross-platform solutions for iOS and Android.", "link": "/services/development/mobile-apps" },
+          { "icon": "LayoutDashboard", "title": "Admin Panels", "description": "Internal tools that empower your operations team.", "link": "/services/development/admin-panels" },
+          { "icon": "Plug", "title": "APIs & Integrations", "description": "Connecting your tech stack with robust middleware.", "link": "/services/development/apis-saas" }
+        ]
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "Our Build Methodology",
+      "subtitle": "How we ship at scale",
+      "content": {
+        "items": [
+          { "step": 1, "title": "Discovery", "description": "Architecting the logic and tech stack.", "icon": "Search" },
+          { "step": 2, "title": "Rapid Sprint", "description": "AI-assisted coding and daily deployments.", "icon": "Code" },
+          { "step": 3, "title": "QA & Scale", "description": "Load testing and security hardening.", "icon": "Shield" },
+          { "step": 4, "title": "Launch", "description": "Zero-downtime deployment to the cloud.", "icon": "Rocket" }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "timeline",
+      "title": "Project Velocity",
+      "subtitle": "A typical build cycle",
+      "content": {
+        "items": [
+          { "year": "Week 1", "title": "Arch & Setup", "description": "Supabase schema and project skeleton.", "icon": "Layers" },
+          { "year": "Week 2-3", "title": "Feature Sprints", "description": "Building core logic and front-end components.", "icon": "Code" },
+          { "year": "Week 4", "title": "Handoff", "description": "Admin training and production launch.", "icon": "CheckCircle" }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": { "style": "gradient", "color": "primary", "width": "full", "spacing": "medium" },
+      "display_order": 11,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-highlights",
+      "title": "Tech Stack Highlights",
+      "subtitle": "The tools powering our success",
+      "content": {
+        "items": [
+          { "title": "Lovable / React", "description": "Next-gen front-end speed.", "icon": "Zap", "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" },
+          { "title": "Supabase / Postgres", "description": "Real-time, scalable data layer.", "icon": "Database", "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" },
+          { "title": "GitHub Copilot", "description": "AI-accelerated coding standards.", "icon": "Sparkles", "image_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" }
+        ]
+      },
+      "display_order": 12,
+      "is_active": true
+    },
+    {
+      "section_type": "video",
+      "title": "Build Showcase",
+      "subtitle": "A look inside our development environment",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+        "autoplay": false
+      },
+      "display_order": 13,
+      "is_active": true
+    },
+    {
+      "section_type": "image-text",
+      "title": "One Codebase, Unlimited Scale",
+      "subtitle": "Architecting for growth",
+      "content": {
+        "image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+        "image_position": "left",
+        "description": "Every project in our portfolio leverages a modular architecture. By keeping the front-end (React) and back-end (Supabase) decoupled but integrated, we ensure that your product can scale its user base without needing a total rewrite. This 'future-ready' approach is why our clients stay with us from MVP to IPO.",
+        "cta_text": "Meet the Dev Team",
+        "cta_link": "/about"
+      },
+      "display_order": 14,
+      "is_active": true
+    },
+    {
+      "section_type": "before-after",
+      "title": "The Performance Shift",
+      "subtitle": "Optimizing a legacy enterprise app",
+      "content": {
+        "before_image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+        "after_image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "before_label": "Legacy Monolith",
+        "after_label": "DOTR Modern Build"
+      },
+      "display_order": 15,
+      "is_active": true
+    },
+    {
+      "section_type": "differentiators",
+      "title": "Why Our Code Wins",
+      "subtitle": "DOTR vs. Outsourced Dev",
+      "content": {
+        "items": [
+          { "feature": "AI-Assisted Delivery (Fast)", "us": true, "competitors": false },
+          { "feature": "Full Admin/CMS Control", "us": true, "competitors": "Hard-coded" },
+          { "feature": "Built-in Scalability", "us": true, "competitors": false },
+          { "feature": "Modern Stack (No Legacy)", "us": true, "competitors": "PHP/Old Java" }
+        ],
+        "show_comparison": true,
+        "our_label": "DOTR",
+        "competitor_label": "Typical Agencies"
+      },
+      "display_order": 16,
+      "is_active": true
+    },
+    {
+      "section_type": "features",
+      "title": "Development Pillars",
+      "subtitle": "Our code quality standards",
+      "content": {
+        "items": [
+          { "title": "Real-time Ready", "description": "Instant updates with Supabase.", "icon": "Zap" },
+          { "title": "Security Hardened", "description": "Row-level security and JWT.", "icon": "Shield" },
+          { "title": "API-First", "description": "Built for easy integrations.", "icon": "Plug" }
+        ]
+      },
+      "display_order": 17,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-list",
+      "title": "Standard in Every Build",
+      "subtitle": "No extra charge for quality",
+      "content": {
+        "items": [
+          { "text": "Responsive Design", "icon": "Smartphone" },
+          { "text": "Admin Dashboard", "icon": "Layout" },
+          { "text": "CI/CD Setup", "icon": "Rocket" },
+          { "text": "Documnetation", "icon": "FileText" }
+        ],
+        "columns": 2
+      },
+      "display_order": 18,
+      "is_active": true
+    },
+    {
+      "section_type": "stats",
+      "title": "Platform Impact",
+      "subtitle": "Aggregated portfolio data",
+      "content": {
+        "items": [
+          { "value": "20", "label": "Languages/Frameworks", "suffix": "+" },
+          { "value": "100", "label": "Lighthouse Score", "suffix": "" },
+          { "value": "50", "label": "App Store Launches", "suffix": "+" }
+        ]
+      },
+      "display_order": 19,
+      "is_active": true
+    },
+    {
+      "section_type": "counters",
+      "title": "The Build Count",
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 150, "label": "APIs Integrated", "prefix": "", "suffix": "+", "icon": "Plug" },
+          { "value": 10, "label": "SaaS Products Live", "prefix": "", "suffix": "", "icon": "Cloud" }
+        ]
+      },
+      "display_order": 20,
+      "is_active": true
+    },
+    {
+      "section_type": "who-its-for",
+      "title": "Project Compatibility",
+      "subtitle": "Who we build for",
+      "content": {
+        "personas": [
+          { "persona": "Tech Startups", "icon": "Rocket", "description": "Need an MVP that is ready for series-A scaling.", "benefits": ["Speed", "Architecture"] },
+          { "persona": "SME Enterprises", "icon": "Building", "description": "Digitizing internal operations with custom dashboards.", "benefits": ["Automation", "Admin"] }
+        ]
+      },
+      "display_order": 21,
+      "is_active": true
+    },
+    {
+      "section_type": "outcomes-benefits",
+      "title": "Build Outcomes",
+      "subtitle": "Tangible tech ROI",
+      "content": {
+        "layout": "grid",
+        "items": [
+          { "title": "Zero Tech Debt", "description": "Fresh codebases using 2026 standards.", "icon": "Check" },
+          { "title": "Internal Control", "description": "Your team manages content via the admin panel.", "icon": "Settings" }
+        ]
+      },
+      "display_order": 22,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "Tech KPIs",
+      "subtitle": "Portfolio Performance",
+      "content": {
+        "items": [
+          { "metric": "99.9%", "label": "Uptime Guarantee", "description": "Built-in cloud redundancy.", "icon": "Activity" }
+        ]
+      },
+      "display_order": 23,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Development Case Studies",
+      "subtitle": "Web, Mobile & SaaS",
+      "content": {
+        "show_filters": true,
+        "items": [
+          { "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80", "title": "AI Property Manager", "category": "SaaS Platform", "link": "/portfolio/ai-property" },
+          { "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80", "title": "Healthcare Mobile App", "category": "Mobile App", "link": "/portfolio/health-app" },
+          { "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "title": "Custom CRM Dashboard", "category": "Admin Panel", "link": "/portfolio/crm-dash" }
+        ]
+      },
+      "display_order": 24,
+      "is_active": true
+    },
+    {
+      "section_type": "gallery",
+      "title": "Code in Action",
+      "subtitle": "Dashboards & Interfaces",
+      "content": {
+        "items": [
+          { "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", "caption": "Enterprise Admin" }
+        ]
+      },
+      "display_order": 25,
+      "is_active": true
+    },
+    {
+      "section_type": "testimonials",
+      "title": "Dev Feedback",
+      "subtitle": "What CTOs say",
+      "content": {
+        "items": [
+          { "quote": "The speed at which DOTR delivers production-ready code is unbelievable.", "author": "John D.", "role": "CTO", "company": "SaaSify" }
+        ]
+      },
+      "display_order": 26,
+      "is_active": true
+    },
+    {
+      "section_type": "social-proof-bar",
+      "title": "Trusted Tech Partner",
+      "subtitle": null,
+      "content": { "user_count": "40+", "rating": 4.9, "platforms": [{ "name": "GitHub", "icon": "Github" }] },
+      "display_order": 27,
+      "is_active": true
+    },
+    {
+      "section_type": "about-us",
+      "title": "Dev Excellence at DOTR",
+      "subtitle": "Our Story",
+      "content": { "story": "We founded the development pillar to kill the 'it will take 6 months' excuse.", "mission": "To be the fastest technical delivery partner globally.", "founded_year": "2024" },
+      "display_order": 28,
+      "is_active": true
+    },
+    {
+      "section_type": "values-culture",
+      "title": "Engineering Values",
+      "subtitle": "How we code",
+      "content": { "items": [{ "title": "Fast", "description": "Weeks, not months.", "icon": "Zap" }] },
+      "display_order": 29,
+      "is_active": true
+    },
+    {
+      "section_type": "trust-badges",
+      "title": "Our Certifications",
+      "subtitle": null,
+      "content": { "items": [{ "title": "AWS Certified", "icon": "Cloud", "description": "Cloud experts." }] },
+      "display_order": 30,
+      "is_active": true
+    },
+    {
+      "section_type": "awards-badges",
+      "title": "Tech Awards",
+      "subtitle": "Innovation recognized",
+      "content": { "items": [{ "title": "Fastest MVP 2025", "organization": "TechSummit", "year": "2025" }] },
+      "display_order": 31,
+      "is_active": true
+    },
+    {
+      "section_type": "logo-cloud",
+      "title": "Platform Partners",
+      "subtitle": "Tools we build upon",
+      "content": { "items": [{ "logo_url": "/logos/supabase.svg", "name": "Supabase" }, { "logo_url": "/logos/lovable.svg", "name": "Lovable" }] },
+      "display_order": 32,
+      "is_active": true
+    },
+    {
+      "section_type": "secondary-cta",
+      "title": null,
+      "subtitle": null,
+      "content": { "text": "Need a technical audit?", "button_text": "Talk to an Architect", "button_url": "/contact" },
+      "display_order": 33,
+      "is_active": true
+    },
+    {
+      "section_type": "faq",
+      "title": "Development FAQ",
+      "subtitle": "Answers for tech teams",
+      "content": { "items": [{ "question": "Who owns the code?", "answer": "You do. 100% IP ownership upon final payment." }] },
+      "display_order": 34,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": { "style": "solid", "spacing": "medium" },
+      "display_order": 35,
+      "is_active": true
+    },
+    {
+      "section_type": "newsletter",
+      "title": "Tech Stack Updates",
+      "subtitle": null,
+      "content": { "placeholder_text": "Email for dev tips", "button_text": "Subscribe" },
+      "display_order": 36,
+      "is_active": true
+    },
+    {
+      "section_type": "contact-info",
+      "title": "Start Your Sprint",
+      "subtitle": "Let's discuss your specs",
+      "content": { "email": "dev@dotr.io", "social_links": [{ "platform": "GitHub", "url": "https://github.com/dotr" }] },
+      "display_order": 37,
+      "is_active": true
+    },
+    {
+      "section_type": "cta",
+      "title": "Ready to Ship?",
+      "subtitle": null,
+      "content": { "headline": "Turn your idea into production code.", "description": "Free architecture consultation for new projects.", "primary_cta_text": "Book Consultation", "primary_cta_link": "/contact" },
+      "display_order": 38,
+      "is_active": true
+    },
+    {
+      "section_type": "exit-intent-cta",
+      "title": null,
+      "subtitle": null,
+      "content": { "headline": "Leaving so soon?", "description": "Download our Tech Stack Checklist.", "button_text": "Get the Checklist" },
+      "display_order": 39,
+      "is_active": true
+    },
+    {
+      "section_type": "primary-cta-banner",
+      "title": "Final CTA",
+      "subtitle": null,
+      "content": { "headline": "Build Once. Scale Everywhere.", "primary_cta_text": "Start Building", "primary_cta_link": "/contact", "background_color": "primary" },
+      "display_order": 40,
+      "is_active": true
+    },
+    {
+      "section_type": "team",
+      "title": "The Engineers",
+      "subtitle": "The minds behind the code",
+      "content": { "items": [{ "name": "Architect", "role": "Lead Systems", "bio": "Focuses on scalability." }] },
+      "display_order": 41,
+      "is_active": true
+    },
+    {
+      "section_type": "blog-posts",
+      "title": "Dev Insights",
+      "subtitle": "Our technical blog",
+      "content": { "count": 3, "layout": "grid" },
+      "display_order": 42,
+      "is_active": true
+    },
+    {
+      "section_type": "pricing",
+      "title": "Build Packages",
+      "subtitle": "Fixed-price development",
+      "content": { "items": [{ "name": "MVP Sprint", "price": "$4,900", "features": ["Supabase Backend", "React Frontend"] }] },
+      "display_order": 43,
+      "is_active": true
+    },
+    {
+      "section_type": "form",
+      "title": "Submit Your Specs",
+      "subtitle": "Let's estimate your build",
+      "content": { "form_title": "Project Intake", "submit_button_text": "Submit", "fields": [{ "field_type": "text", "label": "Stack Preference", "name": "stack", "required": false }] },
+      "display_order": 44,
+      "is_active": true
+    },
+    {
+      "section_type": "press-mentions",
+      "title": "In the News",
+      "subtitle": "Industry coverage",
+      "content": { "items": [{ "publication": "TechWeekly", "quote": "DOTR is fixing agency dev." }] },
+      "display_order": 45,
+      "is_active": true
+    },
+    {
+      "section_type": "ratings-reviews",
+      "title": "Developer Ratings",
+      "subtitle": "Verified tech feedback",
+      "content": { "items": [{ "platform": "Clutch", "rating": 4.9, "review_count": 15 }] },
+      "display_order": 46,
+      "is_active": true
+    },
+    {
+      "section_type": "video-demo",
+      "title": "Admin Demo",
+      "subtitle": "How your team will manage the site",
+      "content": { "video_url": "https://youtube.com", "callouts": [{ "time": "1:00", "text": "Editing content" }] },
+      "display_order": 47,
+      "is_active": true
+    },
+    {
+      "section_type": "screenshot-gallery",
+      "title": "App Previews",
+      "subtitle": "More from the dev portfolio",
+      "content": { "screenshots": [{ "url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80", "caption": "Mobile UX" }] },
+      "display_order": 48,
+      "is_active": true
+    }
+  ]
+}

@@ -1,0 +1,555 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-02-24T16:30:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "portfolio/designing-projects",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "Designing Portfolio Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "Design Excellence in Motion: Our Portfolio",
+        "subtitle": "Explore a curated showcase of UI/UX, branding, and visual storytelling projects. We blend AI-assisted efficiency with human creativity to build world-class digital experiences.",
+        "cta_text": "Start Your Design Project",
+        "cta_link": "/contact",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "We don't just design interfaces; we design business results. Our portfolio showcases how we use AI-assisted tools to deliver brand-consistent, user-centered, and high-converting designs in weeks, not months.",
+        "tagline": "Design that connects. Systems that scale. Results that matter.",
+        "author": "DOTR Creative Lead",
+        "author_title": "Designing Pillar"
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Palette", "text": "UI/UX & Branding" },
+          { "icon": "Sparkles", "text": "AI-Assisted Iteration" },
+          { "icon": "Zap", "text": "Rapid Prototyping" },
+          { "icon": "Layers", "text": "Design Systems" },
+          { "icon": "CheckCircle", "text": "Dev-Ready Handoff" }
+        ]
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 100, "suffix": "+", "prefix": "", "label": "Projects Delivered" },
+          { "value": 40, "suffix": "%", "prefix": "", "label": "Avg. Engagement Lift" },
+          { "value": 14, "label": "Days to Prototype", "suffix": "", "prefix": "" },
+          { "value": 100, "suffix": "%", "prefix": "", "label": "Brand Alignment" }
+        ],
+        "animate": true
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "The Design Void We Fill",
+      "subtitle": "Why brands choose our creative approach",
+      "content": {
+        "problems": [
+          {
+            "title": "Disconnected Visual Identities",
+            "description": "Brands often struggle with visuals that don't match their product experience, leading to user confusion and lack of trust."
+          },
+          {
+            "title": "The 'Agency Lag'",
+            "description": "Traditional design cycles are slow. Our portfolio proves you can have high-end quality with AI-accelerated timelines."
+          }
+        ],
+        "empathy_text": "We've seen too many great products fail because of poor UX or inconsistent branding. Our work is the bridge between a good idea and a great brand."
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Featured Design Projects",
+      "subtitle": "Explore our work across the design spectrum",
+      "content": {
+        "show_filters": true,
+        "items": [
+          { "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "title": "FinTech Mobile App", "category": "UI/UX Design", "link": "/portfolio/fintech-app" },
+          { "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=600&q=80", "title": "Luxe Global Rebrand", "category": "Branding & Identity", "link": "/portfolio/luxe-branding" },
+          { "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80", "title": "SaaS Platform Motion", "category": "Motion Design", "link": "/portfolio/saas-motion" },
+          { "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80", "title": "Creative Agency Web", "category": "Graphic Design", "link": "/portfolio/agency-web" },
+          { "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=80", "title": "E-Commerce Experience", "category": "UI/UX Design", "link": "/portfolio/ecommerce-ux" },
+          { "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80", "title": "Social Media Identity", "category": "Branding & Identity", "link": "/portfolio/social-identity" }
+        ]
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": "Transforming Visions",
+      "subtitle": null,
+      "content": {
+        "problem": "Static designs that don't convert and branding that feels 'borrowed'.",
+        "agitation": "Every day your product lacks a professional, user-centered design, you are losing users to competitors who have invested in their UX.",
+        "solution": "We deliver comprehensive design systems that don't just look beautiful but are built for development-ready handoff and high-conversion performance."
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "Why Our Designs Win",
+      "subtitle": "The DOTR Creative Advantage",
+      "content": {
+        "headline": "Design Built to Scale, Not Just to Look Good",
+        "supporting_points": [
+          "AI-assisted exploration for 3x faster mood-boarding and conceptualization.",
+          "Atomic Design systems that plug directly into your Lovable + Supabase stack.",
+          "User-centered research embedded into every wireframe.",
+          "Clean handoff documentation for developers to ensure 100% design fidelity."
+        ],
+        "cta_text": "See Designing Services",
+        "cta_url": "/services/designing"
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Creative Disciplines",
+      "subtitle": "What we showcase in this portfolio",
+      "content": {
+        "items": [
+          { "icon": "Layout", "title": "UI/UX Design", "description": "Interactive, conversion-focused interfaces.", "link": "/services/designing/ui-ux-design" },
+          { "icon": "Palette", "title": "Graphic Design", "description": "High-impact visual assets for all channels.", "link": "/services/designing/graphic-design" },
+          { "icon": "Award", "title": "Branding & Identity", "description": "Comprehensive visual languages and guidelines.", "link": "/services/designing/branding-identity" },
+          { "icon": "Film", "title": "Motion Design", "description": "Polished animations that bring products to life.", "link": "/services/designing/motion-visual-design" }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "From Sketch to Scale",
+      "subtitle": "Our Creative Workflow",
+      "content": {
+        "items": [
+          { "step": 1, "title": "Discovery", "description": "Aligning on brand values and user goals.", "icon": "Search" },
+          { "step": 2, "title": "Prototyping", "description": "Rapid AI-assisted wireframes and interactive flows.", "icon": "PenTool" },
+          { "step": 3, "title": "System Design", "description": "Building scalable components and guidelines.", "icon": "Layers" },
+          { "step": 4, "title": "Handoff", "description": "Seamless transition to the development team.", "icon": "Rocket" }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "timeline",
+      "title": "Project Lifecycle",
+      "subtitle": "How we delivered our portfolio pieces",
+      "content": {
+        "items": [
+          { "year": "Week 1", "title": "Audit & Moodboarding", "description": "Analyzing competitors and defining the visual vibe.", "icon": "Search" },
+          { "year": "Week 2", "title": "High-Fidelity UI", "description": "Designing the key screens and interactive prototypes.", "icon": "Palette" },
+          { "year": "Week 3", "title": "Component Library", "description": "Finalizing the design system for developers.", "icon": "Layers" }
+        ]
+      },
+      "display_order": 11,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": { "style": "gradient", "color": "primary", "width": "full", "spacing": "medium" },
+      "display_order": 12,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-highlights",
+      "title": "Design Capabilities",
+      "subtitle": "Techniques used in our portfolio",
+      "content": {
+        "items": [
+          { "title": "AI moodboarding", "description": "Using AI to generate visual inspiration fast.", "icon": "Sparkles", "image_url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" },
+          { "title": "Design Tokens", "description": "Ensuring consistency between Figma and Code.", "icon": "Code", "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" },
+          { "title": "Motion Graphics", "description": "Adding polish with custom Lottie animations.", "icon": "Film", "image_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" }
+        ]
+      },
+      "display_order": 13,
+      "is_active": true
+    },
+    {
+      "section_type": "video",
+      "title": "Showreel 2026",
+      "subtitle": "Highlights from our designing portfolio",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80",
+        "autoplay": false
+      },
+      "display_order": 14,
+      "is_active": true
+    },
+    {
+      "section_type": "image-text",
+      "title": "Atomic Design Systems",
+      "subtitle": "The foundation of our work",
+      "content": {
+        "image_url": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=800&q=80",
+        "image_position": "right",
+        "description": "Every project in our portfolio is built using an Atomic Design approach. We start with 'atoms' (buttons, inputs) and build up to complex 'pages'. This modularity ensures that as your brand grows, your design system scales effortlessly without technical debt.",
+        "cta_text": "View Branding Services",
+        "cta_link": "/services/designing/branding-identity"
+      },
+      "display_order": 15,
+      "is_active": true
+    },
+    {
+      "section_type": "before-after",
+      "title": "The UX Transformation",
+      "subtitle": "Redesigning a legacy SaaS dashboard",
+      "content": {
+        "before_image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "after_image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "before_label": "Legacy App",
+        "after_label": "DOTR Redesign"
+      },
+      "display_order": 16,
+      "is_active": true
+    },
+    {
+      "section_type": "differentiators",
+      "title": "Our Portfolio vs. Freelancers",
+      "subtitle": "Why companies choose a pillar-based approach",
+      "content": {
+        "items": [
+          { "feature": "Integrated Dev Handoff", "us": true, "competitors": false },
+          { "feature": "AI-Driven Prototyping", "us": true, "competitors": false },
+          { "feature": "Full Motion Capabilities", "us": true, "competitors": "Design Only" },
+          { "feature": "Modular Design Systems", "us": true, "competitors": "Static Files" }
+        ],
+        "show_comparison": true,
+        "our_label": "DOTR",
+        "competitor_label": "Freelance Market"
+      },
+      "display_order": 17,
+      "is_active": true
+    },
+    {
+      "section_type": "features",
+      "title": "Design Principles",
+      "subtitle": "Standard in every portfolio project",
+      "content": {
+        "items": [
+          { "title": "Accessibility", "description": "WCAG-compliant designs for everyone.", "icon": "CheckCircle" },
+          { "title": "Performance", "description": "Optimized assets for lightning-fast loads.", "icon": "Zap" },
+          { "title": "Storytelling", "description": "Visuals that communicate your 'Why'.", "icon": "Sparkles" }
+        ]
+      },
+      "display_order": 18,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-list",
+      "title": "Included Deliverables",
+      "subtitle": "What we provide with every project",
+      "content": {
+        "items": [
+          { "text": "Figma Source Files", "icon": "FileText" },
+          { "text": "Brand Style Guides", "icon": "Layers" },
+          { "text": "Interactive Prototypes", "icon": "Smartphone" },
+          { "text": "Exported Asset Pack", "icon": "Download" }
+        ],
+        "columns": 2
+      },
+      "display_order": 19,
+      "is_active": true
+    },
+    {
+      "section_type": "stats",
+      "title": "Design Metrics",
+      "subtitle": "Impact across our portfolio",
+      "content": {
+        "items": [
+          { "value": "4", "label": "Design Disciplines", "suffix": "" },
+          { "value": "98", "label": "Retention Rate", "suffix": "%" },
+          { "value": "2", "label": "Weeks to Delivery", "suffix": "" }
+        ]
+      },
+      "display_order": 20,
+      "is_active": true
+    },
+    {
+      "section_type": "counters",
+      "title": "The Impact",
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 50, "label": "Brand Identities", "prefix": "", "suffix": "+", "icon": "Award" },
+          { "value": 100, "label": "UI Components", "prefix": "", "suffix": "+", "icon": "Layers" }
+        ]
+      },
+      "display_order": 21,
+      "is_active": true
+    },
+    {
+      "section_type": "who-its-for",
+      "title": "Ideal Projects",
+      "subtitle": "Who we design for",
+      "content": {
+        "personas": [
+          { "persona": "SaaS Founders", "icon": "Rocket", "description": "Need complex dashboards that look clean and perform.", "benefits": ["UX Flow", "Components"] },
+          { "persona": "Brands", "icon": "Award", "description": "Want a fresh, modern identity that stands out.", "benefits": ["Brand Strategy", "Visuals"] }
+        ]
+      },
+      "display_order": 22,
+      "is_active": true
+    },
+    {
+      "section_type": "outcomes-benefits",
+      "title": "Portfolio Outcomes",
+      "subtitle": "Results of our design",
+      "content": {
+        "layout": "grid",
+        "items": [
+          { "title": "Faster Launch", "description": "Systems built for speed.", "icon": "Zap" },
+          { "title": "Trust", "description": "High-fidelity visuals build credibility.", "icon": "Shield" }
+        ]
+      },
+      "display_order": 23,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "By the Numbers",
+      "subtitle": "Portfolio Success",
+      "content": {
+        "items": [
+          { "metric": "40%", "label": "Engagement Increase", "description": "After UX overhaul.", "icon": "TrendingUp" }
+        ]
+      },
+      "display_order": 24,
+      "is_active": true
+    },
+    {
+      "section_type": "gallery",
+      "title": "Snapshots",
+      "subtitle": "Brief glimpses of UI screens",
+      "content": {
+        "items": [
+          { "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "caption": "Mobile App UI" }
+        ]
+      },
+      "display_order": 25,
+      "is_active": true
+    },
+    {
+      "section_type": "testimonials",
+      "title": "Client Praise",
+      "subtitle": "Feedback from these projects",
+      "content": {
+        "items": [
+          { "quote": "The design system DOTR built allowed our developers to move twice as fast.", "author": "Maria R.", "role": "Product Lead", "company": "VentureX" }
+        ]
+      },
+      "display_order": 26,
+      "is_active": true
+    },
+    {
+      "section_type": "social-proof-bar",
+      "title": "Trusted Globally",
+      "subtitle": null,
+      "content": { "user_count": "50+", "rating": 5.0, "platforms": [{ "name": "LinkedIn", "icon": "LinkedIn" }] },
+      "display_order": 27,
+      "is_active": true
+    },
+    {
+      "section_type": "about-us",
+      "title": "Design at DOTR",
+      "subtitle": "Our Philosophy",
+      "content": { "story": "We believe design is more than pixels; it is the soul of the digital product.", "mission": "To create beautiful, scalable design systems.", "founded_year": "2024" },
+      "display_order": 28,
+      "is_active": true
+    },
+    {
+      "section_type": "values-culture",
+      "title": "Creative Culture",
+      "subtitle": "How we work",
+      "content": { "items": [{ "title": "Iterative", "description": "Always improving.", "icon": "Rocket" }] },
+      "display_order": 29,
+      "is_active": true
+    },
+    {
+      "section_type": "trust-badges",
+      "title": "Our Standard",
+      "subtitle": null,
+      "content": { "items": [{ "title": "Figma Experts", "icon": "Palette", "description": "Certified designers." }] },
+      "display_order": 30,
+      "is_active": true
+    },
+    {
+      "section_type": "awards-badges",
+      "title": "Design Awards",
+      "subtitle": "Recognized Excellence",
+      "content": { "items": [{ "title": "Best UI 2025", "organization": "CreativeSummit", "year": "2025" }] },
+      "display_order": 31,
+      "is_active": true
+    },
+    {
+      "section_type": "logo-cloud",
+      "title": "Tool Stack",
+      "subtitle": "Tools used for these projects",
+      "content": { "items": [{ "logo_url": "/logos/figma.svg", "name": "Figma" }, { "logo_url": "/logos/adobe.svg", "name": "Adobe CC" }] },
+      "display_order": 32,
+      "is_active": true
+    },
+    {
+      "section_type": "secondary-cta",
+      "title": null,
+      "subtitle": null,
+      "content": { "text": "Like what you see?", "button_text": "Request a Quote", "button_url": "/contact" },
+      "display_order": 33,
+      "is_active": true
+    },
+    {
+      "section_type": "faq",
+      "title": "Portfolio FAQ",
+      "subtitle": "Questions about our work",
+      "content": { "items": [{ "question": "Can I get the source files?", "answer": "Yes, we provide all Figma source files at handoff." }] },
+      "display_order": 34,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": { "style": "solid", "spacing": "medium" },
+      "display_order": 35,
+      "is_active": true
+    },
+    {
+      "section_type": "newsletter",
+      "title": "Design Newsletter",
+      "subtitle": null,
+      "content": { "placeholder_text": "Email for design tips", "button_text": "Sign Up" },
+      "display_order": 36,
+      "is_active": true
+    },
+    {
+      "section_type": "contact-info",
+      "title": "Work With Us",
+      "subtitle": "Let's start your design journey",
+      "content": { "email": "hello@dotr.io", "social_links": [{ "platform": "LinkedIn", "url": "https://linkedin.com/company/dotr" }] },
+      "display_order": 37,
+      "is_active": true
+    },
+    {
+      "section_type": "cta",
+      "title": "Inspired?",
+      "subtitle": null,
+      "content": { "headline": "Ready for your own masterpiece?", "description": "Contact us today for a free design audit.", "primary_cta_text": "Book Consultation", "primary_cta_link": "/contact" },
+      "display_order": 38,
+      "is_active": true
+    },
+    {
+      "section_type": "exit-intent-cta",
+      "title": null,
+      "subtitle": null,
+      "content": { "headline": "Before you go...", "description": "Get our free UI Checklist.", "button_text": "Download Now" },
+      "display_order": 39,
+      "is_active": true
+    },
+    {
+      "section_type": "primary-cta-banner",
+      "title": "Final Thought",
+      "subtitle": null,
+      "content": { "headline": "The Best Design is Yet to Come.", "primary_cta_text": "Let's Talk", "primary_cta_link": "/contact", "background_color": "primary" },
+      "display_order": 40,
+      "is_active": true
+    },
+    {
+      "section_type": "team",
+      "title": "The Creators",
+      "subtitle": "The minds behind these designs",
+      "content": { "items": [{ "name": "Creative Director", "role": "Lead Strategy", "bio": "Focuses on brand consistency." }] },
+      "display_order": 41,
+      "is_active": true
+    },
+    {
+      "section_type": "blog-posts",
+      "title": "Design Articles",
+      "subtitle": "Insights from our process",
+      "content": { "count": 3, "layout": "grid" },
+      "display_order": 42,
+      "is_active": true
+    },
+    {
+      "section_type": "pricing",
+      "title": "Standard Design Rates",
+      "subtitle": "Starting points for similar work",
+      "content": { "items": [{ "name": "MVP UX", "price": "$1,490", "features": ["5 Main Screens", "Figma Handoff"] }] },
+      "display_order": 43,
+      "is_active": true
+    },
+    {
+      "section_type": "form",
+      "title": "Start a Design Brief",
+      "subtitle": "Tell us about your next project",
+      "content": { "form_title": "Project Intake", "submit_button_text": "Submit", "fields": [{ "field_type": "text", "label": "Name", "name": "name", "required": true }] },
+      "display_order": 44,
+      "is_active": true
+    },
+    {
+      "section_type": "press-mentions",
+      "title": "Media Presence",
+      "subtitle": "Our work in the news",
+      "content": { "items": [{ "publication": "Dribbble Featured", "quote": "Clean, modern, and effective." }] },
+      "display_order": 45,
+      "is_active": true
+    },
+    {
+      "section_type": "ratings-reviews",
+      "title": "Client Ratings",
+      "subtitle": "Aggregated Feedback",
+      "content": { "items": [{ "platform": "Behance", "rating": 5.0, "review_count": 20 }] },
+      "display_order": 46,
+      "is_active": true
+    },
+    {
+      "section_type": "video-demo",
+      "title": "UX Walkthrough",
+      "subtitle": "How we navigated one of these projects",
+      "content": { "video_url": "https://youtube.com", "callouts": [{ "time": "1:00", "text": "Wireframe phase" }] },
+      "display_order": 47,
+      "is_active": true
+    },
+    {
+      "section_type": "screenshot-gallery",
+      "title": "UI Archives",
+      "subtitle": "More screens from the portfolio",
+      "content": { "screenshots": [{ "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80", "caption": "Admin Dashboard" }] },
+      "display_order": 48,
+      "is_active": true
+    }
+  ]
+}

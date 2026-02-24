@@ -1,0 +1,204 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-02-24T17:30:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "portfolio/ai-automation-projects",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "AI & Automation Portfolio Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "The Future, Automated: AI & Automation Portfolio",
+        "subtitle": "Explore our gallery of intelligent systems, from RAG-based chatbots to complex n8n workflows that power self-operating businesses. High-velocity systems for high-growth brands.",
+        "cta_text": "Automate Your Business",
+        "cta_link": "/contact",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "We don't just 'link apps'; we build digital brains. Our portfolio demonstrates how we use AI-first thinking to eliminate manual bottlenecks, qualify leads at 3 AM, and sync entire tech stacks into one cohesive Digital Operating System.",
+        "tagline": "Intelligent logic. Seamless automation. Infinite scale.",
+        "author": "DOTR Automation Lead",
+        "author_title": "AI & Automation Pillar"
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Brain", "text": "Custom LLM Agents" },
+          { "icon": "Zap", "text": "n8n Workflow Experts" },
+          { "icon": "MessageSquare", "text": "RAG-Based Support" },
+          { "icon": "Target", "text": "Smart Lead Qual" },
+          { "icon": "Workflow", "text": "End-to-End Sync" }
+        ]
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 20, "suffix": "hr+", "prefix": "", "label": "Manual Work Saved/Wk" },
+          { "value": 0, "suffix": "ms", "prefix": "", "label": "Lead Response Time" },
+          { "value": 100, "label": "Accuracy Rate", "suffix": "%", "prefix": "" },
+          { "value": 24, "suffix": "/7", "prefix": "", "label": "AI Availability" }
+        ],
+        "animate": true
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "The Automation Gaps We Filled",
+      "subtitle": "Solving operational stagnation",
+      "content": {
+        "problems": [
+          {
+            "title": "The 'Copy-Paste' Tax",
+            "description": "Replacing manual data entry across fragmented CRMs and spreadsheets with self-healing n8n pipelines."
+          },
+          {
+            "title": "Hallucinating Support Bots",
+            "description": "Moving away from generic bots to RAG-based systems that only use factual company documentation to answer."
+          }
+        ],
+        "empathy_text": "Technology should work for you, not the other way around. Our portfolio shows systems that handle the routine so humans can innovate."
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Featured Automation Projects",
+      "subtitle": "Intelligent systems in the wild",
+      "content": {
+        "show_filters": true,
+        "items": [
+          { "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80", "title": "Real Estate Lead Agent", "category": "AI Chatbot", "link": "/portfolio/real-estate-bot" },
+          { "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "title": "Cross-Platform CRM Sync", "category": "n8n Workflow", "link": "/portfolio/crm-sync" },
+          { "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", "title": "Automated Content Engine", "category": "AI Content", "link": "/portfolio/content-engine" },
+          { "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80", "title": "WhatsApp Support Bot", "category": "AI Support", "link": "/portfolio/whatsapp-bot" },
+          { "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&w=600&q=80", "title": "Smart Form Qualification", "category": "Lead Qual", "link": "/portfolio/smart-forms" },
+          { "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80", "title": "AI Analytics Dashboard", "category": "AI Insights", "link": "/portfolio/ai-analytics" }
+        ]
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": "Stop Managing, Start Automating",
+      "subtitle": null,
+      "content": {
+        "problem": "Manual workflows are the silent growth killers of the modern agency.",
+        "agitation": "Every minute your team spends moving data between HubSpot and WhatsApp is a minute they aren't closing high-value deals.",
+        "solution": "We build custom AI agents and n8n bridges that act as your virtual workforce, operating at 10x speed with 0% fatigue."
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "The DOTR Intelligence Edge",
+      "subtitle": "Why our systems are different",
+      "content": {
+        "headline": "Intelligent Systems Built on an AI-First Foundation",
+        "supporting_points": [
+          "RAG-Powered Bots: Factual responses based only on your brand's knowledge base.",
+          "Self-Healing Workflows: n8n logic that notifies you and retries before a chain breaks.",
+          "Lead-to-Revenue Automation: From ad click to qualified calendar booking without a human touch.",
+          "Secure Cloud Sync: High-security Supabase data layers that keep your intel private."
+        ],
+        "cta_text": "See AI Services",
+        "cta_url": "/services/ai-automation"
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Automation Disciplines",
+      "subtitle": "What we delivered in this portfolio",
+      "content": {
+        "items": [
+          { "icon": "MessageSquare", "title": "AI Chatbots", "description": "24/7 RAG-based support and sales agents.", "link": "/services/ai-automation/chatbots" },
+          { "icon": "Zap", "title": "Workflow Sync", "description": "n8n automation between 500+ apps.", "link": "/services/ai-automation/workflows" },
+          { "icon": "Target", "title": "Lead Qual", "description": "Smart agents that score and book leads.", "link": "/services/ai-automation/lead-gen" },
+          { "icon": "BarChart", "title": "AI Analytics", "description": "Predictive insights from your data.", "link": "/services/ai-automation/analytics" }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "Our Build Logic",
+      "subtitle": "Deploying intelligence",
+      "content": {
+        "items": [
+          { "step": 1, "title": "Audit", "description": "Mapping your manual bottlenecks.", "icon": "Search" },
+          { "step": 2, "title": "Train", "description": "Feeding your data to custom LLMs.", "icon": "Brain" },
+          { "step": 3, "title": "Connect", "description": "Building n8n and API bridges.", "icon": "Plug" },
+          { "step": 4, "title": "Optimize", "description": "Real-time refinement of AI responses.", "icon": "TrendingUp" }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    { "section_type": "timeline", "title": "Automation Lifecycle", "display_order": 11, "is_active": true, "content": { "items": [{ "year": "Week 1", "title": "Discovery" }, { "year": "Week 2", "title": "Model Training" }, { "year": "Week 3", "title": "Integration" }] } },
+    { "section_type": "divider", "display_order": 12, "is_active": true, "content": { "style": "gradient" } },
+    { "section_type": "feature-highlights", "title": "AI Tech Highlights", "display_order": 13, "is_active": true, "content": { "items": [{ "title": "RAG Implementation" }, { "title": "n8n Custom Logic" }] } },
+    { "section_type": "video", "title": "AI in Motion", "display_order": 14, "is_active": true, "content": { "video_url": "https://youtube.com" } },
+    { "section_type": "image-text", "title": "The Digital Twin", "display_order": 15, "is_active": true, "content": { "image_position": "left", "description": "We build an automated twin of your business logic." } },
+    { "section_type": "before-after", "title": "Efficiency Shift", "display_order": 16, "is_active": true, "content": { "before_label": "Manual Tasks", "after_label": "AI Automated" } },
+    { "section_type": "differentiators", "title": "DOTR vs. Simple Zapier", "display_order": 17, "is_active": true, "content": { "items": [{ "feature": "AI Reasoning", "us": true, "competitors": false }] } },
+    { "section_type": "features", "title": "Core Standards", "display_order": 18, "is_active": true, "content": { "items": [{ "title": "Context Awareness" }] } },
+    { "section_type": "feature-list", "title": "Included Tech", "display_order": 19, "is_active": true, "content": { "items": [{ "text": "n8n Cloud Setup" }] } },
+    { "section_type": "stats", "title": "Pillar Data", "display_order": 20, "is_active": true, "content": { "items": [{ "value": "50", "label": "Workflows Built" }] } },
+    { "section_type": "counters", "title": "System Volume", "display_order": 21, "is_active": true, "content": { "items": [{ "value": 1000, "label": "Tasks/Day" }] } },
+    { "section_type": "who-its-for", "title": "Ideal Use-Cases", "display_order": 22, "is_active": true, "content": { "personas": [{ "persona": "High-Growth Agencies" }] } },
+    { "section_type": "outcomes-benefits", "title": "ROI", "display_order": 23, "is_active": true, "content": { "items": [{ "title": "Zero Response Lag" }] } },
+    { "section_type": "success-metrics", "title": "Impact", "display_order": 24, "is_active": true, "content": { "items": [{ "metric": "60%", "label": "Efficiency Lift" }] } },
+    { "section_type": "gallery", "title": "Flow Gallery", "display_order": 25, "is_active": true, "content": { "items": [{ "caption": "n8n Canvas" }] } },
+    { "section_type": "testimonials", "title": "Client Feedback", "display_order": 26, "is_active": true, "content": { "items": [{ "quote": "The lead bot paid for itself in 48 hours." }] } },
+    { "section_type": "social-proof-bar", "display_order": 27, "is_active": true, "content": { "platforms": [{ "name": "n8n Certified" }] } },
+    { "section_type": "about-us", "title": "Our AI Vision", "display_order": 28, "is_active": true, "content": { "story": "We believe humans should never have to copy-paste." } },
+    { "section_type": "values-culture", "title": "AI Ethics", "display_order": 29, "is_active": true, "content": { "items": [{ "title": "AI-First" }] } },
+    { "section_type": "trust-badges", "display_order": 30, "is_active": true, "content": { "items": [{ "title": "Data Private" }] } },
+    { "section_type": "awards-badges", "title": "Awards", "display_order": 31, "is_active": true, "content": { "items": [{ "title": "AI Innovator 2025" }] } },
+    { "section_type": "logo-cloud", "title": "AI Partners", "display_order": 32, "is_active": true, "content": { "items": [{ "name": "OpenAI" }] } },
+    { "section_type": "secondary-cta", "display_order": 33, "is_active": true, "content": { "text": "Ready for an audit?" } },
+    { "section_type": "faq", "title": "AI FAQ", "display_order": 34, "is_active": true, "content": { "items": [{ "question": "What is RAG?" }] } },
+    { "section_type": "divider", "display_order": 35, "is_active": true, "content": { "style": "solid" } },
+    { "section_type": "newsletter", "display_order": 36, "is_active": true, "content": { "title": "Automated Weekly" } },
+    { "section_type": "contact-info", "display_order": 37, "is_active": true, "content": { "email": "ai@dotr.io" } },
+    { "section_type": "cta", "display_order": 38, "is_active": true, "content": { "headline": "Build your digital twin." } },
+    { "section_type": "exit-intent-cta", "display_order": 39, "is_active": true, "content": { "headline": "Free n8n Audit" } },
+    { "section_type": "primary-cta-banner", "display_order": 40, "is_active": true, "content": { "headline": "Scale with Intelligence." } },
+    { "section_type": "team", "title": "The AI Squad", "display_order": 41, "is_active": true, "content": { "items": [{ "name": "AI Architect" }] } },
+    { "section_type": "blog-posts", "title": "AI Blog", "display_order": 42, "is_active": true, "content": { "count": 3 } },
+    { "section_type": "pricing", "title": "Packages", "display_order": 43, "is_active": true, "content": { "items": [{ "name": "Digital OS", "price": "$3,900" }] } },
+    { "section_type": "form", "title": "Project Brief", "display_order": 44, "is_active": true, "content": { "form_title": "Start Here" } },
+    { "section_type": "press-mentions", "display_order": 45, "is_active": true, "content": { "items": [{ "publication": "AI Weekly" }] } },
+    { "section_type": "ratings-reviews", "display_order": 46, "is_active": true, "content": { "items": [{ "platform": "Trustpilot" }] } },
+    { "section_type": "video-demo", "display_order": 47, "is_active": true, "content": { "video_url": "https://youtube.com" } },
+    { "section_type": "screenshot-gallery", "display_order": 48, "is_active": true, "content": { "screenshots": [{ "caption": "Bot Dashboard" }] } }
+  ]
+}

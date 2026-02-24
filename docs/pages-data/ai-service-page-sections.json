@@ -1,0 +1,1028 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-02-24T13:00:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "services/ai-automation",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "AI & Automation Services Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "AI-First Automation: Build an Intelligent, Self-Operating Business",
+        "subtitle": "From custom AI chatbots and lead qualification systems to complex workflow automation with n8n—we build the brains and the brawn of your digital operations. Faster, smarter, and infinitely scalable.",
+        "cta_text": "Get an Automation Consultation",
+        "cta_link": "/contact",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "We help ambitious brands replace manual chaos with intelligent systems. We build AI chatbots, automated lead qualification, and end-to-end CRM workflows that run 24/7. Your goals. Our AI-first systems. Efficiency at scale.",
+        "tagline": "Your vision. Our AI-powered automation. Scale without limits.",
+        "author": "DOTR AI Team",
+        "author_title": "AI & Automation Pillar"
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Brain", "text": "AI-First Workflows" },
+          { "icon": "Zap", "text": "n8n Specialists" },
+          { "icon": "MessageSquare", "text": "Custom AI Chatbots" },
+          { "icon": "Workflow", "text": "End-to-End Automation" },
+          { "icon": "Target", "text": "Smart Lead Qualification" }
+        ]
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 20, "suffix": "hr+", "prefix": "", "label": "Manual Work Saved/Week" },
+          { "value": 100, "suffix": "%", "prefix": "", "label": "Lead Response Rate" },
+          { "value": 5, "suffix": "x", "prefix": "", "label": "Operational Speed" },
+          { "value": 24, "suffix": "/7", "prefix": "", "label": "AI Support Availability" }
+        ],
+        "animate": true
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "Automation Challenges We Solve",
+      "subtitle": "Is your team drowning in manual tasks?",
+      "content": {
+        "problems": [
+          {
+            "title": "Slow Lead Response",
+            "description": "Leads wait hours for a reply, killing conversion. You need instant, smart engagement to strike while the iron is hot."
+          },
+          {
+            "title": "Disconnected App Chaos",
+            "description": "Data is stuck in silos—CRM, WhatsApp, Email, and Sheets don't talk to each other, leading to errors and double work."
+          },
+          {
+            "title": "Manual Repetitive Tasks",
+            "description": "Your best people are spending 40% of their time on data entry and follow-ups instead of strategy and growth."
+          },
+          {
+            "title": "Generic Support Bot",
+            "description": "Basic bots that don't understand context or your business knowledge—frustrating users and failing to solve problems."
+          }
+        ],
+        "empathy_text": "We get it. Scaling a business shouldn't mean hiring an army for manual tasks. DOTR uses AI and n8n to build a 'Digital Operating System' that handles the grunt work while you focus on the vision."
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "problem": "Manual workflows are the hidden tax on your growth. Every hour spent on data entry is an hour lost on innovation.",
+        "agitation": "The competition is already using AI to move 10x faster. While you're manually qualifying a lead, they've already closed the deal with a smart automation.",
+        "solution": "DOTR builds intelligent AI agents and automated workflows that bridge your apps, qualify your leads, and support your customers instantly. Ship faster, save thousands in overhead, and scale without friction."
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "The AI & Automation Advantage",
+      "subtitle": "Why DOTR for Intelligent Systems?",
+      "content": {
+        "headline": "Don't Just Automate—Add Intelligence to Every Workflow",
+        "supporting_points": [
+          "AI-First, not just 'tools': We build systems that think, learn, and adapt to your business logic.",
+          "n8n Specialists: We create complex, multi-app workflows that keep your data in sync 24/7.",
+          "Custom LLM Integration: Chatbots that actually know your documentation and brand voice.",
+          "Lead-to-Revenue Automation: From the first click to CRM qualification, everything is tracked and automated.",
+          "Scalable & Secure: Built with Supabase and modern cloud security to grow as you do."
+        ],
+        "cta_text": "See Our AI Process",
+        "cta_url": "/about"
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Our AI & Automation Services",
+      "subtitle": "Five Pillars of Intelligence",
+      "content": {
+        "items": [
+          {
+            "icon": "MessageSquare",
+            "title": "AI Chatbots & Support",
+            "description": "Custom RAG-based bots that provide 24/7 support using your company's actual knowledge base and documentation.",
+            "link": "/services/ai-automation/chatbots"
+          },
+          {
+            "icon": "Workflow",
+            "title": "Workflow Automation (n8n)",
+            "description": "Complex integrations across CRM, WhatsApp, Email, and Cloud. If it has an API, we can automate it.",
+            "link": "/services/ai-automation/workflows"
+          },
+          {
+            "icon": "Target",
+            "title": "Lead Qualification Systems",
+            "description": "Smart forms and AI agents that ask the right questions, qualify prospects, and book calls automatically.",
+            "link": "/services/ai-automation/lead-gen"
+          },
+          {
+            "icon": "PenTool",
+            "title": "AI Content Generation",
+            "description": "Automated pipelines for SEO content, marketing copy, and social posts that maintain your brand voice at scale.",
+            "link": "/services/ai-automation/content"
+          },
+          {
+            "icon": "BarChart",
+            "title": "AI Analytics & Insights",
+            "description": "Predictive modeling and data automation to surface revenue opportunities you're currently missing.",
+            "link": "/services/ai-automation/analytics"
+          }
+        ]
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "How We Automate",
+      "subtitle": "Our Streamlined System Deployment",
+      "content": {
+        "items": [
+          {
+            "step": 1,
+            "title": "Audit & Discovery",
+            "description": "We map your current manual processes and identify high-impact automation opportunities.",
+            "icon": "Search"
+          },
+          {
+            "step": 2,
+            "title": "Architecture & AI Training",
+            "description": "We design the workflow logic and train AI models on your specific business data.",
+            "icon": "Brain"
+          },
+          {
+            "step": 3,
+            "title": "Build & Integrate",
+            "description": "Systems are built using n8n and AI APIs, then seamlessly integrated with your existing CRM and tools.",
+            "icon": "Code"
+          },
+          {
+            "step": 4,
+            "title": "Scale & Optimize",
+            "description": "We monitor performance, refine AI responses, and expand automation to new departments.",
+            "icon": "Rocket"
+          }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "timeline",
+      "title": "Automation Journey",
+      "subtitle": "From manual chaos to AI-driven clarity",
+      "content": {
+        "items": [
+          { "year": "Week 1", "title": "Discovery & Process Mapping", "description": "Identify bottlenecks and define automation KPIs.", "icon": "Search" },
+          { "year": "Week 2", "title": "AI Model Training", "description": "Feed your brand data into custom AI agents for support and sales.", "icon": "Brain" },
+          { "year": "Week 3-4", "title": "System Build & n8n Workflows", "description": "Connecting your tech stack into a single, automated engine.", "icon": "Code" },
+          { "year": "Ongoing", "title": "Monitoring & AI Refinement", "description": "Continuous improvement to ensure 100% accuracy and efficiency.", "icon": "Rocket" }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "color": "primary",
+        "width": "full",
+        "spacing": "medium"
+      },
+      "display_order": 11,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-highlights",
+      "title": "AI + Automation Capabilities",
+      "subtitle": "The Intelligence Layer Your Business Needs",
+      "content": {
+        "items": [
+          {
+            "title": "Smart RAG Chatbots",
+            "description": "Retrieval-Augmented Generation (RAG) ensures your bot gives factual answers based only on your data.",
+            "icon": "MessageCircle",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Advanced n8n Workflows",
+            "description": "Multi-step automations that handle logic, data transformation, and multi-app syncing effortlessly.",
+            "icon": "Workflow",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "WhatsApp & CRM Integration",
+            "description": "Automate sales conversations and customer updates directly inside WhatsApp, synced with your CRM.",
+            "icon": "MessageSquare",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Lead Scouring & Qualification",
+            "description": "AI analyzes lead data to score intent and only pass high-value prospects to your sales team.",
+            "icon": "Target",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Automated Content Pipelines",
+            "description": "From data point to published blog post—automated research and draft generation systems.",
+            "icon": "Zap",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Self-Healing Workflows",
+            "description": "Advanced error handling that notifies you and attempts to fix issues before they break the chain.",
+            "icon": "Shield",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 12,
+      "is_active": true
+    },
+    {
+      "section_type": "video",
+      "title": "See AI & Automation in Action",
+      "subtitle": "How we build self-operating systems",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
+        "autoplay": false
+      },
+      "display_order": 13,
+      "is_active": true
+    },
+    {
+      "section_type": "image-text",
+      "title": "Intelligence at Scale",
+      "subtitle": "Building your digital twin",
+      "content": {
+        "image_url": "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&w=800&q=80",
+        "image_position": "left",
+        "description": "We take your business knowledge and manual logic and turn them into an automated workforce. Using n8n for orchestration and OpenAI/Anthropic for intelligence, we build systems that don't just 'follow rules'—they understand your goals. Whether it's qualifying a lead at 3 AM or syncing data across ten platforms, we've got you covered.",
+        "cta_text": "See Our Automation Process",
+        "cta_link": "/about"
+      },
+      "display_order": 14,
+      "is_active": true
+    },
+    {
+      "section_type": "before-after",
+      "title": "Automation Impact",
+      "subtitle": "Before & after DOTR stepped in",
+      "content": {
+        "before_image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80",
+        "after_image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+        "before_label": "Manual Chaos",
+        "after_label": "Automated Clarity"
+      },
+      "display_order": 15,
+      "is_active": true
+    },
+    {
+      "section_type": "differentiators",
+      "title": "Why Choose DOTR for AI?",
+      "subtitle": "Typical Freelancers vs. DOTR AI",
+      "content": {
+        "items": [
+          { "feature": "AI-First Thinking (Not just Zapier)", "us": true, "competitors": false },
+          { "feature": "Custom n8n Enterprise Workflows", "us": true, "competitors": "Basic Automations" },
+          { "feature": "RAG-based Knowledge Support", "us": true, "competitors": "Generic Bots" },
+          { "feature": "Lead Qualification + CRM Sync", "us": true, "competitors": false },
+          { "feature": "Self-Healing Error Management", "us": true, "competitors": false },
+          { "feature": "Integration with Design, Dev, Marketing", "us": true, "competitors": "Siloed AI Tools" }
+        ],
+        "show_comparison": true,
+        "our_label": "DOTR",
+        "competitor_label": "Generic Agencies"
+      },
+      "display_order": 16,
+      "is_active": true
+    },
+    {
+      "section_type": "features",
+      "title": "Built-In Quality",
+      "subtitle": "Automation principles we live by",
+      "content": {
+        "items": [
+          { "title": "Data Sovereignty", "description": "Your data stays yours. We build systems that prioritize security and privacy.", "icon": "Shield" },
+          { "title": "Scalable Logic", "description": "Workflows designed to handle 10 leads or 10,000 without breaking a sweat.", "icon": "TrendingUp" },
+          { "title": "Human-in-the-Loop", "description": "We build triggers so AI knows exactly when to hand off to a real person.", "icon": "Users" },
+          { "title": "Real-Time Monitoring", "description": "Every workflow is monitored 24/7 with instant alerts for any hiccups.", "icon": "Activity" },
+          { "title": "Clean API Design", "description": "System architecture that is modular and ready for future integrations.", "icon": "Code" },
+          { "title": "Continuous Learning", "description": "AI systems that get smarter with every interaction based on your feedback.", "icon": "Sparkles" }
+        ]
+      },
+      "display_order": 17,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-list",
+      "title": "Included in Every System",
+      "subtitle": "Standard automation features",
+      "content": {
+        "items": [
+          { "text": "Custom n8n workflow design", "icon": "Zap" },
+          { "text": "AI Knowledge Base training", "icon": "Brain" },
+          { "text": "CRM & WhatsApp integration", "icon": "Plug" },
+          { "text": "Error handling & notifications", "icon": "Bell" },
+          { "text": "System documentation", "icon": "FileText" },
+          { "text": "Initial performance audit", "icon": "Activity" }
+        ],
+        "columns": 2
+      },
+      "display_order": 18,
+      "is_active": true
+    },
+    {
+      "section_type": "stats",
+      "title": "AI Impact by the Numbers",
+      "subtitle": "What We Deliver",
+      "content": {
+        "items": [
+          { "value": "5", "label": "AI Pillars", "suffix": "" },
+          { "value": "24", "label": "Automation Support", "suffix": "/7" },
+          { "value": "100", "label": "Manual Tasks Eliminated", "suffix": "%" },
+          { "value": "3", "label": "Weeks to Deployment", "suffix": "" }
+        ]
+      },
+      "display_order": 19,
+      "is_active": true
+    },
+    {
+      "section_type": "counters",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 50, "label": "Workflows Built", "prefix": "", "suffix": "+", "icon": "Zap" },
+          { "value": 95, "label": "Lead Response Lift", "prefix": "", "suffix": "%", "icon": "Target" },
+          { "value": 24, "label": "Monitoring", "prefix": "", "suffix": "/7", "icon": "Clock" },
+          { "value": 15, "label": "Apps Connected", "prefix": "", "suffix": "+", "icon": "Plug" }
+        ]
+      },
+      "display_order": 20,
+      "is_active": true
+    },
+    {
+      "section_type": "who-its-for",
+      "title": "Who Needs AI Automation?",
+      "subtitle": "From high-growth startups to optimized agencies",
+      "content": {
+        "personas": [
+          {
+            "persona": "High-Growth Startups",
+            "icon": "Rocket",
+            "description": "Scale your operations without hiring. Automate lead gen, onboarding, and support from day one.",
+            "benefits": ["Lean growth", "Instant response", "Scalable systems"]
+          },
+          {
+            "persona": "Agencies & Consultants",
+            "icon": "Building2",
+            "description": "Automate client reporting, data collection, and routine communication to focus on strategy.",
+            "benefits": ["Better margins", "Error-free reporting", "Client delight"]
+          },
+          {
+            "persona": "E-Commerce Brands",
+            "icon": "ShoppingCart",
+            "description": "Connect your store, inventory, and support with AI that tracks orders and answers FAQs.",
+            "benefits": ["24/7 support", "Sync'd data", "LTV growth"]
+          }
+        ]
+      },
+      "display_order": 21,
+      "is_active": true
+    },
+    {
+      "section_type": "outcomes-benefits",
+      "title": "What You'll Achieve",
+      "subtitle": "The ROI of Intelligence",
+      "content": {
+        "layout": "grid",
+        "items": [
+          { "title": "Buy Back Your Time", "description": "Shift your team from 'moving data' to 'moving the needle'. Save hundreds of hours monthly.", "icon": "Clock" },
+          { "title": "Eliminate Human Error", "description": "Automated data sync means no more typos, lost leads, or forgotten follow-ups.", "icon": "CheckCircle" },
+          { "title": "Instant Scalability", "description": "Handle a sudden 10x spike in leads or support tickets without breaking your team.", "icon": "TrendingUp" },
+          { "title": "Data-Driven Decisions", "description": "AI systems categorize and summarize customer needs so you know exactly what to build next.", "icon": "Target" }
+        ]
+      },
+      "display_order": 22,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "Automation Impact",
+      "subtitle": "Results That Matter",
+      "content": {
+        "items": [
+          { "metric": "60%", "label": "Operational Efficiency", "description": "Average increase in team productivity after deploying n8n workflows.", "icon": "Zap" },
+          { "metric": "0s", "label": "Initial Lead Response", "description": "Our AI agents respond to new inquiries instantly, keeping prospects warm.", "icon": "Clock" },
+          { "metric": "98%", "label": "Accuracy Rate", "description": "AI agents trained on your specific documentation provide precise answers.", "icon": "Check" },
+          { "metric": "10k+", "label": "Tasks/Month", "description": "Volume handled by our automated pipelines without manual intervention.", "icon": "Activity" }
+        ]
+      },
+      "display_order": 23,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "AI & Automation Case Studies",
+      "subtitle": "Selected projects across the AI pillar",
+      "content": {
+        "show_filters": true,
+        "items": [
+          { "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "title": "Real-Estate Lead Agent", "category": "AI Chatbot", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80", "title": "Cross-Platform CRM Sync", "category": "n8n Workflow", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", "title": "Automated SEO Engine", "category": "AI Content", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80", "title": "WhatsApp Support Bot", "category": "AI Support", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80", "title": "Lead Scouring Pipeline", "category": "Analytics", "link": "/portfolio" },
+          { "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80", "title": "Multi-Tenant SaaS Automation", "category": "Backend AI", "link": "/portfolio" }
+        ]
+      },
+      "display_order": 24,
+      "is_active": true
+    },
+    {
+      "section_type": "gallery",
+      "title": "Systems in Action",
+      "subtitle": "Visualizing our logic and flows",
+      "content": {
+        "items": [
+          { "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "caption": "n8n Workflow Map", "alt": "Automation flow" },
+          { "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80", "caption": "AI Response Logic", "alt": "AI logic" },
+          { "image_url": "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&w=600&q=80", "caption": "CRM Integration View", "alt": "Dashboard view" },
+          { "image_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=600&q=80", "caption": "Smart Support Interface", "alt": "Chat interface" },
+          { "image_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80", "caption": "Lead Qualification Flow", "alt": "Form flow" },
+          { "image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80", "caption": "Cloud Infrastructure", "alt": "Infrastructure" }
+        ]
+      },
+      "display_order": 25,
+      "is_active": true
+    },
+    {
+      "section_type": "testimonials",
+      "title": "What Clients Say About Our AI",
+      "subtitle": "Trusted by teams that care about speed",
+      "content": {
+        "items": [
+          {
+            "quote": "DOTR's n8n workflows connected our whole business. We stopped hiring assistants and started building systems. The ROI was visible in 30 days.",
+            "author": "Alex Chen",
+            "role": "CEO",
+            "company": "TechStart Inc.",
+            "image": ""
+          },
+          {
+            "quote": "Finally, an AI bot that doesn't hallucinate. Their RAG implementation is flawless—it knows our product better than some of our support staff.",
+            "author": "Maria Rodriguez",
+            "role": "Head of Product",
+            "company": "Digital Ventures",
+            "image": ""
+          },
+          {
+            "quote": "The lead qualification system they built for us changed our sales game. No more junk leads, only high-intent prospects in our calendar.",
+            "author": "James Wilson",
+            "role": "CMO",
+            "company": "Innovate Solutions",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 26,
+      "is_active": true
+    },
+    {
+      "section_type": "social-proof-bar",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "user_count": "200+",
+        "rating": 4.9,
+        "review_count": "80+",
+        "platforms": [
+          { "name": "n8n Experts", "followers": "Top Rated", "icon": "Zap" },
+          { "name": "LinkedIn", "followers": "15K+", "icon": "LinkedIn" }
+        ]
+      },
+      "display_order": 27,
+      "is_active": true
+    },
+    {
+      "section_type": "about-us",
+      "title": "Our AI Philosophy",
+      "subtitle": "Intelligent Systems at DOTR",
+      "content": {
+        "story": "At DOTR, we believe automation is the foundation of any modern business. We combine custom AI logic, n8n orchestration, and deep CRM integration into a cohesive offering. We don't just build bots; we build the 'nervous system' of your company—ensuring data flows where it's needed and intelligence is applied to every decision.",
+        "mission": "To eliminate the routine so humans can innovate. We help teams scale by deploying AI-first systems that are fast, reliable, and deeply integrated.",
+        "vision": "To be the leading partner for companies transitioning to an AI-first operating model, where every workflow is an opportunity for intelligence.",
+        "founder_image": "",
+        "founder_name": "",
+        "founder_title": "",
+        "founded_year": "2024"
+      },
+      "display_order": 28,
+      "is_active": true
+    },
+    {
+      "section_type": "values-culture",
+      "title": "Our Principles",
+      "subtitle": "The values guiding our automation",
+      "content": {
+        "items": [
+          { "title": "AI-First", "description": "We always ask 'how can AI make this smarter?' rather than just 'how can we link these apps?'.", "icon": "Brain" },
+          { "title": "Transparency", "description": "We build open systems. You own the code, the workflows, and the data architecture.", "icon": "Eye" },
+          { "title": "Speed", "description": "We deploy MVPs in weeks. Automation delayed is efficiency denied.", "icon": "Zap" },
+          { "title": "Integration", "description": "Silos are the enemy. We build bridges between every tool in your stack.", "icon": "Plug" },
+          { "title": "Obsessive Testing", "description": "We stress-test every edge case so your automation never fails when it matters most.", "icon": "Activity" },
+          { "title": "Client Impact", "description": "We measure success in hours saved and revenue generated, not just 'live' workflows.", "icon": "Target" }
+        ],
+        "culture_text": "We believe the future belongs to the automated. We move fast, build smart, and always put the results first."
+      },
+      "display_order": 29,
+      "is_active": true
+    },
+    {
+      "section_type": "trust-badges",
+      "title": "Enterprise-Grade Automation",
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "title": "AI-First Logic", "icon": "Sparkles", "description": "Context-aware systems" },
+          { "title": "n8n Specialists", "icon": "Zap", "description": "Expert workflow orchestration" },
+          { "title": "Secure Cloud", "icon": "Shield", "description": "Data encryption & sovereignty" },
+          { "title": "24/7 Monitoring", "icon": "Clock", "description": "Proactive system health checks" }
+        ]
+      },
+      "display_order": 30,
+      "is_active": true
+    },
+    {
+      "section_type": "awards-badges",
+      "title": "Recognition",
+      "subtitle": "AI & Automation excellence",
+      "content": {
+        "items": [
+          { "title": "Automation Innovator 2024", "organization": "Tech Excellence Awards", "year": "2024", "image_url": "" },
+          { "title": "Best AI Implementation", "organization": "SaaS Leaders Summit", "year": "2024", "image_url": "" },
+          { "title": "Workflow Excellence", "organization": "Digital Transformation Awards", "year": "2023", "image_url": "" }
+        ]
+      },
+      "display_order": 31,
+      "is_active": true
+    },
+    {
+      "section_type": "logo-cloud",
+      "title": "The Ecosystem We Automate",
+      "subtitle": "We connect the tools you already use",
+      "content": {
+        "items": [
+          { "logo_url": "/images/logos/openai.svg", "name": "OpenAI", "link": "https://openai.com" },
+          { "logo_url": "/images/logos/n8n.svg", "name": "n8n", "link": "https://n8n.io" },
+          { "logo_url": "/images/logos/whatsapp.svg", "name": "WhatsApp", "link": "https://whatsapp.com" },
+          { "logo_url": "/images/logos/supabase.svg", "name": "Supabase", "link": "https://supabase.com" },
+          { "logo_url": "/images/logos/hubspot.svg", "name": "HubSpot", "link": "https://hubspot.com" },
+          { "logo_url": "/images/logos/slack.svg", "name": "Slack", "link": "https://slack.com" }
+        ]
+      },
+      "display_order": 32,
+      "is_active": true
+    },
+    {
+      "section_type": "secondary-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "text": "Ready to stop the manual work and let AI take the wheel?",
+        "button_text": "Request Automation Audit",
+        "button_url": "/contact"
+      },
+      "display_order": 33,
+      "is_active": true
+    },
+    {
+      "section_type": "faq",
+      "title": "AI & Automation FAQ",
+      "subtitle": "Common questions about intelligent systems",
+      "content": {
+        "items": [
+          {
+            "question": "What is n8n and why do you use it?",
+            "answer": "n8n is a powerful, flexible workflow automation tool. Unlike simpler tools, it allows us to build complex logic, host it securely, and connect almost any API without the limitations of 'task-based' pricing."
+          },
+          {
+            "question": "How do you ensure AI chatbots don't lie?",
+            "answer": "We use RAG (Retrieval-Augmented Generation). This restricts the AI to only using your specific company data and documentation to answer, ensuring it stays accurate and on-brand."
+          },
+          {
+            "question": "Can you automate my specific CRM or app?",
+            "answer": "If your app has an API or a way to export/import data, we can automate it. We specialize in custom integrations where off-the-shelf solutions fail."
+          },
+          {
+            "question": "How fast can we see results?",
+            "answer": "Typically, the first workflow or AI bot is live within 2-3 weeks. We focus on quick wins first to show immediate ROI."
+          },
+          {
+            "question": "Who owns the workflows you build?",
+            "answer": "You do. We build them in your accounts or on your infrastructure. We provide full documentation so your team is never 'locked in'."
+          }
+        ]
+      },
+      "display_order": 34,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "color": "primary",
+        "width": "full",
+        "spacing": "medium"
+      },
+      "display_order": 35,
+      "is_active": true
+    },
+    {
+      "section_type": "newsletter",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "placeholder_text": "Get the weekly 'Automated Business' guide",
+        "button_text": "Subscribe",
+        "success_message": "Welcome to the future. Check your inbox for automation tips."
+      },
+      "display_order": 36,
+      "is_active": true
+    },
+    {
+      "section_type": "contact-info",
+      "title": "Get in Touch",
+      "subtitle": "Let's discuss your automation roadmap",
+      "content": {
+        "email": "hello@dotr.io",
+        "phone": "+1 (555) 000-0000",
+        "address": "Your address here",
+        "map_embed_url": "",
+        "social_links": [
+          { "platform": "LinkedIn", "url": "https://linkedin.com/company/dotr", "icon": "LinkedIn" },
+          { "platform": "Twitter", "url": "https://twitter.com/dotr", "icon": "Twitter" },
+          { "platform": "GitHub", "url": "https://github.com/dotr", "icon": "GitHub" }
+        ]
+      },
+      "display_order": 37,
+      "is_active": true
+    },
+    {
+      "section_type": "cta",
+      "title": "Ready to Level Up Your Efficiency?",
+      "subtitle": null,
+      "content": {
+        "headline": "Let's Build Your Digital Operating System",
+        "description": "From custom AI bots to complex n8n workflows—we'll help you build the systems that work while you sleep. Get a free consultation today.",
+        "primary_cta_text": "Get Automation Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "View Our Case Studies",
+        "secondary_cta_link": "/portfolio"
+      },
+      "display_order": 38,
+      "is_active": true
+    },
+    {
+      "section_type": "exit-intent-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "headline": "Before you get distracted—",
+        "description": "Get a free automation audit. We'll find 3 manual tasks we can eliminate for you in 30 days.",
+        "button_text": "Claim Free Audit",
+        "button_url": "/contact",
+        "show_after_scroll": 50,
+        "offer_text": "Limited to 5 audits per month"
+      },
+      "display_order": 39,
+      "is_active": true
+    },
+    {
+      "section_type": "primary-cta-banner",
+      "title": "Final CTA",
+      "subtitle": null,
+      "content": {
+        "headline": "AI That Actually Works—Get Started Today",
+        "description": "Custom chatbots, n8n workflows, smart lead gen—one partner, fast delivery. Book your consultation and see the DOTR difference.",
+        "primary_cta_text": "Book AI Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "Explore All Pillars",
+        "secondary_cta_link": "/services",
+        "background_color": "primary",
+        "text_color": "white"
+      },
+      "display_order": 40,
+      "is_active": true
+    },
+    {
+      "section_type": "team",
+      "title": "Meet the AI Engineers",
+      "subtitle": "Experts in LLMs, n8n, and data architecture",
+      "content": {
+        "items": [
+          {
+            "name": "AI Lead",
+            "role": "Model Training & RAG Strategy",
+            "bio": "Specializes in building high-accuracy AI agents that speak your brand's language fluently.",
+            "image": ""
+          },
+          {
+            "name": "Workflow Architect",
+            "role": "n8n & Integration Specialist",
+            "bio": "The 'master of the bridge'. If it has an API, they can build a flawless automation for it.",
+            "image": ""
+          },
+          {
+            "name": "Data Scientist",
+            "role": "Analytics & Prediction",
+            "bio": "Turns your automated data into actionable insights and revenue-driving predictions.",
+            "image": ""
+          },
+          {
+            "name": "Support Ops",
+            "role": "Implementation & Training",
+            "bio": "Ensures your team knows exactly how to manage and monitor their new automated systems.",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 41,
+      "is_active": true
+    },
+    {
+      "section_type": "blog-posts",
+      "title": "AI & Automation Insights",
+      "subtitle": "Learn how to build a smarter business",
+      "content": {
+        "count": 3,
+        "show_featured_only": false,
+        "layout": "grid"
+      },
+      "display_order": 42,
+      "is_active": true
+    },
+    {
+      "section_type": "pricing",
+      "title": "Automation That Fits Your Scale",
+      "subtitle": "Transparent pricing for intelligent systems",
+      "content": {
+        "items": [
+          {
+            "name": "Automation Starter",
+            "price": "From $1,490",
+            "description": "Perfect for connecting core apps and building your first AI support bot.",
+            "features": [
+              "2 Core n8n Workflows",
+              "1 Custom AI Support Bot (RAG)",
+              "CRM & Slack integration",
+              "Email support",
+              "Basic documentation"
+            ],
+            "cta_text": "Get Started",
+            "is_featured": false
+          },
+          {
+            "name": "Digital Operating System",
+            "price": "From $3,900",
+            "description": "A complete automation overhaul for high-growth teams.",
+            "features": [
+              "Unlimited n8n Workflows",
+              "AI Sales & Support Agents",
+              "Lead Scouring & Qualification",
+              "Full tech stack integration",
+              "Priority implementation & support"
+            ],
+            "cta_text": "Get Started",
+            "is_featured": true
+          },
+          {
+            "name": "Enterprise AI",
+            "price": "Custom",
+            "description": "Bespoke AI platforms and complex multi-region automation logic.",
+            "features": [
+              "Custom LLM fine-tuning",
+              "Private n8n hosting & security",
+              "On-going system maintenance",
+              "Dedicated Automation Lead",
+              "24/7 priority response"
+            ],
+            "cta_text": "Contact Sales",
+            "is_featured": false
+          }
+        ]
+      },
+      "display_order": 43,
+      "is_active": true
+    },
+    {
+      "section_type": "form",
+      "title": "Start Your Automation Journey",
+      "subtitle": "Tell us about your manual pain points",
+      "content": {
+        "form_title": "Get a Free AI Consultation",
+        "form_description": "Briefly describe which tasks take the most time or where your leads are dropping off. We'll provide a roadmap.",
+        "submit_button_text": "Send Message",
+        "success_message": "Efficiency is on its way! We'll reach out within 24 hours.",
+        "fields": [
+          {
+            "field_type": "text",
+            "label": "Full Name",
+            "name": "name",
+            "placeholder": "John Doe",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "email",
+            "label": "Email Address",
+            "name": "email",
+            "placeholder": "john@example.com",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "select",
+            "label": "Primary Interest",
+            "name": "inquiry_type",
+            "placeholder": "Select an area",
+            "required": true,
+            "options": [
+              "AI Chatbots",
+              "n8n / Workflow Automation",
+              "Lead Qualification",
+              "CRM Integrations",
+              "Other / Not Sure"
+            ],
+            "width": "half"
+          },
+          {
+            "field_type": "textarea",
+            "label": "Describe Your Bottleneck",
+            "name": "message",
+            "placeholder": "Which tasks take you more than 5 hours a week?...",
+            "required": true,
+            "validation": { "min": 10, "max": 1000 },
+            "width": "full"
+          }
+        ]
+      },
+      "display_order": 44,
+      "is_active": true
+    },
+    {
+      "section_type": "press-mentions",
+      "title": "As Seen In",
+      "subtitle": "What the industry says about our AI approach",
+      "content": {
+        "items": [
+          {
+            "publication": "AI Weekly",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=AI+Weekly",
+            "quote": "DOTR is leading the charge in making RAG-based AI accessible and useful for mid-market businesses.",
+            "link": ""
+          },
+          {
+            "publication": "Automation Insider",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Automation+Insider",
+            "quote": "The integration of n8n and custom LLMs at DOTR sets a new standard for 'Digital Operating Systems'.",
+            "link": ""
+          },
+          {
+            "publication": "Future Tech",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Future+Tech",
+            "quote": "Finally, an agency that understands that AI is about results, not just hype.",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 45,
+      "is_active": true
+    },
+    {
+      "section_type": "ratings-reviews",
+      "title": "Trusted by Innovators",
+      "subtitle": "What our partners say on leading platforms",
+      "content": {
+        "items": [
+          {
+            "platform": "G2",
+            "rating": 4.9,
+            "review_count": 45,
+            "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=G2"
+          },
+          {
+            "platform": "Clutch",
+            "rating": 4.8,
+            "review_count": 30,
+            "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Clutch"
+          },
+          {
+            "platform": "Trustpilot",
+            "rating": 4.7,
+            "review_count": 55,
+            "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Trustpilot"
+          }
+        ],
+        "show_aggregate": true
+      },
+      "display_order": 46,
+      "is_active": true
+    },
+    {
+      "section_type": "video-demo",
+      "title": "AI Platform Walkthrough",
+      "subtitle": "A quick look at your new dashboard",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "callouts": [
+          { "time": "0:15", "text": "How your new AI agent thinks" },
+          { "time": "1:30", "text": "Visualizing an n8n workflow" },
+          { "time": "2:45", "text": "Tracking ROI and hours saved" }
+        ]
+      },
+      "display_order": 47,
+      "is_active": true
+    },
+    {
+      "section_type": "screenshot-gallery",
+      "title": "Logic & Flow Screens",
+      "subtitle": "Behind the scenes of our automations",
+      "content": {
+        "screenshots": [
+          {
+            "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+            "caption": "Workflow Orchestration"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
+            "caption": "AI Interaction Logs"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&w=800&q=80",
+            "caption": "CRM Sync Dashboard"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+            "caption": "Cloud Infrastructure Status"
+          }
+        ],
+        "show_captions": true
+      },
+      "display_order": 48,
+      "is_active": true
+    }
+  ]
+}

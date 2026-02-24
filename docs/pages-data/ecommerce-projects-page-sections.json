@@ -1,0 +1,204 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-02-24T17:00:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "portfolio/ecommerce-projects",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "E-Commerce Portfolio Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "Scaling Digital Commerce: Our Portfolio",
+        "subtitle": "Explore our track record of building high-conversion Shopify stores, custom headless marketplaces, and AI-driven retail engines. Built for performance, designed for growth.",
+        "cta_text": "Start Your E-Commerce Build",
+        "cta_link": "/contact",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "We don't just build stores; we build revenue machines. Our portfolio showcases how we integrate AI-powered recommendations and automated workflows to turn static storefronts into self-scaling business systems.",
+        "tagline": "Sell more. Automate everything. Scale effortlessly.",
+        "author": "DOTR E-Commerce Lead",
+        "author_title": "E-Commerce Pillar"
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "ShoppingCart", "text": "Shopify & Woo Specialists" },
+          { "icon": "Zap", "text": "Conversion-First UX" },
+          { "icon": "Brain", "text": "AI Personalization" },
+          { "icon": "Workflow", "text": "n8n Ops Automation" },
+          { "icon": "Repeat", "text": "Subscription Systems" }
+        ]
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 2, "suffix": "x", "prefix": "", "label": "Avg. Conversion Lift" },
+          { "value": 30, "suffix": "%", "prefix": "", "label": "Retention Increase" },
+          { "value": 15, "label": "Hours Saved Weekly", "suffix": "+", "prefix": "" },
+          { "value": 100, "suffix": "%", "prefix": "", "label": "Admin Control" }
+        ],
+        "animate": true
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "The Commerce Challenges We Solved",
+      "subtitle": "Fixing broken retail tech",
+      "content": {
+        "problems": [
+          {
+            "title": "The 'Leaky Funnel' Store",
+            "description": "Redesigning stores that had high traffic but low sales due to slow checkouts and generic UX."
+          },
+          {
+            "title": "Manual Inventory Chaos",
+            "description": "Replacing manual spreadsheets with real-time, automated inventory and order routing systems."
+          }
+        ],
+        "empathy_text": "Your store shouldn't be a source of stress. We build systems that handle the grunt work so you can focus on your products."
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Featured E-Commerce Projects",
+      "subtitle": "Success stories from our retail pillar",
+      "content": {
+        "show_filters": true,
+        "items": [
+          { "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=600&q=80", "title": "DTC Apparel Brand", "category": "Shopify Plus", "link": "/portfolio/dtc-apparel" },
+          { "image": "https://images.unsplash.com/photo-1523287562758-66c7fc58967a?auto=format&fit=crop&w=600&q=80", "title": "Global Tech Marketplace", "category": "Custom Headless", "link": "/portfolio/tech-marketplace" },
+          { "image": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=600&q=80", "title": "Coffee Subscription Engine", "category": "WooCommerce", "link": "/portfolio/coffee-sub" },
+          { "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80", "title": "B2B Wholesale Portal", "category": "Shopify", "link": "/portfolio/b2b-portal" },
+          { "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "title": "Luxury Jewelry Store", "category": "UI/UX & CRO", "link": "/portfolio/luxury-jewelry" },
+          { "image": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80", "title": "Health & Wellness Bot", "category": "AI Automation", "link": "/portfolio/health-bot" }
+        ]
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": "Stop Leaving Money on the Table",
+      "subtitle": null,
+      "content": {
+        "problem": "Generic themes and slow loading times are killing your conversion rate.",
+        "agitation": "Every second of delay and every friction point in your checkout process is a customer lost to a faster, smarter competitor.",
+        "solution": "We deploy AI-optimized, mobile-first storefronts that minimize bounce rates and maximize Average Order Value (AOV) through intelligent cross-selling."
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "The DOTR Commerce Edge",
+      "subtitle": "Why our stores perform better",
+      "content": {
+        "headline": "Commerce Built on an Intelligent Operating System",
+        "supporting_points": [
+          "AI Personalization: Product recommendations that actually convert.",
+          "Seamless n8n Integrations: Your store, CRM, and shipping apps talking in real-time.",
+          "Modular Page Builder: Admin can launch new landing pages in minutes, not days.",
+          "Headless Capabilities: For brands that need ultimate speed and flexibility."
+        ],
+        "cta_text": "Explore E-Commerce Services",
+        "cta_url": "/services/e-commerce"
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "E-Commerce Capabilities",
+      "subtitle": "Our specialized service areas",
+      "content": {
+        "items": [
+          { "icon": "ShoppingCart", "title": "Store Setup", "description": "Shopify, Woo, and custom builds.", "link": "/services/e-commerce/store-setup" },
+          { "icon": "Repeat", "title": "Subscriptions", "description": "Recurring revenue engines.", "link": "/services/e-commerce/subscriptions" },
+          { "icon": "Store", "title": "Marketplaces", "description": "Custom multi-vendor platforms.", "link": "/services/e-commerce/marketplaces" },
+          { "icon": "Workflow", "title": "Retail Ops", "description": "Automated inventory and order flows.", "link": "/services/e-commerce/automation" }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "Our Scaling Process",
+      "subtitle": "From audit to automated growth",
+      "content": {
+        "items": [
+          { "step": 1, "title": "Store Audit", "description": "Identifying conversion leaks and tech debt.", "icon": "Search" },
+          { "step": 2, "title": "UX Transformation", "description": "Designing for speed and mobile-first buyers.", "icon": "Palette" },
+          { "step": 3, "title": "The Intelligence Layer", "description": "Adding AI bots and recommendation engines.", "icon": "Brain" },
+          { "step": 4, "title": "Growth Engine", "description": "Launching automated marketing and loyalty flows.", "icon": "TrendingUp" }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    { "section_type": "timeline", "title": "Project Lifecycle", "display_order": 11, "is_active": true, "content": { "items": [{ "year": "Week 1", "title": "Audit & Mapping" }, { "year": "Week 2-4", "title": "Build & Sync" }, { "year": "Week 5", "title": "Launch" }] } },
+    { "section_type": "divider", "display_order": 12, "is_active": true, "content": { "style": "gradient" } },
+    { "section_type": "feature-highlights", "title": "Commerce Tech Stack", "display_order": 13, "is_active": true, "content": { "items": [{ "title": "AI Recommendation Engines" }, { "title": "Automated Order Routing" }] } },
+    { "section_type": "video", "title": "Platform Demo", "display_order": 14, "is_active": true, "content": { "video_url": "https://youtube.com" } },
+    { "section_type": "image-text", "title": "Beyond the Shopping Cart", "display_order": 15, "is_active": true, "content": { "image_position": "right", "description": "We build complete ecosystems including customer portals and vendor dashboards." } },
+    { "section_type": "before-after", "title": "CRO Transformation", "display_order": 16, "is_active": true, "content": { "before_label": "Standard Theme", "after_label": "DOTR Custom Store" } },
+    { "section_type": "differentiators", "title": "DOTR vs. General Agencies", "display_order": 17, "is_active": true, "content": { "items": [{ "feature": "AI Integration", "us": true, "competitors": false }] } },
+    { "section_type": "features", "title": "Core Standards", "display_order": 18, "is_active": true, "content": { "items": [{ "title": "Zero-Lag Checkout" }] } },
+    { "section_type": "feature-list", "title": "Deliverables", "display_order": 19, "is_active": true, "content": { "items": [{ "text": "Custom Admin Dash" }] } },
+    { "section_type": "stats", "title": "Pillar Stats", "display_order": 20, "is_active": true, "content": { "items": [{ "value": "120", "label": "Stores Launched" }] } },
+    { "section_type": "counters", "title": "Real-time Metrics", "display_order": 21, "is_active": true, "content": { "items": [{ "value": 15, "label": "Retention Lift" }] } },
+    { "section_type": "who-its-for", "title": "Ideal Clients", "display_order": 22, "is_active": true, "content": { "personas": [{ "persona": "DTC Scaling Brands" }] } },
+    { "section_type": "outcomes-benefits", "title": "Results", "display_order": 23, "is_active": true, "content": { "items": [{ "title": "Higher LTV" }] } },
+    { "section_type": "success-metrics", "title": "Performance", "display_order": 24, "is_active": true, "content": { "items": [{ "metric": "40%", "label": "Order Volume Increase" }] } },
+    { "section_type": "gallery", "title": "Interface Gallery", "display_order": 25, "is_active": true, "content": { "items": [{ "caption": "Checkout Flow" }] } },
+    { "section_type": "testimonials", "title": "Client Voice", "display_order": 26, "is_active": true, "content": { "items": [{ "quote": "Our revenue tripled after the replatform." }] } },
+    { "section_type": "social-proof-bar", "display_order": 27, "is_active": true, "content": { "platforms": [{ "name": "Shopify Experts" }] } },
+    { "section_type": "about-us", "title": "Our Commerce Vision", "display_order": 28, "is_active": true, "content": { "story": "We treat commerce as a data problem." } },
+    { "section_type": "values-culture", "title": "Our Standards", "display_order": 29, "is_active": true, "content": { "items": [{ "title": "Conversion First" }] } },
+    { "section_type": "trust-badges", "display_order": 30, "is_active": true, "content": { "items": [{ "title": "PCI Compliant" }] } },
+    { "section_type": "awards-badges", "title": "Awards", "display_order": 31, "is_active": true, "content": { "items": [{ "title": "E-Commerce Innovator 2025" }] } },
+    { "section_type": "logo-cloud", "title": "Partners", "display_order": 32, "is_active": true, "content": { "items": [{ "name": "Stripe" }] } },
+    { "section_type": "secondary-cta", "display_order": 33, "is_active": true, "content": { "text": "Want a store audit?" } },
+    { "section_type": "faq", "title": "Commerce FAQ", "display_order": 34, "is_active": true, "content": { "items": [{ "question": "Can you migrate my data?" }] } },
+    { "section_type": "divider", "display_order": 35, "is_active": true, "content": { "style": "solid" } },
+    { "section_type": "newsletter", "display_order": 36, "is_active": true, "content": { "title": "E-Commerce Insights" } },
+    { "section_type": "contact-info", "display_order": 37, "is_active": true, "content": { "email": "commerce@dotr.io" } },
+    { "section_type": "cta", "display_order": 38, "is_active": true, "content": { "headline": "Scale your store today." } },
+    { "section_type": "exit-intent-cta", "display_order": 39, "is_active": true, "content": { "headline": "Free Store Audit" } },
+    { "section_type": "primary-cta-banner", "display_order": 40, "is_active": true, "content": { "headline": "Ready for 10x Growth?" } },
+    { "section_type": "team", "title": "The Retail Squad", "display_order": 41, "is_active": true, "content": { "items": [{ "name": "Commerce Architect" }] } },
+    { "section_type": "blog-posts", "title": "Growth Blog", "display_order": 42, "is_active": true, "content": { "count": 3 } },
+    { "section_type": "pricing", "title": "Build Packages", "display_order": 43, "is_active": true, "content": { "items": [{ "name": "Growth Store Rebuild", "price": "$7,900" }] } },
+    { "section_type": "form", "title": "Start Your Brief", "display_order": 44, "is_active": true, "content": { "form_title": "Project Intake" } },
+    { "section_type": "press-mentions", "display_order": 45, "is_active": true, "content": { "items": [{ "publication": "TechCrunch" }] } },
+    { "section_type": "ratings-reviews", "display_order": 46, "is_active": true, "content": { "items": [{ "platform": "G2" }] } },
+    { "section_type": "video-demo", "display_order": 47, "is_active": true, "content": { "video_url": "https://youtube.com" } },
+    { "section_type": "screenshot-gallery", "display_order": 48, "is_active": true, "content": { "screenshots": [{ "caption": "Backend Admin" }] } }
+  ]
+}

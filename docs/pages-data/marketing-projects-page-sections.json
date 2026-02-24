@@ -1,0 +1,204 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-02-24T17:15:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "portfolio/marketing-projects",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "Marketing Portfolio Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "Growth Engineering: Our Marketing Portfolio",
+        "subtitle": "Discover how we combine AI-powered strategy with full-funnel execution to scale visibility, leads, and revenue. Data-driven results across SEO, Paid, and Automation.",
+        "cta_text": "Start Your Growth Sprint",
+        "cta_link": "/contact",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "We help ambitious brands move beyond vanity metrics to real ROI. By integrating AI into every stage of the marketing funnel—from programmatic SEO to automated lead nurturing—we build growth engines that scale without linear costs.",
+        "tagline": "AI-powered growth. Data-backed results. ROI on autopilot.",
+        "author": "DOTR Growth Lead",
+        "author_title": "Marketing Pillar"
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Target", "text": "Full-Funnel Strategy" },
+          { "icon": "Search", "text": "Programmatic SEO" },
+          { "icon": "Zap", "text": "AI-Optimized Ads" },
+          { "icon": "Mail", "text": "Automated Nurturing" },
+          { "icon": "BarChart", "text": "Clear Attribution" }
+        ]
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 40, "suffix": "%", "prefix": "", "label": "Higher Lead Quality" },
+          { "value": 2, "suffix": "x", "prefix": "", "label": "Faster Results" },
+          { "value": 100, "label": "Data-Driven", "suffix": "%", "prefix": "" },
+          { "value": 24, "suffix": "/7", "prefix": "", "label": "AI Optimization" }
+        ],
+        "animate": true
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "The Growth Gaps We Close",
+      "subtitle": "Solving the attribution and scaling crisis",
+      "content": {
+        "problems": [
+          {
+            "title": "Disconnected Funnels",
+            "description": "Fixing the gap where paid traffic hits a site but never converts into a nurtured lead."
+          },
+          {
+            "title": "The SEO Plateau",
+            "description": "Moving past traditional keyword blogging to programmatic scale that captures thousands of high-intent search terms."
+          }
+        ],
+        "empathy_text": "Marketing shouldn't be a guessing game. We build the tracking and automation systems so you know exactly where your next customer is coming from."
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Featured Marketing Projects",
+      "subtitle": "Growth engines we've built and optimized",
+      "content": {
+        "show_filters": true,
+        "items": [
+          { "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "title": "SaaS Programmatic SEO", "category": "SEO", "link": "/portfolio/saas-seo" },
+          { "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", "title": "AI-Optimized Paid Acquisition", "category": "Paid Ads", "link": "/portfolio/paid-ads" },
+          { "image": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=600&q=80", "title": "Automated Lead Nurture Funnel", "category": "Email Automation", "link": "/portfolio/lead-funnel" },
+          { "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80", "title": "Community Growth Strategy", "category": "Social Media", "link": "/portfolio/social-growth" },
+          { "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80", "title": "Multi-Channel Growth Audit", "category": "Digital Strategy", "link": "/portfolio/growth-audit" },
+          { "image": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80", "title": "E-Commerce Retention System", "category": "Full-Funnel", "link": "/portfolio/ecommerce-retention" }
+        ]
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": "Stop Wasting Your Ad Spend",
+      "subtitle": null,
+      "content": {
+        "problem": "Generic marketing plans burn through budgets without clear attribution.",
+        "agitation": "If you can't tell which ad click resulted in a closed sale, you're not marketing—you're gambling with your capital.",
+        "solution": "We deploy full-funnel tracking and AI-powered optimization to ensure every dollar is spent on the highest-converting audiences and messages."
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "The DOTR Growth Engine",
+      "subtitle": "Why our strategy works",
+      "content": {
+        "headline": "Full-Funnel Marketing Powered by the DOTR Operating System",
+        "supporting_points": [
+          "AI-Assisted Content: Faster campaigns and consistent messaging across all channels.",
+          "Data-Driven Attribution: See exactly how each channel contributes to revenue.",
+          "n8n Lead Workflows: Automated follow-ups that ensure no lead goes cold.",
+          "Programmatic Scale: Technical SEO that ranks for thousands of long-tail keywords."
+        ],
+        "cta_text": "See Marketing Services",
+        "cta_url": "/services/marketing"
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Marketing Pillars",
+      "subtitle": "What we showcase in this portfolio",
+      "content": {
+        "items": [
+          { "icon": "Search", "title": "SEO & Growth", "description": "Programmatic scale and technical SEO.", "link": "/services/marketing/seo" },
+          { "icon": "TrendingUp", "title": "Paid Advertising", "description": "Search and social ads optimized by AI.", "link": "/services/marketing/paid-ads" },
+          { "icon": "Mail", "title": "Email & Automation", "description": "Lead nurturing and retention workflows.", "link": "/services/marketing/email-automation" },
+          { "icon": "Share2", "title": "Social Strategy", "description": "Building brand awareness and community.", "link": "/services/marketing/social-media" }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "Our Growth Process",
+      "subtitle": "From audit to automated scale",
+      "content": {
+        "items": [
+          { "step": 1, "title": "Discovery & Audit", "description": "Baselines for data and current performance.", "icon": "Search" },
+          { "step": 2, "title": "Strategy Design", "description": "Defining the channel mix and AI targets.", "icon": "Compass" },
+          { "step": 3, "title": "Execution", "description": "Launching campaigns and content engines.", "icon": "Zap" },
+          { "step": 4, "title": "Optimize & Scale", "description": "Automating the winning flows.", "icon": "Rocket" }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    { "section_type": "timeline", "title": "Campaign Lifecycle", "display_order": 11, "is_active": true, "content": { "items": [{ "year": "Week 1", "title": "Audit" }, { "year": "Week 2", "title": "Strategy" }, { "year": "Week 3-4", "title": "Launch & Scale" }] } },
+    { "section_type": "divider", "display_order": 12, "is_active": true, "content": { "style": "gradient" } },
+    { "section_type": "feature-highlights", "title": "Marketing Tech Stack", "display_order": 13, "is_active": true, "content": { "items": [{ "title": "AI Content Engines" }, { "title": "Attribution Dashboards" }] } },
+    { "section_type": "video", "title": "Growth Showreel", "display_order": 14, "is_active": true, "content": { "video_url": "https://youtube.com" } },
+    { "section_type": "image-text", "title": "Attribution at Scale", "display_order": 15, "is_active": true, "content": { "image_position": "right", "description": "We connect your marketing data to your CRM for 100% clarity." } },
+    { "section_type": "before-after", "title": "Lead Quality Lift", "display_order": 16, "is_active": true, "content": { "before_label": "Untracked Chaos", "after_label": "DOTR Optimized" } },
+    { "section_type": "differentiators", "title": "DOTR vs. General Agencies", "display_order": 17, "is_active": true, "content": { "items": [{ "feature": "AI Strategy", "us": true, "competitors": false }] } },
+    { "section_type": "features", "title": "Core Standards", "display_order": 18, "is_active": true, "content": { "items": [{ "title": "Full-Funnel Tracking" }] } },
+    { "section_type": "feature-list", "title": "Deliverables", "display_order": 19, "is_active": true, "content": { "items": [{ "text": "Programmatic SEO Plan" }] } },
+    { "section_type": "stats", "title": "Pillar Stats", "display_order": 20, "is_active": true, "content": { "items": [{ "value": "5", "label": "Marketing Pillars" }] } },
+    { "section_type": "counters", "title": "Real-time Metrics", "display_order": 21, "is_active": true, "content": { "items": [{ "value": 40, "label": "Lead Quality Lift" }] } },
+    { "section_type": "who-its-for", "title": "Ideal Partners", "display_order": 22, "is_active": true, "content": { "personas": [{ "persona": "High-Growth Startups" }] } },
+    { "section_type": "outcomes-benefits", "title": "Results", "display_order": 23, "is_active": true, "content": { "items": [{ "title": "Better ROI" }] } },
+    { "section_type": "success-metrics", "title": "Impact", "display_order": 24, "is_active": true, "content": { "items": [{ "metric": "2x", "label": "Faster Results" }] } },
+    { "section_type": "gallery", "title": "Campaign Gallery", "display_order": 25, "is_active": true, "content": { "items": [{ "caption": "Attribution Dashboard" }] } },
+    { "section_type": "testimonials", "title": "Client Praise", "display_order": 26, "is_active": true, "content": { "items": [{ "quote": "DOTR cut our CAC by half in 30 days." }] } },
+    { "section_type": "social-proof-bar", "display_order": 27, "is_active": true, "content": { "platforms": [{ "name": "LinkedIn Ads Certified" }] } },
+    { "section_type": "about-us", "title": "Our Growth Story", "display_order": 28, "is_active": true, "content": { "story": "We treat marketing as an engineering problem." } },
+    { "section_type": "values-culture", "title": "Marketing Values", "display_order": 29, "is_active": true, "content": { "items": [{ "title": "Data First" }] } },
+    { "section_type": "trust-badges", "display_order": 30, "is_active": true, "content": { "items": [{ "title": "Meta Partner" }] } },
+    { "section_type": "awards-badges", "title": "Awards", "display_order": 31, "is_active": true, "content": { "items": [{ "title": "Best SEO Strategy 2025" }] } },
+    { "section_type": "logo-cloud", "title": "Tools We Use", "display_order": 32, "is_active": true, "content": { "items": [{ "name": "HubSpot" }] } },
+    { "section_type": "secondary-cta", "display_order": 33, "is_active": true, "content": { "text": "Want a growth audit?" } },
+    { "section_type": "faq", "title": "Marketing FAQ", "display_order": 34, "is_active": true, "content": { "items": [{ "question": "What is programmatic SEO?" }] } },
+    { "section_type": "divider", "display_order": 35, "is_active": true, "content": { "style": "solid" } },
+    { "section_type": "newsletter", "display_order": 36, "is_active": true, "content": { "title": "Growth Guide" } },
+    { "section_type": "contact-info", "display_order": 37, "is_active": true, "content": { "email": "growth@dotr.io" } },
+    { "section_type": "cta", "display_order": 38, "is_active": true, "content": { "headline": "Start your growth engine." } },
+    { "section_type": "exit-intent-cta", "display_order": 39, "is_active": true, "content": { "headline": "Free Channel Audit" } },
+    { "section_type": "primary-cta-banner", "display_order": 40, "is_active": true, "content": { "headline": "Ready for AI-Powered Scale?" } },
+    { "section_type": "team", "title": "The Growth Squad", "display_order": 41, "is_active": true, "content": { "items": [{ "name": "Growth Architect" }] } },
+    { "section_type": "blog-posts", "title": "Marketing Insights", "display_order": 42, "is_active": true, "content": { "count": 3 } },
+    { "section_type": "pricing", "title": "Growth Plans", "display_order": 43, "is_active": true, "content": { "items": [{ "name": "Growth Plan", "price": "$299" }] } },
+    { "section_type": "form", "title": "Get Started", "display_order": 44, "is_active": true, "content": { "form_title": "Project Intake" } },
+    { "section_type": "press-mentions", "display_order": 45, "is_active": true, "content": { "items": [{ "publication": "Forbes" }] } },
+    { "section_type": "ratings-reviews", "display_order": 46, "is_active": true, "content": { "items": [{ "platform": "Trustpilot" }] } },
+    { "section_type": "video-demo", "display_order": 47, "is_active": true, "content": { "video_url": "https://youtube.com" } },
+    { "section_type": "screenshot-gallery", "display_order": 48, "is_active": true, "content": { "screenshots": [{ "caption": "Ad Performance Dashboard" }] } }
+  ]
+}

@@ -8,9 +8,10 @@ import { Progress } from '@/components/ui/progress';
 import { Card, CardContent } from '@/components/ui/card';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { useSectionImportExport, type ImportOptions, type ImportResult } from '@/hooks/useSectionImportExport';
-import { parseSectionImportFile, validateSectionImportData, type SectionValidationResult } from '@/lib/sectionImportExport';
+import { parseSectionImportFile, validateSectionImportData, type SectionExportData, type SectionValidationResult } from '@/lib/sectionImportExport';
 import type { SectionType } from '@/hooks/usePageSections';
 import { cn } from '@/lib/utils';
+import { ImportReviewTable, type ImportRowStatus } from '@/components/admin/ImportReviewTable';
 
 interface SectionImportModalProps {
   open: boolean;
@@ -23,6 +24,17 @@ interface SectionImportModalProps {
 
 type ImportMode = 'skip' | 'overwrite' | 'merge';
 type ReorderStrategy = 'preserve' | 'append' | 'renumber';
+type WizardStep = 'upload' | 'review' | 'options' | 'importing' | 'result';
+
+interface SectionReviewRow {
+  id: string;
+  index: number;
+  sectionType: string;
+  title: string | null;
+  subtitle: string | null;
+  hasExisting?: boolean;
+  hasConflict?: boolean;
+}
 
 export function SectionImportModal({
   open,
@@ -40,6 +52,9 @@ export function SectionImportModal({
   const [isImporting, setIsImporting] = useState(false);
   const [importResult, setImportResult] = useState<ImportResult | null>(null);
   const [sectionCount, setSectionCount] = useState<number>(0);
+  const [parsedSections, setParsedSections] = useState<SectionExportData | null>(null);
+  const [selectedSectionIds, setSelectedSectionIds] = useState<string[]>([]);
+  const [step, setStep] = useState<WizardStep>('upload');
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const { importSections } = useSectionImportExport({
@@ -61,9 +76,11 @@ export function SectionImportModal({
     setValidation(null);
     setImportResult(null);
     setIsValidating(true);
+    setStep('upload');
 
     try {
       const importData = await parseSectionImportFile(selectedFile);
+      setParsedSections(importData);
       setSectionCount(importData.sections.length);
       const validationResult = await validateSectionImportData(
         importData,
@@ -75,6 +92,11 @@ export function SectionImportModal({
         }))
       );
       setValidation(validationResult);
+      if (validationResult.valid) {
+        // Preselect all sections by default
+        setSelectedSectionIds(importData.sections.map((_, idx) => `section-${idx}`));
+        setStep('review');
+      }
     } catch (error) {
       setValidation({
         valid: false,
@@ -83,6 +105,9 @@ export function SectionImportModal({
           message: error instanceof Error ? error.message : 'Failed to parse file',
         }],
       });
+      setParsedSections(null);
+      setSelectedSectionIds([]);
+      setStep('upload');
     } finally {
       setIsValidating(false);
     }
@@ -93,16 +118,29 @@ export function SectionImportModal({
 
     setIsImporting(true);
     setImportResult(null);
+    setStep('importing');
+
+    const selectedSectionIndexes =
+      parsedSections && selectedSectionIds.length > 0
+        ? selectedSectionIds
+            .map((id) => {
+              const match = id.match(/^section-(\d+)$/);
+              return match ? Number(match[1]) : null;
+            })
+            .filter((v): v is number => v != null)
+        : undefined;
 
     try {
       const options: ImportOptions = {
         onConflict: importMode,
         reorderStrategy,
         validateSchemas: true,
+        selectedSectionIndexes,
       };
 
       const result = await importSections(file, sectionTypes, options);
       setImportResult(result);
+      setStep('result');
 
       if (result.success) {
         // Reset form after successful import
@@ -133,6 +171,9 @@ export function SectionImportModal({
     setSectionCount(0);
     setImportMode('skip');
     setReorderStrategy('append');
+    setParsedSections(null);
+    setSelectedSectionIds([]);
+    setStep('upload');
     if (fileInputRef.current) {
       fileInputRef.current.value = '';
     }
@@ -145,9 +186,36 @@ export function SectionImportModal({
     }
   };
 
-  const canImport = file && validation?.valid && !isImporting && !isValidating;
+  const canImport = file && validation?.valid && selectedSectionIds.length > 0 && !isImporting && !isValidating;
   const hasErrors = validation && !validation.valid;
   const hasWarnings = validation && validation.warnings && validation.warnings.length > 0;
+
+  const buildSectionRows = (): SectionReviewRow[] => {
+    if (!parsedSections) return [];
+    return parsedSections.sections.map((s, index) => {
+      const hasExisting = false;
+      const hasConflict =
+        validation?.errors.some((e) => e.sectionIndex === index) ?? false;
+      return {
+        id: `section-${index}`,
+        index,
+        sectionType: s.section_type ?? 'unknown',
+        title: s.title ?? null,
+        subtitle: s.subtitle ?? null,
+        hasExisting,
+        hasConflict,
+      };
+    });
+  };
+
+  const getStatusForRow = (row: { hasExisting?: boolean; hasConflict?: boolean }): ImportRowStatus | null => {
+    if (row.hasConflict) return 'conflict';
+    if (row.hasExisting) return 'existing';
+    return 'new';
+  };
+
+  const getSectionSearchText = (row: SectionReviewRow) =>
+    [row.sectionType, row.title, row.subtitle].filter(Boolean).join(' ');
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>
@@ -274,14 +342,58 @@ export function SectionImportModal({
 
                 {validation.valid && file && sectionCount > 0 && (
                   <div className="text-sm text-muted-foreground">
-                    Found {sectionCount} section{sectionCount !== 1 ? 's' : ''} to import
+                    Found {sectionCount} section{sectionCount !== 1 ? 's' : ''} in file
                   </div>
                 )}
               </div>
             )}
 
+            {validation?.valid && step === 'review' && (
+              <div className="space-y-6">
+                <div className="space-y-2">
+                  <Label>Sections to import</Label>
+                  <ImportReviewTable<SectionReviewRow>
+                    rows={buildSectionRows()}
+                    columns={[
+                      {
+                        key: 'sectionType',
+                        header: 'Section Type',
+                        render: (row) => row.sectionType,
+                      },
+                      {
+                        key: 'title',
+                        header: 'Title',
+                        render: (row) => row.title ?? '—',
+                      },
+                      {
+                        key: 'subtitle',
+                        header: 'Subtitle',
+                        render: (row) => row.subtitle ?? '—',
+                      },
+                    ]}
+                    selectedIds={selectedSectionIds}
+                    onSelectionChange={setSelectedSectionIds}
+                    getRowStatus={(row) => getStatusForRow(row)}
+                    getSearchText={getSectionSearchText}
+                    entityLabel="sections"
+                  />
+                </div>
+
+                <div className="flex justify-end">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    disabled={!canImport}
+                    onClick={() => setStep('options')}
+                  >
+                    Continue to import options
+                  </Button>
+                </div>
+              </div>
+            )}
+
             {/* Import Options */}
-            {validation?.valid && (
+            {validation?.valid && step === 'options' && (
               <div className="space-y-4">
                 <div className="space-y-3">
                   <div>
@@ -432,7 +544,10 @@ export function SectionImportModal({
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Loader2 className="h-4 w-4 animate-spin" />
-                  <span>Importing sections...</span>
+                  <span>
+                    Importing selected sections
+                    {parsedSections ? '...' : '…'}
+                  </span>
                 </div>
                 <Progress value={undefined} className="w-full" />
               </div>
@@ -505,9 +620,9 @@ export function SectionImportModal({
             onClick={handleClose}
             disabled={isImporting}
           >
-            {importResult ? 'Close' : 'Cancel'}
+            {importResult ? 'Close' : step === 'options' ? 'Back' : 'Cancel'}
           </Button>
-          {!importResult && (
+          {!importResult && step === 'options' && (
             <Button
               onClick={handleImport}
               disabled={!canImport}
@@ -518,8 +633,13 @@ export function SectionImportModal({
                   Importing...
                 </>
               ) : (
-                'Import Sections'
+                'Import Selected Sections'
               )}
+            </Button>
+          )}
+          {!importResult && step === 'review' && (
+            <Button onClick={() => setStep('options')} disabled={!canImport}>
+              Continue
             </Button>
           )}
         </div>

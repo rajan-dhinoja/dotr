@@ -1,0 +1,1308 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-02-13T10:00:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "blog",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "Blog Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "AI, Automation & Digital Growth Insights",
+        "subtitle": "Deep-dive articles, playbooks, and frameworks from DOTR on building an AI-first, modular, and scalable digital business engine.",
+        "cta_text": "Start with Featured Articles",
+        "cta_link": "#featured",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "DOTR Blog is your go-to hub for practical, AI-first strategies to design, build, market, and scale modern digital experiences.",
+        "tagline": "From automation workflows to programmatic SEO, learn how to turn your website into a true business engine.",
+        "author": "DOTR",
+        "author_title": "Dhinoja OmniTech Resolutions"
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "blog-posts",
+      "title": "Featured Articles",
+      "subtitle": "Start with our most impactful guides and insights",
+      "content": {
+        "count": 6,
+        "show_featured_only": true,
+        "layout": "grid"
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Brain", "text": "AI-First Strategies" },
+          { "icon": "Layers", "text": "Modular, Section-Based Thinking" },
+          { "icon": "Globe", "text": "Programmatic SEO & Growth" },
+          { "icon": "Zap", "text": "Fast, Actionable Playbooks" },
+          { "icon": "Target", "text": "Conversion-Focused Content" }
+        ]
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "who-its-for",
+      "title": "Who This Blog Is For",
+      "subtitle": "If you're building or scaling with AI, this is for you",
+      "content": {
+        "personas": [
+          {
+            "persona": "Founders & Leadership",
+            "icon": "User",
+            "description": "Understand how to turn your website into a living AI business platform.",
+            "benefits": [
+              "Strategic clarity on AI-first digital transformation",
+              "Frameworks to move from brochure sites to business engines",
+              "Practical examples and use cases"
+            ]
+          },
+          {
+            "persona": "Product & Growth Teams",
+            "icon": "TrendingUp",
+            "description": "Design flows that convert and systems that scale.",
+            "benefits": [
+              "Playbooks for funnels and conversion optimization",
+              "Ideas for modular, experiment-friendly page structures",
+              "Insights on data, analytics & automation"
+            ]
+          },
+          {
+            "persona": "Developers & Designers",
+            "icon": "Code",
+            "description": "Build CMS-driven, AI-ready experiences faster.",
+            "benefits": [
+              "Best practices for section-based architectures",
+              "Examples using modern stacks like Lovable & Supabase",
+              "Patterns for integrating AI and automation"
+            ]
+          }
+        ]
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "features",
+      "title": "Content Themes",
+      "subtitle": "Explore the key pillars we write about",
+      "content": {
+        "items": [
+          {
+            "title": "AI & Automation",
+            "description": "Articles on AI chatbots, lead qualification, workflow automation, and AI analytics.",
+            "icon": "Cpu"
+          },
+          {
+            "title": "Design & UX",
+            "description": "Insights on UX, UI, branding, and how to design for conversion.",
+            "icon": "PenTool"
+          },
+          {
+            "title": "Development & Architecture",
+            "description": "Deep dives into building modular, CMS-driven systems with modern stacks.",
+            "icon": "Code"
+          },
+          {
+            "title": "Marketing & Programmatic SEO",
+            "description": "Guides on SEO, content engines, and programmatic growth.",
+            "icon": "Globe"
+          },
+          {
+            "title": "Strategy & Consulting",
+            "description": "High-level thinking on building an AI-first business engine, not just a site.",
+            "icon": "Target"
+          },
+          {
+            "title": "Case Studies & Stories",
+            "description": "Real-world transformations using DOTR's AI-first approach.",
+            "icon": "FileText"
+          }
+        ]
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "Why Follow DOTR Blog?",
+      "subtitle": "From theory to implementation",
+      "content": {
+        "headline": "Actionable content from an AI-first, end-to-end digital solutions company",
+        "supporting_points": [
+          "Grounded in real projects across design, development, marketing, and automation",
+          "Written with an AI-first mindset—automation and intelligence at the core",
+          "Aligned with a modular, CMS-driven, section-based architecture for your site",
+          "Focused on turning content into leads, trust, and long-term growth",
+          "Built to help you scale without adding complexity or vendor chaos"
+        ],
+        "cta_text": "Browse All Articles",
+        "cta_url": "/blog/all"
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "stats",
+      "title": "Knowledge You Can Trust",
+      "subtitle": "Backed by real work and real outcomes",
+      "content": {
+        "items": [
+          {
+            "value": "9",
+            "label": "Service Pillars",
+            "suffix": ""
+          },
+          {
+            "value": "48",
+            "label": "Modular Section Types",
+            "suffix": ""
+          },
+          {
+            "value": "100",
+            "label": "AI-Powered Focus",
+            "suffix": "%"
+          },
+          {
+            "value": "24",
+            "label": "Support Hours",
+            "suffix": "/7"
+          }
+        ]
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "newsletter",
+      "title": "Stay Ahead with DOTR Insights",
+      "subtitle": "Get AI, automation, and growth strategies directly in your inbox.",
+      "content": {
+        "placeholder_text": "Enter your email",
+        "button_text": "Subscribe to the Newsletter",
+        "success_message": "Thanks for subscribing! You'll receive AI-first strategies, templates, and playbooks from DOTR."
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "faq",
+      "title": "Blog & Content FAQs",
+      "subtitle": "Answers to common questions about the DOTR blog",
+      "content": {
+        "items": [
+          {
+            "question": "What topics do you cover on the DOTR blog?",
+            "answer": "We focus on AI, automation, CMS-driven architectures, modular page design, programmatic SEO, and the strategy behind building a digital business engine—not just a brochure website."
+          },
+          {
+            "question": "Who is this content written for?",
+            "answer": "Founders, product leaders, marketers, designers, and developers who want to build and scale AI-first digital experiences using modern tools like Lovable, Supabase, and n8n."
+          },
+          {
+            "question": "How often do you publish new content?",
+            "answer": "We publish high-quality, in-depth articles regularly, focused on evergreen concepts and frameworks you can apply immediately."
+          },
+          {
+            "question": "Can I request a topic?",
+            "answer": "Yes! Reach out via our contact page and share what you'd like to learn about—AI, automation, design, development, or growth. We use these requests to shape our content roadmap."
+          },
+          {
+            "question": "Do you share implementation details and technical guides?",
+            "answer": "Absolutely. Many articles include practical implementation tips, suggested tech stacks, and examples aligned with DOTR's AI-first philosophy."
+          }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "cta",
+      "title": "Turn Insights into Action",
+      "subtitle": null,
+      "content": {
+        "headline": "Ready to Apply What You’ve Learned?",
+        "description": "If you're ready to move from ideas to implementation, DOTR can help you design, build, and automate an AI-first digital platform.",
+        "primary_cta_text": "Talk to DOTR",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "Explore Our Services",
+        "secondary_cta_link": "/services"
+      },
+      "display_order": 11,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "width": "medium",
+        "spacing": "medium"
+      },
+      "display_order": 12,
+      "is_active": true
+    },
+    {
+      "section_type": "contact-info",
+      "title": "Have a Story or Use Case?",
+      "subtitle": "We’d love to feature real-world AI-first transformations.",
+      "content": {
+        "email": "hello@dotr.com",
+        "phone": "+1 (555) 000-0000",
+        "address": "Your City, Your Country",
+        "map_embed_url": "",
+        "social_links": [
+          {
+            "platform": "LinkedIn",
+            "url": "https://linkedin.com",
+            "icon": "Linkedin"
+          },
+          {
+            "platform": "Twitter",
+            "url": "https://twitter.com",
+            "icon": "Twitter"
+          }
+        ]
+      },
+      "display_order": 13,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "Content & Learning Challenges",
+      "subtitle": "Why most blogs don’t move the needle",
+      "content": {
+        "problems": [
+          {
+            "title": "Scattered, Unstructured Content",
+            "description": "Articles are published randomly with no clear learning path, making it hard for readers to know where to start."
+          },
+          {
+            "title": "Theory Without Implementation",
+            "description": "Lots of ideas, but not enough practical, step-by-step guidance to actually apply them."
+          },
+          {
+            "title": "No Connection to Real Systems",
+            "description": "Content that doesn’t reflect how modern, AI-first systems are really built and operated."
+          },
+          {
+            "title": "Hard to Find the Right Piece",
+            "description": "Poor navigation and no clear mapping from problems to the right content or services."
+          }
+        ],
+        "empathy_text": "We know you don’t have time to read fluff. You need content that connects directly to how you design, build, automate, and scale your digital systems."
+      },
+      "display_order": 14,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": "The Cost of Consuming the Wrong Content",
+      "subtitle": "Then how the DOTR blog helps",
+      "content": {
+        "problem": "Reading scattered, shallow content wastes time and leads to half-implemented ideas that never become real systems.",
+        "agitation": "Teams jump from trend to trend without a clear operating model—losing focus, duplicating work, and never fully unlocking the power of AI and automation.",
+        "solution": "The DOTR blog is built around an AI-first, system-driven philosophy. Every article, guide, and playbook maps back to concrete architectures, workflows, and outcomes you can plug into your own business."
+      },
+      "display_order": 15,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "How to Use This Blog",
+      "subtitle": "A simple process to get value fast",
+      "content": {
+        "items": [
+          {
+            "step": 1,
+            "title": "Pick Your Focus Area",
+            "description": "Start with the category that matches your current priority—AI & automation, design, development, marketing, or strategy.",
+            "icon": "Search"
+          },
+          {
+            "step": 2,
+            "title": "Follow Suggested Sequences",
+            "description": "Use curated article paths (from fundamentals to deep dives) to build understanding step-by-step.",
+            "icon": "List"
+          },
+          {
+            "step": 3,
+            "title": "Apply Frameworks & Templates",
+            "description": "Copy and adapt checklists, schemas, and workflows into your own stack and operations.",
+            "icon": "ClipboardList"
+          },
+          {
+            "step": 4,
+            "title": "Connect to Services When Ready",
+            "description": "When you outgrow DIY, connect the dots with DOTR’s 9 pillars to implement production-grade systems.",
+            "icon": "Rocket"
+          }
+        ]
+      },
+      "display_order": 16,
+      "is_active": true
+    },
+    {
+      "section_type": "outcomes-benefits",
+      "title": "What You’ll Get from the DOTR Blog",
+      "subtitle": "More than just “interesting ideas”",
+      "content": {
+        "layout": "grid",
+        "items": [
+          {
+            "title": "Clear Mental Models",
+            "description": "Understand how AI-first, modular systems really work so you can design better strategies.",
+            "icon": "Brain"
+          },
+          {
+            "title": "Implementation Playbooks",
+            "description": "Follow practical guides that map ideas to concrete architectures, flows, and tools.",
+            "icon": "Workflow"
+          },
+          {
+            "title": "Faster Decision-Making",
+            "description": "Use frameworks to decide what to build now, what to automate, and what to postpone.",
+            "icon": "Zap"
+          },
+          {
+            "title": "Alignment with DOTR Services",
+            "description": "See exactly how content connects to DOTR’s 9 pillars if you decide to partner later.",
+            "icon": "Layers"
+          }
+        ]
+      },
+      "display_order": 17,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Content Mapped to DOTR Pillars",
+      "subtitle": "Learn how each department thinks and operates",
+      "content": {
+        "items": [
+          {
+            "icon": "Palette",
+            "title": "Designing",
+            "description": "Articles on UX patterns, design systems, and brand storytelling.",
+            "link": "/blog/category/designing"
+          },
+          {
+            "icon": "Code",
+            "title": "Development",
+            "description": "Content on architectures, CMS design, and modern stacks like Lovable and Supabase.",
+            "link": "/blog/category/development"
+          },
+          {
+            "icon": "ShoppingCart",
+            "title": "E-Commerce",
+            "description": "Playbooks for AI-ready storefronts, subscriptions, and checkout flows.",
+            "link": "/blog/category/e-commerce"
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Marketing",
+            "description": "Guides on funnels, SEO, campaigns, and automation-backed growth.",
+            "link": "/blog/category/marketing"
+          },
+          {
+            "icon": "Video",
+            "title": "Content & Creative",
+            "description": "Storytelling, content systems, and how to keep messaging consistent across channels.",
+            "link": "/blog/category/content-creative"
+          },
+          {
+            "icon": "Brain",
+            "title": "AI & Automation",
+            "description": "Deep dives into AI flows, bots, and automation blueprints.",
+            "link": "/blog/category/ai-automation"
+          },
+          {
+            "icon": "Cloud",
+            "title": "Cloud / DevOps",
+            "description": "Best practices for deployment, monitoring, and scalable infrastructure.",
+            "link": "/blog/category/cloud-devops"
+          },
+          {
+            "icon": "Shield",
+            "title": "Security & Maintenance",
+            "description": "Content on hardening, performance, and long-term reliability.",
+            "link": "/blog/category/security-maintenance"
+          },
+          {
+            "icon": "Lightbulb",
+            "title": "Consulting & Support",
+            "description": "Strategy pieces, decision frameworks, and transformation stories.",
+            "link": "/blog/category/consulting-support"
+          }
+        ]
+      },
+      "display_order": 18,
+      "is_active": true
+    },
+    {
+      "section_type": "logo-cloud",
+      "title": "Built on Modern Tools",
+      "subtitle": "We write from real hands-on experience",
+      "content": {
+        "items": [
+          {
+            "logo_url": "/images/logos/lovable.svg",
+            "name": "Lovable",
+            "link": "https://lovable.dev"
+          },
+          {
+            "logo_url": "/images/logos/supabase.svg",
+            "name": "Supabase",
+            "link": "https://supabase.com"
+          },
+          {
+            "logo_url": "/images/logos/n8n.svg",
+            "name": "n8n",
+            "link": "https://n8n.io"
+          },
+          {
+            "logo_url": "/images/logos/openai.svg",
+            "name": "OpenAI",
+            "link": "https://openai.com"
+          },
+          {
+            "logo_url": "/images/logos/vercel.svg",
+            "name": "Vercel",
+            "link": "https://vercel.com"
+          }
+        ]
+      },
+      "display_order": 19,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "From Articles to Case Studies",
+      "subtitle": "See how ideas turn into shipped systems",
+      "content": {
+        "show_filters": false,
+        "items": [
+          {
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "title": "AI-First Website Transformation",
+            "category": "Case Study",
+            "link": "/blog/case-studies/ai-first-website"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80",
+            "title": "Automation Blueprint in Production",
+            "category": "Automation",
+            "link": "/blog/case-studies/automation-blueprint"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80",
+            "title": "Programmatic SEO Engine",
+            "category": "Growth",
+            "link": "/blog/case-studies/programmatic-seo-engine"
+          }
+        ]
+      },
+      "display_order": 20,
+      "is_active": true
+    },
+    {
+      "section_type": "image-text",
+      "title": "From Reading to Building",
+      "subtitle": "Use content as a bridge to real systems",
+      "content": {
+        "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "description": "Every article is written with implementation in mind. We show how concepts map to database schemas, section structures, automation flows, and actual tools—so you can move from reading to building with less guesswork.",
+        "image_position": "right",
+        "cta_text": "Explore Implementation Guides",
+        "cta_link": "/blog/category/implementation-guides"
+      },
+      "display_order": 21,
+      "is_active": true
+    },
+    {
+      "section_type": "video",
+      "title": "Watch Explainers & Deep Dives",
+      "subtitle": "Short videos on AI-first systems and patterns",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+        "autoplay": false
+      },
+      "display_order": 22,
+      "is_active": true
+    },
+    {
+      "section_type": "timeline",
+      "title": "Learning Paths",
+      "subtitle": "Move from fundamentals to advanced topics",
+      "content": {
+        "items": [
+          {
+            "year": "Phase 1",
+            "title": "Foundations",
+            "description": "Start with articles that define AI-first thinking, modular sections, and CMS-driven systems.",
+            "icon": "BookOpen"
+          },
+          {
+            "year": "Phase 2",
+            "title": "Architecture & Design",
+            "description": "Deep dives into system design, data modeling, and UX for business engines.",
+            "icon": "Layers"
+          },
+          {
+            "year": "Phase 3",
+            "title": "Automation & AI",
+            "description": "Guides for building bots, flows, and AI-powered experiences.",
+            "icon": "Cpu"
+          },
+          {
+            "year": "Phase 4",
+            "title": "Growth & Optimization",
+            "description": "Programmatic SEO, experimentation, and continuous improvement.",
+            "icon": "TrendingUp"
+          }
+        ]
+      },
+      "display_order": 23,
+      "is_active": true
+    },
+    {
+      "section_type": "gallery",
+      "title": "Visuals from Our Playbooks",
+      "subtitle": "Schemas, flows, and system diagrams",
+      "content": {
+        "items": [
+          {
+            "image_url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80",
+            "caption": "Automation Flow Diagrams",
+            "alt": "Automation diagrams"
+          },
+          {
+            "image_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80",
+            "caption": "Section-Based Layouts",
+            "alt": "Section layout"
+          },
+          {
+            "image_url": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80",
+            "caption": "Admin & CMS Screens",
+            "alt": "Admin UI"
+          },
+          {
+            "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "caption": "Analytics & Dashboards",
+            "alt": "Analytics"
+          }
+        ]
+      },
+      "display_order": 24,
+      "is_active": true
+    },
+    {
+      "section_type": "team",
+      "title": "Who Writes the DOTR Blog?",
+      "subtitle": "Operators, builders, and strategists",
+      "content": {
+        "items": [
+          {
+            "name": "Strategy & Leadership",
+            "role": "AI-First Vision & Systems Thinking",
+            "bio": "Defines the operating models, frameworks, and philosophies behind each article.",
+            "image": ""
+          },
+          {
+            "name": "Engineering",
+            "role": "Development & Automation",
+            "bio": "Translates ideas into code examples, architectures, and automation patterns.",
+            "image": ""
+          },
+          {
+            "name": "Design",
+            "role": "UX, UI & Content Experience",
+            "bio": "Focuses on clarity, structure, and how information is consumed.",
+            "image": ""
+          },
+          {
+            "name": "Growth",
+            "role": "SEO & Experimentation",
+            "bio": "Connects content topics to programmatic SEO and growth strategies.",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 25,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "How We Measure Blog Impact",
+      "subtitle": "Not just pageviews",
+      "content": {
+        "items": [
+          {
+            "metric": "Time Well Spent",
+            "label": "High depth of scroll & engagement",
+            "description": "Readers stay, explore, and apply—not just bounce.",
+            "icon": "Clock"
+          },
+          {
+            "metric": "Applied Playbooks",
+            "label": "Frameworks used in real projects",
+            "description": "Readers report using templates and flows in production.",
+            "icon": "CheckCircle"
+          },
+          {
+            "metric": "Qualified Conversations",
+            "label": "Better questions from readers",
+            "description": "Inbound conversations start from a shared AI-first vocabulary.",
+            "icon": "MessageSquare"
+          },
+          {
+            "metric": "Compounding Library",
+            "label": "Evergreen content growth",
+            "description": "A growing set of articles that stay relevant over time.",
+            "icon": "Layers"
+          }
+        ]
+      },
+      "display_order": 26,
+      "is_active": true
+    },
+    {
+      "section_type": "social-proof-bar",
+      "title": "Trusted by Builders & Operators",
+      "subtitle": null,
+      "content": {
+        "user_count": "Thousands of readers",
+        "rating": 4.9,
+        "review_count": "Hundreds of positive comments",
+        "platforms": [
+          {
+            "name": "LinkedIn",
+            "followers": "Growing network",
+            "icon": "Linkedin"
+          },
+          {
+            "name": "Twitter",
+            "followers": "Active updates",
+            "icon": "Twitter"
+          }
+        ]
+      },
+      "display_order": 27,
+      "is_active": true
+    },
+    {
+      "section_type": "awards-badges",
+      "title": "Recognized Content & Ideas",
+      "subtitle": "Where our thinking has been featured",
+      "content": {
+        "items": [
+          {
+            "title": "AI-First Systems Thinking",
+            "organization": "Product Communities",
+            "year": "2025",
+            "image_url": "https://placehold.co/120x80/f0f0f0/666?text=AI"
+          },
+          {
+            "title": "Programmatic SEO Frameworks",
+            "organization": "Growth Circles",
+            "year": "2024",
+            "image_url": "https://placehold.co/120x80/f0f0f0/666?text=SEO"
+          },
+          {
+            "title": "Automation Blueprints",
+            "organization": "Ops Leaders",
+            "year": "2024",
+            "image_url": "https://placehold.co/120x80/f0f0f0/666?text=OPS"
+          }
+        ]
+      },
+      "display_order": 28,
+      "is_active": true
+    },
+    {
+      "section_type": "press-mentions",
+      "title": "What Others Say About Our Content",
+      "subtitle": "Quotes from communities and platforms",
+      "content": {
+        "items": [
+          {
+            "publication": "Builder Communities",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Builders",
+            "quote": "DOTR’s articles turn complex AI-first concepts into practical, reusable patterns.",
+            "link": ""
+          },
+          {
+            "publication": "Growth Circles",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Growth",
+            "quote": "Some of the clearest writing on programmatic SEO and modular content systems.",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 29,
+      "is_active": true
+    },
+    {
+      "section_type": "ratings-reviews",
+      "title": "Reader Feedback",
+      "subtitle": "How people rate the DOTR blog",
+      "content": {
+        "items": [
+          {
+            "platform": "Direct Surveys",
+            "rating": 4.9,
+            "review_count": 50,
+            "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=CSAT"
+          },
+          {
+            "platform": "Community Comments",
+            "rating": 4.8,
+            "review_count": 80,
+            "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=COMM"
+          }
+        ],
+        "show_aggregate": true
+      },
+      "display_order": 30,
+      "is_active": true
+    },
+    {
+      "section_type": "trust-badges",
+      "title": "Content You Can Rely On",
+      "subtitle": null,
+      "content": {
+        "items": [
+          {
+            "title": "AI-First Perspective",
+            "icon": "Brain",
+            "description": "Every article is rooted in AI-first thinking."
+          },
+          {
+            "title": "System-Driven",
+            "icon": "Settings",
+            "description": "Tied to architectures, flows, and real systems."
+          },
+          {
+            "title": "End-to-End View",
+            "icon": "Layers",
+            "description": "Connects design, dev, automation, and growth."
+          },
+          {
+            "title": "Action-Oriented",
+            "icon": "Target",
+            "description": "Written to be implemented, not just read."
+          }
+        ]
+      },
+      "display_order": 31,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-list",
+      "title": "What the DOTR Blog Covers",
+      "subtitle": "Key recurring topics and formats",
+      "content": {
+        "items": [
+          {
+            "text": "AI consultant and lead qualification flows",
+            "icon": "MessageSquare"
+          },
+          {
+            "text": "Section-based page architectures and content models",
+            "icon": "Grid"
+          },
+          {
+            "text": "Automation with n8n and similar tools",
+            "icon": "Workflow"
+          },
+          {
+            "text": "Programmatic SEO structures and content systems",
+            "icon": "Globe"
+          },
+          {
+            "text": "Design and UX patterns for conversion",
+            "icon": "PenTool"
+          },
+          {
+            "text": "Real project breakdowns and case studies",
+            "icon": "FileText"
+          }
+        ],
+        "columns": 2
+      },
+      "display_order": 32,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-highlights",
+      "title": "AI-First Capabilities Behind Our Content",
+      "subtitle": "Why our perspective is different",
+      "content": {
+        "items": [
+          {
+            "title": "AI Consultant Patterns",
+            "description": "We explore how to design conversational flows that recommend the right services and paths.",
+            "icon": "MessageSquare",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Smart Lead Qualification",
+            "description": "Articles on how to automatically score, route, and prioritize leads using AI and rules.",
+            "icon": "Filter",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Content Generation Workflows",
+            "description": "Guides on using AI to draft, refine, and localize content while keeping humans in the loop.",
+            "icon": "FileText",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "AI Analytics & Insights",
+            "description": "How to use AI to interpret analytics and surface opportunities.",
+            "icon": "BarChart",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 33,
+      "is_active": true
+    },
+    {
+      "section_type": "testimonials",
+      "title": "What Readers Say",
+      "subtitle": "Experiences from founders, operators, and builders",
+      "content": {
+        "items": [
+          {
+            "quote": "The DOTR blog helped us reframe our entire website as a system—not just a design project. The frameworks are incredibly practical.",
+            "author": "A. Founder",
+            "role": "Founder",
+            "company": "Early-Stage Startup",
+            "image": ""
+          },
+          {
+            "quote": "We implemented one of the automation blueprints and saved hours every week. The content is unusually actionable.",
+            "author": "B. Operator",
+            "role": "Operations Lead",
+            "company": "Growing Business",
+            "image": ""
+          },
+          {
+            "quote": "As a developer, I appreciate that the articles connect concepts to actual schemas and flows.",
+            "author": "C. Engineer",
+            "role": "Senior Engineer",
+            "company": "Digital Product Team",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 34,
+      "is_active": true
+    },
+    {
+      "section_type": "before-after",
+      "title": "Before & After Reading the DOTR Blog",
+      "subtitle": "How your mental model can change",
+      "content": {
+        "before_image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+        "after_image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "before_label": "Random Tactics",
+        "after_label": "System-Driven Strategy"
+      },
+      "display_order": 35,
+      "is_active": true
+    },
+    {
+      "section_type": "video-demo",
+      "title": "See a Content-to-System Journey",
+      "subtitle": "From reading an article to shipping a workflow",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+        "callouts": [
+          {
+            "time": "0:15",
+            "text": "Overview of the DOTR blog structure"
+          },
+          {
+            "time": "1:30",
+            "text": "Following a learning path"
+          },
+          {
+            "time": "2:45",
+            "text": "Turning a playbook into a real automation"
+          }
+        ]
+      },
+      "display_order": 36,
+      "is_active": true
+    },
+    {
+      "section_type": "screenshot-gallery",
+      "title": "Screenshots from Guides & Templates",
+      "subtitle": "How our examples look in real tools",
+      "content": {
+        "screenshots": [
+          {
+            "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+            "caption": "Analytics Dashboard Example"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+            "caption": "Admin & Section Management"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80",
+            "caption": "Automation Flow in n8n"
+          }
+        ],
+        "show_captions": true
+      },
+      "display_order": 37,
+      "is_active": true
+    },
+    {
+      "section_type": "device-frames",
+      "title": "Read Anywhere",
+      "subtitle": "Optimized for desktop, tablet, and mobile",
+      "content": {
+        "device_type": "iphone",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80"
+        ]
+      },
+      "display_order": 38,
+      "is_active": true
+    },
+    {
+      "section_type": "counters",
+      "title": "By the Numbers",
+      "subtitle": "How the DOTR blog scales over time",
+      "content": {
+        "items": [
+          {
+            "value": 100,
+            "label": "Articles & Playbooks (goal)",
+            "prefix": "",
+            "suffix": "+",
+            "icon": "FileText"
+          },
+          {
+            "value": 48,
+            "label": "Section Types Covered",
+            "prefix": "",
+            "suffix": "+",
+            "icon": "Grid"
+          },
+          {
+            "value": 9,
+            "label": "Service Pillars Linked",
+            "prefix": "",
+            "suffix": "",
+            "icon": "Layers"
+          },
+          {
+            "value": 24,
+            "label": "Hours Available",
+            "prefix": "",
+            "suffix": "/7",
+            "icon": "Clock"
+          }
+        ]
+      },
+      "display_order": 39,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          {
+            "value": 10,
+            "suffix": "+",
+            "prefix": "",
+            "label": "Core Learning Paths"
+          },
+          {
+            "value": 5,
+            "suffix": "",
+            "prefix": "",
+            "label": "Primary Content Themes"
+          },
+          {
+            "value": 9,
+            "suffix": "",
+            "prefix": "",
+            "label": "Pillars Connected"
+          },
+          {
+            "value": 100,
+            "suffix": "%",
+            "prefix": "",
+            "label": "AI-First Focus"
+          }
+        ],
+        "animate": true
+      },
+      "display_order": 40,
+      "is_active": true
+    },
+    {
+      "section_type": "about-us",
+      "title": "Why We Created the DOTR Blog",
+      "subtitle": "Content as part of the DOTR operating system",
+      "content": {
+        "story": "The DOTR blog exists to document how we think about AI-first systems, modular content, and end-to-end digital operations. Instead of keeping our frameworks internal, we share them so founders, operators, and builders can benefit—whether or not they work with us directly.",
+        "mission": "To provide clear, practical thinking that helps teams move from scattered tactics to a coherent, AI-first business engine.",
+        "vision": "A world where more teams run on modular, automated, and data-driven systems instead of fragile, manual setups.",
+        "founder_image": "",
+        "founder_name": "",
+        "founder_title": "",
+        "founded_year": "2024"
+      },
+      "display_order": 41,
+      "is_active": true
+    },
+    {
+      "section_type": "values-culture",
+      "title": "How We Approach Content",
+      "subtitle": "Principles behind every article",
+      "content": {
+        "items": [
+          {
+            "title": "Clarity Over Hype",
+            "description": "Explain complex ideas simply, without buzzword overload.",
+            "icon": "Target"
+          },
+          {
+            "title": "Systems, Not Hacks",
+            "description": "Focus on durable architectures and processes, not one-time tricks.",
+            "icon": "Layers"
+          },
+          {
+            "title": "Honest Trade-Offs",
+            "description": "Discuss pros, cons, and constraints openly so you can decide what fits your context.",
+            "icon": "Scale"
+          },
+          {
+            "title": "Implementation-Focused",
+            "description": "Always tie ideas back to tools, schemas, and workflows.",
+            "icon": "Wrench"
+          }
+        ]
+      },
+      "display_order": 42,
+      "is_active": true
+    },
+    {
+      "section_type": "pricing",
+      "title": "From Free Content to Partnership",
+      "subtitle": "How DOTR can support you beyond the blog",
+      "content": {
+        "items": [
+          {
+            "name": "Self-Serve",
+            "price": "$0",
+            "description": "Use the DOTR blog, frameworks, and templates on your own.",
+            "features": [
+              "Free access to articles and guides",
+              "Reusable frameworks and checklists",
+              "No commitment required"
+            ],
+            "cta_text": "Explore Articles",
+            "is_featured": false
+          },
+          {
+            "name": "Guided Implementation",
+            "price": "From $299",
+            "description": "Work with DOTR to implement specific playbooks or systems.",
+            "features": [
+              "Focused scope (e.g. one automation or learning path)",
+              "Hands-on support and recommendations",
+              "Alignment with your current stack"
+            ],
+            "cta_text": "Discuss Guided Support",
+            "is_featured": true
+          },
+          {
+            "name": "Full Partnership",
+            "price": "Custom",
+            "description": "End-to-end, AI-first digital operating system design and implementation.",
+            "features": [
+              "Strategy, architecture, and implementation",
+              "Ongoing optimization and growth",
+              "Access to all 9 DOTR pillars"
+            ],
+            "cta_text": "Talk to DOTR",
+            "is_featured": false
+          }
+        ]
+      },
+      "display_order": 43,
+      "is_active": true
+    },
+    {
+      "section_type": "form",
+      "title": "Request a Content Recommendation",
+      "subtitle": "Tell us your context and we’ll suggest where to start",
+      "content": {
+        "form_title": "Get a Curated Reading Path",
+        "form_description": "Share a bit about your role, stack, and goals—we’ll send back a short list of DOTR articles tailored for you.",
+        "submit_button_text": "Request Recommendations",
+        "success_message": "Thanks! We’ll reply with a curated reading path and relevant playbooks.",
+        "fields": [
+          {
+            "field_type": "text",
+            "label": "Full Name",
+            "name": "name",
+            "placeholder": "John Doe",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "email",
+            "label": "Email Address",
+            "name": "email",
+            "placeholder": "john@example.com",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "select",
+            "label": "Your Role",
+            "name": "role",
+            "placeholder": "Select an option",
+            "required": true,
+            "options": [
+              "Founder / Leadership",
+              "Product / Growth",
+              "Engineering",
+              "Design",
+              "Operations"
+            ],
+            "width": "half"
+          },
+          {
+            "field_type": "select",
+            "label": "Primary Focus",
+            "name": "focus",
+            "placeholder": "What do you want to learn?",
+            "required": true,
+            "options": [
+              "AI & Automation",
+              "Architecture & Development",
+              "Design & UX",
+              "Programmatic SEO & Growth",
+              "General Overview"
+            ],
+            "width": "half"
+          },
+          {
+            "field_type": "textarea",
+            "label": "Context",
+            "name": "context",
+            "placeholder": "Tell us briefly about your current stack, challenges, and goals...",
+            "required": true,
+            "validation": {
+              "min": 10,
+              "max": 1000
+            },
+            "width": "full"
+          }
+        ]
+      },
+      "display_order": 44,
+      "is_active": true
+    },
+    {
+      "section_type": "primary-cta-banner",
+      "title": "Turn Ideas into Systems",
+      "subtitle": null,
+      "content": {
+        "headline": "Ready to Go Beyond Reading?",
+        "description": "If the DOTR blog resonates with how you want to operate, we can help you design and ship real AI-first systems.",
+        "primary_cta_text": "Talk to DOTR",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "Browse Services",
+        "secondary_cta_link": "/services",
+        "background_color": "primary",
+        "text_color": "white"
+      },
+      "display_order": 45,
+      "is_active": true
+    },
+    {
+      "section_type": "secondary-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "text": "Prefer to keep exploring on your own? Save the blog and come back whenever you’re ready.",
+        "button_text": "Browse All Articles",
+        "button_url": "/blog/all"
+      },
+      "display_order": 46,
+      "is_active": true
+    },
+    {
+      "section_type": "exit-intent-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "headline": "Leaving Without a Learning Path?",
+        "description": "Before you go, get a curated list of DOTR articles that match your role and goals.",
+        "button_text": "Get My Reading Path",
+        "button_url": "/contact",
+        "show_after_scroll": 50,
+        "offer_text": "We’ll suggest 5–10 specific articles and playbooks for you."
+      },
+      "display_order": 47,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "subtle",
+        "width": "full",
+        "spacing": "large"
+      },
+      "display_order": 48,
+      "is_active": true
+    }
+  ]
+}

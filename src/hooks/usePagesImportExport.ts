@@ -19,6 +19,21 @@ export interface PagesImportOptions {
   onConflict?: PagesImportMode;
 }
 
+export interface PagesImportSelection {
+  /**
+   * Optional zero-based indexes into the parsed pages array indicating
+   * which pages from the file should be processed. If omitted, all
+   * parsed pages are considered.
+   */
+  pageIndexes?: number[];
+  /**
+   * Optional zero-based indexes into the parsed menu_items array
+   * indicating which menu items from the file should be processed. If
+   * omitted, all parsed menu items are considered.
+   */
+  menuItemIndexes?: number[];
+}
+
 export interface PagesImportResult {
   success: boolean;
   total: number;
@@ -90,6 +105,70 @@ function sortMenuItemsTopo(items: MenuItemFlat[]): MenuItemFlat[] {
     }
   }
   return out;
+}
+
+export interface ExistingForReview {
+  existingPageSlugs: Set<string>;
+  existingMenuKeys: Set<string>;
+}
+
+/**
+ * Fetches existing pages (by slug) and menu items (by location+label+parent) so the
+ * import modal can hide them in the review list when "Skip Existing" is selected.
+ * existingMenuKeys is a Set of `${menu_location}:${key}` for menu items that already exist.
+ */
+export async function getExistingForReview(
+  parsedMenuItems: MenuItemFlat[]
+): Promise<ExistingForReview> {
+  const [existingPagesRes, existingMenuRes] = await Promise.all([
+    supabase.from('pages').select('slug'),
+    supabase.from('menu_items').select('id, menu_location, label, parent_id'),
+  ]);
+  if (existingPagesRes.error) throw existingPagesRes.error;
+  if (existingMenuRes.error) throw existingMenuRes.error;
+
+  const existingPageSlugs = new Set<string>(
+    (existingPagesRes.data ?? []).map((p: { slug: string }) => p.slug)
+  );
+
+  const existingMenu = (existingMenuRes.data ?? []) as Array<{
+    id: string;
+    menu_location: string;
+    label: string;
+    parent_id: string | null;
+  }>;
+
+  function findExistingMenuItem(
+    loc: string,
+    label: string,
+    parentId: string | null
+  ): (typeof existingMenu)[0] | undefined {
+    return existingMenu.find(
+      (m) =>
+        m.menu_location === loc &&
+        m.label === label &&
+        (m.parent_id ?? null) === parentId
+    );
+  }
+
+  const existingMenuKeys = new Set<string>();
+  const menuKeyToId = new Map<string, string>();
+
+  const sortedMenu = sortMenuItemsTopo(parsedMenuItems);
+  for (const it of sortedMenu) {
+    const parentId = it.parent_key
+      ? menuKeyToId.get(`${it.menu_location}:${it.parent_key}`) ?? null
+      : null;
+    const existing = findExistingMenuItem(it.menu_location, it.label, parentId);
+    if (existing) {
+      menuKeyToId.set(`${it.menu_location}:${it.key}`, existing.id);
+      existingMenuKeys.add(`${it.menu_location}:${it.key}`);
+    } else {
+      menuKeyToId.set(`${it.menu_location}:${it.key}`, `new:${it.key}`);
+    }
+  }
+
+  return { existingPageSlugs, existingMenuKeys };
 }
 
 function buildPageUpdate(
@@ -185,8 +264,12 @@ export function usePagesImportExport() {
   }, [toast]);
 
   const importPagesMenu = useCallback(
-    async (file: File, options: PagesImportOptions = {}): Promise<PagesImportResult> => {
+    async (
+      file: File,
+      options: PagesImportOptions & { selection?: PagesImportSelection } = {}
+    ): Promise<PagesImportResult> => {
       const onConflict = options.onConflict ?? 'skip';
+      const selection = options.selection;
 
       try {
         const data = await parsePagesMenuFile(file);
@@ -255,13 +338,35 @@ export function usePagesImportExport() {
 
         const slugToId = new Map<string, string>();
         const menuKeyToId = new Map<string, string>();
+
+        // Pre-populate so new pages can resolve parent_slug and menu items can resolve page_slug
+        for (const p of existingPages) {
+          slugToId.set(p.slug, p.id);
+        }
+
         let imported = 0;
         let skipped = 0;
         let overwritten = 0;
         let failed = 0;
         const errors: PagesImportResult['errors'] = [];
 
-        const sortedPages = sortPagesTopo(data.pages);
+        // Determine which pages and menu items should be processed
+        const pageIndexes: number[] = selection?.pageIndexes
+          ? selection.pageIndexes.filter(
+              (i) => Number.isInteger(i) && i >= 0 && i < data.pages.length
+            )
+          : data.pages.map((_, idx) => idx);
+
+        const menuIndexes: number[] = selection?.menuItemIndexes
+          ? selection.menuItemIndexes.filter(
+              (i) => Number.isInteger(i) && i >= 0 && i < data.menu_items.length
+            )
+          : data.menu_items.map((_, idx) => idx);
+
+        const pagesToProcess = pageIndexes.map((i) => data.pages[i]);
+        const menuToProcess = menuIndexes.map((i) => data.menu_items[i]);
+
+        const sortedPages = sortPagesTopo(pagesToProcess);
 
         for (let i = 0; i < sortedPages.length; i++) {
           const p = sortedPages[i];
@@ -322,7 +427,7 @@ export function usePagesImportExport() {
           }
         }
 
-        const sortedMenu = sortMenuItemsTopo(data.menu_items);
+        const sortedMenu = sortMenuItemsTopo(menuToProcess);
 
         function findExistingMenuItem(
           loc: string,
@@ -337,19 +442,48 @@ export function usePagesImportExport() {
           );
         }
 
+        // Pre-populate menuKeyToId so new menu items can resolve parent_key to existing parents
+        const allParsedSorted = sortMenuItemsTopo(data.menu_items);
+        for (const it of allParsedSorted) {
+          const parentId = it.parent_key
+            ? menuKeyToId.get(`${it.menu_location}:${it.parent_key}`) ?? null
+            : null;
+          const existing = findExistingMenuItem(it.menu_location, it.label, parentId);
+          if (existing) {
+            menuKeyToId.set(`${it.menu_location}:${it.key}`, existing.id);
+          }
+        }
+
         for (let i = 0; i < sortedMenu.length; i++) {
           const it = sortedMenu[i];
           try {
             const parentId = it.parent_key
               ? menuKeyToId.get(`${it.menu_location}:${it.parent_key}`) ?? null
               : null;
+            // Link menu item to page if page_slug is provided
+            // This ensures "Edit page" and "Sections" buttons appear after import
             const pageId = it.page_slug ? slugToId.get(it.page_slug) ?? null : null;
+            if (it.page_slug && !pageId) {
+              // Warn if page_slug references a page that doesn't exist
+              console.warn(`Menu item "${it.label}" references page_slug "${it.page_slug}" which was not found in imported pages`);
+            }
             const url = it.url ?? (it.page_slug ? getPageHref(it.page_slug) : null);
 
             const existing = findExistingMenuItem(it.menu_location, it.label, parentId);
 
             if (existing) {
               if (onConflict === 'skip') {
+                // Even in skip mode, update page_id if it's missing or different, so buttons work
+                if (pageId && existing.page_id !== pageId) {
+                  const { error: updateError } = await supabase
+                    .from('menu_items')
+                    .update({ page_id: pageId })
+                    .eq('id', existing.id);
+                  if (updateError) {
+                    // Log but don't fail - this is a best-effort update
+                    console.warn(`Failed to update page_id for menu item ${existing.id}:`, updateError);
+                  }
+                }
                 menuKeyToId.set(`${it.menu_location}:${it.key}`, existing.id);
                 skipped++;
                 continue;
@@ -409,13 +543,14 @@ export function usePagesImportExport() {
         queryClient.invalidateQueries({ predicate: (q) => (q.queryKey[0] as string) === 'navigation-menu' });
         queryClient.invalidateQueries({ predicate: (q) => (q.queryKey[0] as string) === 'mega-menu' });
         queryClient.invalidateQueries({ predicate: (q) => (q.queryKey[0] as string) === 'page' });
-        // Force refetch of admin pages so the list updates immediately
+        // Force refetch of admin pages and menu items so the list updates immediately
         await queryClient.refetchQueries({ queryKey: QUERY_KEYS.adminPages });
         await queryClient.refetchQueries({ queryKey: QUERY_KEYS.adminPagesTree });
+        await queryClient.refetchQueries({ queryKey: QUERY_KEYS.adminMenuItems });
 
         await logJsonImport('pages_and_menu', imported + overwritten, failed);
 
-        const total = data.pages.length + data.menu_items.length;
+        const total = pagesToProcess.length + menuToProcess.length;
         const hasErrors = failed > 0 || errors.length > 0;
         toast({
           title: 'Import completed',

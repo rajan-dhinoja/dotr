@@ -1,0 +1,1168 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-02-13T10:30:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "contact",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "Contact DOTR",
+      "subtitle": null,
+      "content": {
+        "headline": "Talk to Our AI-First Team",
+        "subtitle": "Share your goals, challenges, or ideas—and we'll respond with clear, actionable next steps powered by AI-driven insight.",
+        "cta_text": "Start Your Conversation",
+        "cta_link": "#contact-form",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "Struggling to Find the Right Partner?",
+      "subtitle": "If this sounds familiar, let's talk.",
+      "content": {
+        "problems": [
+          {
+            "title": "Too Many Vendors, Not Enough Clarity",
+            "description": "You’re tired of jumping between agencies for design, development, marketing, and support—with no single owner of outcomes."
+          },
+          {
+            "title": "Complex Needs, No Clear Plan",
+            "description": "You know you need AI, automation, and a modern digital presence—but you're not sure where to start."
+          },
+          {
+            "title": "Slow Responses & Generic Proposals",
+            "description": "You’ve filled contact forms before and waited days for vague replies that don’t reflect your real needs."
+          },
+          {
+            "title": "Worried About Time, Budget, and ROI",
+            "description": "You want a partner who is transparent about timelines, investment, and the outcomes you can realistically expect."
+          }
+        ],
+        "empathy_text": "If that feels familiar, you’re not alone. Use this Contact page as a starting point—we’ll listen first, then propose an AI-first solution tailored to your stage, budget, and vision."
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "What You Get When You Reach Out",
+      "subtitle": "Clarity, not generic sales talk.",
+      "content": {
+        "headline": "A Fast, Structured Path from Conversation to AI-Powered Execution",
+        "supporting_points": [
+          "AI-assisted discovery that understands your requirements and suggests the right mix from DOTR’s 9 pillars",
+          "Clear expectations on timelines, pricing approaches, and engagement models—no surprises",
+          "One partner for design, development, automation, and growth instead of juggling multiple vendors",
+          "A roadmap that balances quick wins with scalable, future-ready architecture",
+          "Guidance grounded in our modern stack (Lovable, Supabase, n8n) and AI-first philosophy"
+        ],
+        "cta_text": "Share Your Requirements",
+        "cta_url": "#contact-form"
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "What You Can Talk to Us About",
+      "subtitle": "9 specialized pillars, one unified conversation.",
+      "content": {
+        "items": [
+          {
+            "icon": "Palette",
+            "title": "Designing",
+            "description": "UI/UX, branding, and visual systems for websites, apps, and platforms.",
+            "link": "/services/designing"
+          },
+          {
+            "icon": "Code",
+            "title": "Development",
+            "description": "Web, app, and platform development with scalable, modern architectures.",
+            "link": "/services/development"
+          },
+          {
+            "icon": "ShoppingCart",
+            "title": "E-Commerce",
+            "description": "Stores, subscriptions, payments, and marketplaces built to convert.",
+            "link": "/services/e-commerce"
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Marketing",
+            "description": "SEO, campaigns, funnels, and automation that drive growth.",
+            "link": "/services/marketing"
+          },
+          {
+            "icon": "Video",
+            "title": "Content & Creative",
+            "description": "Storytelling, content, and media that align with your brand and funnel.",
+            "link": "/services/content-creative"
+          },
+          {
+            "icon": "Brain",
+            "title": "AI & Automation",
+            "description": "Chatbots, workflows, and AI systems that reduce manual work.",
+            "link": "/services/ai-automation"
+          },
+          {
+            "icon": "Cloud",
+            "title": "Cloud / DevOps",
+            "description": "Deployment, scaling, and reliability for serious digital products.",
+            "link": "/services/cloud-devops"
+          },
+          {
+            "icon": "Shield",
+            "title": "Security & Maintenance",
+            "description": "Security, monitoring, and long-term care for your stack.",
+            "link": "/services/security-maintenance"
+          },
+          {
+            "icon": "Lightbulb",
+            "title": "Consulting & Support",
+            "description": "Product thinking, roadmapping, and long-term strategic support.",
+            "link": "/services/consulting-support"
+          }
+        ]
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-highlights",
+      "title": "How We Use AI Before, During, and After Your First Call",
+      "subtitle": "Your contact request is just the beginning.",
+      "content": {
+        "items": [
+          {
+            "title": "AI Consultant Intake",
+            "description": "Your inputs are processed by AI to surface the most relevant services, case studies, and engagement options before our first conversation.",
+            "icon": "MessageSquare",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Smart Lead Qualification",
+            "description": "We automatically route your inquiry to the right pillar (or mix of pillars) so you’re not repeating yourself to multiple teams.",
+            "icon": "Filter",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Tailored Recommendations",
+            "description": "Our systems match your goals with proven patterns, examples, and solution templates so we can talk specifics, not theory.",
+            "icon": "Sparkles",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "AI-Assisted Proposals",
+            "description": "After our conversation, we use AI to help structure clear scopes, timelines, and options—reviewed and refined by humans.",
+            "icon": "FileText",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Continuous Insight Loop",
+            "description": "Your engagement generates data and insights that feed back into better decisions, optimizations, and future experiments.",
+            "icon": "BarChart",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Workflow Automation",
+            "description": "From follow-ups to onboarding, n8n-powered workflows ensure you’re never waiting on manual steps.",
+            "icon": "Workflow",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "What Happens After You Contact Us",
+      "subtitle": "A clear, 4-step path.",
+      "content": {
+        "items": [
+          {
+            "step": 1,
+            "title": "Share Your Context",
+            "description": "You fill out the Contact form with your goals, challenges, and constraints. Our AI and team review it before we talk.",
+            "icon": "Search"
+          },
+          {
+            "step": 2,
+            "title": "Discovery Call",
+            "description": "We run a focused call to clarify your needs, validate assumptions, and map them to DOTR’s 9 pillars.",
+            "icon": "PenTool"
+          },
+          {
+            "step": 3,
+            "title": "Solution Blueprint",
+            "description": "You receive a structured outline of proposed solutions, phases, timelines, and levels of investment.",
+            "icon": "Code"
+          },
+          {
+            "step": 4,
+            "title": "Kickoff & Execution",
+            "description": "Once aligned, we start implementation with AI-accelerated delivery, automation, and clear communication.",
+            "icon": "Rocket"
+          }
+        ]
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "differentiators",
+      "title": "Why Reach Out to DOTR vs a Traditional Agency?",
+      "subtitle": "What makes this Contact page different.",
+      "content": {
+        "items": [
+          {
+            "feature": "AI-First Discovery and Scoping",
+            "us": true,
+            "competitors": false
+          },
+          {
+            "feature": "End-to-End Under One Roof",
+            "us": true,
+            "competitors": "Fragmented Vendors"
+          },
+          {
+            "feature": "Weeks, Not Months to First Value",
+            "us": true,
+            "competitors": false
+          },
+          {
+            "feature": "Fully CMS-Driven Delivery",
+            "us": true,
+            "competitors": "Hard-Coded Sites"
+          },
+          {
+            "feature": "Modern, Scalable Stack",
+            "us": true,
+            "competitors": "Legacy or Patchwork Tools"
+          },
+          {
+            "feature": "24/7 AI Support & Automation",
+            "us": true,
+            "competitors": false
+          },
+          {
+            "feature": "Programmatic SEO & Growth Built-In",
+            "us": true,
+            "competitors": "Limited SEO Support"
+          },
+          {
+            "feature": "Clarity Before Commitment",
+            "us": true,
+            "competitors": false
+          }
+        ],
+        "show_comparison": true,
+        "our_label": "DOTR",
+        "competitor_label": "Traditional Agencies"
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "stats",
+      "title": "A Contact That Actually Moves Things Forward",
+      "subtitle": "Signals from our work and systems.",
+      "content": {
+        "items": [
+          {
+            "value": "9",
+            "label": "Specialized Pillars",
+            "suffix": ""
+          },
+          {
+            "value": "48",
+            "label": "Modular Section Types",
+            "suffix": ""
+          },
+          {
+            "value": "98",
+            "label": "Client Satisfaction",
+            "suffix": "%"
+          },
+          {
+            "value": "24",
+            "label": "Hours Support",
+            "suffix": "/7"
+          }
+        ]
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "What Successful Engagements Look Like",
+      "subtitle": "Outcomes that start from a simple conversation.",
+      "content": {
+        "items": [
+          {
+            "metric": "40%",
+            "label": "Average Revenue Lift",
+            "description": "Clients see meaningful revenue or efficiency gains after implementing AI-first solutions.",
+            "icon": "TrendingUp"
+          },
+          {
+            "metric": "20+",
+            "label": "Hours Saved Weekly",
+            "description": "Automation replaces manual, repetitive tasks across teams.",
+            "icon": "Clock"
+          },
+          {
+            "metric": "3x",
+            "label": "Faster Time to Market",
+            "description": "From first call to launch, projects ship faster with our stack and processes.",
+            "icon": "Zap"
+          },
+          {
+            "metric": "98%",
+            "label": "Client Satisfaction",
+            "description": "Partners stay with DOTR because we focus on outcomes, not just deliverables.",
+            "icon": "Heart"
+          }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "testimonials",
+      "title": "Teams That Started with a Simple Message",
+      "subtitle": "Conversations that turned into long-term partnerships.",
+      "content": {
+        "items": [
+          {
+            "quote": "Our first interaction with DOTR was through this Contact page. Within days we had a clear roadmap, not just a sales pitch. Their AI-first mindset showed up from day one.",
+            "author": "Alex Chen",
+            "role": "CEO",
+            "company": "TechStart Inc.",
+            "image": ""
+          },
+          {
+            "quote": "We explained our challenges once—and DOTR mapped everything across design, development, and automation. One conversation replaced weeks of back-and-forth with other vendors.",
+            "author": "Maria Rodriguez",
+            "role": "Founder",
+            "company": "Digital Ventures",
+            "image": ""
+          },
+          {
+            "quote": "The intake, discovery, and proposal flow was the smoothest we’ve experienced. It felt like they already understood our industry and constraints.",
+            "author": "James Wilson",
+            "role": "CTO",
+            "company": "Innovate Solutions",
+            "image": ""
+          },
+          {
+            "quote": "What started as a small inquiry turned into a long-term partnership. DOTR’s clarity, speed, and automation made it very easy to say yes.",
+            "author": "Sarah Kim",
+            "role": "Operations Director",
+            "company": "ScaleUp Co.",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "cta",
+      "title": "Ready to Talk?",
+      "subtitle": null,
+      "content": {
+        "headline": "Tell Us Where You Are and Where You Want to Be",
+        "description": "Use the form below to share as much context as you can. We’ll come back with structured next steps—not spam, not generic pitches.",
+        "primary_cta_text": "Fill the Contact Form",
+        "primary_cta_link": "#contact-form",
+        "secondary_cta_text": "Book a Call Directly",
+        "secondary_cta_link": "#booking"
+      },
+      "display_order": 11,
+      "is_active": true
+    },
+    {
+      "section_type": "about-us",
+      "title": "Who You’re Reaching Out To",
+      "subtitle": "DOTR – Dhinoja OmniTech Resolutions",
+      "content": {
+        "story": "DOTR is an AI-first digital solutions company built to remove friction between ideas and execution. When you contact us, you’re speaking with a team that understands design, engineering, automation, and growth as one connected system.",
+        "mission": "To help ambitious teams ship AI-powered, scalable digital experiences without juggling multiple vendors or outdated systems.",
+        "vision": "To be the partner you call when you’re ready to treat your website and platforms like a living business engine—not a static brochure.",
+        "founder_image": "",
+        "founder_name": "",
+        "founder_title": "",
+        "founded_year": "2024"
+      },
+      "display_order": 12,
+      "is_active": true
+    },
+    {
+      "section_type": "values-culture",
+      "title": "How We Show Up in Every Conversation",
+      "subtitle": "Values that guide how we respond, plan, and execute.",
+      "content": {
+        "items": [
+          {
+            "title": "AI-First Thinking",
+            "description": "We look for leverage and automation from the first message you send.",
+            "icon": "Brain"
+          },
+          {
+            "title": "Speed & Clarity",
+            "description": "You get clear responses and concrete next steps, not vague follow-ups.",
+            "icon": "Zap"
+          },
+          {
+            "title": "Scalability",
+            "description": "We think in systems—from your first project to your long-term roadmap.",
+            "icon": "TrendingUp"
+          },
+          {
+            "title": "End-to-End Ownership",
+            "description": "We connect the dots across all 9 pillars instead of treating them as silos.",
+            "icon": "Layers"
+          },
+          {
+            "title": "Honesty & Fit",
+            "description": "If we’re not the right partner for your stage or constraints, we’ll tell you.",
+            "icon": "Sparkles"
+          },
+          {
+            "title": "Client Success",
+            "description": "Our measure of success is the outcomes you see after we deploy.",
+            "icon": "Target"
+          }
+        ]
+      },
+      "display_order": 13,
+      "is_active": true
+    },
+    {
+      "section_type": "trust-badges",
+      "title": "You’re in Good Company",
+      "subtitle": null,
+      "content": {
+        "items": [
+          {
+            "title": "AI-Powered Platform",
+            "icon": "Brain",
+            "description": "We use modern AI tools across discovery, delivery, and support."
+          },
+          {
+            "title": "Modern Tech Stack",
+            "icon": "Code",
+            "description": "Lovable, Supabase, n8n, GitHub Copilot, and cloud-native hosting."
+          },
+          {
+            "title": "Scalable Infrastructure",
+            "icon": "Cloud",
+            "description": "Built for uptime, performance, and long-term reliability."
+          },
+          {
+            "title": "Security First",
+            "icon": "Shield",
+            "description": "Security, backups, and best practices baked into our work."
+          }
+        ]
+      },
+      "display_order": 14,
+      "is_active": true
+    },
+    {
+      "section_type": "faq",
+      "title": "Contact & Engagement FAQs",
+      "subtitle": "Answers to common questions before you reach out.",
+      "content": {
+        "items": [
+          {
+            "question": "What happens after I submit the Contact form?",
+            "answer": "You’ll receive an acknowledgment, and our team (with AI assistance) will review your details. We typically respond within 24 hours with either clarifying questions, a proposed call time, or an initial outline of next steps."
+          },
+          {
+            "question": "Is the first consultation free?",
+            "answer": "Yes. The initial discovery conversation is focused on understanding your goals, challenges, and constraints. From there, we’ll suggest engagement options that match your stage and budget."
+          },
+          {
+            "question": "What kind of information should I include in my message?",
+            "answer": "Share your current situation, target outcomes, timelines, and any existing assets (website, product, brand, etc.). The more context you provide, the more tailored and useful our response will be."
+          },
+          {
+            "question": "Can we start small and scale later?",
+            "answer": "Absolutely. Many clients begin with a focused scope (e.g., a website, funnel, or AI automation pilot) and expand once we’ve proven value and established trust."
+          },
+          {
+            "question": "Do you work with teams in different time zones?",
+            "answer": "Yes. We’re used to working with global teams and can align communication and delivery patterns with your time zone and working style."
+          },
+          {
+            "question": "Do you only work on AI-heavy projects?",
+            "answer": "No. While we are AI-first, we’re equally comfortable with foundational projects like brand, website, or platform builds—and we’ll suggest where AI adds the most leverage."
+          },
+          {
+            "question": "Is everything we discuss confidential?",
+            "answer": "Yes. We treat your information with care and can sign an NDA if required before sharing sensitive details."
+          },
+          {
+            "question": "How soon can we start after the first call?",
+            "answer": "Start times vary by scope and complexity, but many projects kick off within 1–2 weeks after alignment on scope and terms."
+          }
+        ]
+      },
+      "display_order": 15,
+      "is_active": true
+    },
+    {
+      "section_type": "primary-cta-banner",
+      "title": "Take the First Step",
+      "subtitle": null,
+      "content": {
+        "headline": "Share Your Challenge. We’ll Bring the AI-First Plan.",
+        "description": "You don’t need a perfect brief—just a clear intent to improve. Tell us where you are now and where you’d like to go.",
+        "primary_cta_text": "Submit Your Contact Request",
+        "primary_cta_link": "#contact-form",
+        "secondary_cta_text": "Schedule a Call",
+        "secondary_cta_link": "#booking",
+        "background_color": "primary",
+        "text_color": "white"
+      },
+      "display_order": 16,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Zap", "text": "Fast, Clear Responses" },
+          { "icon": "Shield", "text": "Serious About Security" },
+          { "icon": "Brain", "text": "AI-First, Not AI-Hyped" },
+          { "icon": "HeadphonesIcon", "text": "Support That Actually Helps" },
+          { "icon": "Layers", "text": "9 Pillars, One Partner" }
+        ]
+      },
+      "display_order": 17,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "You share your goals and constraints. We bring AI-first thinking, end-to-end capabilities, and a clear plan to move from idea to execution.",
+        "tagline": "One message today can unlock your next stage of growth.",
+        "author": "DOTR",
+        "author_title": "Dhinoja OmniTech Resolutions"
+      },
+      "display_order": 18,
+      "is_active": true
+    },
+    {
+      "section_type": "logo-cloud",
+      "title": "Brands That Reached Out and Chose AI-First",
+      "subtitle": "You’ll be in good company.",
+      "content": {
+        "items": [
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+1", "name": "Client 1", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+2", "name": "Client 2", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+3", "name": "Client 3", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+4", "name": "Client 4", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Client+5", "name": "Client 5", "link": "" }
+        ]
+      },
+      "display_order": 19,
+      "is_active": true
+    },
+    {
+      "section_type": "who-its-for",
+      "title": "Who Should Contact Us?",
+      "subtitle": "If you see yourself here, let’s talk.",
+      "content": {
+        "personas": [
+          {
+            "persona": "Founders & Leadership",
+            "icon": "Rocket",
+            "description": "You’re responsible for growth, differentiation, or digital transformation.",
+            "benefits": ["Strategic clarity", "Execution partner", "AI-first roadmap"]
+          },
+          {
+            "persona": "Product & Tech Teams",
+            "icon": "Building2",
+            "description": "You need a partner who understands modern stacks, scalability, and AI.",
+            "benefits": ["Scalable architecture", "Dev & DevOps help", "Automation"]
+          },
+          {
+            "persona": "Agencies & Partners",
+            "icon": "Users",
+            "description": "You want to extend your offering with AI, dev, or automation capabilities.",
+            "benefits": ["White-label options", "Capacity extension", "Reliable delivery"]
+          }
+        ]
+      },
+      "display_order": 20,
+      "is_active": true
+    },
+    {
+      "section_type": "outcomes-benefits",
+      "title": "Benefits of Starting the Conversation",
+      "subtitle": "Even one call can unlock clarity.",
+      "content": {
+        "layout": "grid",
+        "items": [
+          { "title": "Clear Next Steps", "description": "Know exactly what to do next—even if you don’t work with us yet.", "icon": "Zap" },
+          { "title": "Right-Sized Scope", "description": "Engagement options that respect your stage, budget, and risk profile.", "icon": "Heart" },
+          { "title": "AI-First Lens", "description": "We highlight where AI can create real leverage vs. nice-to-have experiments.", "icon": "TrendingUp" },
+          { "title": "Long-Term Thinking", "description": "We design for your next 12–24 months, not just the next 2–4 weeks.", "icon": "Target" }
+        ]
+      },
+      "display_order": 21,
+      "is_active": true
+    },
+    {
+      "section_type": "features",
+      "title": "What Our Discovery & Engagement Process Includes",
+      "subtitle": "From first form submit to long-term partnership.",
+      "content": {
+        "items": [
+          { "title": "Context-Driven Discovery", "description": "We read your inputs carefully and ask only the questions that matter.", "icon": "Settings" },
+          { "title": "Programmatic Thinking", "description": "We think in systems and templates, not one-off hacks.", "icon": "Globe" },
+          { "title": "Modern Stack Familiarity", "description": "We’re fluent in Lovable, Supabase, n8n, and modern frontend stacks.", "icon": "Code" },
+          { "title": "AI Automation", "description": "From lead qualification to follow-ups, many steps are automated.", "icon": "Cpu" },
+          { "title": "End-to-End Capability", "description": "We can carry projects from strategy to design, build, and growth.", "icon": "Layers" },
+          { "title": "Continuous Optimization", "description": "We don’t disappear after launch—data and feedback drive improvements.", "icon": "BarChart" }
+        ]
+      },
+      "display_order": 22,
+      "is_active": true
+    },
+    {
+      "section_type": "image-text",
+      "title": "How We Prepare Before Talking to You",
+      "subtitle": "Your time is valuable—so is ours.",
+      "content": {
+        "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "description": "Before every call, we review your inputs, check your existing digital presence, and run an AI-assisted analysis to identify obvious opportunities and constraints. That way, the live conversation is focused, concrete, and immediately useful.",
+        "image_position": "left",
+        "cta_text": "Send Us Your Context",
+        "cta_link": "#contact-form"
+      },
+      "display_order": 23,
+      "is_active": true
+    },
+    {
+      "section_type": "video",
+      "title": "How We Work with You",
+      "subtitle": "A quick overview of our engagement style.",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+        "autoplay": false
+      },
+      "display_order": 24,
+      "is_active": true
+    },
+    {
+      "section_type": "timeline",
+      "title": "From First Contact to Live Impact",
+      "subtitle": "A high-level timeline.",
+      "content": {
+        "items": [
+          { "year": "Week 0", "title": "Contact & Discovery", "description": "You share your context; we analyze and align on goals.", "icon": "Rocket" },
+          { "year": "Weeks 1–2", "title": "Planning & Design", "description": "We shape scopes, flows, and experiences with AI-assisted tooling.", "icon": "Layers" },
+          { "year": "Weeks 3–8", "title": "Build, Automate, Launch", "description": "Execution across design, development, AI, and automation.", "icon": "Globe" }
+        ]
+      },
+      "display_order": 25,
+      "is_active": true
+    },
+    {
+      "section_type": "newsletter",
+      "title": "Not Ready to Talk Yet?",
+      "subtitle": "Get ideas and insights first.",
+      "content": {
+        "placeholder_text": "Enter your email",
+        "button_text": "Get Insights",
+        "success_message": "Thanks for subscribing! We'll share concrete, AI-first case studies and playbooks—not fluff."
+      },
+      "display_order": 26,
+      "is_active": true
+    },
+    {
+      "section_type": "secondary-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "text": "Prefer to skip forms and talk directly?",
+        "button_text": "Book a Free Consultation",
+        "button_url": "#booking"
+      },
+      "display_order": 27,
+      "is_active": true
+    },
+    {
+      "section_type": "team",
+      "title": "Who You’ll Be Talking To",
+      "subtitle": "Not a random inbox—real humans, supported by AI.",
+      "content": {
+        "items": [
+          { "name": "Strategy & Leadership", "role": "Vision & Direction", "bio": "Aligns your goals with the right mix across DOTR’s 9 pillars.", "image": "" },
+          { "name": "Engineering", "role": "Technology & Architecture", "bio": "Ensures your ideas map to scalable, realistic technical plans.", "image": "" },
+          { "name": "Design", "role": "Experience & Brand", "bio": "Connects your story to interfaces, content, and visuals.", "image": "" },
+          { "name": "Growth", "role": "Acquisition & Retention", "bio": "Thinks through funnels, SEO, and long-term growth levers.", "image": "" }
+        ]
+      },
+      "display_order": 28,
+      "is_active": true
+    },
+    {
+      "section_type": "gallery",
+      "title": "Snapshots of What We Build",
+      "subtitle": "Visual context for the conversations we have.",
+      "content": {
+        "items": [
+          { "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", "caption": "Dashboards & Analytics", "alt": "Analytics dashboard" },
+          { "image_url": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80", "caption": "Web & App Experiences", "alt": "Web app" },
+          { "image_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80", "caption": "E-Commerce Journeys", "alt": "E-commerce store" },
+          { "image_url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80", "caption": "Automation Workflows", "alt": "Automation workflow" },
+          { "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80", "caption": "Collaboration in Action", "alt": "Team collaboration" },
+          { "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "caption": "Insight & Reporting", "alt": "Data insights" }
+        ]
+      },
+      "display_order": 29,
+      "is_active": true
+    },
+    {
+      "section_type": "contact-info",
+      "title": "Contact Details",
+      "subtitle": "Multiple ways to reach DOTR.",
+      "content": {
+        "email": "hello@dotr.com",
+        "phone": "+1 (555) 000-0000",
+        "address": "Your City, Your Country",
+        "map_embed_url": "",
+        "social_links": [
+          { "platform": "LinkedIn", "url": "https://linkedin.com", "icon": "Linkedin" },
+          { "platform": "Twitter", "url": "https://twitter.com", "icon": "Twitter" }
+        ]
+      },
+      "display_order": 30,
+      "is_active": true
+    },
+    {
+      "section_type": "blog-posts",
+      "title": "Want to Read Before You Reach Out?",
+      "subtitle": "Articles on AI, automation, and digital strategy.",
+      "content": {
+        "count": 3,
+        "show_featured_only": false,
+        "layout": "grid"
+      },
+      "display_order": 31,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "width": "medium",
+        "spacing": "medium"
+      },
+      "display_order": 32,
+      "is_active": true
+    },
+    {
+      "section_type": "pricing",
+      "title": "Typical Investment Levels",
+      "subtitle": "So you have a sense of scale before we talk.",
+      "content": {
+        "items": [
+          {
+            "name": "Starter",
+            "price": "From $99",
+            "description": "For small projects, prototypes, or first-time collaborations.",
+            "features": [
+              "Up to 5 pages or flows",
+              "Basic CMS configuration",
+              "Mobile responsive",
+              "Email support",
+              "SSL certificate"
+            ],
+            "cta_text": "Discuss Starter",
+            "is_featured": false
+          },
+          {
+            "name": "Professional",
+            "price": "From $299",
+            "description": "For growing teams ready to invest in scalable infrastructure.",
+            "features": [
+              "Up to 20 pages or flows",
+              "Full admin panel access",
+              "E-commerce or funnel integration",
+              "Priority support",
+              "SEO optimization",
+              "Analytics dashboard"
+            ],
+            "cta_text": "Discuss Professional",
+            "is_featured": true
+          },
+          {
+            "name": "Enterprise",
+            "price": "Custom",
+            "description": "For organizations needing fully tailored, multi-pillar solutions.",
+            "features": [
+              "Unlimited pages and flows",
+              "Fully custom design and UX",
+              "All 9 pillars available",
+              "Dedicated account manager",
+              "24/7 priority support",
+              "Custom integrations and development",
+              "Training & onboarding"
+            ],
+            "cta_text": "Discuss Enterprise",
+            "is_featured": false
+          }
+        ]
+      },
+      "display_order": 33,
+      "is_active": true
+    },
+    {
+      "section_type": "form",
+      "title": "Contact Form",
+      "subtitle": "Tell us about your goals and constraints.",
+      "content": {
+        "form_title": "Start Your Conversation with DOTR",
+        "form_description": "Share as much detail as you’re comfortable with. We’ll review your context and respond with a tailored next-step plan.",
+        "submit_button_text": "Send Message",
+        "success_message": "Thank you! Your message has been received. We’ll get back to you within 24 hours with meaningful next steps.",
+        "fields": [
+          {
+            "field_type": "text",
+            "label": "Full Name",
+            "name": "name",
+            "placeholder": "John Doe",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "email",
+            "label": "Email Address",
+            "name": "email",
+            "placeholder": "john@example.com",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "phone",
+            "label": "Phone Number",
+            "name": "phone",
+            "placeholder": "+1 (555) 123-4567",
+            "required": false,
+            "width": "half"
+          },
+          {
+            "field_type": "select",
+            "label": "Primary Interest Area",
+            "name": "inquiry_type",
+            "placeholder": "Select an option",
+            "required": true,
+            "options": [
+              "AI & Automation",
+              "Web & App Development",
+              "Design & Branding",
+              "E-Commerce",
+              "Marketing & SEO",
+              "Operations & Internal Tools",
+              "General Inquiry"
+            ],
+            "width": "half"
+          },
+          {
+            "field_type": "textarea",
+            "label": "Project / Challenge Description",
+            "name": "message",
+            "placeholder": "Tell us about your current situation, goals, and any constraints (budget, timeline, tech stack, etc.)...",
+            "required": true,
+            "validation": { "min": 10, "max": 2000 },
+            "width": "full"
+          },
+          {
+            "field_type": "checkbox",
+            "label": "I agree to receive updates and occasional emails about DOTR’s services and insights.",
+            "name": "marketing_consent",
+            "required": false,
+            "width": "full"
+          }
+        ]
+      },
+      "display_order": 34,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Examples We Can Walk You Through on the Call",
+      "subtitle": "See the kind of work we can discuss together.",
+      "content": {
+        "show_filters": true,
+        "items": [
+          {
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+            "title": "E-Commerce Platform",
+            "category": "E-Commerce",
+            "link": "/portfolio/e-commerce-platform"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80",
+            "title": "SaaS Dashboard",
+            "category": "Development",
+            "link": "/portfolio/saas-dashboard"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80",
+            "title": "Brand Identity",
+            "category": "Design",
+            "link": "/portfolio/brand-identity"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80",
+            "title": "Corporate Website",
+            "category": "Development",
+            "link": "/portfolio/corporate-website"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80",
+            "title": "AI Chatbot Platform",
+            "category": "AI & Automation",
+            "link": "/portfolio/ai-chatbot"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "title": "Analytics Platform",
+            "category": "Development",
+            "link": "/portfolio/analytics-platform"
+          }
+        ]
+      },
+      "display_order": 35,
+      "is_active": true
+    },
+    {
+      "section_type": "counters",
+      "title": "Signals from the Work Behind This Contact Page",
+      "subtitle": "You’re not the first to reach out.",
+      "content": {
+        "items": [
+          { "value": 500, "label": "Projects Delivered", "prefix": "", "suffix": "+", "icon": "Briefcase" },
+          { "value": 98, "label": "Client Satisfaction", "prefix": "", "suffix": "%", "icon": "Heart" },
+          { "value": 24, "label": "Support Hours", "prefix": "", "suffix": "/7", "icon": "Clock" },
+          { "value": 9, "label": "Specialized Pillars", "prefix": "", "suffix": "", "icon": "Layers" }
+        ]
+      },
+      "display_order": 36,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 500, "suffix": "+", "prefix": "", "label": "Happy Clients" },
+          { "value": 98, "suffix": "%", "prefix": "", "label": "Satisfaction Rate" },
+          { "value": 24, "suffix": "/7", "prefix": "", "label": "Support Available" },
+          { "value": 9, "suffix": "", "prefix": "", "label": "Service Pillars" }
+        ],
+        "animate": true
+      },
+      "display_order": 37,
+      "is_active": true
+    },
+    {
+      "section_type": "social-proof-bar",
+      "title": "Trusted by Forward-Thinking Teams",
+      "subtitle": null,
+      "content": {
+        "user_count": "25,000+",
+        "rating": 4.9,
+        "review_count": "1,200+",
+        "platforms": [
+          { "name": "LinkedIn", "followers": "30K", "icon": "Linkedin" },
+          { "name": "Twitter", "followers": "50K", "icon": "Twitter" }
+        ]
+      },
+      "display_order": 38,
+      "is_active": true
+    },
+    {
+      "section_type": "awards-badges",
+      "title": "Recognition of Our Work",
+      "subtitle": "External validation of our approach.",
+      "content": {
+        "items": [
+          { "title": "AI Innovation 2024", "organization": "Tech Excellence Awards", "year": "2024", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" },
+          { "title": "Top Development Team", "organization": "Digital Leaders Summit", "year": "2024", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" },
+          { "title": "Customer Choice", "organization": "Business Excellence Awards", "year": "2023", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" }
+        ]
+      },
+      "display_order": 39,
+      "is_active": true
+    },
+    {
+      "section_type": "press-mentions",
+      "title": "As Seen In",
+      "subtitle": "Where our work and approach have been featured.",
+      "content": {
+        "items": [
+          { "publication": "TechCrunch", "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=TechCrunch", "quote": "A game-changing approach to AI-first digital solutions that's revolutionizing how businesses scale.", "link": "https://techcrunch.com" },
+          { "publication": "Forbes", "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Forbes", "quote": "Leading innovation with cutting-edge technology and end-to-end service across nine specialized pillars.", "link": "https://forbes.com" },
+          { "publication": "Wired", "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Wired", "quote": "The future of digital transformation is here—fast delivery, no vendor juggling, AI at the core.", "link": "https://wired.com" }
+        ]
+      },
+      "display_order": 40,
+      "is_active": true
+    },
+    {
+      "section_type": "ratings-reviews",
+      "title": "Rated Highly by Clients",
+      "subtitle": "Signals from review platforms.",
+      "content": {
+        "items": [
+          { "platform": "Google", "rating": 4.9, "review_count": 250, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Google" },
+          { "platform": "Clutch", "rating": 4.8, "review_count": 120, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Clutch" },
+          { "platform": "Trustpilot", "rating": 4.7, "review_count": 180, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Trustpilot" }
+        ],
+        "show_aggregate": true
+      },
+      "display_order": 41,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": "The Cost of Not Reaching Out",
+      "subtitle": "Then what happens when you do.",
+      "content": {
+        "problem": "Every month you delay modernizing your stack, brand, or funnels, you lose opportunities, efficiency, and signal to your market.",
+        "agitation": "Your team stays busy with manual work. Your prospects struggle through outdated flows. Competitors who invest now move faster while you stay in reactive mode.",
+        "solution": "A simple conversation with DOTR can unlock a phased, AI-first plan that respects your constraints while moving you forward. One message today can prevent months of compounding technical and operational debt."
+      },
+      "display_order": 42,
+      "is_active": true
+    },
+    {
+      "section_type": "before-after",
+      "title": "Before Contact vs After Engagement",
+      "subtitle": "See the difference a single decision can make.",
+      "content": {
+        "before_image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+        "after_image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "before_label": "Before Reaching Out",
+        "after_label": "After DOTR Engagement"
+      },
+      "display_order": 43,
+      "is_active": true
+    },
+    {
+      "section_type": "video-demo",
+      "title": "Walkthrough of an Engagement",
+      "subtitle": "From first contact to shipped solution.",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+        "callouts": [
+          { "time": "0:15", "text": "How we review your contact details" },
+          { "time": "1:30", "text": "What happens during the discovery call" },
+          { "time": "2:45", "text": "How we turn insights into a practical roadmap" }
+        ]
+      },
+      "display_order": 44,
+      "is_active": true
+    },
+    {
+      "section_type": "screenshot-gallery",
+      "title": "Screens You Might See Along the Journey",
+      "subtitle": "Dashboards, admin panels, and flows.",
+      "content": {
+        "screenshots": [
+          { "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80", "caption": "Analytics Dashboard" },
+          { "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80", "caption": "Admin Panel Overview" },
+          { "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80", "caption": "Content Management" },
+          { "url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80", "caption": "AI & Automation Workflows" }
+        ],
+        "show_captions": true
+      },
+      "display_order": 45,
+      "is_active": true
+    },
+    {
+      "section_type": "device-frames",
+      "title": "Your Experiences, Everywhere",
+      "subtitle": "We design and build for every screen.",
+      "content": {
+        "device_type": "iphone",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80"
+        ]
+      },
+      "display_order": 46,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-list",
+      "title": "What’s Included When You Engage with DOTR",
+      "subtitle": "Highlights of our standard approach.",
+      "content": {
+        "items": [
+          { "text": "Fully CMS-driven content—edit everything from the admin", "icon": "Settings" },
+          { "text": "Programmatic SEO ready—scale to hundreds of pages", "icon": "Globe" },
+          { "text": "24/7 AI support and automation", "icon": "Headphones" },
+          { "text": "Modern stack: Lovable, Supabase, n8n", "icon": "Code" },
+          { "text": "End-to-end across 9 pillars—no vendor juggling", "icon": "Layers" },
+          { "text": "Enterprise-grade security and backups", "icon": "Shield" },
+          { "text": "Continuous optimization and monitoring", "icon": "BarChart3" },
+          { "text": "Weeks, not months—fast delivery", "icon": "Zap" }
+        ],
+        "columns": 2
+      },
+      "display_order": 47,
+      "is_active": true
+    },
+    {
+      "section_type": "exit-intent-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "headline": "Before You Leave...",
+        "description": "If you’re even slightly considering an AI-first upgrade to your digital presence, send a quick message. We’ll make sure it’s worth your time.",
+        "button_text": "Send a Quick Message",
+        "button_url": "#contact-form",
+        "show_after_scroll": 50,
+        "offer_text": "We’ll respond with a short, clear summary of what’s possible for you."
+      },
+      "display_order": 48,
+      "is_active": true
+    }
+  ]
+}

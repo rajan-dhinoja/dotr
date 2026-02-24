@@ -759,6 +759,304 @@
       },
       "display_order": 40,
       "is_active": true
+    },
+    {
+      "section_type": "team",
+      "title": "Meet the Design Team",
+      "subtitle": "Experts in UI/UX, branding, and motion",
+      "content": {
+        "items": [
+          {
+            "name": "Creative Direction",
+            "role": "Design Strategy & Vision",
+            "bio": "Leads the overall design direction across UI/UX, branding, and motion to keep every touchpoint on-brand.",
+            "image": ""
+          },
+          {
+            "name": "Product & UI/UX",
+            "role": "Interfaces & Experiences",
+            "bio": "Designs user journeys, wireframes, and interfaces that feel intuitive and drive conversions.",
+            "image": ""
+          },
+          {
+            "name": "Brand & Visual",
+            "role": "Identity & Visual Language",
+            "bio": "Builds visual systems—logos, color, typography, and layouts—that make your brand recognizable everywhere.",
+            "image": ""
+          },
+          {
+            "name": "Motion & Interaction",
+            "role": "Motion Graphics & Micro‑Interactions",
+            "bio": "Creates motion, animations, and micro‑interactions that add polish and guide user focus.",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 41,
+      "is_active": true
+    },
+    {
+      "section_type": "blog-posts",
+      "title": "Latest Design Insights",
+      "subtitle": "UI/UX, branding, and motion design articles",
+      "content": {
+        "count": 3,
+        "show_featured_only": false,
+        "layout": "grid"
+      },
+      "display_order": 42,
+      "is_active": true
+    },
+    {
+      "section_type": "pricing",
+      "title": "Design Plans That Scale",
+      "subtitle": "Transparent pricing for every stage of your brand",
+      "content": {
+        "items": [
+          {
+            "name": "Starter",
+            "price": "From $99",
+            "description": "Perfect for small brands needing focused design support.",
+            "features": [
+              "Single landing page or key screen",
+              "Core brand styling (colors, typography)",
+              "Mobile-responsive layouts",
+              "Email support",
+              "Basic asset exports"
+            ],
+            "cta_text": "Get Started",
+            "is_featured": false
+          },
+          {
+            "name": "Professional",
+            "price": "From $299",
+            "description": "Ideal for growing teams needing full design support across products.",
+            "features": [
+              "Multi-page UI/UX or flows",
+              "Brand guidelines & components",
+              "Design system starter kit",
+              "Priority support",
+              "Handoff-ready Figma files"
+            ],
+            "cta_text": "Get Started",
+            "is_featured": true
+          },
+          {
+            "name": "Enterprise",
+            "price": "Custom",
+            "description": "Complete design partnership for product teams and enterprises.",
+            "features": [
+              "End-to-end design across products",
+              "Full design system & documentation",
+              "On-going design iterations",
+              "Dedicated design lead",
+              "24/7 priority support",
+              "Workshops & stakeholder reviews"
+            ],
+            "cta_text": "Contact Sales",
+            "is_featured": false
+          }
+        ]
+      },
+      "display_order": 43,
+      "is_active": true
+    },
+    {
+      "section_type": "form",
+      "title": "Start Your Design Project",
+      "subtitle": "Tell us about your design needs—we'll respond within 24 hours",
+      "content": {
+        "form_title": "Get a Free Design Consultation",
+        "form_description": "Share a bit about your brand, product, and goals. We'll recommend the right mix of UI/UX, branding, and motion support.",
+        "submit_button_text": "Send Message",
+        "success_message": "Thank you! Your message has been received. We'll get back to you within 24 hours with tailored design recommendations.",
+        "fields": [
+          {
+            "field_type": "text",
+            "label": "Full Name",
+            "name": "name",
+            "placeholder": "John Doe",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "email",
+            "label": "Email Address",
+            "name": "email",
+            "placeholder": "john@example.com",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "phone",
+            "label": "Phone Number",
+            "name": "phone",
+            "placeholder": "+1 (555) 123-4567",
+            "required": false,
+            "width": "half"
+          },
+          {
+            "field_type": "select",
+            "label": "Design Interest",
+            "name": "inquiry_type",
+            "placeholder": "Select an option",
+            "required": true,
+            "options": [
+              "UI/UX Design",
+              "Branding & Identity",
+              "Graphic Design",
+              "Motion / Visual Design",
+              "Multiple / Not Sure Yet"
+            ],
+            "width": "half"
+          },
+          {
+            "field_type": "textarea",
+            "label": "Project Details",
+            "name": "message",
+            "placeholder": "Tell us about your design project, timelines, and goals...",
+            "required": true,
+            "validation": { "min": 10, "max": 1000 },
+            "width": "full"
+          },
+          {
+            "field_type": "checkbox",
+            "label": "I agree to receive updates and design resources",
+            "name": "marketing_consent",
+            "required": false,
+            "width": "full"
+          }
+        ]
+      },
+      "display_order": 44,
+      "is_active": true
+    },
+    {
+      "section_type": "press-mentions",
+      "title": "As Seen In",
+      "subtitle": "What the press says about our design work",
+      "content": {
+        "items": [
+          {
+            "publication": "Design Weekly",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Design+Weekly",
+            "quote": "DOTR blends UI/UX, branding, and motion into cohesive experiences that feel premium and ship fast.",
+            "link": ""
+          },
+          {
+            "publication": "Creative Review",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Creative+Review",
+            "quote": "A modern, system-driven approach to design that keeps brands consistent across every touchpoint.",
+            "link": ""
+          },
+          {
+            "publication": "Product Today",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Product+Today",
+            "quote": "Design that respects both user experience and engineering realities—rare and valuable.",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 45,
+      "is_active": true
+    },
+    {
+      "section_type": "ratings-reviews",
+      "title": "Rated by Design Clients",
+      "subtitle": "What our design partners say on leading platforms",
+      "content": {
+        "items": [
+          {
+            "platform": "Google",
+            "rating": 4.9,
+            "review_count": 120,
+            "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Google"
+          },
+          {
+            "platform": "Clutch",
+            "rating": 4.8,
+            "review_count": 60,
+            "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Clutch"
+          },
+          {
+            "platform": "Behance",
+            "rating": 4.7,
+            "review_count": 90,
+            "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Behance"
+          }
+        ],
+        "show_aggregate": true
+      },
+      "display_order": 46,
+      "is_active": true
+    },
+    {
+      "section_type": "video-demo",
+      "title": "Design Walkthrough",
+      "subtitle": "A quick look at how we design",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80",
+        "callouts": [
+          {
+            "time": "0:15",
+            "text": "How we go from brief to concepts"
+          },
+          {
+            "time": "1:30",
+            "text": "Building design systems and components"
+          },
+          {
+            "time": "2:45",
+            "text": "Handoff-ready files for dev teams"
+          }
+        ]
+      },
+      "display_order": 47,
+      "is_active": true
+    },
+    {
+      "section_type": "screenshot-gallery",
+      "title": "Design Screens",
+      "subtitle": "Key UI and brand views",
+      "content": {
+        "screenshots": [
+          {
+            "url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80",
+            "caption": "Product UI Screens"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=800&q=80",
+            "caption": "Brand Identity System"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80",
+            "caption": "Marketing & Graphic Assets"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+            "caption": "Motion & Visual Explorations"
+          }
+        ],
+        "show_captions": true
+      },
+      "display_order": 48,
+      "is_active": true
+    },
+    {
+      "section_type": "device-frames",
+      "title": "Every Device, Every Screen",
+      "subtitle": "Design that looks great everywhere",
+      "content": {
+        "device_type": "iphone",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80"
+        ]
+      },
+      "display_order": 49,
+      "is_active": true
     }
   ]
 }

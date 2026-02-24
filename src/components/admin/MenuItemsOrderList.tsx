@@ -10,9 +10,10 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { GripVertical, Link2, LayoutGrid, LayoutList, Pencil, Trash2, Eye, EyeOff, Globe } from 'lucide-react';
+import { GripVertical, Link2, LayoutGrid, LayoutList, Pencil, Trash2, Eye, EyeOff, Globe, CheckCircle, Circle } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { getTypeBadgeColor, getTypeBadgeLabel, getLevelLabel, getLevelColor } from '@/components/admin/PagesNavigationList';
+import { getSystemRouteForSlug } from '@/lib/systemRoutes';
 import {
   DndContext,
   DragOverlay,
@@ -308,9 +309,31 @@ function SortableMenuItemCard({
               title={pageIsActive ? 'Unpublish page' : 'Publish page'}
               className="shrink-0"
             >
-              {pageIsActive ? <Globe className="h-4 w-4" /> : <Globe className="h-4 w-4 text-muted-foreground" />}
+              {pageIsActive ? <CheckCircle className="h-4 w-4" /> : <Circle className="h-4 w-4 text-muted-foreground" />}
             </Button>
           )}
+          {(() => {
+            // Build the visit URL: use system route for pages, or node.url for external links
+            let visitUrl: string | null = null;
+            if (pageSlug) {
+              visitUrl = getSystemRouteForSlug(pageSlug) + sub;
+            } else if (node.url && node.url !== '#') {
+              visitUrl = node.url + sub;
+            }
+            return visitUrl ? (
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => {
+                  window.open(visitUrl!, '_blank', 'noopener,noreferrer');
+                }}
+                title="Visit site"
+                className="shrink-0"
+              >
+                <Globe className="h-4 w-4" />
+              </Button>
+            ) : null;
+          })()}
           {isSectionLink && node.section_id && pageSlug && (
             <>
               {onEditSectionLink && (

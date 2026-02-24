@@ -1,0 +1,1079 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-02-13T00:00:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "services/e-commerce",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "E‑Commerce Services Hero",
+      "subtitle": null,
+      "content": {
+        "headline": "AI-Powered E‑Commerce That Converts & Scales",
+        "subtitle": "From Shopify and WooCommerce to fully custom storefronts and marketplaces—we design, build, and optimize e‑commerce experiences that sell more, automate more, and scale with your brand.",
+        "cta_text": "Get an E‑Commerce Consultation",
+        "cta_link": "/contact",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "E‑Commerce Problems We Solve",
+      "subtitle": "Are these hurting your store?",
+      "content": {
+        "problems": [
+          {
+            "title": "Low Conversion & High Cart Abandonment",
+            "description": "Traffic comes in but doesn’t convert. Confusing flows, slow pages, and broken checkout experiences sabotage your revenue."
+          },
+          {
+            "title": "Fragile Tech Stack",
+            "description": "Plugins stacked on plugins, slow themes, and hacked-together integrations that break on every update or campaign."
+          },
+          {
+            "title": "Manual, Repetitive Operations",
+            "description": "Order management, follow‑ups, inventory sync, and customer support done manually—stealing time from strategy and growth."
+          },
+          {
+            "title": "No Single View of Customers",
+            "description": "Data is scattered across your store, ads manager, email tool, and spreadsheets—making it hard to segment, personalize, or forecast."
+          }
+        ],
+        "empathy_text": "We get it. Running an e‑commerce business means juggling products, campaigns, ops, and support—often on tech that was never designed to scale. You need a store that sells on autopilot, not one that constantly needs fixing."
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "Why DOTR for E‑Commerce?",
+      "subtitle": "The AI‑First Storefront Advantage",
+      "content": {
+        "headline": "Stores That Convert Better, Operate Smarter, and Scale Faster",
+        "supporting_points": [
+          "End‑to‑end e‑commerce: strategy, UX, development, CRO, automation, and marketing in one place.",
+          "AI‑first—from product discovery and recommendations to support and retention, we bake intelligence into your store.",
+          "Modern stack: Shopify, WooCommerce, custom headless builds with Supabase, n8n, and AI assistants.",
+          "Conversion‑focused UX: fast, mobile‑first, and optimized checkouts instead of just “pretty” themes.",
+          "Built to scale: from first 100 orders to multi‑region catalogs, subscriptions, and marketplaces."
+        ],
+        "cta_text": "See Our E‑Commerce Approach",
+        "cta_url": "/about"
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Our E‑Commerce Services",
+      "subtitle": "Everything you need to launch, optimize, and scale",
+      "content": {
+        "items": [
+          {
+            "icon": "ShoppingCart",
+            "title": "Store Setup & Replatforming",
+            "description": "Shopify, WooCommerce, or custom builds. New stores, redesigns, or migrations without losing SEO or data.",
+            "link": "/services/e-commerce/store-setup"
+          },
+          {
+            "icon": "Layout",
+            "title": "UX, UI & Conversion Optimization",
+            "description": "Product pages, collections, checkout flows, and on‑site journeys designed to convert more visitors into buyers.",
+            "link": "/services/e-commerce/ux-cro"
+          },
+          {
+            "icon": "Repeat",
+            "title": "Subscriptions & Memberships",
+            "description": "Recurring revenue systems for DTC brands—subscriptions, loyalty programs, bundles, and upsells.",
+            "link": "/services/e-commerce/subscriptions"
+          },
+          {
+            "icon": "Store",
+            "title": "Marketplaces & Multi‑Vendor",
+            "description": "Custom marketplaces and multi‑seller platforms with vendor dashboards, payouts, and reviews.",
+            "link": "/services/e-commerce/marketplaces"
+          },
+          {
+            "icon": "Workflow",
+            "title": "Operations & Automation",
+            "description": "Inventory sync, order routing, notifications, and workflows automated via n8n and your existing tools.",
+            "link": "/services/e-commerce/automation"
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Traffic, Retention & LTV",
+            "description": "SEO, paid traffic, email/SMS flows, and AI‑driven personalization to grow AOV, LTV, and repeat purchases.",
+            "link": "/services/e-commerce/growth"
+          }
+        ]
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-highlights",
+      "title": "E‑Commerce + AI Capabilities",
+      "subtitle": "How we make your store smarter",
+      "content": {
+        "items": [
+          {
+            "title": "AI Product Recommendations",
+            "description": "Dynamic cross‑sell, upsell, and bundles based on behavior, history, and intent—not generic “related products”.",
+            "icon": "Sparkles",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "AI‑Powered Search & Discovery",
+            "description": "Smart search that understands typos and intent, making it effortless for shoppers to find what they want.",
+            "icon": "Search",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Chatbots & Smart Support",
+            "description": "AI assistants that answer questions, track orders, and suggest products—reducing support load while boosting sales.",
+            "icon": "MessageSquare",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "AI‑Assisted Merchandising",
+            "description": "Collections, home page tiles, and promos optimized automatically based on performance and inventory.",
+            "icon": "Grid",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1515165562835-c4c9e0737eaa?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Fraud & Risk Signals",
+            "description": "AI‑driven risk scoring on orders to flag suspicious activity before it becomes a chargeback problem.",
+            "icon": "Shield",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1510511336377-1a9caa095849?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Revenue & Cohort Insights",
+            "description": "Analytics that surface which products, channels, and cohorts drive real profit—not just vanity metrics.",
+            "icon": "BarChart",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "How We Build & Scale Your Store",
+      "subtitle": "A clear, fast, AI‑assisted process",
+      "content": {
+        "items": [
+          {
+            "step": 1,
+            "title": "Discovery & Store Audit",
+            "description": "We review your products, tech stack, analytics, and funnels to understand what’s working—and what’s blocking growth.",
+            "icon": "Search"
+          },
+          {
+            "step": 2,
+            "title": "Experience & Architecture Design",
+            "description": "We map journeys from first visit to repeat purchase, design UX/UI, and define the right stack and integrations.",
+            "icon": "PenTool"
+          },
+          {
+            "step": 3,
+            "title": "Build, Integrate & Automate",
+            "description": "We implement themes or custom frontends, set up integrations (payment, shipping, CRM), and connect automations via n8n.",
+            "icon": "Code"
+          },
+          {
+            "step": 4,
+            "title": "Launch, Optimize & Scale",
+            "description": "A/B tests, performance tuning, CRO, and AI‑powered personalization to keep your revenue and LTV climbing.",
+            "icon": "Rocket"
+          }
+        ]
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "differentiators",
+      "title": "Why Choose DOTR for E‑Commerce?",
+      "subtitle": "Traditional store builders vs. AI‑first growth partner",
+      "content": {
+        "items": [
+          { "feature": "AI‑First Storefront & Operations", "us": true, "competitors": false },
+          { "feature": "Strategy + UX + Dev + CRO + Automation", "us": true, "competitors": "Fragmented Vendors" },
+          { "feature": "Weeks to Launch (Not Months)", "us": true, "competitors": false },
+          { "feature": "CMS‑Driven Sections & Landing Pages", "us": true, "competitors": "Hard‑Coded Themes" },
+          { "feature": "Modern Headless & Native Platforms", "us": true, "competitors": "Outdated Stacks" },
+          { "feature": "Programmatic SEO & Catalog Growth", "us": true, "competitors": "Limited SEO" },
+          { "feature": "24/7 AI Support & Workflows", "us": true, "competitors": false },
+          { "feature": "Deep Integration with Rest of DOTR Pillars", "us": true, "competitors": "E‑Commerce Only" }
+        ],
+        "show_comparison": true,
+        "our_label": "DOTR",
+        "competitor_label": "Typical E‑Commerce Agencies"
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "stats",
+      "title": "E‑Commerce by the Numbers",
+      "subtitle": "Results our stack is designed for",
+      "content": {
+        "items": [
+          { "value": "15", "label": "Avg. Conversion Lift", "suffix": "%" },
+          { "value": "30", "label": "Avg. AOV Increase", "suffix": "%" },
+          { "value": "20", "label": "Hours Saved per Week", "suffix": "+" },
+          { "value": "24", "label": "Support & Automation", "suffix": "/7" }
+        ]
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "E‑Commerce Success Metrics",
+      "subtitle": "What brands achieve with DOTR",
+      "content": {
+        "items": [
+          {
+            "metric": "2–3x",
+            "label": "Conversion Rate Uplift",
+            "description": "From theme‑based stores to optimized experiences with AI‑powered personalization and CRO.",
+            "icon": "TrendingUp"
+          },
+          {
+            "metric": "40%",
+            "label": "Lower Support Load",
+            "description": "Chatbots, self‑serve help, and automated updates reduce manual tickets and chats.",
+            "icon": "Headphones"
+          },
+          {
+            "metric": "25%",
+            "label": "Higher AOV",
+            "description": "Intelligent bundling, cross‑sells, and post‑purchase offers increase basket size.",
+            "icon": "ShoppingCart"
+          },
+          {
+            "metric": "3x",
+            "label": "Faster Launch Cycles",
+            "description": "Modular sections and CMS‑driven pages let you ship new campaigns without dev queues.",
+            "icon": "Zap"
+          }
+        ]
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "testimonials",
+      "title": "What E‑Commerce Brands Say",
+      "subtitle": "Trusted by stores that take growth seriously",
+      "content": {
+        "items": [
+          {
+            "quote": "DOTR rebuilt our Shopify store from the ground up. Our conversion rate almost doubled and we now launch campaigns in days instead of weeks.",
+            "author": "Alex Chen",
+            "role": "Founder",
+            "company": "UrbanCraft Co.",
+            "image": ""
+          },
+          {
+            "quote": "Their AI recommendations and email flows turned our one‑time buyers into loyal customers. Our LTV has never looked better.",
+            "author": "Maria Rodriguez",
+            "role": "CMO",
+            "company": "Glowline Beauty",
+            "image": ""
+          },
+          {
+            "quote": "We finally have a single view of our customers. DOTR connected our store, CRM, and marketing stack and automated the boring work.",
+            "author": "James Wilson",
+            "role": "COO",
+            "company": "PeakGear",
+            "image": ""
+          },
+          {
+            "quote": "The team understands both the tech and the business side of e‑commerce. They ship fast, ask smart questions, and care about numbers, not just pixels.",
+            "author": "Sarah Kim",
+            "role": "Head of Growth",
+            "company": "Northside Home",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "cta",
+      "title": "Ready to Fix Your Store?",
+      "subtitle": null,
+      "content": {
+        "headline": "Let’s Turn Your Store into a Growth Engine",
+        "description": "Whether you’re launching from zero or scaling past your current stack, we’ll design, build, and automate an e‑commerce experience that sells more with less effort.",
+        "primary_cta_text": "Get an E‑Commerce Audit",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "View E‑Commerce Case Studies",
+        "secondary_cta_link": "/portfolio"
+      },
+      "display_order": 11,
+      "is_active": true
+    },
+    {
+      "section_type": "about-us",
+      "title": "E‑Commerce at DOTR",
+      "subtitle": "Part of a bigger AI‑first ecosystem",
+      "content": {
+        "story": "DOTR (Dhinoja OmniTech Resolutions) is an AI‑first digital solutions company. Our E‑Commerce pillar combines design, development, marketing, and automation to build stores that don’t just look good—they operate as intelligent revenue engines connected to the rest of your business.",
+        "mission": "To build e‑commerce experiences that are fast, scalable, and deeply integrated with AI, so brands can focus on products and customers—not firefighting their tech stack.",
+        "vision": "To be the go‑to partner for brands that want their store, marketing, and operations to feel like one unified, always‑on growth system.",
+        "founder_image": "",
+        "founder_name": "",
+        "founder_title": "",
+        "founded_year": "2024"
+      },
+      "display_order": 12,
+      "is_active": true
+    },
+    {
+      "section_type": "values-culture",
+      "title": "How We Think About E‑Commerce",
+      "subtitle": "Principles that guide every build",
+      "content": {
+        "items": [
+          { "title": "Conversion First", "description": "Every design and feature is evaluated on whether it helps a shopper buy or return.", "icon": "Target" },
+          { "title": "AI‑First Operations", "description": "We default to automation and intelligence instead of adding more manual work.", "icon": "Brain" },
+          { "title": "Speed & Reliability", "description": "Fast pages and stable integrations are non‑negotiable for revenue and UX.", "icon": "Zap" },
+          { "title": "Scalability", "description": "We design catalogs, infrastructure, and workflows to handle your next 10x.", "icon": "TrendingUp" },
+          { "title": "Owner Control", "description": "Content, campaigns, and landing pages are CMS‑driven—no dev ticket needed.", "icon": "Settings" },
+          { "title": "End‑to‑End Thinking", "description": "We think from ad click to repeat purchase, not just the homepage.", "icon": "Layers" }
+        ]
+      },
+      "display_order": 13,
+      "is_active": true
+    },
+    {
+      "section_type": "trust-badges",
+      "title": "Built on Battle‑Tested Foundations",
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "title": "Shopify & WooCommerce Experts", "icon": "ShoppingCart", "description": "Platform‑native builds with best‑practice architecture." },
+          { "title": "Headless & API‑First", "icon": "Code", "description": "Supabase, modern frontends, and flexible APIs." },
+          { "title": "Enterprise‑Grade Security", "icon": "Shield", "description": "Secure checkouts, data protection, and backups." },
+          { "title": "AI & Automation Native", "icon": "Cpu", "description": "n8n, AI assistants, and intelligent workflows baked in." }
+        ]
+      },
+      "display_order": 14,
+      "is_active": true
+    },
+    {
+      "section_type": "faq",
+      "title": "E‑Commerce Services FAQ",
+      "subtitle": "Your questions answered",
+      "content": {
+        "items": [
+          {
+            "question": "Which platforms do you support?",
+            "answer": "We work with Shopify, WooCommerce, and custom headless setups using modern stacks like React, Supabase, and n8n. We choose the right stack based on where you are now and where you want to go."
+          },
+          {
+            "question": "Can you migrate my existing store?",
+            "answer": "Yes. We handle migrations from legacy platforms or between Shopify/WooCommerce, including products, customers, orders, and SEO‑sensitive URLs with minimal downtime."
+          },
+          {
+            "question": "How long does a typical project take?",
+            "answer": "Most e‑commerce rebuilds or launches see a first version in 3–6 weeks, depending on catalog size and integrations. We’ll give you a clear timeline and milestones after discovery."
+          },
+          {
+            "question": "Do you also handle marketing and traffic?",
+            "answer": "Absolutely. Our Marketing and Content pillars can run SEO, paid, social, and email for you, tightly integrated with your store, analytics, and automation stack."
+          },
+          {
+            "question": "Is everything editable without developers?",
+            "answer": "Yes. We build modular sections and CMS‑driven layouts so your team can launch new landing pages, offers, and campaigns from the admin—no new deploys needed."
+          },
+          {
+            "question": "Can you support subscriptions and memberships?",
+            "answer": "Yes. We design and implement subscription flows, membership areas, loyalty programs, and post‑purchase upsells optimized for retention and LTV."
+          }
+        ]
+      },
+      "display_order": 15,
+      "is_active": true
+    },
+    {
+      "section_type": "primary-cta-banner",
+      "title": "Final CTA",
+      "subtitle": null,
+      "content": {
+        "headline": "Ready to Scale Your E‑Commerce with AI?",
+        "description": "Whether you need a new store, a smarter stack, or better conversions—we’ll help you turn your e‑commerce into a real growth engine.",
+        "primary_cta_text": "Book E‑Commerce Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "Explore All Services",
+        "secondary_cta_link": "/services",
+        "background_color": "primary",
+        "text_color": "white"
+      },
+      "display_order": 16,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Zap", "text": "Weeks, Not Months" },
+          { "icon": "ShoppingCart", "text": "E‑Commerce Specialists" },
+          { "icon": "Brain", "text": "AI‑First Approach" },
+          { "icon": "Workflow", "text": "Automated Operations" },
+          { "icon": "TrendingUp", "text": "Revenue‑Focused" }
+        ]
+      },
+      "display_order": 17,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "We help ambitious brands build and scale e‑commerce experiences that convert more, automate more, and rely less on manual work—powered by AI, modern stacks, and a deep understanding of online retail.",
+        "tagline": "Your products. Our AI‑powered e‑commerce engine. Revenue on repeat.",
+        "author": "DOTR",
+        "author_title": "Dhinoja OmniTech Resolutions"
+      },
+      "display_order": 18,
+      "is_active": true
+    },
+    {
+      "section_type": "logo-cloud",
+      "title": "Brands & Tools We Work With",
+      "subtitle": "Stacks and ecosystems we’re comfortable in",
+      "content": {
+        "items": [
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Shopify", "name": "Shopify", "link": "https://shopify.com" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=WooCommerce", "name": "WooCommerce", "link": "https://woocommerce.com" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Stripe", "name": "Stripe", "link": "https://stripe.com" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Klaviyo", "name": "Klaviyo", "link": "https://klaviyo.com" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Supabase", "name": "Supabase", "link": "https://supabase.com" }
+        ]
+      },
+      "display_order": 19,
+      "is_active": true
+    },
+    {
+      "section_type": "who-its-for",
+      "title": "Who We Build E‑Commerce For",
+      "subtitle": "If you sell online, we can help",
+      "content": {
+        "personas": [
+          {
+            "persona": "DTC Brands",
+            "icon": "ShoppingBag",
+            "description": "Growing direct‑to‑consumer brands that need better conversion, retention, and operations.",
+            "benefits": ["DTC‑focused UX", "Subscriptions & LTV", "CRO & automation"]
+          },
+          {
+            "persona": "Multi‑Brand Retailers",
+            "icon": "Store",
+            "description": "Retailers and distributors moving from offline or legacy e‑commerce to modern, scalable stacks.",
+            "benefits": ["Catalog & inventory design", "Multi‑warehouse logic", "Marketplace options"]
+          },
+          {
+            "persona": "Creators & Digital Sellers",
+            "icon": "Video",
+            "description": "Creators selling courses, downloads, or memberships who want frictionless checkout and delivery.",
+            "benefits": ["Membership systems", "Upsells & bundles", "Automated fulfillment"]
+          }
+        ]
+      },
+      "display_order": 20,
+      "is_active": true
+    },
+    {
+      "section_type": "outcomes-benefits",
+      "title": "What You’ll Achieve",
+      "subtitle": "Concrete e‑commerce outcomes, not just a new theme",
+      "content": {
+        "layout": "grid",
+        "items": [
+          { "title": "Higher Conversion", "description": "Streamlined UX, faster pages, and AI‑powered personalization that move more visitors to checkout.", "icon": "Target" },
+          { "title": "Better Retention", "description": "Smart post‑purchase flows, subscriptions, and loyalty that keep customers buying again and again.", "icon": "Repeat" },
+          { "title": "Operational Efficiency", "description": "Automated workflows that take support, reporting, and day‑to‑day tasks off your plate.", "icon": "Workflow" },
+          { "title": "Clarity & Control", "description": "Dashboards and analytics that tell you exactly what’s working and where to invest next.", "icon": "BarChart" }
+        ]
+      },
+      "display_order": 21,
+      "is_active": true
+    },
+    {
+      "section_type": "features",
+      "title": "E‑Commerce Capabilities",
+      "subtitle": "What’s always included",
+      "content": {
+        "items": [
+          { "title": "Conversion‑First UX", "description": "Layouts, flows, and messaging built around how shoppers actually buy.", "icon": "Layout" },
+          { "title": "SEO & Programmatic Pages", "description": "Collection, product, and landing page structures ready for organic growth at scale.", "icon": "Globe" },
+          { "title": "Headless & Native Options", "description": "From theme‑based builds to headless stacks with Supabase and modern frontends.", "icon": "Code" },
+          { "title": "Automation & Integrations", "description": "n8n workflows connecting your store, CRM, email, and ops tools.", "icon": "Workflow" },
+          { "title": "CMS‑Driven Sections", "description": "Every hero, grid, and CTA manageable from admin, not locked in code.", "icon": "Settings" },
+          { "title": "Monitoring & Optimization", "description": "Performance, error tracking, and CRO baked into how we operate.", "icon": "TrendingUp" }
+        ]
+      },
+      "display_order": 22,
+      "is_active": true
+    },
+    {
+      "section_type": "image-text",
+      "title": "From First Order to Scaled Operation",
+      "subtitle": "E‑commerce that grows with you",
+      "content": {
+        "image_url": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&q=80",
+        "description": "We don’t just launch stores—we design the systems around them. From catalog structure and fulfillment logic to post‑purchase flows and dashboards, your e‑commerce foundation is built to support the next stage of your growth, not just today’s traffic.",
+        "image_position": "left",
+        "cta_text": "Talk About Your Store",
+        "cta_link": "/contact"
+      },
+      "display_order": 23,
+      "is_active": true
+    },
+    {
+      "section_type": "video",
+      "title": "See Our E‑Commerce Approach",
+      "subtitle": "A quick walkthrough of how we build and scale stores",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
+        "autoplay": false
+      },
+      "display_order": 24,
+      "is_active": true
+    },
+    {
+      "section_type": "timeline",
+      "title": "Typical E‑Commerce Timeline",
+      "subtitle": "From audit to optimized store",
+      "content": {
+        "items": [
+          { "year": "Week 1", "title": "Audit & Strategy", "description": "We analyze your current store (or plans), define goals, and agree on stack and roadmap.", "icon": "Search" },
+          { "year": "Week 2–3", "title": "Design & Build", "description": "UX/UI, theming or custom frontend, integrations, and basic automations implemented.", "icon": "Layout" },
+          { "year": "Week 4–5", "title": "Launch & CRO", "description": "Soft launch, tracking, and first waves of optimization for speed and conversion.", "icon": "Rocket" }
+        ]
+      },
+      "display_order": 25,
+      "is_active": true
+    },
+    {
+      "section_type": "newsletter",
+      "title": "E‑Commerce & Growth Insights",
+      "subtitle": "Ideas on conversion, retention, and automation—straight to your inbox.",
+      "content": {
+        "placeholder_text": "Enter your email",
+        "button_text": "Subscribe",
+        "success_message": "Thanks for subscribing! We’ll send you our best e‑commerce and growth insights."
+      },
+      "display_order": 26,
+      "is_active": true
+    },
+    {
+      "section_type": "secondary-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "text": "Prefer to start with a quick audit of your current store?",
+        "button_text": "Request E‑Commerce Audit",
+        "button_url": "/contact"
+      },
+      "display_order": 27,
+      "is_active": true
+    },
+    {
+      "section_type": "team",
+      "title": "Your E‑Commerce Squad",
+      "subtitle": "Specialists across design, dev, CRO, and automation",
+      "content": {
+        "items": [
+          { "name": "E‑Commerce Lead", "role": "Strategy & Architecture", "bio": "Owns the overall store strategy, stack, and roadmap so everything points to revenue.", "image": "" },
+          { "name": "UX & Conversion", "role": "Flows & Experiments", "bio": "Designs and tests journeys to squeeze maximum value from your existing traffic.", "image": "" },
+          { "name": "Store Engineer", "role": "Platforms & Integrations", "bio": "Implements themes, headless frontends, APIs, and complex logic cleanly.", "image": "" },
+          { "name": "Automation & Retention", "role": "n8n, Email, & LTV", "bio": "Builds the flows that turn one‑time buyers into long‑term customers.", "image": "" }
+        ]
+      },
+      "display_order": 28,
+      "is_active": true
+    },
+    {
+      "section_type": "gallery",
+      "title": "E‑Commerce in Action",
+      "subtitle": "Snapshots from stores and flows we’ve built",
+      "content": {
+        "items": [
+          { "image_url": "https://images.unsplash.com/photo-1515165562835-c4c9e0737eaa?auto=format&fit=crop&w=600&q=80", "caption": "Product Listing & Merchandising", "alt": "Product grid" },
+          { "image_url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=600&q=80", "caption": "High‑converting Product Detail Page", "alt": "PDP" },
+          { "image_url": "https://images.unsplash.com/photo-1523287562758-66c7fc58967a?auto=format&fit=crop&w=600&q=80", "caption": "Optimized Checkout Flow", "alt": "Checkout" },
+          { "image_url": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=600&q=80", "caption": "Subscription & Membership UI", "alt": "Subscriptions" },
+          { "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80", "caption": "E‑Commerce Analytics Dashboard", "alt": "Analytics" },
+          { "image_url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80", "caption": "Automation & Workflow Builder", "alt": "Automation" }
+        ]
+      },
+      "display_order": 29,
+      "is_active": true
+    },
+    {
+      "section_type": "contact-info",
+      "title": "Talk to the E‑Commerce Team",
+      "subtitle": "Tell us about your store, goals, or challenges",
+      "content": {
+        "email": "hello@dotr.com",
+        "phone": "+1 (555) 000-0000",
+        "address": "Your City, Your Country",
+        "map_embed_url": "",
+        "social_links": [
+          { "platform": "LinkedIn", "url": "https://linkedin.com", "icon": "Linkedin" },
+          { "platform": "Twitter", "url": "https://twitter.com", "icon": "Twitter" }
+        ]
+      },
+      "display_order": 30,
+      "is_active": true
+    },
+    {
+      "section_type": "blog-posts",
+      "title": "E‑Commerce & Growth Articles",
+      "subtitle": "Playbooks, breakdowns, and experiments",
+      "content": {
+        "count": 3,
+        "show_featured_only": false,
+        "layout": "grid"
+      },
+      "display_order": 31,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "width": "medium",
+        "spacing": "medium"
+      },
+      "display_order": 32,
+      "is_active": true
+    },
+    {
+      "section_type": "pricing",
+      "title": "E‑Commerce Engagement Models",
+      "subtitle": "Clarity on investment from day one",
+      "content": {
+        "items": [
+          {
+            "name": "Store Audit & Quick Wins",
+            "price": "From $1,490",
+            "description": "Perfect if you already have a store and want a prioritized list of fixes and opportunities.",
+            "features": [
+              "Full UX, speed, and analytics review",
+              "Technical & SEO health check",
+              "CRO opportunities & experiment ideas",
+              "Prioritized roadmap for the next 90 days",
+              "Implementation options with or without DOTR"
+            ],
+            "cta_text": "Book an Audit",
+            "is_featured": false
+          },
+          {
+            "name": "Growth Store Rebuild",
+            "price": "From $7,900",
+            "description": "Ideal if you’re ready for a serious upgrade in conversion, stack, and automation.",
+            "features": [
+              "New UX/UI for key pages & flows",
+              "Platform setup or replatforming",
+              "Core automations (abandoned cart, post‑purchase, winback)",
+              "Analytics, tracking, and dashboards",
+              "Launch support and first optimization cycle"
+            ],
+            "cta_text": "Plan My Rebuild",
+            "is_featured": true
+          },
+          {
+            "name": "Scale & Retention",
+            "price": "Custom",
+            "description": "For brands treating e‑commerce as a core growth engine with ongoing experiments and automation.",
+            "features": [
+              "Continuous CRO & UX experiments",
+              "Advanced personalization & AI recommendations",
+              "Subscription & LTV strategy and implementation",
+              "Automation & operations roadmap",
+              "Dedicated e‑commerce lead and support"
+            ],
+            "cta_text": "Talk to an Expert",
+            "is_featured": false
+          }
+        ]
+      },
+      "display_order": 33,
+      "is_active": true
+    },
+    {
+      "section_type": "form",
+      "title": "Start Your E‑Commerce Project",
+      "subtitle": "Share a bit about your store—we’ll respond within 24 hours",
+      "content": {
+        "form_title": "Get an E‑Commerce Consultation",
+        "form_description": "Tell us about your products, current platform, and growth goals. We’ll come back with a clear plan, rough timelines, and stack recommendations.",
+        "submit_button_text": "Send Store Details",
+        "success_message": "Thank you! Your e‑commerce brief has been received. We’ll get back to you within 24 hours with next steps.",
+        "fields": [
+          {
+            "field_type": "text",
+            "label": "Full Name",
+            "name": "name",
+            "placeholder": "John Doe",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "email",
+            "label": "Email Address",
+            "name": "email",
+            "placeholder": "john@example.com",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "phone",
+            "label": "Phone Number",
+            "name": "phone",
+            "placeholder": "+1 (555) 123-4567",
+            "required": false,
+            "width": "half"
+          },
+          {
+            "field_type": "select",
+            "label": "Current Platform",
+            "name": "platform",
+            "placeholder": "Select an option",
+            "required": true,
+            "options": [
+              "Shopify",
+              "WooCommerce",
+              "Custom / Headless",
+              "No store yet",
+              "Other / Not sure"
+            ],
+            "width": "half"
+          },
+          {
+            "field_type": "textarea",
+            "label": "Store & Goals",
+            "name": "project_overview",
+            "placeholder": "Share your current situation, monthly revenue range, and what you want to improve (conversion, AOV, retention, stack, etc.)...",
+            "required": true,
+            "validation": { "min": 10, "max": 1000 },
+            "width": "full"
+          },
+          {
+            "field_type": "select",
+            "label": "Timeline",
+            "name": "timeline",
+            "placeholder": "When do you want to start?",
+            "required": false,
+            "options": [
+              "ASAP (0–2 weeks)",
+              "Soon (2–6 weeks)",
+              "Later (2–3 months)",
+              "Exploring options"
+            ],
+            "width": "half"
+          },
+          {
+            "field_type": "checkbox",
+            "label": "I agree to receive e‑commerce and growth insights",
+            "name": "marketing_consent",
+            "required": false,
+            "width": "full"
+          }
+        ]
+      },
+      "display_order": 34,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Selected E‑Commerce Work",
+      "subtitle": "A sample of what we’ve built and scaled",
+      "content": {
+        "show_filters": true,
+        "items": [
+          {
+            "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=600&q=80",
+            "title": "Lifestyle DTC Store",
+            "category": "Shopify",
+            "link": "/portfolio/ecommerce-lifestyle"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1523287562758-66c7fc58967a?auto=format&fit=crop&w=600&q=80",
+            "title": "Multi‑Brand Retailer",
+            "category": "WooCommerce",
+            "link": "/portfolio/ecommerce-retail"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=600&q=80",
+            "title": "Subscription Coffee Brand",
+            "category": "Subscriptions",
+            "link": "/portfolio/ecommerce-subscription"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80",
+            "title": "Accessories Marketplace",
+            "category": "Marketplace",
+            "link": "/portfolio/ecommerce-marketplace"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80",
+            "title": "Headless Storefront",
+            "category": "Headless",
+            "link": "/portfolio/ecommerce-headless"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "title": "Automation & Ops Dashboard",
+            "category": "Automation",
+            "link": "/portfolio/ecommerce-automation"
+          }
+        ]
+      },
+      "display_order": 35,
+      "is_active": true
+    },
+    {
+      "section_type": "counters",
+      "title": "By the Numbers",
+      "subtitle": "Our e‑commerce impact in real time",
+      "content": {
+        "items": [
+          { "value": 120, "label": "Stores Launched or Rebuilt", "prefix": "", "suffix": "+", "icon": "ShoppingCart" },
+          { "value": 98, "label": "Client Satisfaction", "prefix": "", "suffix": "%", "icon": "Heart" },
+          { "value": 24, "label": "Support & Automation", "prefix": "", "suffix": "/7", "icon": "Clock" },
+          { "value": 3, "label": "Average ROI Multiplier", "prefix": "x", "suffix": "", "icon": "TrendingUp" }
+        ]
+      },
+      "display_order": 36,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 2, "suffix": "x", "prefix": "", "label": "Typical Conversion Lift" },
+          { "value": 25, "suffix": "%", "prefix": "", "label": "Typical AOV Increase" },
+          { "value": 20, "suffix": "+", "prefix": "", "label": "Hours Saved Monthly" },
+          { "value": 120, "suffix": "+", "prefix": "", "label": "E‑Commerce Projects" }
+        ],
+        "animate": true
+      },
+      "display_order": 37,
+      "is_active": true
+    },
+    {
+      "section_type": "social-proof-bar",
+      "title": "Trusted by Growth‑Focused Brands",
+      "subtitle": null,
+      "content": {
+        "user_count": "500+",
+        "rating": 4.9,
+        "review_count": "150+",
+        "platforms": [
+          { "name": "Shopify Apps", "followers": "Top Rated", "icon": "Star" },
+          { "name": "LinkedIn", "followers": "30K", "icon": "Linkedin" }
+        ]
+      },
+      "display_order": 38,
+      "is_active": true
+    },
+    {
+      "section_type": "awards-badges",
+      "title": "Recognition",
+      "subtitle": "E‑commerce and digital excellence",
+      "content": {
+        "items": [
+          { "title": "E‑Commerce Innovation 2024", "organization": "Digital Commerce Awards", "year": "2024", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" },
+          { "title": "Best Storefront Experience", "organization": "UX & Commerce Summit", "year": "2024", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" },
+          { "title": "Customer Choice", "organization": "Business Excellence Awards", "year": "2023", "image_url": "https://placehold.co/120x80/f0f0f0/666?text=Award" }
+        ]
+      },
+      "display_order": 39,
+      "is_active": true
+    },
+    {
+      "section_type": "press-mentions",
+      "title": "As Seen In",
+      "subtitle": "What the press says about our e‑commerce work",
+      "content": {
+        "items": [
+          {
+            "publication": "TechCrunch",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=TechCrunch",
+            "quote": "DOTR’s AI‑first approach to e‑commerce is redefining how online brands design and operate their stores.",
+            "link": "https://techcrunch.com"
+          },
+          {
+            "publication": "Forbes",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Forbes",
+            "quote": "From small DTC brands to complex marketplaces, DOTR builds storefronts that act like intelligent growth engines.",
+            "link": "https://forbes.com"
+          },
+          {
+            "publication": "Wired",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Wired",
+            "quote": "A rare blend of UX, engineering, and automation—e‑commerce that actually feels modern end‑to‑end.",
+            "link": "https://wired.com"
+          }
+        ]
+      },
+      "display_order": 40,
+      "is_active": true
+    },
+    {
+      "section_type": "ratings-reviews",
+      "title": "Rated by E‑Commerce Clients",
+      "subtitle": "What our partners say on leading platforms",
+      "content": {
+        "items": [
+          { "platform": "Google", "rating": 4.9, "review_count": 80, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Google" },
+          { "platform": "Clutch", "rating": 4.8, "review_count": 40, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Clutch" },
+          { "platform": "Shopify Experts", "rating": 4.8, "review_count": 30, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Shopify" }
+        ],
+        "show_aggregate": true
+      },
+      "display_order": 41,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": "The Cost of a Store That’s “Good Enough”",
+      "subtitle": "Then the solution",
+      "content": {
+        "problem": "Every month with a slow, leaky, or hard‑to‑change store silently burns ad spend, frustrates customers, and caps your growth.",
+        "agitation": "You keep patching plugins, hacking together flows, and hoping the next theme or agency will fix it. Meanwhile, competitors investing in smarter stacks and AI‑driven experiences are widening the gap.",
+        "solution": "DOTR helps you step off that treadmill. We design, build, and automate a conversion‑ready, AI‑first e‑commerce foundation that you can keep improving without rewrites or constant firefighting."
+      },
+      "display_order": 42,
+      "is_active": true
+    },
+    {
+      "section_type": "before-after",
+      "title": "Before & After DOTR E‑Commerce",
+      "subtitle": "See the shift",
+      "content": {
+        "before_image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+        "after_image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80",
+        "before_label": "Before",
+        "after_label": "After"
+      },
+      "display_order": 43,
+      "is_active": true
+    },
+    {
+      "section_type": "video-demo",
+      "title": "See It in Action",
+      "subtitle": "A quick walkthrough of an optimized store stack",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1523287562758-66c7fc58967a?auto=format&fit=crop&w=800&q=80",
+        "callouts": [
+          { "time": "0:15", "text": "Homepage & product discovery" },
+          { "time": "1:30", "text": "Checkout, subscriptions, and post‑purchase flows" },
+          { "time": "2:45", "text": "Automation, analytics, and ops views" }
+        ]
+      },
+      "display_order": 44,
+      "is_active": true
+    },
+    {
+      "section_type": "screenshot-gallery",
+      "title": "Platform Preview",
+      "subtitle": "Key screens from our e‑commerce implementations",
+      "content": {
+        "screenshots": [
+          { "url": "https://images.unsplash.com/photo-1523287562758-66c7fc58967a?auto=format&fit=crop&w=800&q=80", "caption": "Product Grid & Filtering" },
+          { "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80", "caption": "High‑Intent Product Page" },
+          { "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80", "caption": "Cart & Upsell Drawer" },
+          { "url": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&q=80", "caption": "Subscription Management" }
+        ],
+        "show_captions": true
+      },
+      "display_order": 45,
+      "is_active": true
+    },
+    {
+      "section_type": "device-frames",
+      "title": "Mobile‑First by Default",
+      "subtitle": "Optimized for where your customers actually buy",
+      "content": {
+        "device_type": "iphone",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1523287562758-66c7fc58967a?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=400&q=80"
+        ]
+      },
+      "display_order": 46,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-list",
+      "title": "What Every Engagement Includes",
+      "subtitle": "No matter your size, you get the full stack",
+      "content": {
+        "items": [
+          { "text": "Conversion‑driven UX & copy recommendations", "icon": "Target" },
+          { "text": "SEO‑friendly structure for category & product URLs", "icon": "Globe" },
+          { "text": "Analytics & event tracking setup", "icon": "BarChart3" },
+          { "text": "Core automations (abandoned cart, winback, post‑purchase)", "icon": "Workflow" },
+          { "text": "CMS‑driven content & landing sections", "icon": "Settings" },
+          { "text": "Security, backups, and performance baselines", "icon": "Shield" },
+          { "text": "Clear documentation & handover", "icon": "FileText" },
+          { "text": "Launch and optimization support", "icon": "Headphones" }
+        ],
+        "columns": 2
+      },
+      "display_order": 47,
+      "is_active": true
+    },
+    {
+      "section_type": "exit-intent-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "headline": "Wait! Before You Go—",
+        "description": "Get a free e‑commerce audit and see exactly where your store is leaking revenue and where AI can help.",
+        "button_text": "Claim Free E‑Commerce Audit",
+        "button_url": "/contact",
+        "show_after_scroll": 50,
+        "offer_text": "We’ll send you a prioritized list of fixes, quick wins, and stack recommendations."
+      },
+      "display_order": 48,
+      "is_active": true
+    }
+  ]
+}
+

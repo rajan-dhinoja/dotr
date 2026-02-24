@@ -121,7 +121,7 @@ function flattenMenuItems(
       page_slug: it.page_slug ?? null,
       target: it.target ?? '_self',
       is_active: it.is_active ?? true,
-      menu_type: (it as MenuItemImportFlat).menu_type ?? null,
+      menu_type: (it as MenuItemImportFlat).menu_type ?? (it as { type?: string }).type ?? null,
     };
 
     if (isNested(it) && it.children && it.children.length > 0) {
@@ -167,7 +167,7 @@ function normalizeFlatMenuItems(
     display_order: typeof it.display_order === 'number' ? it.display_order : i,
     target: it.target ?? '_self',
     is_active: it.is_active ?? true,
-    menu_type: it.menu_type ?? null,
+    menu_type: it.menu_type ?? (it as { type?: string }).type ?? null,
   }));
 }
 

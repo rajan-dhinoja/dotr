@@ -155,6 +155,7 @@ export default function AdminPages() {
   const [menuSortBy, setMenuSortBy] = useState<MenuSortOption>('default');
   const [syncPageOrderOnReorder, setSyncPageOrderOnReorder] = useState(false);
   const [selectedMenuItemIds, setSelectedMenuItemIds] = useState<string[]>([]);
+  const [isBulkDeletingPages, setIsBulkDeletingPages] = useState(false);
   const { toast } = useToast();
   const { logActivity } = useActivityLog();
   const { exportPagesMenu } = usePagesImportExport();
@@ -565,22 +566,27 @@ export default function AdminPages() {
     onError: (e: Error) => toast({ title: 'Error', description: e.message, variant: 'destructive' }),
   });
 
+  const deletePageById = async (id: string) => {
+    const { data: page, error: fetchErr } = await supabase
+      .from('pages')
+      .select('id, source_entity_type, source_entity_id, slug')
+      .eq('id', id)
+      .maybeSingle();
+    if (fetchErr) throw fetchErr;
+    if (page?.source_entity_type && page?.source_entity_id) {
+      const r = await deleteSourceEntityWhenPageDeleted(
+        supabase,
+        page as { source_entity_type: string; source_entity_id: string; slug?: string }
+      );
+      if (!r.success) throw new Error(r.error);
+    } else {
+      const { error } = await supabase.from('pages').delete().eq('id', id);
+      if (error) throw error;
+    }
+  };
+
   const deleteMutation = useMutation({
-    mutationFn: async (id: string) => {
-      const { data: page, error: fetchErr } = await supabase
-        .from('pages')
-        .select('id, source_entity_type, source_entity_id, slug')
-        .eq('id', id)
-        .maybeSingle();
-      if (fetchErr) throw fetchErr;
-      if (page?.source_entity_type && page?.source_entity_id) {
-        const r = await deleteSourceEntityWhenPageDeleted(supabase, page as { source_entity_type: string; source_entity_id: string; slug?: string });
-        if (!r.success) throw new Error(r.error);
-      } else {
-        const { error } = await supabase.from('pages').delete().eq('id', id);
-        if (error) throw error;
-      }
-    },
+    mutationFn: deletePageById,
     onSuccess: () => {
       setPageToDelete(null);
       queryClient.invalidateQueries({ queryKey: ['admin-pages'] });
@@ -760,6 +766,77 @@ export default function AdminPages() {
     }
     reorderPagesMutation.mutate(updates);
   }, [menuDataForSync?.tree, allPagesForHierarchy, reorderPagesMutation, toast]);
+
+  const selectedPageIdsFromMenu = useMemo(() => {
+    const tree = menuDataForSync?.tree ?? [];
+    const selectedSet = new Set(selectedMenuItemIds);
+    const pageIds = new Set<string>();
+
+    const walk = (nodes: AdminMenuItemNode[]) => {
+      nodes.forEach((node) => {
+        if (selectedSet.has(node.id) && node.page_id) {
+          pageIds.add(node.page_id);
+        }
+        if (node.children?.length) {
+          walk(node.children);
+        }
+      });
+    };
+
+    walk(tree);
+    return Array.from(pageIds);
+  }, [menuDataForSync?.tree, selectedMenuItemIds]);
+
+  const handleBulkDeletePagesFromSelection = async () => {
+    if (selectedPageIdsFromMenu.length === 0) {
+      toast({
+        title: 'No pages to delete',
+        description: 'Selected items do not contain any pages.',
+        variant: 'destructive',
+      });
+      return;
+    }
+
+    setIsBulkDeletingPages(true);
+    let successCount = 0;
+    let failedCount = 0;
+
+    for (const pageId of selectedPageIdsFromMenu) {
+      try {
+        await deletePageById(pageId);
+        successCount++;
+      } catch (e) {
+        console.error(e);
+        failedCount++;
+      }
+    }
+
+    // Invalidate the same queries as the single delete mutation
+    queryClient.invalidateQueries({ queryKey: ['admin-pages'] });
+    queryClient.invalidateQueries({ queryKey: ['admin-pages-all'] });
+    queryClient.invalidateQueries({ queryKey: ['pages'] });
+    queryClient.invalidateQueries({ queryKey: ['nav-pages'] });
+    queryClient.invalidateQueries({ queryKey: ['admin-services'] });
+    queryClient.invalidateQueries({ queryKey: ['admin-service-categories'] });
+    queryClient.invalidateQueries({ predicate: (query) => query.queryKey[0] === 'page' });
+
+    setSelectedMenuItemIds([]);
+    setIsBulkDeletingPages(false);
+
+    if (successCount > 0) {
+      toast({
+        title: `Deleted ${successCount} page${successCount === 1 ? '' : 's'}`,
+      });
+    }
+
+    if (failedCount > 0) {
+      toast({
+        title: 'Some pages could not be deleted',
+        description: `${failedCount} page${failedCount === 1 ? '' : 's'} failed to delete. They may still be referenced elsewhere.`,
+        variant: 'destructive',
+      });
+    }
+  };
 
   const menuFilterFn = useMemo(() => {
     const kind = menuItemKindFilter;
@@ -1087,6 +1164,14 @@ export default function AdminPages() {
                         disabled={toggleMenuItemVisibilityMutation.isPending}
                       >
                         Hide in menu
+                      </Button>
+                      <Button
+                        variant="destructive"
+                        size="sm"
+                        onClick={handleBulkDeletePagesFromSelection}
+                        disabled={isBulkDeletingPages || selectedPageIdsFromMenu.length === 0}
+                      >
+                        {isBulkDeletingPages ? 'Deleting pages...' : 'Delete pages'}
                       </Button>
                       <Button variant="ghost" size="sm" onClick={() => setSelectedMenuItemIds([])}>
                         Clear

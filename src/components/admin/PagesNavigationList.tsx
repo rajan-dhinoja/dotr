@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Link } from 'react-router-dom';
-import { GripVertical, Pencil, Trash2, Eye, EyeOff, LayoutList, Link2, LayoutGrid } from 'lucide-react';
+import { GripVertical, Pencil, Trash2, Eye, EyeOff, LayoutList, Link2, LayoutGrid, Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import {
   DndContext,
@@ -330,19 +330,45 @@ function SortablePageCard({
           <p className="text-xs text-foreground/70 mt-0.5">{url || 'No link'}</p>
         </div>
         <div className="flex items-center gap-2 flex-shrink-0">
-          <Button variant="ghost" size="icon" onClick={onToggleVisibility} disabled={isVisibilityPending}>
+          {/* Page visibility (publish/unpublish) */}
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={onToggleVisibility}
+            disabled={isVisibilityPending}
+            title={isActive ? 'Unpublish page' : 'Publish page'}
+          >
             {isActive ? <Eye className="h-4 w-4" /> : <EyeOff className="h-4 w-4 text-foreground/60" />}
           </Button>
+
+          {/* Visit page on site */}
+          <Button variant="ghost" size="icon" asChild>
+            <Link
+              to={url || '#'}
+              target="_blank"
+              rel="noreferrer"
+              title="Visit page"
+            >
+              <Globe className="h-4 w-4" />
+            </Link>
+          </Button>
+
+          {/* Sections manager */}
           <Button variant="ghost" size="sm" asChild>
             <Link to={`/admin/page-sections?page=${encodeURIComponent(node.slug)}`} className="gap-1.5">
               <LayoutGrid className="h-4 w-4" />
               Sections
             </Link>
           </Button>
-          <Button variant="ghost" size="sm" onClick={onEdit}>
-            Edit
+
+          {/* Edit page */}
+          <Button variant="ghost" size="sm" onClick={onEdit} className="gap-1.5">
+            <Pencil className="h-4 w-4" />
+            Edit page
           </Button>
-          <Button variant="ghost" size="icon" onClick={onDelete}>
+
+          {/* Delete page */}
+          <Button variant="ghost" size="icon" onClick={onDelete} title="Delete page">
             <Trash2 className="h-4 w-4 text-destructive" />
           </Button>
         </div>

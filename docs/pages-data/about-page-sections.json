@@ -1,0 +1,1216 @@
+{
+  "version": "1.0",
+  "exported_at": "2026-02-13T00:00:00.000Z",
+  "entity_type": "page_section",
+  "page_type": "about",
+  "entity_id": null,
+  "sections": [
+    {
+      "section_type": "hero",
+      "title": "Hero Section",
+      "subtitle": null,
+      "content": {
+        "headline": "About DOTR – Dhinoja OmniTech Resolutions",
+        "subtitle": "An AI-first digital solutions company built to help ambitious businesses move faster, scale smarter, and operate on automation instead of manual effort.",
+        "cta_text": "Discover How We Work",
+        "cta_link": "#our-approach",
+        "background_image": ""
+      },
+      "display_order": 1,
+      "is_active": true
+    },
+    {
+      "section_type": "usp-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "icon": "Brain", "text": "AI-First, Not Just AI-Assisted" },
+          { "icon": "Layers", "text": "9 Pillars, One Partner" },
+          { "icon": "Zap", "text": "Weeks, Not Months" },
+          { "icon": "Settings", "text": "System-Driven, CMS-Controlled" },
+          { "icon": "Shield", "text": "Security & Reliability Built-In" }
+        ]
+      },
+      "display_order": 2,
+      "is_active": true
+    },
+    {
+      "section_type": "elevator-pitch",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "pitch": "DOTR (Dhinoja OmniTech Resolutions) is an AI-powered digital solutions partner that brings design, development, automation, and growth strategy under one roof—so you never have to juggle multiple vendors again.",
+        "tagline": "AI-first, system-driven, and built for businesses that want speed, scalability, and real results.",
+        "author": "DOTR",
+        "author_title": "Dhinoja OmniTech Resolutions"
+      },
+      "display_order": 3,
+      "is_active": true
+    },
+    {
+      "section_type": "about-us",
+      "title": "Who We Are",
+      "subtitle": "AI-first, not just AI-assisted",
+      "content": {
+        "story": "DOTR – Dhinoja OmniTech Resolutions was created with a clear vision: to build a new kind of digital partner that is AI-first, not just AI-assisted. Instead of long, manual, and fragmented projects, we focus on fast, scalable and future-ready solutions powered by automation, smart workflows, and a modern tech stack. Every engagement is designed to remove friction, reduce repetitive work, and give teams more time to focus on meaningful growth.",
+        "mission": "To deliver AI-powered, end-to-end digital solutions that are quick, smart, and optimized—helping businesses turn complex ideas into scalable, real-world systems.",
+        "vision": "To become the go-to AI-first operating partner for businesses worldwide, where websites, products, and systems operate as living business engines rather than static brochures.",
+        "founder_image": "",
+        "founder_name": "",
+        "founder_title": "",
+        "founded_year": "2024"
+      },
+      "display_order": 4,
+      "is_active": true
+    },
+    {
+      "section_type": "values-culture",
+      "title": "Our Values & Culture",
+      "subtitle": "Principles that guide how we think and build",
+      "content": {
+        "items": [
+          {
+            "title": "AI-First Mindset",
+            "description": "We design every solution with automation and intelligence at the core—from discovery and planning to launch and optimization.",
+            "icon": "Brain"
+          },
+          {
+            "title": "System-Driven Thinking",
+            "description": "We treat websites and platforms as business engines, not one-off projects—everything is data-driven, admin-controlled, and built for iteration.",
+            "icon": "Settings"
+          },
+          {
+            "title": "Speed with Quality",
+            "description": "We move fast using modern tools and AI assistance, without compromising on architecture, performance, or long-term maintainability.",
+            "icon": "Zap"
+          },
+          {
+            "title": "End-to-End Ownership",
+            "description": "From design and development to marketing, automation, and support, we take responsibility for the full journey, not just one slice of it.",
+            "icon": "Layers"
+          },
+          {
+            "title": "Scalability by Design",
+            "description": "Every decision is made with future growth in mind—no hard-coded dead ends, no fragile systems that break when traffic or use-cases grow.",
+            "icon": "TrendingUp"
+          },
+          {
+            "title": "Client-Centric Outcomes",
+            "description": "We measure success by business impact—leads generated, time saved, revenue unlocked—not just by how good something looks.",
+            "icon": "Target"
+          }
+        ]
+      },
+      "display_order": 5,
+      "is_active": true
+    },
+    {
+      "section_type": "problem-statement",
+      "title": "The Problem We Saw",
+      "subtitle": "Why DOTR needed to exist",
+      "content": {
+        "problems": [
+          {
+            "title": "Fragmented Digital Vendors",
+            "description": "Businesses were forced to work with separate agencies for design, development, marketing, and automation—creating misalignment and slow delivery."
+          },
+          {
+            "title": "Slow, Manual Operations",
+            "description": "Teams spent hours on repetitive, low-leverage work instead of focusing on strategy and growth."
+          },
+          {
+            "title": "Static, Non-Scalable Websites",
+            "description": "Most websites were hard-coded and rigid, making it painful to adapt, experiment, or scale content and services."
+          },
+          {
+            "title": "AI as an Afterthought",
+            "description": "AI was often bolted on at the end instead of being the core engine behind workflows, decisions, and experiences."
+          }
+        ],
+        "empathy_text": "DOTR was born from working with founders, operators, and teams who wanted more than a portfolio website—they wanted a living system they could control and scale."
+      },
+      "display_order": 6,
+      "is_active": true
+    },
+    {
+      "section_type": "agitate-solve",
+      "title": "The Cost of Staying Fragmented",
+      "subtitle": "Then how DOTR solves it",
+      "content": {
+        "problem": "When your digital presence, operations, and automation are spread across disconnected tools and vendors, you lose speed, visibility, and momentum.",
+        "agitation": "Every misaligned vendor, manual handoff, and static system compounds over time—slower launches, missed opportunities, and teams stuck putting out fires instead of building the future.",
+        "solution": "DOTR brings everything under one AI-first operating system—modular, CMS-driven sites, AI-powered flows, and end-to-end services across 9 pillars—so your digital foundation finally works as one unified engine."
+      },
+      "display_order": 7,
+      "is_active": true
+    },
+    {
+      "section_type": "value-proposition",
+      "title": "Why Partner with DOTR?",
+      "subtitle": "The DOTR difference in one view",
+      "content": {
+        "headline": "An AI-powered, end-to-end partner that treats your website as a business engine.",
+        "supporting_points": [
+          "AI-first approach across strategy, execution, and operations—not just a chatbot on the side.",
+          "Modular, CMS-driven architecture so your team can adapt content and pages without code.",
+          "9 specialized pillars under one roof, reducing coordination overhead and delivery time.",
+          "Built on a modern stack (Lovable, Supabase, n8n) for speed, reliability, and scalability.",
+          "Focused on measurable outcomes: efficiency gained, revenue unlocked, and complexity reduced."
+        ],
+        "cta_text": "See How We Work",
+        "cta_url": "#our-approach"
+      },
+      "display_order": 8,
+      "is_active": true
+    },
+    {
+      "section_type": "differentiators",
+      "title": "How DOTR Is Different",
+      "subtitle": "Compared to traditional agencies and vendors",
+      "content": {
+        "items": [
+          {
+            "feature": "AI-First from Day One",
+            "us": true,
+            "competitors": "AI as an add-on"
+          },
+          {
+            "feature": "End-to-End Across 9 Pillars",
+            "us": true,
+            "competitors": "Narrow, isolated services"
+          },
+          {
+            "feature": "CMS-Driven & Modular Sections",
+            "us": true,
+            "competitors": "Hard-coded pages"
+          },
+          {
+            "feature": "Programmatic SEO & Growth",
+            "us": true,
+            "competitors": "Limited SEO capabilities"
+          },
+          {
+            "feature": "Automation & Workflows Built-In",
+            "us": true,
+            "competitors": "Manual processes"
+          },
+          {
+            "feature": "System-Driven Strategy",
+            "us": true,
+            "competitors": "One-off campaigns"
+          },
+          {
+            "feature": "Single Ownership Partner",
+            "us": true,
+            "competitors": "Multiple vendors to manage"
+          }
+        ],
+        "show_comparison": true,
+        "our_label": "DOTR",
+        "competitor_label": "Traditional Approach"
+      },
+      "display_order": 9,
+      "is_active": true
+    },
+    {
+      "section_type": "services-grid",
+      "title": "Our Pillars",
+      "subtitle": "A multi-department structure under one partner",
+      "content": {
+        "items": [
+          {
+            "icon": "Palette",
+            "title": "Designing",
+            "description": "UI/UX, visual design, branding, and identity that make your products clear, consistent, and conversion-focused.",
+            "link": "/services/designing"
+          },
+          {
+            "icon": "Code",
+            "title": "Development",
+            "description": "Frontend, backend, and full-stack engineering for web apps, admin panels, APIs, and SaaS platforms.",
+            "link": "/services/development"
+          },
+          {
+            "icon": "ShoppingCart",
+            "title": "E-Commerce",
+            "description": "Shopify, WooCommerce, and custom e-commerce platforms with subscriptions, payments, and marketplaces.",
+            "link": "/services/e-commerce"
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Marketing",
+            "description": "Digital strategy, SEO, campaigns, and automation that turn attention into qualified demand.",
+            "link": "/services/marketing"
+          },
+          {
+            "icon": "Video",
+            "title": "Content & Creative",
+            "description": "Story-driven content, copy, and media that explain your value and build trust across channels.",
+            "link": "/services/content-creative"
+          },
+          {
+            "icon": "Brain",
+            "title": "AI & Automation",
+            "description": "AI chatbots, workflows, recommendation systems, CRM and WhatsApp automation, and AI analytics.",
+            "link": "/services/ai-automation"
+          },
+          {
+            "icon": "Cloud",
+            "title": "Cloud / DevOps",
+            "description": "Cloud infrastructure, CI/CD, monitoring, and scalable deployment on modern platforms.",
+            "link": "/services/cloud-devops"
+          },
+          {
+            "icon": "Shield",
+            "title": "Security & Maintenance",
+            "description": "Security, performance optimization, backups, and ongoing care for your digital assets.",
+            "link": "/services/security-maintenance"
+          },
+          {
+            "icon": "Lightbulb",
+            "title": "Consulting & Support",
+            "description": "Product thinking, MVP planning, digital transformation, and long-term strategic support.",
+            "link": "/services/consulting-support"
+          }
+        ]
+      },
+      "display_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "who-its-for",
+      "title": "Who DOTR Is For",
+      "subtitle": "Teams that benefit most from an AI-first partner",
+      "content": {
+        "personas": [
+          {
+            "persona": "Founders & Startups",
+            "icon": "Rocket",
+            "description": "Moving from idea to scalable digital products with limited time and resources.",
+            "benefits": [
+              "Faster go-to-market",
+              "Foundations that won’t need a rewrite",
+              "Single partner for product, site, and growth"
+            ]
+          },
+          {
+            "persona": "Growing Businesses",
+            "icon": "TrendingUp",
+            "description": "Already live, but hitting operational and technical bottlenecks.",
+            "benefits": [
+              "Automation for repetitive tasks",
+              "Better analytics and visibility",
+              "Modular site and system to support new initiatives"
+            ]
+          },
+          {
+            "persona": "Digital & Tech Leaders",
+            "icon": "Cpu",
+            "description": "Responsible for digital transformation and looking for an AI-first execution partner.",
+            "benefits": [
+              "Modern, scalable architecture",
+              "AI-backed decision and recommendation systems",
+              "Long-term partner aligned with transformation goals"
+            ]
+          }
+        ]
+      },
+      "display_order": 11,
+      "is_active": true
+    },
+    {
+      "section_type": "outcomes-benefits",
+      "title": "What Working with DOTR Achieves",
+      "subtitle": "Outcomes that define our success",
+      "content": {
+        "layout": "grid",
+        "items": [
+          {
+            "title": "Operational Efficiency",
+            "description": "Automate repetitive workflows and reduce manual coordination between tools and vendors.",
+            "icon": "Zap"
+          },
+          {
+            "title": "Stronger Digital Foundation",
+            "description": "Shift from a static website to a modular system that can handle new services, products, and markets.",
+            "icon": "Layers"
+          },
+          {
+            "title": "Better Customer Experience",
+            "description": "Use AI to personalize interactions, qualify leads, and respond faster across channels.",
+            "icon": "Heart"
+          },
+          {
+            "title": "Compounding Growth",
+            "description": "Programmatic SEO, content systems, and automation that keep working even when your team is offline.",
+            "icon": "TrendingUp"
+          }
+        ]
+      },
+      "display_order": 12,
+      "is_active": true
+    },
+    {
+      "section_type": "features",
+      "title": "Core Capabilities of DOTR",
+      "subtitle": "What you get when you work with us",
+      "content": {
+        "items": [
+          {
+            "title": "AI-First Strategy",
+            "description": "Every engagement starts by identifying where AI and automation can unlock the most leverage.",
+            "icon": "Brain"
+          },
+          {
+            "title": "Modular Content System",
+            "description": "48+ reusable section types that make your About page and entire site fully configurable from the admin.",
+            "icon": "Settings"
+          },
+          {
+            "title": "Programmatic SEO Ready",
+            "description": "Structure and content patterns that can scale into hundreds of pages when you’re ready.",
+            "icon": "Globe"
+          },
+          {
+            "title": "End-to-End Services",
+            "description": "From initial concept to ongoing optimization across all 9 pillars.",
+            "icon": "Layers"
+          },
+          {
+            "title": "Analytics & Insights",
+            "description": "Data-backed decisions using AI-driven analytics and dashboards.",
+            "icon": "BarChart3"
+          },
+          {
+            "title": "Automation-First Workflows",
+            "description": "Connect your tools with n8n flows so work happens automatically in the background.",
+            "icon": "Workflow"
+          }
+        ]
+      },
+      "display_order": 13,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-list",
+      "title": "Inside the DOTR Operating System",
+      "subtitle": "Key elements that power our approach",
+      "content": {
+        "items": [
+          {
+            "text": "CMS-driven content for all core pages, including About, Services, and Case Studies.",
+            "icon": "FileText"
+          },
+          {
+            "text": "Reusable sections library mapped to your brand and messaging.",
+            "icon": "Grid"
+          },
+          {
+            "text": "AI consultant flows to qualify leads and route them to the right services.",
+            "icon": "MessageSquare"
+          },
+          {
+            "text": "Automation between website, CRM, email, and chat.",
+            "icon": "Link"
+          },
+          {
+            "text": "Scalable architecture ready for new products, locations, and markets.",
+            "icon": "Globe"
+          },
+          {
+            "text": "Continuous optimization with analytics and experimentation.",
+            "icon": "BarChart"
+          }
+        ],
+        "columns": 2
+      },
+      "display_order": 14,
+      "is_active": true
+    },
+    {
+      "section_type": "feature-highlights",
+      "title": "AI-First Capabilities at Our Core",
+      "subtitle": "How AI shows up in how we operate",
+      "content": {
+        "items": [
+          {
+            "title": "AI Consultant Experiences",
+            "description": "We design chat and form flows that ask the right questions and recommend the right DOTR services or solutions.",
+            "icon": "MessageSquare",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Smart Lead Qualification",
+            "description": "Leads are automatically scored, routed, and enriched based on their responses and behavior.",
+            "icon": "Filter",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Content Assistance",
+            "description": "AI assists your team in drafting, improving, and localizing content across pages and campaigns.",
+            "icon": "FileText",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "AI Analytics & Insights",
+            "description": "We use AI to surface patterns in user behavior, performance, and opportunities for optimization.",
+            "icon": "BarChart",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          },
+          {
+            "title": "Automated Workflows",
+            "description": "Integrations and workflows built with n8n ensure data moves instantly between your tools.",
+            "icon": "Workflow",
+            "image": "",
+            "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 15,
+      "is_active": true
+    },
+    {
+      "section_type": "process",
+      "title": "Our Approach",
+      "subtitle": "A streamlined, AI-supported delivery process",
+      "content": {
+        "items": [
+          {
+            "step": 1,
+            "title": "Understand & Diagnose",
+            "description": "We start with discovery—understanding your business model, bottlenecks, and growth goals using structured questions and AI-assisted analysis.",
+            "icon": "Search"
+          },
+          {
+            "step": 2,
+            "title": "Design the System",
+            "description": "We map out the right combination of sections, services, and automations across our 9 pillars—treating your website and tools as one integrated system.",
+            "icon": "PenTool"
+          },
+          {
+            "step": 3,
+            "title": "Build with AI & Modern Stack",
+            "description": "Using Lovable, Supabase, n8n, and AI coding tools, we build fast, robust foundations that are fully admin-controlled and ready to scale.",
+            "icon": "Code"
+          },
+          {
+            "step": 4,
+            "title": "Launch, Automate & Optimize",
+            "description": "We roll out automation, integrate analytics, and keep refining the system so it continues to generate leads, qualify prospects, and drive growth.",
+            "icon": "Rocket"
+          }
+        ]
+      },
+      "display_order": 16,
+      "is_active": true
+    },
+    {
+      "section_type": "image-text",
+      "title": "How We Think About Websites",
+      "subtitle": "From brochure to business engine",
+      "content": {
+        "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "description": "We don’t build static, fixed websites. We build modular, CMS-driven systems where every page is made of reusable sections that you can reorder, reuse, and scale. Paired with AI-powered flows, your website becomes a living operating system for your business—educating visitors, qualifying leads, recommending services, and triggering automated workflows 24/7.",
+        "image_position": "right",
+        "cta_text": "See the DOTR-DOS Vision",
+        "cta_link": "/vision"
+      },
+      "display_order": 17,
+      "is_active": true
+    },
+    {
+      "section_type": "timeline",
+      "title": "Our Journey So Far",
+      "subtitle": "From idea to AI-powered operating system",
+      "content": {
+        "items": [
+          {
+            "year": "2024",
+            "title": "DOTR Founded",
+            "description": "DOTR launches with a clear mission: build an AI-first, end-to-end digital solutions partner for modern businesses.",
+            "icon": "Rocket"
+          },
+          {
+            "year": "2024",
+            "title": "Pillars & Structure Defined",
+            "description": "Nine core pillars are established—covering design, development, e-commerce, marketing, content, AI, cloud, security, and consulting.",
+            "icon": "Layers"
+          },
+          {
+            "year": "2025",
+            "title": "Modular & CMS-Driven System",
+            "description": "The DOTR-DOS architecture matures with 48+ reusable section types and a fully admin-controlled content system.",
+            "icon": "Globe"
+          }
+        ]
+      },
+      "display_order": 18,
+      "is_active": true
+    },
+    {
+      "section_type": "stats",
+      "title": "At a Glance",
+      "subtitle": "The DOTR structure and philosophy in numbers",
+      "content": {
+        "items": [
+          {
+            "value": "9",
+            "label": "Specialized Service Pillars",
+            "suffix": ""
+          },
+          {
+            "value": "48",
+            "label": "Modular Section Types",
+            "suffix": ""
+          },
+          {
+            "value": "100",
+            "label": "AI-First Orientation",
+            "suffix": "%"
+          },
+          {
+            "value": "24",
+            "label": "Support Availability",
+            "suffix": "/7"
+          }
+        ]
+      },
+      "display_order": 19,
+      "is_active": true
+    },
+    {
+      "section_type": "kpi-strip",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "items": [
+          { "value": 9, "suffix": "", "prefix": "", "label": "Service Pillars" },
+          { "value": 48, "suffix": "+", "prefix": "", "label": "Section Types" },
+          { "value": 100, "suffix": "%", "prefix": "", "label": "AI-First Mindset" },
+          { "value": 24, "suffix": "/7", "prefix": "", "label": "Support Coverage" }
+        ],
+        "animate": true
+      },
+      "display_order": 20,
+      "is_active": true
+    },
+    {
+      "section_type": "team",
+      "title": "The People Behind DOTR",
+      "subtitle": "A cross-functional team built around AI and systems thinking",
+      "content": {
+        "items": [
+          {
+            "name": "Leadership",
+            "role": "Strategy & Vision",
+            "bio": "Defines the AI-first philosophy, product direction, and long-term roadmap for DOTR and its clients.",
+            "image": ""
+          },
+          {
+            "name": "Engineering",
+            "role": "Development & DevOps",
+            "bio": "Builds and maintains scalable, modern platforms with robust infrastructure and automation.",
+            "image": ""
+          },
+          {
+            "name": "Design",
+            "role": "UX, UI & Brand",
+            "bio": "Crafts experiences that look great, feel intuitive, and convert visitors into loyal customers.",
+            "image": ""
+          },
+          {
+            "name": "Growth",
+            "role": "Marketing & SEO",
+            "bio": "Owns programmatic SEO, content strategy, and growth experimentation across channels.",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 21,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "Measuring Our Impact",
+      "subtitle": "How we know DOTR is working for clients",
+      "content": {
+        "items": [
+          {
+            "metric": "3x",
+            "label": "Faster Launch Cycles",
+            "description": "Modular builds and AI-assisted workflows mean faster iterations.",
+            "icon": "Zap"
+          },
+          {
+            "metric": "20+",
+            "label": "Hours Saved Per Week",
+            "description": "Automation removes repetitive tasks from your team’s plate.",
+            "icon": "Clock"
+          },
+          {
+            "metric": "40%",
+            "label": "Average Efficiency Gain",
+            "description": "Better systems, fewer fire drills, more time for strategy.",
+            "icon": "TrendingUp"
+          },
+          {
+            "metric": "98%",
+            "label": "Client Satisfaction",
+            "description": "Long-term partnerships built on outcomes, not vanity metrics.",
+            "icon": "Heart"
+          }
+        ]
+      },
+      "display_order": 22,
+      "is_active": true
+    },
+    {
+      "section_type": "social-proof-bar",
+      "title": "Trusted by Forward-Thinking Teams",
+      "subtitle": null,
+      "content": {
+        "user_count": "Hundreds",
+        "rating": 4.9,
+        "review_count": "Dozens of projects",
+        "platforms": [
+          { "name": "LinkedIn", "followers": "Growing network", "icon": "Linkedin" },
+          { "name": "Twitter", "followers": "Active updates", "icon": "Twitter" }
+        ]
+      },
+      "display_order": 23,
+      "is_active": true
+    },
+    {
+      "section_type": "awards-badges",
+      "title": "Recognition & Momentum",
+      "subtitle": "Early validation of the DOTR approach",
+      "content": {
+        "items": [
+          {
+            "title": "AI Innovation",
+            "organization": "Industry Circles",
+            "year": "2024",
+            "image_url": "https://placehold.co/120x80/f0f0f0/666?text=AI"
+          },
+          {
+            "title": "System-Driven Design",
+            "organization": "Digital Product Community",
+            "year": "2024",
+            "image_url": "https://placehold.co/120x80/f0f0f0/666?text=System"
+          },
+          {
+            "title": "End-to-End Delivery",
+            "organization": "Growth Leaders",
+            "year": "2023",
+            "image_url": "https://placehold.co/120x80/f0f0f0/666?text=E2E"
+          }
+        ]
+      },
+      "display_order": 24,
+      "is_active": true
+    },
+    {
+      "section_type": "press-mentions",
+      "title": "What People Are Saying",
+      "subtitle": "DOTR’s philosophy in the words of others",
+      "content": {
+        "items": [
+          {
+            "publication": "Product Communities",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Community",
+            "quote": "DOTR’s view of websites as modular business engines is reshaping how teams think about digital.",
+            "link": ""
+          },
+          {
+            "publication": "Tech Leaders",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Leaders",
+            "quote": "An AI-first, system-driven mindset that connects strategy with execution.",
+            "link": ""
+          }
+        ]
+      },
+      "display_order": 25,
+      "is_active": true
+    },
+    {
+      "section_type": "ratings-reviews",
+      "title": "Client Feedback",
+      "subtitle": "Ratings across different channels",
+      "content": {
+        "items": [
+          {
+            "platform": "Direct Client Surveys",
+            "rating": 4.9,
+            "review_count": 50,
+            "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=CSAT"
+          },
+          {
+            "platform": "Project Retention",
+            "rating": 4.8,
+            "review_count": 30,
+            "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Retention"
+          }
+        ],
+        "show_aggregate": true
+      },
+      "display_order": 26,
+      "is_active": true
+    },
+    {
+      "section_type": "testimonials",
+      "title": "What Our Partners Say",
+      "subtitle": "Experiences of working with DOTR",
+      "content": {
+        "items": [
+          {
+            "quote": "DOTR didn’t just build us a website—they built us a system we can grow into. Our About page, services, and content are now fully controlled from the admin.",
+            "author": "A. Founder",
+            "role": "Founder",
+            "company": "Early-Stage Startup",
+            "image": ""
+          },
+          {
+            "quote": "The AI-first, modular approach means we can launch new pages, campaigns, and experiments without constant dev cycles.",
+            "author": "B. Operator",
+            "role": "Operations Lead",
+            "company": "Growing Business",
+            "image": ""
+          },
+          {
+            "quote": "DOTR helped us connect the dots—from brand story and About content to automation and analytics.",
+            "author": "C. Leader",
+            "role": "Head of Digital",
+            "company": "Scale-Up",
+            "image": ""
+          }
+        ]
+      },
+      "display_order": 27,
+      "is_active": true
+    },
+    {
+      "section_type": "gallery",
+      "title": "Snapshots of Our Work",
+      "subtitle": "Systems and experiences we’ve helped shape",
+      "content": {
+        "items": [
+          {
+            "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+            "caption": "Analytics & Operations Dashboards",
+            "alt": "Analytics dashboard"
+          },
+          {
+            "image_url": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80",
+            "caption": "CMS-Driven Admin Panels",
+            "alt": "Admin panel"
+          },
+          {
+            "image_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80",
+            "caption": "Brand & Visual Systems",
+            "alt": "Brand visuals"
+          },
+          {
+            "image_url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80",
+            "caption": "Automation Workflows",
+            "alt": "Automation workflows"
+          }
+        ]
+      },
+      "display_order": 28,
+      "is_active": true
+    },
+    {
+      "section_type": "portfolio-grid",
+      "title": "Example Engagements",
+      "subtitle": "How the DOTR approach shows up in the real world",
+      "content": {
+        "show_filters": false,
+        "items": [
+          {
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+            "title": "AI-First Marketing Site",
+            "category": "Web & CMS",
+            "link": "/portfolio/ai-first-site"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80",
+            "title": "Modular Admin System",
+            "category": "Product & Ops",
+            "link": "/portfolio/admin-system"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=600&q=80",
+            "title": "Automation & Workflows",
+            "category": "Automation",
+            "link": "/portfolio/workflows"
+          }
+        ]
+      },
+      "display_order": 29,
+      "is_active": true
+    },
+    {
+      "section_type": "logo-cloud",
+      "title": "Teams That Believe in Our Approach",
+      "subtitle": "Representative logos and communities",
+      "content": {
+        "items": [
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Startup", "name": "Startup Ecosystem", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Builders", "name": "Builder Communities", "link": "" },
+          { "logo_url": "https://placehold.co/160x64/f0f0f0/666?text=Ops", "name": "Ops & RevOps Groups", "link": "" }
+        ]
+      },
+      "display_order": 30,
+      "is_active": true
+    },
+    {
+      "section_type": "video",
+      "title": "Inside the DOTR Philosophy",
+      "subtitle": "A quick overview of how we think and work",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+        "autoplay": false
+      },
+      "display_order": 31,
+      "is_active": true
+    },
+    {
+      "section_type": "video-demo",
+      "title": "See the System in Motion",
+      "subtitle": "From visitor to qualified opportunity",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+        "callouts": [
+          { "time": "0:15", "text": "Overview of the DOTR-DOS idea" },
+          { "time": "1:30", "text": "Modular sections & admin control" },
+          { "time": "2:45", "text": "AI consultant and automations" }
+        ]
+      },
+      "display_order": 32,
+      "is_active": true
+    },
+    {
+      "section_type": "screenshot-gallery",
+      "title": "Platform & Admin Screens",
+      "subtitle": "A peek into how we structure systems",
+      "content": {
+        "screenshots": [
+          {
+            "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+            "caption": "Analytics Dashboard"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+            "caption": "Admin & Section Management"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+            "caption": "Content Editing"
+          }
+        ],
+        "show_captions": true
+      },
+      "display_order": 33,
+      "is_active": true
+    },
+    {
+      "section_type": "device-frames",
+      "title": "Built for Every Device",
+      "subtitle": "Responsive, fast, and reliable everywhere",
+      "content": {
+        "device_type": "iphone",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80"
+        ]
+      },
+      "display_order": 34,
+      "is_active": true
+    },
+    {
+      "section_type": "before-after",
+      "title": "Before & After DOTR",
+      "subtitle": "How our approach changes your digital foundation",
+      "content": {
+        "before_image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+        "after_image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "before_label": "Before DOTR",
+        "after_label": "After DOTR"
+      },
+      "display_order": 35,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "gradient",
+        "width": "medium",
+        "spacing": "medium"
+      },
+      "display_order": 36,
+      "is_active": true
+    },
+    {
+      "section_type": "newsletter",
+      "title": "Stay Close to the DOTR Journey",
+      "subtitle": "Occasional updates on AI, systems, and digital operating models.",
+      "content": {
+        "placeholder_text": "Enter your email",
+        "button_text": "Subscribe",
+        "success_message": "Thanks for subscribing! We’ll share our latest thinking on AI-first systems and digital strategy."
+      },
+      "display_order": 37,
+      "is_active": true
+    },
+    {
+      "section_type": "blog-posts",
+      "title": "From the DOTR Playbook",
+      "subtitle": "Articles on AI, systems, and scaling",
+      "content": {
+        "count": 3,
+        "show_featured_only": false,
+        "layout": "list"
+      },
+      "display_order": 38,
+      "is_active": true
+    },
+    {
+      "section_type": "contact-info",
+      "title": "Talk to DOTR",
+      "subtitle": "Tell us where you are and where you want to go",
+      "content": {
+        "email": "hello@dotr.com",
+        "phone": "+1 (555) 000-0000",
+        "address": "Your City, Your Country",
+        "map_embed_url": "",
+        "social_links": [
+          {
+            "platform": "LinkedIn",
+            "url": "https://linkedin.com",
+            "icon": "Linkedin"
+          },
+          {
+            "platform": "Twitter",
+            "url": "https://twitter.com",
+            "icon": "Twitter"
+          }
+        ]
+      },
+      "display_order": 39,
+      "is_active": true
+    },
+    {
+      "section_type": "form",
+      "title": "Start a Conversation with DOTR",
+      "subtitle": "Share a bit about your context and goals",
+      "content": {
+        "form_title": "Tell Us About Your Team & Systems",
+        "form_description": "We’ll review your current digital setup and recommend how DOTR’s AI-first approach can help.",
+        "submit_button_text": "Send Details",
+        "success_message": "Thank you! We’ll get back to you with tailored recommendations and possible next steps.",
+        "fields": [
+          {
+            "field_type": "text",
+            "label": "Full Name",
+            "name": "name",
+            "placeholder": "John Doe",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "email",
+            "label": "Email Address",
+            "name": "email",
+            "placeholder": "john@example.com",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "text",
+            "label": "Company / Project Name",
+            "name": "company",
+            "placeholder": "Your company",
+            "required": false,
+            "width": "full"
+          },
+          {
+            "field_type": "select",
+            "label": "Primary Focus Area",
+            "name": "focus",
+            "placeholder": "Select an option",
+            "required": true,
+            "options": [
+              "Foundational Website / About System",
+              "AI & Automation",
+              "Product / Platform Build",
+              "Marketing & Growth",
+              "General Exploration"
+            ],
+            "width": "full"
+          },
+          {
+            "field_type": "textarea",
+            "label": "Current Situation",
+            "name": "context",
+            "placeholder": "Where are you today and what are you trying to solve?",
+            "required": true,
+            "validation": { "min": 10, "max": 1000 },
+            "width": "full"
+          }
+        ]
+      },
+      "display_order": 40,
+      "is_active": true
+    },
+    {
+      "section_type": "faq",
+      "title": "About DOTR – FAQs",
+      "subtitle": "Answers to common questions about who we are and how we work",
+      "content": {
+        "items": [
+          {
+            "question": "What does AI-first actually mean for DOTR?",
+            "answer": "AI-first means that automation, intelligent decision-making, and data-driven flows are considered from the very beginning of every engagement—not added at the end. From content to workflows, we look for where AI can unlock the most leverage."
+          },
+          {
+            "question": "How is DOTR different from a traditional agency?",
+            "answer": "Instead of separate vendors for design, development, marketing, and automation, DOTR offers 9 integrated pillars under one roof—with a modular CMS system and AI-driven workflows binding everything together."
+          },
+          {
+            "question": "Do you only work on websites?",
+            "answer": "No. We view the website as the hub of a larger digital operating system that can include web apps, admin tools, analytics, automation workflows, and more."
+          },
+          {
+            "question": "Can I start small and scale later?",
+            "answer": "Yes. Many partners start with a core foundation—like an AI-first website and About system—and then expand into automation, SEO, and more advanced flows."
+          }
+        ]
+      },
+      "display_order": 41,
+      "is_active": true
+    },
+    {
+      "section_type": "primary-cta-banner",
+      "title": "Ready to Learn More About DOTR?",
+      "subtitle": null,
+      "content": {
+        "headline": "If Our Philosophy Resonates, Let’s Talk",
+        "description": "We work best with teams who see their website and tools as a living system—not a one-time project.",
+        "primary_cta_text": "Book an Intro Call",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "Explore Our Services",
+        "secondary_cta_link": "/services",
+        "background_color": "primary",
+        "text_color": "white"
+      },
+      "display_order": 42,
+      "is_active": true
+    },
+    {
+      "section_type": "secondary-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "text": "Want a deeper dive into DOTR’s AI-first operating model?",
+        "button_text": "Read the Full Vision",
+        "button_url": "/docs/website-vision-strategy"
+      },
+      "display_order": 43,
+      "is_active": true
+    },
+    {
+      "section_type": "exit-intent-cta",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "headline": "Leaving Without Saying Hi?",
+        "description": "If DOTR’s approach sounds interesting, share a few details and we’ll send back ideas tailored to your context.",
+        "button_text": "Share Your Context",
+        "button_url": "/contact",
+        "show_after_scroll": 50,
+        "offer_text": "We’ll map your current state to the DOTR-DOS vision."
+      },
+      "display_order": 44,
+      "is_active": true
+    },
+    {
+      "section_type": "counters",
+      "title": "By the Numbers",
+      "subtitle": "How DOTR thinks about scale",
+      "content": {
+        "items": [
+          { "value": 9, "label": "Pillars Under One Roof", "prefix": "", "suffix": "", "icon": "Layers" },
+          { "value": 48, "label": "Section Types in the System", "prefix": "", "suffix": "+", "icon": "Grid" },
+          { "value": 24, "label": "Hours of System Availability", "prefix": "", "suffix": "/7", "icon": "Clock" },
+          { "value": 100, "label": "AI-First Focus", "prefix": "", "suffix": "%", "icon": "Brain" }
+        ]
+      },
+      "display_order": 45,
+      "is_active": true
+    },
+    {
+      "section_type": "success-metrics",
+      "title": "Internal Benchmarks",
+      "subtitle": "How we evaluate ourselves",
+      "content": {
+        "items": [
+          {
+            "metric": "100%",
+            "label": "Admin-Editable Content",
+            "description": "Our internal bar: no hard-coded content on core marketing surfaces.",
+            "icon": "Settings"
+          },
+          {
+            "metric": "Zero",
+            "label": "Vendor Juggling Required",
+            "description": "We measure success by how simple it is for partners to work with a single team.",
+            "icon": "UserCheck"
+          }
+        ]
+      },
+      "display_order": 46,
+      "is_active": true
+    },
+    {
+      "section_type": "cta",
+      "title": "Ready to Work with an AI-First Partner?",
+      "subtitle": null,
+      "content": {
+        "headline": "Let’s Turn Your Digital Presence into a Business Engine",
+        "description": "If you’re ready to move beyond static websites and fragmented tools, DOTR can help you build a connected, AI-powered system that scales with you.",
+        "primary_cta_text": "Book a Free Consultation",
+        "primary_cta_link": "/contact",
+        "secondary_cta_text": "Explore Our Services",
+        "secondary_cta_link": "/services"
+      },
+      "display_order": 47,
+      "is_active": true
+    },
+    {
+      "section_type": "divider",
+      "title": null,
+      "subtitle": null,
+      "content": {
+        "style": "subtle",
+        "width": "full",
+        "spacing": "large"
+      },
+      "display_order": 48,
+      "is_active": true
+    }
+  ]
+}

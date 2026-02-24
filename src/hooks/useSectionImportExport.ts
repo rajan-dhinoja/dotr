@@ -10,6 +10,12 @@ export interface ImportOptions {
   onConflict?: 'skip' | 'overwrite' | 'merge';
   reorderStrategy?: 'preserve' | 'append' | 'renumber';
   validateSchemas?: boolean;
+  /**
+   * Optional zero-based indexes into the parsed sections array indicating
+   * which sections from the file should be processed. If omitted, all
+   * parsed sections are considered.
+   */
+  selectedSectionIndexes?: number[];
 }
 
 export interface ImportResult {
@@ -91,6 +97,7 @@ export function useSectionImportExport({
       onConflict = 'skip',
       reorderStrategy = 'append',
       validateSchemas = true,
+      selectedSectionIndexes,
     } = options;
 
     try {
@@ -168,6 +175,15 @@ export function useSectionImportExport({
         ? Math.max(...existingSections.map(s => s.display_order ?? 0))
         : -1;
 
+      // Determine which sections should be processed
+      const sectionIndexes: number[] = selectedSectionIndexes
+        ? selectedSectionIndexes.filter(
+            (i) => Number.isInteger(i) && i >= 0 && i < importData.sections.length
+          )
+        : importData.sections.map((_, idx) => idx);
+
+      const sectionsToProcess = sectionIndexes.map((i) => importData.sections[i]);
+
       // Track results
       let imported = 0;
       let skipped = 0;
@@ -180,8 +196,9 @@ export function useSectionImportExport({
       const norm = (v: string | null | undefined) => (v == null || v === '' ? null : v);
 
       // Process each section
-      for (let i = 0; i < importData.sections.length; i++) {
-        const sectionData = importData.sections[i];
+      for (let i = 0; i < sectionsToProcess.length; i++) {
+        const sectionData = sectionsToProcess[i];
+        const originalIndex = sectionIndexes[i];
         
         try {
           // Find existing section: first by id, then by section_type + title (for all modes including skip)
@@ -285,10 +302,10 @@ export function useSectionImportExport({
         } catch (error) {
           failed++;
           errors.push({
-            sectionIndex: i,
+            sectionIndex: originalIndex,
             error: error instanceof Error ? error.message : 'Unknown error',
           });
-          console.error(`Failed to import section ${i + 1}:`, error);
+          console.error(`Failed to import section ${originalIndex + 1}:`, error);
         }
       }
 
@@ -340,7 +357,7 @@ export function useSectionImportExport({
 
       return {
         success: !hasErrors,
-        total: importData.sections.length,
+        total: sectionsToProcess.length,
         imported,
         skipped,
         overwritten,

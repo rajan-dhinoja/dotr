@@ -819,6 +819,259 @@
       },
       "display_order": 40,
       "is_active": true
+    },
+    {
+      "section_type": "team",
+      "title": "The Team Behind the Work",
+      "subtitle": "Specialists across design, development, and marketing",
+      "content": {
+        "items": [
+          { "name": "Design & UX", "role": "Product & Experience", "bio": "Designers crafting interfaces that look great and convert.", "image": "" },
+          { "name": "Engineering", "role": "Web, Mobile & Platforms", "bio": "Developers shipping reliable, scalable products.", "image": "" },
+          { "name": "Growth & Marketing", "role": "Acquisition & Retention", "bio": "Marketers building full-funnel campaigns that perform.", "image": "" },
+          { "name": "AI & Automation", "role": "Systems & Workflows", "bio": "Specialists using AI to accelerate delivery and insights.", "image": "" }
+        ]
+      },
+      "display_order": 41,
+      "is_active": true
+    },
+    {
+      "section_type": "blog-posts",
+      "title": "Insights Behind Our Portfolio",
+      "subtitle": "Case studies, breakdowns, and lessons from real projects",
+      "content": {
+        "count": 3,
+        "show_featured_only": false,
+        "layout": "grid"
+      },
+      "display_order": 42,
+      "is_active": true
+    },
+    {
+      "section_type": "pricing",
+      "title": "Pricing for Project Engagements",
+      "subtitle": "Flexible options for design, development, and marketing work",
+      "content": {
+        "items": [
+          {
+            "name": "Project Starter",
+            "price": "From $99",
+            "description": "Ideal for smaller portfolio-worthy engagements like landing pages or single campaigns.",
+            "features": [
+              "Focused scope (e.g. single page or campaign)",
+              "Modern, responsive implementation",
+              "Basic analytics setup",
+              "Email support"
+            ],
+            "cta_text": "Discuss a Starter Project",
+            "is_featured": false
+          },
+          {
+            "name": "Growth Project",
+            "price": "From $299",
+            "description": "For multi-scope projects that combine design, development, and marketing.",
+            "features": [
+              "Multi-page or multi-channel scope",
+              "Design system or component library",
+              "Conversion-focused implementation",
+              "Priority support",
+              "Analytics & reporting"
+            ],
+            "cta_text": "Plan a Growth Project",
+            "is_featured": true
+          },
+          {
+            "name": "Full-Stack Engagement",
+            "price": "Custom",
+            "description": "End-to-end brand, product, and marketing initiatives with ongoing support.",
+            "features": [
+              "Strategy, design, development, and marketing",
+              "Custom roadmap and milestones",
+              "Dedicated account and delivery leads",
+              "24/7 priority support",
+              "Ongoing optimization and experimentation"
+            ],
+            "cta_text": "Talk to Our Team",
+            "is_featured": false
+          }
+        ]
+      },
+      "display_order": 43,
+      "is_active": true
+    },
+    {
+      "section_type": "form",
+      "title": "Start a Portfolio-Worthy Project",
+      "subtitle": "Tell us about the work you want to ship next",
+      "content": {
+        "form_title": "Request a Project Consultation",
+        "form_description": "Share a few details about your project, and we'll reply with recommended scope, timeline, and next steps.",
+        "submit_button_text": "Submit Project Brief",
+        "success_message": "Thank you! We've received your brief and will respond within 24 hours with tailored recommendations.",
+        "fields": [
+          {
+            "field_type": "text",
+            "label": "Full Name",
+            "name": "name",
+            "placeholder": "John Doe",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "email",
+            "label": "Email Address",
+            "name": "email",
+            "placeholder": "john@example.com",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "text",
+            "label": "Company / Organization",
+            "name": "company",
+            "placeholder": "Your company name",
+            "required": false,
+            "width": "full"
+          },
+          {
+            "field_type": "select",
+            "label": "Primary Project Type",
+            "name": "project_type",
+            "placeholder": "Select an option",
+            "required": true,
+            "options": [
+              "Design (UI/UX, branding, visual)",
+              "Development (web, mobile, SaaS)",
+              "Marketing (SEO, paid, email)",
+              "End-to-end (design + dev + marketing)"
+            ],
+            "width": "half"
+          },
+          {
+            "field_type": "select",
+            "label": "Timeline",
+            "name": "timeline",
+            "placeholder": "When do you want to start?",
+            "required": false,
+            "options": [
+              "ASAP (this month)",
+              "Within 1–2 months",
+              "Within 3–6 months",
+              "Exploring options"
+            ],
+            "width": "half"
+          },
+          {
+            "field_type": "textarea",
+            "label": "Project Details",
+            "name": "project_details",
+            "placeholder": "Tell us about the project, goals, and any existing assets...",
+            "required": true,
+            "validation": { "min": 10, "max": 1500 },
+            "width": "full"
+          },
+          {
+            "field_type": "checkbox",
+            "label": "I agree to receive updates and project-related communications",
+            "name": "marketing_consent",
+            "required": false,
+            "width": "full"
+          }
+        ]
+      },
+      "display_order": 44,
+      "is_active": true
+    },
+    {
+      "section_type": "press-mentions",
+      "title": "Portfolio Featured In",
+      "subtitle": "Publications and platforms that have covered our work",
+      "content": {
+        "items": [
+          {
+            "publication": "TechCrunch",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=TechCrunch",
+            "quote": "DOTR's portfolio showcases how AI-first delivery can compress timelines without sacrificing quality.",
+            "link": "https://techcrunch.com"
+          },
+          {
+            "publication": "Forbes",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Forbes",
+            "quote": "From design systems to go-to-market, DOTR's projects demonstrate end-to-end thinking.",
+            "link": "https://forbes.com"
+          },
+          {
+            "publication": "Wired",
+            "logo_url": "https://placehold.co/160x60/f0f0f0/666?text=Wired",
+            "quote": "A portfolio built on speed, clarity, and AI-assisted execution.",
+            "link": "https://wired.com"
+          }
+        ]
+      },
+      "display_order": 45,
+      "is_active": true
+    },
+    {
+      "section_type": "ratings-reviews",
+      "title": "Ratings Across Platforms",
+      "subtitle": "What clients say about our projects",
+      "content": {
+        "items": [
+          { "platform": "Google", "rating": 4.9, "review_count": 250, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Google" },
+          { "platform": "Clutch", "rating": 4.8, "review_count": 120, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Clutch" },
+          { "platform": "Trustpilot", "rating": 4.7, "review_count": 180, "logo_url": "https://placehold.co/80x80/f0f0f0/666?text=Trustpilot" }
+        ],
+        "show_aggregate": true
+      },
+      "display_order": 46,
+      "is_active": true
+    },
+    {
+      "section_type": "video-demo",
+      "title": "Walk Through Selected Projects",
+      "subtitle": "A quick video tour of how we design, build, and launch",
+      "content": {
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "poster_image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+        "callouts": [
+          { "time": "0:15", "text": "Overview of our portfolio structure" },
+          { "time": "1:30", "text": "Behind the scenes of a design + dev project" },
+          { "time": "2:45", "text": "How we connect projects to measurable outcomes" }
+        ]
+      },
+      "display_order": 47,
+      "is_active": true
+    },
+    {
+      "section_type": "screenshot-gallery",
+      "title": "Screenshots from Real Projects",
+      "subtitle": "Interfaces, dashboards, and campaign visuals",
+      "content": {
+        "screenshots": [
+          { "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80", "caption": "Analytics Dashboard" },
+          { "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80", "caption": "Admin Panel Overview" },
+          { "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80", "caption": "Product UI" },
+          { "url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80", "caption": "Automation & Workflow" }
+        ],
+        "show_captions": true
+      },
+      "display_order": 48,
+      "is_active": true
+    },
+    {
+      "section_type": "device-frames",
+      "title": "Projects on Every Device",
+      "subtitle": "Portfolio work across desktop, tablet, and mobile",
+      "content": {
+        "device_type": "iphone",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80",
+          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80"
+        ]
+      },
+      "display_order": 49,
+      "is_active": true
     }
   ],
   "services_list": {

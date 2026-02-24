@@ -873,6 +873,144 @@
       },
       "display_order": 47,
       "is_active": true
+    },
+    {
+      "section_type": "pricing",
+      "title": "Development Plans That Scale With You",
+      "subtitle": "Transparent pricing for MVPs, products, and platforms",
+      "content": {
+        "items": [
+          {
+            "name": "MVP Sprint",
+            "price": "From $4,900",
+            "description": "Ship a focused MVP or internal tool in weeks.",
+            "features": [
+              "Scoped MVP or single product module",
+              "Modern stack (React, TypeScript, Supabase)",
+              "CMS-driven content & basic admin",
+              "One environment deployment",
+              "Email support during build"
+            ],
+            "cta_text": "Plan My MVP",
+            "is_featured": false
+          },
+          {
+            "name": "Product Launch",
+            "price": "From $9,900",
+            "description": "Full product build across web, admin, and APIs.",
+            "features": [
+              "Web app + admin panel + APIs",
+              "Role-based access & analytics",
+              "CI/CD pipeline & cloud-ready setup",
+              "Performance, security & QA",
+              "Priority support during launch"
+            ],
+            "cta_text": "Launch My Product",
+            "is_featured": true
+          },
+          {
+            "name": "Scale & Platform",
+            "price": "Custom",
+            "description": "Multi-tenant SaaS, complex platforms, and long-term roadmaps.",
+            "features": [
+              "Multi-tenant or multi-region architecture",
+              "Advanced integrations & workflows",
+              "Performance & cost optimization",
+              "Ongoing feature sprints",
+              "Dedicated technical lead & support"
+            ],
+            "cta_text": "Talk to a Tech Lead",
+            "is_featured": false
+          }
+        ]
+      },
+      "display_order": 48,
+      "is_active": true
+    },
+    {
+      "section_type": "form",
+      "title": "Start Your Development Project",
+      "subtitle": "Tell us what you want to build—we'll respond within 24 hours",
+      "content": {
+        "form_title": "Get a Development Consultation",
+        "form_description": "Share a bit about your product, stack, and timeline. We'll come back with a clear development plan, estimated timeline, and recommended stack.",
+        "submit_button_text": "Send Project Details",
+        "success_message": "Thank you! Your development brief has been received. We'll get back to you within 24 hours with next steps.",
+        "fields": [
+          {
+            "field_type": "text",
+            "label": "Full Name",
+            "name": "name",
+            "placeholder": "John Doe",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "email",
+            "label": "Email Address",
+            "name": "email",
+            "placeholder": "john@example.com",
+            "required": true,
+            "width": "full"
+          },
+          {
+            "field_type": "phone",
+            "label": "Phone Number",
+            "name": "phone",
+            "placeholder": "+1 (555) 123-4567",
+            "required": false,
+            "width": "half"
+          },
+          {
+            "field_type": "select",
+            "label": "Development Focus",
+            "name": "dev_focus",
+            "placeholder": "Select an option",
+            "required": true,
+            "options": [
+              "Web App / Admin Panel",
+              "Mobile Application",
+              "APIs / Integrations",
+              "SaaS Platform",
+              "Internal Tools",
+              "Not Sure Yet"
+            ],
+            "width": "half"
+          },
+          {
+            "field_type": "textarea",
+            "label": "Project Overview",
+            "name": "project_overview",
+            "placeholder": "Describe what you want to build, current stack (if any), and key goals...",
+            "required": true,
+            "validation": { "min": 10, "max": 1000 },
+            "width": "full"
+          },
+          {
+            "field_type": "select",
+            "label": "Timeline",
+            "name": "timeline",
+            "placeholder": "When do you want to start?",
+            "required": false,
+            "options": [
+              "ASAP (0–2 weeks)",
+              "Soon (2–6 weeks)",
+              "Later (2–3 months)",
+              "Exploring options"
+            ],
+            "width": "half"
+          },
+          {
+            "field_type": "checkbox",
+            "label": "I agree to receive updates and development insights",
+            "name": "marketing_consent",
+            "required": false,
+            "width": "full"
+          }
+        ]
+      },
+      "display_order": 49,
+      "is_active": true
     }
   ]
 }
